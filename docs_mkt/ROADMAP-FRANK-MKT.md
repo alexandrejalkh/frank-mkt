@@ -167,7 +167,8 @@ frank-mkt-plugin/
 | `metricas-marketing` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.721 | **medium (6 meses)** |
 | **🎉 Bloco Marketing & Estratégia — COMPLETO** | **✅ 5/5** | **7.871** | — |
 | `dominio-vertical-fundamentos` (mãe Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.347 | **low (12 meses)** |
-| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 1/13** (mãe + 12 filhas planejadas) | **1.347** | — |
+| `dominio-ti-mkt` (1ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.533 | **medium (6 meses)** |
+| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 2/13** (mãe + 1 filha + 11 planejadas) | **2.880** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
