@@ -1,5 +1,43 @@
 # Changelog — Frank MKT
 
+## 2.1.0 (2026-05-08) — Início Bloco F Domínio Vertical EXPANDIDO (1/13) — `dominio-vertical-fundamentos`
+
+### Adicionado
+
+- **Skill `dominio-vertical-fundamentos`** (`skills/dominio-vertical-fundamentos/SKILL.md`, **1347 linhas**, volatility **`low` (12 meses)** — sétima skill volatility low, **pesquisa de campo** — 6 web searches em 2026-05-08: vertical content marketing strategy 2026 niche expertise SME thought leadership, domain expertise marketing posts 2026 audience adaptation B2B verticals, subject matter expert content marketing 2026 LinkedIn industry posts founder, explaining complex topics marketing simply 2026 framework Feynman technique, cross-disciplinary content marketing trend 2026 niche intersection unique angle, regulated industries marketing compliance 2026 healthcare finance legal posts). **Skill-MÃE do Bloco F EXPANDIDO** (1 mãe + 12 filhas vs original 1+5). Foco crucial: PRODUZIR CONTEÚDO MKT sobre verticais — NÃO executar processos vertical (frank-juridico para processual). **2026 trend SME-led authority** > brand content; personal LinkedIn outperforms company pages todas métricas; **thought leadership = primary driver Google Information Gain** (rewards original human insight); **74% companies niche markets higher conversion**; **35% cross-niche engagement lift** (creators outside immediate niche). Cobre 7 fundações + 1 aplicação: **(1) Cenário 2026** SME-led + Information Gain + niche conversion stats; **(2) Framework decisão 4D adaptado vertical** com tabela 12 filhas Bloco F (Who+Need+Action+Context per vertical); **(3) Feynman Technique** 4 steps (choose+research+explain to child+target gaps); aplicação MKT detalhada com Reforma Tributária BR exemplo Feynman applied; **(4) Tom adaptation 3 levels** (técnico peer-to-peer + executive C-level + leigo educational) cross-skill matrix com `escrita-por-publico` 6 audiências canonical; **(5) Cross-pollination 2 verticais** = 35% engagement lift; matrix examples (IA+Jurídico, IA+Financeiro, Jurídico+RH, Empreendedorismo+IA, Negócios+IoT, RH+IA, Fiscal+IA, DP+Jurídico, ADM+IoT); cross-pollination tests genuine não forçada; **(6) Compliance regulated industries** (Healthcare HIPAA + Finance + Legal OAB + Pharma FDA/ANVISA + Alcohol/Tobacco/Gambling + Food + Politics + Insurance); compliance check pre-publish framework; specific 2026 (HIPAA tracking pixels = violations, Homebuyers Privacy Protection Act mar/2026, OIG Medicare 2026 first major update since 1999, Lei 15.325/2026 BR, Reforma Tributária); **85% executives more complex** (PwC 2025); AI explainability mandatory; **(7) Team-led content strategy** decentralizada via SMEs vs brand-only; implementation framework 6 steps (identify SMEs + guidance + cadence 3-5 posts founder + amplification cross-engagement + measurement per-SME + sustain weekly); tools (Taplio + Shield + Supergrow + Sprout employee advocacy); compliance guardrails team-led; **(8) Mapping 12 filhas Bloco F** + workflow produção + ordem implementação recomendada (TI → Jurídico → Empreendedorismo → Negócios → IA mãe → técnicas-claude-gemini PARAR INPUT USER → RH → DP → Financeiro → Fiscal → ADM → IoT). 18 anti-patterns universais; workflow operacional (setup vertical strategy 4-6 sem + quarterly review + filha implementation workflow). 3 templates (vertical content brief YAML + tom adaptation matrix + SME content brief). 18 Regras de Ouro. 4 exemplos comportamentais detalhados (founder TI LinkedIn hybrid 70/30 strategy + cross-pollination + 6 meses roadmap, Reforma Tributária BR Feynman simplification 4-step rigorous + analogies + audience-relevant framing 11 anti-patterns, healthcare HIPAA+LGPD+OIG compliance 6-week strategy + tools healthcare-compliant + investment $100-500k/year, cross-pollination IA+RH AI recruitment ethics structured Feynman + SME-led + compliance-aware + 4 cross-pollination tests passed). Checklist Contraditório Interno 10 perguntas. ~25 referências (Richard Feynman "Surely You're Joking" 1985 + Caltech lectures, CMO Alliance B2B Thought Leadership 2026, Elementor Vertical Market 2026, Pierre Herubel Team-Led Content Strategy LinkedIn 2026, Improvado Marketing Compliance 2026, Morgan Lewis OIG Medicare Advantage 2026, Heath brothers "Made to Stick", Marcus Sheridan "They Ask You Answer", Donald Miller "StoryBrand"). Integração com ecossistema completo + STARTS Bloco F.
+
+### Bloco F EXPANDIDO 1+12 = 13 skills total (1 mãe + 12 filhas)
+
+| # | Skill | Status |
+|---|-------|--------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | ✅ v0.1.0 |
+| 1 | `dominio-ti-mkt` | ⏸️ próxima |
+| 2 | `dominio-juridico-mkt` | ⏸️ |
+| 3 | `dominio-empreendedorismo-mkt` | ⏸️ |
+| 4 | `dominio-negocios-mkt` | ⏸️ |
+| 5 | `dominio-ia-mkt` (mãe IA) | ⏸️ |
+| 6 | `tecnicas-ia-claude-gemini-mkt` (filha — REQUER INPUT USER) | ⏸️ |
+| 7 | `dominio-rh-mkt` | ⏸️ |
+| 8 | `dominio-dp-mkt` | ⏸️ |
+| 9 | `dominio-financeiro-mkt` | ⏸️ |
+| 10 | `dominio-fiscal-mkt` | ⏸️ |
+| 11 | `dominio-adm-mkt` | ⏸️ |
+| 12 | `dominio-iot-mkt` | ⏸️ |
+
+### Estatísticas globais
+
+- **34 skills implementadas / 45.043 linhas totais**
+- 14 skills volatility `high` (trimestral)
+- 13 skills volatility `medium` (semestral)
+- **7 skills volatility `low`** (anualmente, próxima 2027-05-08)
+- **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Domínio Vertical 1/13** (mãe escrita)
+
+### Próxima skill (Bloco F filha 1/12)
+
+- `dominio-ti-mkt` — TI/SaaS B2B/dev tools/cloud/arquitetura/security/dev advocacy/founder build-in-public
+
+---
+
 ## 2.0.0 (2026-05-08) — 🎉🚀 v2.0.0 MILESTONE — BLOCO MARKETING & ESTRATÉGIA COMPLETO
 
 ### Resumo

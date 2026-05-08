@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.0.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.0.0 MILESTONE — **7 BLOCOS PRINCIPAIS COMPLETOS**: SEO (7) + Midia Social (10) + Comunicacao Visual & IA (4) + Multi-Platform Strategy (3) + Persuasao & Engajamento (2) + Marketing Nao-Tradicional (2) + **Marketing & Estrategia (5 — posicionamento-marca + branding + funil-jornada + big-idea + metricas-marketing)** + Bloco F Dominio Vertical 0/6 (planejado). 33 skills totais, 43.696 linhas. 14 skills volatility high (trimestral); 13 medium (semestral); 6 low (anual). Agentes ainda em construcao.",
+  "version": "2.1.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.1.0 — **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Dominio Vertical EXPANDIDO 1/13** (1 mae + 12 filhas: ti+juridico+empreendedorismo+negocios+ia+tecnicas-ia-claude-gemini+rh+dp+financeiro+fiscal+adm+iot). 34 skills totais, 45.043 linhas. 14 high (trimestral); 13 medium (semestral); 7 low (anual). Agentes ainda em construcao.",
   "author": {
     "name": "Alexandre Jalkh"
   },

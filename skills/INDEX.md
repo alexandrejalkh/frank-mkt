@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.0.0 — 2026-05-08) — 🎉🚀 v2.0.0 MILESTONE — 7 BLOCOS PRINCIPAIS COMPLETOS
+## Status (v2.1.0 — 2026-05-08) — 7 blocos principais completos + Bloco F Domínio Vertical 1/13
 
-**33 skills implementadas / 43.696 linhas totais.**
+**34 skills implementadas / 45.043 linhas totais.**
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -16,7 +16,7 @@
 | **Marketing Não-Tradicional** | ✅ **2/2** | 2.642 |
 | **Marketing & Estratégia** | ✅ **5/5** | 7.871 |
 | Marketing & Estratégia | ⏸️ 0/5 | — |
-| **Domínio Vertical (NOVO bloco F)** | ⏸️ 0/6 | — |
+| **Domínio Vertical (NOVO bloco F — EXPANDIDO)** | 🔄 **1/13** | 1.347 |
 | Bloco E Documentos Corporativos | ⏸️ 0/2 | — |
 | Pesquisa & Inteligência de Mercado | ⏸️ 0/6 | — |
 | Copy & Redação | ⏸️ 0/4 | — |
@@ -26,9 +26,9 @@
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **33/~76** | **43.696** |
+| **TOTAL** | **34/~83** | **45.043** |
 
-**Volatility:** 13 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **6 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca` + `branding` + `funil-jornada` + `big-idea`.
+**Volatility:** 13 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca` + `branding` + `funil-jornada` + `big-idea` + `dominio-vertical-fundamentos`.
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
@@ -57,18 +57,27 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 | [big-idea](big-idea/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. **Big Idea = núcleo unificador campanha**. **Ogilvy vs Bernbach** philosophies (Creative Revolution 1960s): Ogilvy content+research-driven; Bernbach DDB art>science + creative teams paired (copywriter+art director first). **3 cases iconicos foundational**: **Apple "Think Different" 1997** (resposta IBM Think + crazy ones Einstein/Gandhi/MLK + sem produto), **Nike "Just Do It" 1988** (Walt Stack 80yo + raw gritty + sales **+1050% over decade $800M→$9.2B**), **Dove "Real Beauty" 2004** (insight 2% women self-perceive beautiful + sustained 20+ years + revolutionized purpose-driven 21st century). **StoryBrand Donald Miller 2017**: customer=hero+brand=guide; "If you confuse, you lose"; 7-part (character+problem+guide+plan+CTA+success+failure). **Single-Minded Proposition (SMP)** + **compress-to-ONE-sentence test**. **Cannes Lions 2026** Grand Prix: FCB Caption with Intention (Design accessibility 433M Deaf), AKQA Sounds Right (Innovation NATURE official artist Spotify), Publicis Three Words (Business Transformation AXA "and domestic violence"). **AB InBev Creative Marketer of the Year 3x historic 2026**. **Bernbach 5 revolutions**: creative teams paired + creativity over research + emotional connection + breaking conventions + permission to fail. **Creative brief modern 2026** living system AI-aware (Uplifted/Briefly/Asana/Monday/Miro). 7-step framework Superside. **BR cases**: Itaú "Felipão" decadas, Casas Bahia jingle, Nubank Purple anti-bank, Magazine Luiza Lu, Natura "Bem Estar Bem". 18 anti-patterns (brand=hero StoryBrand violation, multi-Big-Idea confusion, generic "innovative" vacuous, sentence test fails muddy concept, copy competitor me-too, founder/CEO not bought-in) | **v0.1.0 (2026-05-08)** |
 | [metricas-marketing](metricas-marketing/SKILL.md) | **Pesquisa de campo (volatility medium)**. **CAC + LTV + LTV:CAC 3:1+ healthy**; B2B SaaS CAC $200-500 typical (industry-wide $1.200); CAC payback **<12-18m healthy** (<80 dias top performers). **ROAS** 3-5x healthy; Meta median **1.93x / avg 2.79x**; email **6-10x**; search 4-8x. Marketing budget B2C 5-10% / B2B 2-5% / **SaaS 8-15% (median 8% 2026 down from 10%)**. **Rule of 40 SaaS** (Brad Feld 2015) growth+margin ≥40%; companies clearing R40 trade **4.8x EV/Rev vs 2.7x = 74% premium**. **Magic Number** (Scale Venture) >0.75 healthy S&M efficiency. **NRR 100%+ healthy / 110%+ outstanding / 130%+ best-in-class**. **Vanity vs actionable** "So What?" test rigoroso. **Attribution 2026**: MTA + MMM dual-model norm; W-shaped 30/30/30/10; **MMM adoption tripled 9%→26%** post iOS 14.5 (signal shrunk **30-60% of 2020**); Google open-sourced MMM library 2024; CAPI server-side restores 30-50% missing data. **Brand health 5 dimensions** (awareness depth + consideration + preference + emotional + advocacy); NPS B2B SaaS 30-50 healthy. **Conversion benchmarks 2026**: website 2-3% / ecommerce 1.5-3% / B2B 2.5-5% / SaaS trial 3-7%. Tools: Looker Studio free + Geckoboard $31-149/mês + GA4 + ChartMogul/Baremetrics SaaS metrics + Sprout Social brand health + Dreamdata B2B journey. BR-specific (Pix conversion 60-80% mobile + WhatsApp 90% open rate + Mercado Livre take rate). 20 anti-patterns (vanity-first, last-touch only, ROAS without LTV, R40 ignored, NPS sole metric) | **v0.1.0 (2026-05-08)** |
 
-## Skills de Domínio Vertical aplicado a MKT (NOVO bloco F — acionamento automático)
+## Skills de Domínio Vertical aplicado a MKT (NOVO bloco F — acionamento automático) — EXPANDIDO
 
 > **Contexto**: skills focadas em PRODUZIR CONTEÚDO MKT (posts, artigos, threads) sobre verticais especificos — NÃO em executar processos do vertical em si. Ex.: `dominio-juridico-mkt` ajuda a escrever posts sobre direito digital/LGPD/Lei 15.325 — NÃO substitui frank-juridico para análise processual.
+>
+> **EXPANDIDO 2026-05-08** de 6 → **13 skills** (1 mãe + 12 filhas) cobrindo: TI + Jurídico + Empreendedorismo + Negócios + IA (+ técnicas Claude/Gemini específicas user) + RH + DP + Financeiro + Fiscal + ADM + IoT (M5 Stack inside).
 
 | Skill | Tema | Status |
 |-------|------|--------|
-| `dominio-vertical-fundamentos` | **Skill-mãe**. Framework decisão "quando vertical-knowledge ajuda em MKT post"; mapping audiência → vertical relevante; tom adaptado por vertical (técnico vs executive vs leigo); compliance ao falar de verticais regulados; cross-pollination entre verticais (ex.: "IA + Jurídico + LGPD" = post oportunidade) | ⏸️ Planejada |
+| [dominio-vertical-fundamentos](dominio-vertical-fundamentos/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. Skill-MÃE Bloco F. **Foco PRODUZIR CONTEUDO MKT** sobre verticais — NÃO executar processos. **2026 trend SME-led authority** > brand content; personal LinkedIn outperforms company pages; **thought leadership = primary driver Google Information Gain**; **74% niche markets higher conversion**; **35% higher engagement** cross-niche creators. **Feynman Technique** (Richard Feynman 1965) — "if you can't explain simply, you don't understand"; 4 steps. **Framework 4D adaptado vertical** (cf. `escrita-por-publico`). **Tom adaptation 3 levels**: técnico (peer-to-peer specialist) + executive (C-level) + leigo (educational). **Compliance regulated 2026**: HIPAA + LGPD + Lei 15.325 + Reforma Tributária BR + AI explainability mandatory; **85% executives compliance more complex** (PwC 2025). **Cross-pollination 2 verticais** = unique angle differentiation (IA+Jurídico+LGPD examples). **Team-led content strategy** decentralizada via SMEs > brand-only. Mapeia 12 filhas: TI + Jurídico + Empreendedorismo + Negócios + IA (mãe + filha técnicas Claude/Gemini user input) + RH + DP + Financeiro + Fiscal + ADM + IoT (M5 Stack inside). 18 anti-patterns | **v0.1.0 (2026-05-08)** |
 | `dominio-ti-mkt` | TI aplicado a posts MKT — SaaS B2B fundamentos, dev tools, cloud (AWS/GCP/Azure), arquitetura, observability, security, vocabulário CTO/dev manager, posts founder build-in-public, Engineering blog tipos, dev advocacy | ⏸️ Planejada |
 | `dominio-juridico-mkt` | Jurídico aplicado a posts MKT — LGPD, CONAR, CDC, Lei 15.325/2026 Influenciador, Lei 14.133/2021 Licitações, Marco Civil, ECA Digital, posts founder explicando direito digital, regulação Tech, IA legal frameworks, fair use, copyright AI music (Suno lawsuit) — NÃO direito processual interno | ⏸️ Planejada |
 | `dominio-empreendedorismo-mkt` | Empreendedorismo aplicado a posts MKT — frameworks YC, Lean Startup, build-in-public, founder LinkedIn voice, MVP, PMF, growth hacking, indie maker, DTC scaling, founder mode (Paul Graham 2024), bootstrap vs venture-backed, exit stories | ⏸️ Planejada |
 | `dominio-negocios-mkt` | Negócios/business aplicado a posts MKT — modelos B2B/B2C/B2B2C/marketplace, unit economics, M&A, IPO, SPAC, valuation, frameworks BCG/Porter, due diligence MKT angle, Series A-G playbooks, scale-up strategies, portfolio strategy | ⏸️ Planejada |
-| `dominio-ia-mkt` | IA aplicada a posts MKT (NÃO LLM internals) — ChatGPT/Claude/Gemini comparisons, AI tools landscape MKT (Opus Clip, Suno, Midjourney, Castmagic), AI ethics em MKT, Lei 15.325 disclosure IA, GEO/LLMO/AEO, AI search (cf. `seo-ai-otimizacao`), workflow IA→IA, prompt engineering público | ⏸️ Planejada |
+| `dominio-ia-mkt` | **Skill-mãe IA**. IA aplicada a posts MKT (NÃO LLM internals) — ChatGPT/Claude/Gemini comparisons, AI tools landscape MKT (Opus Clip, Suno, Midjourney, Castmagic), AI ethics em MKT, Lei 15.325 disclosure IA, GEO/LLMO/AEO, AI search (cf. `seo-ai-otimizacao`), workflow IA→IA, prompt engineering público | ⏸️ Planejada |
+| `tecnicas-ia-claude-gemini-mkt` | **Filha de `dominio-ia-mkt`** — Técnicas específicas Claude + Gemini desenvolvidas/testadas pelo user (prompts, workflows, conceitos, ideias). Não pesquisa de campo padrão — input direto user | ⏸️ Planejada — REQUER INPUT USER |
+| `dominio-rh-mkt` | RH strategic aplicado a posts MKT — recruitment + employer brand + retention + people analytics + culture posts + leadership content + remote work + DEI + Gen Z workforce | ⏸️ Planejada |
+| `dominio-dp-mkt` | DP operational aplicado a posts MKT — CLT compliance + folha pagamento + ponto eletrônico + e-Social + férias + 13º salário + rescisão + reforma trabalhista BR posts | ⏸️ Planejada |
+| `dominio-financeiro-mkt` | Financeiro aplicado a posts MKT — cash flow management + FP&A + treasury + DRE + capital structure + finance management + fundraising posts (founder financial literacy) | ⏸️ Planejada |
+| `dominio-fiscal-mkt` | Fiscal aplicado a posts MKT — tax planning + compliance fiscal BR + Simples Nacional + Lucro Presumido vs Real + Reforma Tributária BR (Lei 122/2024 + Emenda 132/2023) + ICMS + IPI + ISS posts | ⏸️ Planejada |
+| `dominio-adm-mkt` | Administrativo aplicado a posts MKT — governance + procedures + logistics + supply chain + operations management + procurement + facilities posts | ⏸️ Planejada |
+| `dominio-iot-mkt` | IoT aplicado a posts MKT — IoT general fundamentos + **M5 Stack ESP32 specifics inside** + casos uso MKT (ambient marketing, sensores brand, ativações interativas, smart packaging, IoT+IA convergence) | ⏸️ Planejada |
 
 ## Skills de Copy & Redação (acionamento automático)
 
