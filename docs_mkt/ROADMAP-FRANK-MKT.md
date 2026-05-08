@@ -161,7 +161,8 @@ frank-mkt-plugin/
 | `newsjacking-real-time` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.232 | **medium (6 meses)** |
 | **🎉 Bloco Marketing Não-Tradicional — COMPLETO** | **✅ 2/2** | **2.642** | — |
 | `posicionamento-marca` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) — **bloco Marketing & Estratégia** | 1.380 | **low (12 meses)** |
-| **Bloco Marketing & Estratégia (em construção)** | **🔄 1/5** | **1.380** | — |
+| `branding` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.687 | **low (12 meses)** |
+| **Bloco Marketing & Estratégia (em construção)** | **🔄 2/5** | **3.067** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

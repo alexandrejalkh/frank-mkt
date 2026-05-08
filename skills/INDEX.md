@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v1.0.0+ — 2026-05-08) — 🎉🚀 v1.0.0 MILESTONE + Bloco Marketing & Estratégia 1/5
+## Status (v1.1.0+ — 2026-05-08) — 6 BLOCOS COMPLETOS + Marketing & Estratégia 2/5
 
-**29 skills implementadas / 37.205 linhas totais.**
+**30 skills implementadas / 38.892 linhas totais.**
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -14,7 +14,7 @@
 | **Multi-Platform Strategy** | ✅ **3/3** | 4.344 |
 | **Persuasão & Engajamento** | ✅ **2/2** | 2.827 |
 | **Marketing Não-Tradicional** | ✅ **2/2** | 2.642 |
-| **Marketing & Estratégia (em construção)** | 🔄 **1/5** | 1.380 |
+| **Marketing & Estratégia (em construção)** | 🔄 **2/5** | 3.067 |
 | Marketing & Estratégia | ⏸️ 0/5 | — |
 | **Domínio Vertical (NOVO bloco F)** | ⏸️ 0/6 | — |
 | Bloco E Documentos Corporativos | ⏸️ 0/2 | — |
@@ -26,9 +26,9 @@
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **29/~76** | **37.205** |
+| **TOTAL** | **30/~76** | **38.892** |
 
-**Volatility:** 12 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **3 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca`.
+**Volatility:** 12 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **4 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca` + `branding`.
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
@@ -52,7 +52,7 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 | Skill | Tema | Status |
 |-------|------|--------|
 | [posicionamento-marca](posicionamento-marca/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. **Trout & Ries 'Positioning' 1972/1981** foundational ('battle for mind of customer'). **Kotler STP** + **Aaker brand mental box**. **3 estratégias 2026**: existing categoria (default) / nova categoria (rare/risky — HubSpot Inbound + Uber + Zoom) / **subcategoria recomendado middle path** ("CRM for real estate" / "PM for engineering"). **JTBD framework** (Christensen + Ulwick + Moesta) — functional + social + emotional dimensions; **4 forces** (push + pull + anxiety + habit) = template ad copy/landing/emails. **Templates**: Geoffrey Moore B2B classic + Made-to-Stick analogy + HubSpot 16 examples; ~25-30 palavras ideal. **B2B logical/ROI vs B2C emotional/lifestyle**. **Cases repositioning**: Old Spice 2010 +125% YoY ($280M→$1B), BK 2026 $700M comeback. **Perceptual map 2x2** identifies gaps + crowded zones. BR-specific: Magazine Luiza Lu, Nubank "anti-bank". JTBD interview script (push/pull/anxiety/habit/outcome). 18 anti-patterns ("we help businesses grow" generic, multi-benefit listing, copying competitor, attempting category creation pre-PMF) | **v0.1.0 (2026-05-08)** |
-| `branding` | Identidade verbal, voz, tom, personalidade, brand archetypes (Jung), brand pyramid | ⏸️ Planejada |
+| [branding](branding/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. **Carl Jung 12 archetypes** (1919) adaptado Mark + Pearson 'The Hero and the Outlaw' 2001: Innocent + Everyman + Hero + Outlaw + Explorer + Creator + Ruler + Magician + Lover + Caregiver + Jester + Sage. **95% decisões compra subconscious** (Zaltman Harvard). **Keller CBBE pyramid** 1993 customer-centric (4 stages: Identity → Meaning → Response → Relationships + 6 blocks: salience+performance+imagery+judgments+feelings+resonance). **Aaker** 1991 asset-focused (awareness+associations+perceived quality+loyalty+proprietary assets); orgs sofisticadas usam BOTH. **Voice vs Tone vs Personality**: Personality WHO + Voice WHAT (consistente NUNCA muda) + Tone HOW context-adjust. **4-dimension framework** (formal/casual + serious/funny + respectful/irreverent + enthusiastic/matter-of-fact). **Cases voice**: Stripe (engineer precise), Slack ("clear concise human friendly intelligent coworker"), Nike Hero, Wendy's snarky, Apple minimalist, Mailchimp Jester, Coca-Cola 130 anos consistent, Liquid Death Outlaw. **2026 Gen Z** authenticity > polish (anti-corporate aesthetics, maximalism, raw imperfect; **2.4x conversion authentic vs traditional**; performative branding detected instantly + permanent disengagement; 75% support cause-aligned MAS 47% see unrelated as sales ploy). **Brand guidelines DINÂMICOS** 2026 (Zeroheight interactive + AI-enabled; **60% materials fail** + **81% companies struggle** off-brand). **Cases rebranding**: Mailchimp 2018 (Cavendish Yellow + Freddie refined), Slack (logo simpler scalable), **Dropbox 2017** (file storage → creativity, +100M users/yr post-rebrand, 700M users 2020). BR-specific (Magazine Luiza Everyman/Caregiver Lu, Nubank Outlaw/Magician roxo, Itaú Sage/Caregiver orange, Casas Bahia Everyman jingle decadas). 18 anti-patterns | **v0.1.0 (2026-05-08)** |
 | `funil-jornada` | Funil AARRR (Dave McClure 2007 + Awareness Growth Tribe 2016) / customer journey B2B vs B2C / mapas | ⏸️ Planejada |
 | `big-idea` | Conceito criativo central de campanha (Ogilvy, Bernbach DDB, modern frameworks) | ⏸️ Planejada |
 | `metricas-marketing` | KPIs (CAC, LTV, ROAS, CTR, CPM, NPS, NRR, Magic Number, Rule of 40, etc.) com ressalva sobre vanity metrics | ⏸️ Planejada |
