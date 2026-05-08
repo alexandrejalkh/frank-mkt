@@ -164,7 +164,8 @@ frank-mkt-plugin/
 | `branding` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.687 | **low (12 meses)** |
 | `funil-jornada` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.502 | **low (12 meses)** |
 | `big-idea` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.581 | **low (12 meses)** |
-| **Bloco Marketing & Estratégia (em construção)** | **🔄 4/5** | **6.150** | — |
+| `metricas-marketing` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.721 | **medium (6 meses)** |
+| **🎉 Bloco Marketing & Estratégia — COMPLETO** | **✅ 5/5** | **7.871** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

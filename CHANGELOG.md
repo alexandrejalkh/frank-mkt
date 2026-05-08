@@ -1,5 +1,60 @@
 # Changelog — Frank MKT
 
+## 2.0.0 (2026-05-08) — 🎉🚀 v2.0.0 MILESTONE — BLOCO MARKETING & ESTRATÉGIA COMPLETO
+
+### Resumo
+
+**33 skills implementadas / 43.696 linhas totais. 7 BLOCOS PRINCIPAIS COMPLETOS.**
+
+| Bloco | Status | Skills | Linhas |
+|-------|--------|-------:|-------:|
+| **SEO Estendido** | ✅ Completo | 7/7 | 9.853 |
+| **Mídia Social** | ✅ Completo | 10/10 | 10.962 |
+| **Comunicação Visual & IA** | ✅ Completo | 4/4 | 5.197 |
+| **Multi-Platform Strategy** | ✅ Completo | 3/3 | 4.344 |
+| **Persuasão & Engajamento** | ✅ Completo | 2/2 | 2.827 |
+| **Marketing Não-Tradicional** | ✅ Completo | 2/2 | 2.642 |
+| **Marketing & Estratégia** | ✅ **COMPLETO 5/5** | 5/5 | 7.871 |
+| Bloco F Domínio Vertical (planejado) | ⏸️ | 0/6 | — |
+| Demais blocos | ⏸️ | 0/~37 | 0 |
+| **Total** | | **33/~76** | **43.696** |
+
+### Adicionado
+
+- **Skill `metricas-marketing`** (`skills/metricas-marketing/SKILL.md`, **1721 linhas**, volatility `medium` (6 meses), **pesquisa de campo** — 6 web searches em 2026-05-08: marketing KPIs 2026 CAC LTV ROAS benchmarks B2B SaaS B2C ecommerce, Magic Number Rule of 40 SaaS metrics 2026 unit economics, vanity metrics actionable metrics 2026 marketing analytics, marketing attribution 2026 multi-touch first-touch last-touch data-driven, marketing dashboard 2026 Looker Studio Geckoboard, brand health metrics 2026 NPS sentiment recall awareness). **5ª e última skill do Bloco Marketing & Estratégia** (COMPLETA o bloco). Cobre 7 fundações + 1 aplicação: **(1) CAC + LTV + LTV:CAC ratio benchmarks 2026** — CAC B2B SaaS $200-500 typical (industry-wide $1.200); ecommerce $20-60; **CAC payback <12-18m healthy / <80 days best-in-class top performers**; LTV formula simple (ARPU × Lifespan × Gross Margin) + complex (AOV × Frequency × Lifespan × GM); **LTV:CAC 3:1+ healthy / >5:1 underinvest growth**; **(2) ROAS** + benchmarks per channel 2026 — email **6-10x highest**, search 4-8x, social 3-5x, Meta median **1.93x / avg 2.79x** (cf. `instagram-ads` + `facebook-ads`); LTV-based ROAS vs short-term ROAS distinction crítica; **(3) Rule of 40 SaaS (Brad Feld 2015)** + **Magic Number (Scale Venture Partners)** — R40 = revenue growth + profit margin ≥40%; SaaS Metrics Standards Board recommends ARR + FCF margin; **companies clearing R40 trade 4.8x EV/Rev vs 2.7x failing = 74% premium 2026**; Magic Number formula = (Q ARR - prev Q) × 4 / prev Q S&M; **>0.75 healthy investment efficiency**; outras unit economics (GRR 90%+, NRR 100%/110%/130%, Quick Ratio 4+, Burn Multiple <1.5, Gross Margin 70-85%); **(4) Vanity vs Actionable metrics** — "So What?" test rigoroso framework; vanity (followers, page views, likes, impressions) vs actionable (conversion per stage, CAC by source, retention cohort, ARPU); 10 common swaps documented; vanity contextualized OK como secondary proxy (Sec 6.4); **(5) Marketing attribution 2026** — single-touch (last-touch + first-touch) vs multi-touch (linear + time decay + W-shaped position-based 30/30/30/10 + DDA data-driven 300-400 conversions/mês minimum); **MMM adoption tripled 9%→26%** privacy-driven; **iOS 14.5 + Chrome cookies = MTA shrunk 30-60% of 2020 signal**; Google open-sourced MMM library 2024 (Lightweight MMM); **MTA + MMM dual-model 2026 OPERATING NORM**; CAPI server-side restores 30-50% missing data; first-party data strategy + CDP (Segment $120-1.2k/mês); GA4 default DDA; **(6) Brand health 5 dimensions** comprehensive framework (awareness depth + consideration set + preference strength + emotional connection + advocacy behaviors); awareness aided + unaided + top-of-mind; NPS B2B SaaS 30-50 healthy / B2C 50-70 / best-in-class 70+; sentiment analysis monthly (Sprout/Brandwatch/Talkwalker); brand health tracking cadence quarterly survey + monthly social listening + weekly priority brands + annual deep-dive; NPS limitations + complementary metrics (CSAT + CES + brand affinity + repurchase intent); **(7) Marketing dashboards** — Looker Studio (Google free + GA4 native + customizable + 86% rating), Geckoboard ($31-149/mês TV displays + 88% rating), marketing-specific tools (Dreamdata B2B journey + Bizible + HubSpot Attribution + Improvado data aggregation), product analytics (Mixpanel + Amplitude + PostHog + Heap), social analytics (Sprout + Brandwatch + Talkwalker), ecommerce (Triple Whale + Klaviyo); 4 key dashboards build (CMO executive + Marketing Manager tactical + CRO/Sales VP revenue + Brand Manager brand health); **(8) Marketing budget allocation** — B2C 5-10% / B2B 2-5% / **SaaS 8-15% (median 8% 2026 down from 10%)**; within-marketing breakdown (paid 30-50% + content/SEO 15-25% + events 10-20% + tools 5-10% + brand 10-25% + performance 50-75%); **brand vs performance split** (60/40 B2C OR 40/60 B2B Binet & Field IPA databank decades research). 20 anti-patterns (vanity-first, last-touch only 60%+ misattribution, ROAS without LTV short-termism, R40 ignored, NPS sole metric, MTA without MMM post-iOS 14.5, GA4 DDA <300 conversions silent fallback, brand metrics quarterly only, performance-only budget brand erodes, dashboards 50+ metrics paralysis); workflow (build measurement plan campanha 4 sem + quarterly KPI review 90-day + annual budget planning Q4); 4 templates (CMO dashboard YAML completo + So What? test + attribution model decision + brand health tracker setup); 18 Regras de Ouro; 4 exemplos comportamentais detalhados (B2B SaaS Series A monthly investor report 23 metrics 5 sections, vanity diretor reporta followers 4-sem conversion educational not destructive 10x value transformation, R40 SaaS Series B score 32 concerning 3 paths remediation 6-12m R40 32→42 valuation 2.7x→4.8x = 74% premium $20-100M+ Series C lift, last-touch attribution insufficient 2026 dual-model migration 6-12 sem MTA+MMM stack $24-120k/year ROI 15-30% efficiency lift). Checklist Contraditório Interno 10 perguntas. ~30 referências (Sean Ellis "Hacking Growth", Brad Feld Rule of 40 2015, Scale Venture Partners Magic Number 2008, Eric Ries "Lean Startup" vanity-actionable origin, Aventis Rule of 40 SaaS 2026, Improvado Multi-Touch Attribution 2026, Sprout Social Brand Health Tracking 2026, Looker Studio + Geckoboard tools, SaaS Metrics Standards Board, Binet & Field "Long and Short of It" IPA, Byron Sharp "How Brands Grow"). Integração com ecossistema completo + FECHA cycle Marketing & Estratégia bloco.
+
+### Bloco Marketing & Estratégia — TODAS 5 skills implementadas
+
+| # | Skill Marketing & Estratégia | Linhas | Volatility |
+|---|---|-------:|-----------|
+| 1 | `posicionamento-marca` | 1.380 | low |
+| 2 | `branding` | 1.687 | low |
+| 3 | `funil-jornada` | 1.502 | low |
+| 4 | `big-idea` | 1.581 | low |
+| 5 | **`metricas-marketing`** | **1.721** | **medium** |
+| **TOTAL bloco Marketing & Estratégia** | | **7.871** | — |
+
+### Estatísticas globais — v2.0.0 milestone
+
+- **33 skills implementadas / 43.696 linhas totais**
+- 14 skills volatility `high` (trimestral, próxima ~2026-08-08)
+- 13 skills volatility `medium` (semestral, próxima ~2026-11-08)
+- 6 skills volatility `low` (anualmente, próxima 2027-05-08)
+- **7 BLOCOS PRINCIPAIS COMPLETOS** = milestone v2.0.0:
+  - SEO Estendido (7) + Mídia Social (10) + Comunicação Visual & IA (4) + Multi-Platform Strategy (3) + Persuasão & Engajamento (2) + Marketing Não-Tradicional (2) + **Marketing & Estratégia (5)**
+- Pesquisa de campo (6+ web searches) em 14 das 14 skills high + 6 skills low + 13 skills medium
+
+### Próximos blocos sugeridos
+
+- **Bloco F Domínio Vertical** (NOVO planejado, 6 skills — 1 mãe + 5 filhas TI/Jurídico/Empreendedorismo/Negócios/IA aplicados a posts MKT)
+- **Bloco E Documentos Corporativos** (2 skills — apresentacoes-pitch + folders-mockups-banners)
+- **Pesquisa & Inteligência de Mercado** (6 skills — sizing-mercado + persona-icp + analise-concorrencia + qualitativa + quantitativa + trendwatching)
+- **Copy & Redação** (4 skills — copywriting-conversao + storytelling + email-marketing + redacao-publicitaria)
+- **UX/UI** (4 skills), **Conhecimento Plataforma** (6 skills), **Corporativo & Humanitário** (6 skills), **Meta-skill** (1)
+- **Infraestrutura** (8 slash commands), **Agentes** (14)
+
+---
+
 ## 1.4.0 (2026-05-08) — Bloco Marketing & Estratégia (4/5) — `big-idea`
 
 ### Adicionado
