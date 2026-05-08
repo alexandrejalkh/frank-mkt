@@ -176,7 +176,8 @@ frank-mkt-plugin/
 | `dominio-rh-mkt` (7ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.419 | **medium (6 meses)** |
 | `dominio-dp-mkt` (8ª filha Bloco F — DP operational complementar RH) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.271 | **high (3 meses)** |
 | `dominio-financeiro-mkt` (9ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.447 | **medium (6 meses)** |
-| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 10/13** (mãe + 9 filhas + 3 planejadas) | **14.776** | — |
+| `dominio-fiscal-mkt` (10ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.379 | **high (3 meses)** |
+| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 11/13** (mãe + 10 filhas + 2 planejadas) | **16.155** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
