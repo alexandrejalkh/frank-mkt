@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v1.0.0 — 2026-05-08) — 🎉🚀 v1.0.0 MILESTONE — 6 BLOCOS PRINCIPAIS COMPLETOS
+## Status (v1.0.0+ — 2026-05-08) — 🎉🚀 v1.0.0 MILESTONE + Bloco Marketing & Estratégia 1/5
 
-**28 skills implementadas / 35.825 linhas totais.**
+**29 skills implementadas / 37.205 linhas totais.**
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -14,18 +14,21 @@
 | **Multi-Platform Strategy** | ✅ **3/3** | 4.344 |
 | **Persuasão & Engajamento** | ✅ **2/2** | 2.827 |
 | **Marketing Não-Tradicional** | ✅ **2/2** | 2.642 |
-| Infraestrutura (slash commands) | ⏸️ 0/8 | — |
+| **Marketing & Estratégia (em construção)** | 🔄 **1/5** | 1.380 |
 | Marketing & Estratégia | ⏸️ 0/5 | — |
-| Copy & Redação | ⏸️ 0/4 | — |
+| **Domínio Vertical (NOVO bloco F)** | ⏸️ 0/6 | — |
+| Bloco E Documentos Corporativos | ⏸️ 0/2 | — |
 | Pesquisa & Inteligência de Mercado | ⏸️ 0/6 | — |
+| Copy & Redação | ⏸️ 0/4 | — |
 | UX/UI | ⏸️ 0/4 | — |
-| Psicologia & Influência | ⏸️ 0/3 | — |
+| Psicologia & Influência (overlap parcial) | ⏸️ 0/2 | — |
 | Conhecimento de Plataforma | ⏸️ 0/6 | — |
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
+| Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **28/~70** | **35.825** |
+| **TOTAL** | **29/~76** | **37.205** |
 
-**Volatility:** 12 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **2 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas`.
+**Volatility:** 12 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **3 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca`.
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
@@ -46,13 +49,26 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 
 ## Skills de Marketing & Estratégia (acionamento automático)
 
-| Skill | Tema |
-|-------|------|
-| `posicionamento-marca` | Posicionamento, value prop, diferenciação |
-| `branding` | Identidade verbal, voz, tom, personalidade |
-| `funil-jornada` | Funil AARRR / jornada do cliente / mapas |
-| `big-idea` | Conceito criativo central de campanha |
-| `metricas-marketing` | KPIs (CAC, LTV, ROAS, CTR, CPM, etc.) com ressalva |
+| Skill | Tema | Status |
+|-------|------|--------|
+| [posicionamento-marca](posicionamento-marca/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. **Trout & Ries 'Positioning' 1972/1981** foundational ('battle for mind of customer'). **Kotler STP** + **Aaker brand mental box**. **3 estratégias 2026**: existing categoria (default) / nova categoria (rare/risky — HubSpot Inbound + Uber + Zoom) / **subcategoria recomendado middle path** ("CRM for real estate" / "PM for engineering"). **JTBD framework** (Christensen + Ulwick + Moesta) — functional + social + emotional dimensions; **4 forces** (push + pull + anxiety + habit) = template ad copy/landing/emails. **Templates**: Geoffrey Moore B2B classic + Made-to-Stick analogy + HubSpot 16 examples; ~25-30 palavras ideal. **B2B logical/ROI vs B2C emotional/lifestyle**. **Cases repositioning**: Old Spice 2010 +125% YoY ($280M→$1B), BK 2026 $700M comeback. **Perceptual map 2x2** identifies gaps + crowded zones. BR-specific: Magazine Luiza Lu, Nubank "anti-bank". JTBD interview script (push/pull/anxiety/habit/outcome). 18 anti-patterns ("we help businesses grow" generic, multi-benefit listing, copying competitor, attempting category creation pre-PMF) | **v0.1.0 (2026-05-08)** |
+| `branding` | Identidade verbal, voz, tom, personalidade, brand archetypes (Jung), brand pyramid | ⏸️ Planejada |
+| `funil-jornada` | Funil AARRR (Dave McClure 2007 + Awareness Growth Tribe 2016) / customer journey B2B vs B2C / mapas | ⏸️ Planejada |
+| `big-idea` | Conceito criativo central de campanha (Ogilvy, Bernbach DDB, modern frameworks) | ⏸️ Planejada |
+| `metricas-marketing` | KPIs (CAC, LTV, ROAS, CTR, CPM, NPS, NRR, Magic Number, Rule of 40, etc.) com ressalva sobre vanity metrics | ⏸️ Planejada |
+
+## Skills de Domínio Vertical aplicado a MKT (NOVO bloco F — acionamento automático)
+
+> **Contexto**: skills focadas em PRODUZIR CONTEÚDO MKT (posts, artigos, threads) sobre verticais especificos — NÃO em executar processos do vertical em si. Ex.: `dominio-juridico-mkt` ajuda a escrever posts sobre direito digital/LGPD/Lei 15.325 — NÃO substitui frank-juridico para análise processual.
+
+| Skill | Tema | Status |
+|-------|------|--------|
+| `dominio-vertical-fundamentos` | **Skill-mãe**. Framework decisão "quando vertical-knowledge ajuda em MKT post"; mapping audiência → vertical relevante; tom adaptado por vertical (técnico vs executive vs leigo); compliance ao falar de verticais regulados; cross-pollination entre verticais (ex.: "IA + Jurídico + LGPD" = post oportunidade) | ⏸️ Planejada |
+| `dominio-ti-mkt` | TI aplicado a posts MKT — SaaS B2B fundamentos, dev tools, cloud (AWS/GCP/Azure), arquitetura, observability, security, vocabulário CTO/dev manager, posts founder build-in-public, Engineering blog tipos, dev advocacy | ⏸️ Planejada |
+| `dominio-juridico-mkt` | Jurídico aplicado a posts MKT — LGPD, CONAR, CDC, Lei 15.325/2026 Influenciador, Lei 14.133/2021 Licitações, Marco Civil, ECA Digital, posts founder explicando direito digital, regulação Tech, IA legal frameworks, fair use, copyright AI music (Suno lawsuit) — NÃO direito processual interno | ⏸️ Planejada |
+| `dominio-empreendedorismo-mkt` | Empreendedorismo aplicado a posts MKT — frameworks YC, Lean Startup, build-in-public, founder LinkedIn voice, MVP, PMF, growth hacking, indie maker, DTC scaling, founder mode (Paul Graham 2024), bootstrap vs venture-backed, exit stories | ⏸️ Planejada |
+| `dominio-negocios-mkt` | Negócios/business aplicado a posts MKT — modelos B2B/B2C/B2B2C/marketplace, unit economics, M&A, IPO, SPAC, valuation, frameworks BCG/Porter, due diligence MKT angle, Series A-G playbooks, scale-up strategies, portfolio strategy | ⏸️ Planejada |
+| `dominio-ia-mkt` | IA aplicada a posts MKT (NÃO LLM internals) — ChatGPT/Claude/Gemini comparisons, AI tools landscape MKT (Opus Clip, Suno, Midjourney, Castmagic), AI ethics em MKT, Lei 15.325 disclosure IA, GEO/LLMO/AEO, AI search (cf. `seo-ai-otimizacao`), workflow IA→IA, prompt engineering público | ⏸️ Planejada |
 
 ## Skills de Copy & Redação (acionamento automático)
 

@@ -1,5 +1,41 @@
 # Changelog — Frank MKT
 
+## 1.1.0 (2026-05-08) — Início Bloco Marketing & Estratégia (1/5) + Roadmap Bloco F Domínio Vertical (planejado)
+
+### Adicionado
+
+- **Skill `posicionamento-marca`** (`skills/posicionamento-marca/SKILL.md`, **1380 linhas**, volatility **`low` (12 meses)** — terceira skill volatility low do plugin, **pesquisa de campo** — 6 web searches em 2026-05-08: brand positioning Trout Ries 2026 framework Aaker Kotler modern, positioning statement template 2026 B2B B2C examples value proposition, category creation vs differentiation 2026 startup brand positioning, jobs to be done JTBD positioning 2026 Christensen framework marketing, repositioning brand 2026 case studies Old Spice Burger King comeback, positioning matrix perceptual map 2026 competitor analysis tools). **1ª skill do Bloco Marketing & Estratégia** (base estratégica do plugin). Cobre: **Trout & Ries 1972/1981 foundational** ("battle for mind of customer") + **Kotler STP** + **Aaker brand mental box**; **3 estratégias 2026** (existing categoria default / nova rare cases HubSpot Inbound + Uber + Zoom / **subcategoria recomendado** middle path); **JTBD framework** profundo (Christensen + Ulwick + Moesta) com 4 forces (push + pull + anxiety + habit) + interview script; **templates** Geoffrey Moore + Made-to-Stick analogy + HubSpot 16 examples + 25-30 word rule; **B2B vs B2C** diferenças com cases (Stripe + Linear + Notion vs Liquid Death + Oatly + Nike); **repositioning** Old Spice 2010 +125% YoY ($280M→$1B) + BK 2026 $700M comeback; **perceptual map 2x2** + tools; **BR-specific** (Magazine Luiza Lu, Nubank "anti-bank" 100M+ customers); 18 anti-patterns; workflow 8 sem startup + 18-24 meses repositioning; 4 templates YAML; 4 exemplos comportamentais detalhados (B2B SaaS workflow positioning 8 sem, repositioning consumer 10 anos Old Spice/BK formula, JTBD discovery 4 sem 50 customers, subcategoria CRM nicho 6 sem decision matrix); ~35 referências (Trout & Ries + Kotler + Aaker + Christensen + Ulwick + Moesta + April Dunford + Geoffrey Moore + Donald Miller + Heath brothers).
+
+### Roadmap atualizado — Bloco F: Domínio Vertical aplicado a MKT (planejado)
+
+Adicionado bloco F com 6 skills planejadas (1 mãe + 5 filhas) cobrindo TI/Jurídico/Empreendedorismo/Negócios/IA aplicados a posts MKT (NÃO processos internos):
+
+- `dominio-vertical-fundamentos` (skill-mãe — framework decisão + tom adaptado por vertical + compliance + cross-pollination)
+- `dominio-ti-mkt` (SaaS B2B + dev tools + cloud + dev advocacy)
+- `dominio-juridico-mkt` (LGPD + CONAR + CDC + Lei 15.325 + Lei 14.133 + Marco Civil + ECA Digital — NÃO direito processual)
+- `dominio-empreendedorismo-mkt` (frameworks YC + Lean + build-in-public + founder mode)
+- `dominio-negocios-mkt` (modelos + unit economics + M&A + IPO + frameworks BCG/Porter)
+- `dominio-ia-mkt` (ChatGPT/Claude/Gemini + AI tools landscape + ethics + Lei 15.325 disclosure + GEO/LLMO/AEO)
+
+Total roadmap atualizado: **76 skills planejadas** (vs 70 anterior).
+
+### Estatísticas globais
+
+- **29 skills implementadas / 37.205 linhas totais**
+- 14 skills volatility `high` (re-validar trimestral, próxima ~2026-08-08)
+- 12 skills volatility `medium` (re-validar semestral, próxima ~2026-11-08)
+- **3 skills volatility `low`** (anualmente, próxima 2027-05-08): `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca`
+- **6 BLOCOS PRINCIPAIS COMPLETOS** + **Marketing & Estratégia 1/5** + **Bloco F Domínio Vertical 0/6 planejado**
+
+### Próximas skills do Bloco Marketing & Estratégia (sequenciais)
+
+- `branding` (2/5 — identidade verbal/voz/tom/personalidade, brand archetypes Jung, brand pyramid)
+- `funil-jornada` (3/5 — AARRR Pirate Metrics + customer journey B2B vs B2C)
+- `big-idea` (4/5 — Ogilvy + Bernbach DDB + creative concept central)
+- `metricas-marketing` (5/5 — KPIs CAC/LTV/ROAS + ressalva vanity metrics)
+
+---
+
 ## 1.0.0 (2026-05-08) — 🎉🚀 v1.0.0 MILESTONE — 6 BLOCOS PRINCIPAIS COMPLETOS
 
 ### Resumo
