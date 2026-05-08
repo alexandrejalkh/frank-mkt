@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.2.0 — 2026-05-08) — 7 blocos principais completos + Bloco F Domínio Vertical 2/13
+## Status (v2.3.0 — 2026-05-08) — 7 blocos principais completos + Bloco F Domínio Vertical 3/13
 
-**35 skills implementadas / 46.576 linhas totais.**
+**36 skills implementadas / 48.264 linhas totais.**
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -16,7 +16,7 @@
 | **Marketing Não-Tradicional** | ✅ **2/2** | 2.642 |
 | **Marketing & Estratégia** | ✅ **5/5** | 7.871 |
 | Marketing & Estratégia | ⏸️ 0/5 | — |
-| **Domínio Vertical (NOVO bloco F — EXPANDIDO)** | 🔄 **2/13** | 2.880 |
+| **Domínio Vertical (NOVO bloco F — EXPANDIDO)** | 🔄 **3/13** | 4.568 |
 | Bloco E Documentos Corporativos | ⏸️ 0/2 | — |
 | Pesquisa & Inteligência de Mercado | ⏸️ 0/6 | — |
 | Copy & Redação | ⏸️ 0/4 | — |
@@ -26,9 +26,9 @@
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **35/~83** | **46.576** |
+| **TOTAL** | **36/~83** | **48.264** |
 
-**Volatility:** 14 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas` + `posicionamento-marca` + `branding` + `funil-jornada` + `big-idea` + `dominio-vertical-fundamentos`.
+**Volatility:** 14 skills `medium` (re-validar a cada 6 meses) + **15 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
@@ -67,7 +67,7 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 |-------|------|--------|
 | [dominio-vertical-fundamentos](dominio-vertical-fundamentos/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. Skill-MÃE Bloco F. **Foco PRODUZIR CONTEUDO MKT** sobre verticais — NÃO executar processos. **2026 trend SME-led authority** > brand content; personal LinkedIn outperforms company pages; **thought leadership = primary driver Google Information Gain**; **74% niche markets higher conversion**; **35% higher engagement** cross-niche creators. **Feynman Technique** (Richard Feynman 1965) — "if you can't explain simply, you don't understand"; 4 steps. **Framework 4D adaptado vertical** (cf. `escrita-por-publico`). **Tom adaptation 3 levels**: técnico (peer-to-peer specialist) + executive (C-level) + leigo (educational). **Compliance regulated 2026**: HIPAA + LGPD + Lei 15.325 + Reforma Tributária BR + AI explainability mandatory; **85% executives compliance more complex** (PwC 2025). **Cross-pollination 2 verticais** = unique angle differentiation (IA+Jurídico+LGPD examples). **Team-led content strategy** decentralizada via SMEs > brand-only. Mapeia 12 filhas: TI + Jurídico + Empreendedorismo + Negócios + IA (mãe + filha técnicas Claude/Gemini user input) + RH + DP + Financeiro + Fiscal + ADM + IoT (M5 Stack inside). 18 anti-patterns | **v0.1.0 (2026-05-08)** |
 | [dominio-ti-mkt](dominio-ti-mkt/SKILL.md) | **Pesquisa de campo (volatility medium)**. **Foco produzir CONTEÚDO MKT** orientado audience tecnica (CTOs + dev managers + engineers + founders TI). DevRel fundamentals 2026 (advocacy + community + experience + evangelism). **LinkedIn 2026 strict profile-to-content alignment**; **Verified Human uploads priority** > AI-generated; CTO rule core+1-2 adjacent. **Engineering blog patterns** Anthropic (context engineering load-bearing) + Stripe (lessons + lines code) + Vercel (AI SDK 20M+ downloads, AI Gateway); **llms.txt 2026 standard** Markdown documentation entry AI tools. **Cloud market 2026**: AWS 31% (Toyota) / Azure 23-25% (Microsoft fleet) / GCP 11-12% (Tesla advanced); **94% multi-cloud** but **only 12% senior IT feel architectural depth adequate**. **Build-in-public** founders DOs (share learning NOT plans, market NOT product, specific problems vague solutions) + DONTs (unreleased features, pivots pre-team, exact unit economics, fundraising pre-term-signed). **CTO newsletter 10k subs > display 100k generic**. **Reddit 2026 crescente** + LLM training data heavy. Cross-skill: `github-presence` (TI authority) + `seo-keywords` (technical long-tail) + `linkedin-organico` (B2B SME platform) + cross-pollination TI+Jurídico/Negócios/IA = 35% engagement lift. 18 anti-patterns | **v0.1.0 (2026-05-08)** |
-| `dominio-juridico-mkt` | Jurídico aplicado a posts MKT — LGPD, CONAR, CDC, Lei 15.325/2026 Influenciador, Lei 14.133/2021 Licitações, Marco Civil, ECA Digital, posts founder explicando direito digital, regulação Tech, IA legal frameworks, fair use, copyright AI music (Suno lawsuit) — NÃO direito processual interno | ⏸️ Planejada |
+| [dominio-juridico-mkt](dominio-juridico-mkt/SKILL.md) | **Pesquisa de campo (volatility HIGH — 3 meses) + material `frank_juridico_garden`**. **Foco produzir CONTEÚDO MKT educational** sobre direito digital — **NÃO substitui frank-juridico-ti-plugin processual**. **5 verticais regulatórios 2026**: **LGPD Lei 13.709/2018** (15 documentos obrigatórios + 10 bases legais Art 7 + dados sensíveis Art 11; ANPD multas **2% receita / R$ 50M/infração + R$ 50k/dia**; Lei 15.352/2026 ANPD agência reguladora; primeira multa micro-empresa = company size NOT shield); **Lei 15.325/2026 Influenciador** (vigor 6 jan/2026, mercado BR projetado **US$ 33,5B até 2034**, disclosure obrigatório criadores/streamers/podcasters/games/reviews/unboxings/lives/afiliados, CONAR+IAB autorregulamentação SEM força lei); **OAB Provisão 205/2021** marketing jurídico (revisão final 2025-2026; informativo NÃO mercantilista; sem promessa resultado); **Marco Regulatório IA Brasil PL 2.338/2023** (aprovado Senado dez/2024, pendente Câmara, risk-based EU-style) + **EU AI Act** (transparency rules ago/2026, high-risk ago/2026-2027); **Lei 14.133/2021 Licitações** + Decreto 12.807/2025 valores atualizados. **Material reference profundo**: `frank_juridico_garden` Skill 09 LGPD + caso real VExpress (2.329 encomendas/30d + 104 vazamentos incidentais + manobra assemblear CC art 145/187/422). **Disclaimer mandatory** todos pieces. Cross-pollination Jurídico+TI/IA/Negócios/RH/DP = 35% engagement lift. 18 anti-patterns (pre-judging cases, OAB violations, AI-generated jurídico hallucinations, marketing speak, Lei 15.325 disclosure absent) | **v0.1.0 (2026-05-08)** |
 | `dominio-empreendedorismo-mkt` | Empreendedorismo aplicado a posts MKT — frameworks YC, Lean Startup, build-in-public, founder LinkedIn voice, MVP, PMF, growth hacking, indie maker, DTC scaling, founder mode (Paul Graham 2024), bootstrap vs venture-backed, exit stories | ⏸️ Planejada |
 | `dominio-negocios-mkt` | Negócios/business aplicado a posts MKT — modelos B2B/B2C/B2B2C/marketplace, unit economics, M&A, IPO, SPAC, valuation, frameworks BCG/Porter, due diligence MKT angle, Series A-G playbooks, scale-up strategies, portfolio strategy | ⏸️ Planejada |
 | `dominio-ia-mkt` | **Skill-mãe IA**. IA aplicada a posts MKT (NÃO LLM internals) — ChatGPT/Claude/Gemini comparisons, AI tools landscape MKT (Opus Clip, Suno, Midjourney, Castmagic), AI ethics em MKT, Lei 15.325 disclosure IA, GEO/LLMO/AEO, AI search (cf. `seo-ai-otimizacao`), workflow IA→IA, prompt engineering público | ⏸️ Planejada |
