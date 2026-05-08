@@ -150,6 +150,10 @@ frank-mkt-plugin/
 | `composicao-visual` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.346 | **medium (6 meses)** |
 | `audio-musica-ia` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.356 | **high (3 meses)** |
 | **🎉 Bloco Comunicação Visual & IA — COMPLETO** | **✅ 4/4** | **5.197** | — |
+| `github-presence` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) — **NOVO bloco Multi-Platform Strategy** | 1.339 | **medium (6 meses)** |
+| `multi-platform-narrative` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.275 | **medium (6 meses)** |
+| `escrita-por-publico` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.730 | **low (12 meses)** — primeira `low` do plugin |
+| **🎉 Bloco Multi-Platform Strategy — COMPLETO** | **✅ 3/3** | **4.344** | — |
 | Demais (5+ blocos novos sugeridos + agentes) | Planejados | — | — |
 
 ---

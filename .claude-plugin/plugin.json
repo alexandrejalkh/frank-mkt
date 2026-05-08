@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "0.7.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v0.7.0 — **3 BLOCOS PRINCIPAIS COMPLETOS**: SEO (7 skills, 9.853 linhas) + Midia Social (10 skills, 10.962 linhas) + **Comunicacao Visual & IA Generativa (4 skills, 5.197 linhas — geracao-imagens-ia, infograficos-diagramas, composicao-visual, audio-musica-ia)**. 21 skills totais, 26.012 linhas. 14 skills com pesquisa de campo (volatility high) re-validadas trimestral; 7 skills volatility medium re-validadas semestral. Agentes ainda em construcao (esqueleto).",
+  "version": "0.8.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v0.8.0 — **4 BLOCOS PRINCIPAIS COMPLETOS**: SEO (7) + Midia Social (10) + Comunicacao Visual & IA (4) + **Multi-Platform Strategy (3 — github-presence + multi-platform-narrative + escrita-por-publico)**. 24 skills totais, 30.356 linhas. 14 skills com pesquisa de campo (volatility high) re-validadas trimestral; 9 skills volatility medium re-validadas semestral; **1 skill volatility low re-validada anualmente** (escrita-por-publico — principios B2B/B2C/investor/gov/talent/dev estaveis ha decadas). Agentes ainda em construcao (esqueleto).",
   "author": {
     "name": "Alexandre Jalkh"
   },
