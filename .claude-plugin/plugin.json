@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.6.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.6.0 — **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Dominio Vertical EXPANDIDO 6/13** (mae + ti + juridico + empreendedorismo + negocios + IA SKILL-MAE; proxima filha tecnicas-ia-claude-gemini-mkt requer input user). 39 skills totais, 52.932 linhas. 16 high (trimestral); 16 medium (semestral); 7 low (anual). Agentes ainda em construcao.",
+  "version": "2.7.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.7.0 — **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Dominio Vertical EXPANDIDO 7/13** (mae + ti + juridico + empreendedorismo + negocios + IA mae + tecnicas-ia-claude-gemini-mkt material proprietario user Alexandre Jalkh integrado). 40 skills totais, 54.335 linhas. 16 high (trimestral); 17 medium (semestral); 7 low (anual). Agentes ainda em construcao.",
   "author": {
     "name": "Alexandre Jalkh"
   },
