@@ -157,6 +157,9 @@ frank-mkt-plugin/
 | `persuasao-eticas` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) — **NOVO bloco Persuasão & Engajamento** | 1.315 | **low (12 meses)** |
 | `engajamento-comunidade` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.512 | **medium (6 meses)** |
 | **🎉 Bloco Persuasão & Engajamento — COMPLETO** | **✅ 2/2** | **2.827** | — |
+| `guerrilha-criativa` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) — **NOVO bloco Marketing Não-Tradicional** | 1.410 | **medium (6 meses)** |
+| `newsjacking-real-time` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.232 | **medium (6 meses)** |
+| **🎉 Bloco Marketing Não-Tradicional — COMPLETO** | **✅ 2/2** | **2.642** | — |
 | Demais (5+ blocos novos sugeridos + agentes) | Planejados | — | — |
 
 ---
