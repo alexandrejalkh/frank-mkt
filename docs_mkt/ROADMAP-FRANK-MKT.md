@@ -154,6 +154,9 @@ frank-mkt-plugin/
 | `multi-platform-narrative` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.275 | **medium (6 meses)** |
 | `escrita-por-publico` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.730 | **low (12 meses)** — primeira `low` do plugin |
 | **🎉 Bloco Multi-Platform Strategy — COMPLETO** | **✅ 3/3** | **4.344** | — |
+| `persuasao-eticas` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) — **NOVO bloco Persuasão & Engajamento** | 1.315 | **low (12 meses)** |
+| `engajamento-comunidade` | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.512 | **medium (6 meses)** |
+| **🎉 Bloco Persuasão & Engajamento — COMPLETO** | **✅ 2/2** | **2.827** | — |
 | Demais (5+ blocos novos sugeridos + agentes) | Planejados | — | — |
 
 ---

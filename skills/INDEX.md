@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v0.8.0 — 2026-05-08) — 🎉 4 BLOCOS PRINCIPAIS COMPLETOS
+## Status (v0.9.0 — 2026-05-08) — 🎉 5 BLOCOS PRINCIPAIS COMPLETOS
 
-**24 skills implementadas / 30.356 linhas totais.**
+**26 skills implementadas / 33.183 linhas totais.**
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -12,6 +12,7 @@
 | **Mídia Social** | ✅ **10/10** | 10.962 |
 | **Comunicação Visual & IA** | ✅ **4/4** | 5.197 |
 | **Multi-Platform Strategy** | ✅ **3/3** | 4.344 |
+| **Persuasão & Engajamento** | ✅ **2/2** | 2.827 |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Marketing & Estratégia | ⏸️ 0/5 | — |
 | Copy & Redação | ⏸️ 0/4 | — |
@@ -21,9 +22,9 @@
 | Conhecimento de Plataforma | ⏸️ 0/6 | — |
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **24/~70** | **30.356** |
+| **TOTAL** | **26/~70** | **33.183** |
 
-**Volatility:** 9 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **1 skill `low` (re-validar a cada 12 meses, próxima 2027-05-08)**.
+**Volatility:** 10 skills `medium` (re-validar a cada 6 meses) + 14 skills `high` (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + **2 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08)** — `escrita-por-publico` + `persuasao-eticas`.
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
@@ -105,6 +106,13 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 | [multi-platform-narrative](multi-platform-narrative/SKILL.md) | **Pesquisa de campo (volatility medium)**. **Cross-posting idêntico = SUPPRESSED em todas plataformas 2026** (LinkedIn external links -60%, X cross-post automated suppressed). Native content boosted universalmente. **Atomic content vs Repurposing**: atomization = quebrar pillar em peças independentes (1 webinar 60min → 30+ pieces); repurposing = reformatar pillar novo formato. **Hub-and-spoke model**: 1 pillar long-form (45-60min webinar/3000+ blog post/podcast 30min) + N spokes platform-specific = **+35% reach vs isolated posts**, **+40% output sem aumentar tempo**. **9:16 gold standard 2026** (1080x1920) — **95% mobile video consumption**; LinkedIn vertical preferential placement 2026; 16:9 ainda usado YouTube long + LinkedIn landscape. **Length por plataforma**: TikTok 11-18s viral / 21-34s storytelling / 30-60s educational; Reels 60-90s sweet spot; LinkedIn doc 7-10 slides; X thread 8-12 tweets; YouTube long 8-15min sweet; podcast 25-45min. **Tom + voice por plataforma**: LinkedIn formal/B2B / IG visual+aspirational / TikTok casual+entertaining / X polêmico+real-time / YouTube tutorial+long-form / blog SEO long-tail. **Sequencing temporal 3 estratégias**: simultaneous (HN/PH/Reddit launch — velocity Trending), waterfall (single-by-single Spotify EP-style), cascade (cada plataforma janela 24-48h). 3-phase: pre-launch 6-8 sem + launch 1-2 sem + post-launch 4-6 sem. **AI repurposing tools 2026**: Opus Clip ($19-99/mês auto clips long-form com virality score), Repurpose.io ($19-49/mês auto distribution), Castmagic ($29-99/mês podcast→text), Riverside Magic Clips, Descript ($24+/mês), ChatGPT/Claude prompt template adaptation. Brand voice doc per-platform; calendar editorial template hub-and-spoke. Anti-patterns: copy-paste idêntico, watermarks cross-platform, hashtags transversais, length wrong, sem captions accessibility (-30% reach), ignorar timezone | **v0.1.0 (2026-05-08)** |
 | [escrita-por-publico](escrita-por-publico/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. Adapta por **AUDIÊNCIA** (vs `multi-platform-narrative` que adapta por PLATAFORMA). **Framework 4D**: Who+Need+Action+Context. **6 audiências canônicas**: **(1) B2B** formal autoritativo data-driven, sem slang/memes, vende eficiência+crescimento+custo; **(2) B2C** emocional conversacional human, casual fun, vende conveniência+diversão+sentimentos, sem corporate buzzwords; **(3) Investor (seed/A/B 2026)** **'efficient growth' >> 'growth at all costs'**, **authenticity > polish** (slick deck = red flag), grounded+honest+proven metrics+realistic projections, founder learnings genuínos não-AI-generated; estrutura YC pitch 10 slides, métricas Series A target (NRR 110%+, CAC payback <18m, burn multiple <1.5, Rule of 40); **(4) Government/setor público BR** **Lei 14.133/2021 Nova Lei Licitações**, RFP/RFQ format estrito, jurídico-formal indireto impessoal, certidões + atestados + ICP-Brasil mandatory; **(5) Talent/recruiting** **88% candidates dizem employer brand influencia decisão apply**, authenticity > polish, transparent salary range mandatory, mobile-first, real photos não stock, anti-padrões "family"+"rockstars"+"unlimited PTO sem context"; **(6) Developer/técnico** code-first + API docs (use case > endpoint reference), Microsoft/Google Developer/Write the Docs styles, sem marketing speak, concise. **Same insight, 6 versões** (insight base "30min onboarding calls = 3x retention" reescrito 6x). **Audience-aware 2026**: psychographics > demographics, brief writers com **audience language vs brand language**, AI-powered psychographic analysis. Combinar com `multi-platform-narrative` = matriz 6 audiências × 9 plataformas = 54 manifestações. Anti-patterns: one-size-fits-all, B2B em ad B2C, marketing speak em docs, hype em investor deck, casual em RFP gov, polish demais em recruiting | **v0.1.0 (2026-05-08)** |
 
+## Skills de Persuasão & Engajamento (NOVO bloco — ✅ COMPLETO 2/2)
+
+| Skill | Tema | Status |
+|-------|------|--------|
+| [persuasao-eticas](persuasao-eticas/SKILL.md) | **Pesquisa de campo (volatility LOW — 12 meses)**. Adapta agente Investigador Frank-Jurídico para marketing. **Cialdini 7 princípios** (Reciprocity + Commitment/Consistency + Social Proof + Authority + Liking + Scarcity + **Unity 7º novo Pre-Suasion 2016**) com aplicação ETHICAL marketing. **Voss tactical empathy** (FBI hostage negotiator 24 anos): **Mirroring** (repetir 1-3 últimas palavras curiosity tone), **Labeling** ("It sounds like..."), **"No" framework** (no = safety vs yes = pressure), 3 voice tones. **Edmondson psychological safety** (Harvard Thinkers50 #1, 20+ anos research): **4 stages** (inclusion → learner → contributor → challenger) aplicados em **brand communities + UGC programs**, "Right Kind of Wrong" (2023) intelligent failure celebration. **Behavioral economics**: Kahneman/Tversky (Thinking Fast Slow Sys 1/2) → Thaler "Nudge" (2008 libertarian paternalism) → **Sunstein "Ethics of Influence"** (2016 4-criteria nudge legitimo). **LINHA CRÍTICA**: persuasão **CLARIFIES** (intent+transparency+autonomy+welfare), manipulação **OBSCURES** (covert+coercive). **Stats 2026**: **97% apps EU contém dark pattern** (European Commission), 76% subscription sites manipulative (FTC 2024), **Amazon $2.5B settlement** largest history, Epic $245M, Genshin $20M; **FTC Click-to-Cancel rule** vigor 2024-2026, **56% users perdem trust** após manipulação, 43% stop purchasing. Compliance: FTC US + GDPR EU + DSA + **CONAR BR + CDC Lei 8.078/90 + Lei 15.325/2026 (Influenciador)**. **Dark patterns 12 tipos catalog** (false urgency, hidden costs, confirm shaming, forced continuity, roach motel, sneak into basket, disguised ads, misdirection, bait/switch, friend spam, privacy zuckering, trick questions). 4-question test (intent+transparency+autonomy+welfare). Anti-patterns: fabricated urgency, fake reviews, FOMO recurrent, manufactured tribalism "family" | **v0.1.0 (2026-05-08)** |
+| [engajamento-comunidade](engajamento-comunidade/SKILL.md) | **Pesquisa de campo (volatility medium)**. Aplicação prática de Edmondson 4 stages + Cialdini Unity (cf. `persuasao-eticas`). **Plataformas 2026**: Discord (>55% non-gamers, brands precisam clear job + 6-10 channels lean), Slack (B2B — Online Geniuses 53k + RevGenius 50k), Reddit (subreddit nicho), Circle ($89-399/mês B2C creators), forums próprios (Discourse community.brand.com SEO compounding). **UGC ROI MASSIVO 2026**: **+161% conversions, -50% CPC, +4x clicks**, +20-50% authenticity, **CPA -30-50%**; 61% brands using, 84% accelerating; mercado **$4.7B (2022) → $71.3B (2032)**. **Brand ambassador**: comp $600-900/mês retainers + bonuses; **-40-60% CAC vs paid**, conversão **2-3x higher vs cold**; tools Influitive (B2B), CreatorIQ (Fortune 500), Skeepers, Brandbassador. **CLG metrics**: **activation rate 20-30% saudável**, **retention members vs non-members = clearest ROI indicator**. **Cases iconicos**: Atlassian Community (Jira/Confluence Product Groups), Salesforce Trailblazer (gamified learning), HubSpot Inbound, Notion (template gallery + UGC + Notion Champions), Figma (community 4M+ files), Duolingo (forum + leagues + Duo mascote $100M+ value), Zapier dev Discord, Shopify Partners. UGC tier strategy 4 níveis (organic → incentived $200/mês drawing → structured creator $600-900/mês retainer → enterprise influencer). Channel architecture lean 6-10 launch + maturity progression 4 phases. **Moderation = trust infrastructure** (NÃO cost center) — 1 bad-fit member damage culture inteira. **Micro-communities thriving** 2026 (smaller > mass). Compliance Lei 15.325/2026 + CONAR + LGPD + FTC. Anti-patterns: server porque "audience lá", 20+ channels DAY 1, promo >20% messages, founder absent 4+ sem, ambassador sem #publi disclosure | **v0.1.0 (2026-05-08)** |
+
 ## Skills de Pesquisa & Inteligência de Mercado (acionamento automático)
 
 | Skill | Tema |
@@ -125,13 +133,14 @@ Detalhes em [`SNAPSHOT-2026-05-07.md`](../../docs_mkt/SNAPSHOT-2026-05-07.md).
 | `acessibilidade-wcag` | WCAG 2.1, contraste, leitor de tela, ARIA |
 | `design-system-basico` | Tokens, componentes, consistência |
 
-## Skills de Psicologia & Influência (acionamento automático)
+## Skills de Psicologia & Influência (parcialmente coberto pelo Bloco B)
+
+> `gatilhos-eticos` foi consolidado em `persuasao-eticas` (Bloco B Persuasão & Engajamento). Restantes:
 
 | Skill | Tema |
 |-------|------|
-| `gatilhos-eticos` | Cialdini, escassez, autoridade — uso ético |
-| `vies-cognitivo` | Heurísticas, ancoragem, framing |
-| `prova-social-honesta` | Depoimento real, case verificável |
+| `vies-cognitivo` | Heurísticas, ancoragem, framing — catalog de biases (overlap parcial com `persuasao-eticas` Sec 6.2) |
+| `prova-social-honesta` | Depoimento real, case verificável (overlap parcial com `persuasao-eticas` Sec 3.3 + 9 dark pattern audit) |
 
 ## Skills de Conhecimento de Plataforma (acionamento automático — high volatility)
 
