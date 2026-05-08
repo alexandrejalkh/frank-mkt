@@ -1,5 +1,66 @@
 # Changelog — Frank MKT
 
+## 2.9.0 (2026-05-08) — Bloco F Domínio Vertical 9/13 — `dominio-dp-mkt`
+
+### Adicionado
+
+- **Skill `dominio-dp-mkt`** (`skills/dominio-dp-mkt/SKILL.md`, **1.271 linhas**, volatility **`high` (3 meses)** — DP BR altíssima volatilidade legislativa: eSocial layout S-1.3 + FIM DA DIRF + IRRF Lei 15.270/2025 + Reforma Tributária 2026 + Lei 14.611/2023 fiscalização crescente + Portaria 671 atualizações + Decreto 12.797/2025 + STF constitucionalidade em julgamento, **pesquisa de campo** — 6 web searches em 2026-05-08: eSocial 2026 mudanças obrigações + folha pagamento 2026 INSS FGTS encargos + Portaria 671 ponto eletrônico + CLT compliance rescisão 2026 + DP automação software ContaAzul Domínio + Lei 14.611 igualdade salarial fiscalização. **8ª FILHA Bloco F = COMPLEMENTO NATURAL ao `dominio-rh-mkt`** (strategic) — distinção crítica RH WHO+WHY vs DP WHAT+HOW+WHEN. **Foco crucial**: produzir CONTEÚDO MKT educational sobre DP operacional BR — **NÃO substitui contador especializado DP CRC habilitado + advogado trabalhista + consultor eSocial especializado**. **8 fundações + aplicação**:
+
+- **Fundação 1 — eSocial 2026 mudanças paradigmáticas**: **FIM DA DIRF** mudança mais impactante 2026 (informações antes anuais via PGD agora **mensais via eSocial+EFD-Reinf** + informe rendimentos automatic gerado eventos periódicos + erros visíveis Receita Federal real-time NÃO espera fim ano + fiscalização crescente cruzamento dados); **CPF único identificador** todas obrigações trabalhistas+previdenciárias (elimina NIS/PIS/PASEP); **Tabela 03 reformulada** códigos específicos PLR + auxílio-saúde + intermitentes (objetivo evitar descrições genéricas + cruzamento rigoroso incidências tributárias); **Layout S-1.3 mandatory** + certificados Sectigo + WebServices + DP+RH+Contabilidade+TI coordenar junto + integrações folha+ponto+benefícios+gestão revisadas; **fiscalização IA cruzamento real-time** (Receita Federal usa AI cruzar eventos eSocial + identifica inconsistências real-time + alertas automáticos divergência padrão setor + multas+autuações mais eficientes).
+
+- **Fundação 2 — Folha pagamento 2026 values + automação**: **salário mínimo R$ 1.621** (Decreto 12.797/2025) + **IRRF isento até R$ 5.000/mês** Lei 15.270/2025 + faixas progressivas além + **teto INSS R$ 8.475,55** + INSS patronal **20% sobre folha** + **FGTS 8%** sobre remuneração bruta (depositado conta vinculada NÃO descontado salário) + RAT/SAT 1-3% conforme grau risco atividade + sistema S 5,8% indústria = **encargos +80% custo total empresa sobre salário bruto formalizado**; automação 2026 (sistemas folha regras cálculo automáticas + simulação tempo real + tabelas INSS/IRRF atualizadas automatic + geração arquivos eSocial integrada + dashboards estratégicos); players BR (**Domínio Sistemas** escritório contábil tradicional + **ContaAzul Pro** ERP integrado **único ERP API import Domínio automatic** + **Alterdata** DP automatizado + **Convenia** cloud-native + **Fortes Tecnologia** escritórios cloud + **Solides** DP+people analytics).
+
+- **Fundação 3 — Portaria 671/2021 ponto eletrônico**: origem (Portaria nº 671/2021 8 nov/2021 MTP consolidou+modernizou + revogou Portarias 1510+373); **3 categorias REP**: REP-C (Convencional) ponto físico tradicional local fixo + REP-A (Alternativo) sistemas digitais software/aplicativos registros remotos + **REP-P (Programa) INOVAÇÃO** controle fully digital software servidor dedicado/cloud uso exclusivo registro horas; **2026 atualizações** (comprovante ponto obrigatório todos modelos REP padronizado + maior controle alterações retroativas justificativas+auditoria + integração mandatory eSocial REP-P certificação digital); banco horas máx 1 ano não exceder soma horas semanais + **máx 10h diárias**; biometria/foto/geolocation anti-fraude fundamental; espelho ponto mensal acesso colaborador (entrada+saída+horas extras+atrasos+saídas+ausências+faltas) impressa OR digital ciência+assinatura.
+
+- **Fundação 4 — CLT compliance + rescisão 2026**: **prazo unificado 10 dias úteis** fim contrato (INDEPENDENTE quem iniciou+aviso trabalhado/indenizado) + **multa 1 salário empregado AUTOMATIC** sem necessidade prova prejuízo se atrasar; **7 verbas rescisórias principais** (saldo salário + 13º proporcional + férias proporcionais+1/3 + aviso prévio + multa FGTS 40% saldo + saque FGTS + descontos INSS/IRRF); **INSS rescisão SEPARADO por rubrica** (saldo salário + 13º proporcional + aviso indenizado cada rubrica seu cálculo INSS progressivo NÃO somar tudo+aplicar — erro comum DPs); aviso prévio **30 dias 1º ano + 3 dias/ano até max 90 dias** trabalhado/indenizado; values 2026 (Decreto 12.797/2025 SM R$ 1.621 + Lei 15.270/2025 IRRF isento R$ 5.000).
+
+- **Fundação 5 — Lei 14.611/2023 igualdade salarial**: aplicabilidade (pessoas jurídicas direito privado **100+ empregados** independente setor/faturamento/estrutura societária + aferição **CNPJ individual NÃO grupo econômico**); **Relatório Transparência Salarial 2026** calendário semestral (1º sem questionário Portal Emprega Brasil 3-28 fev/2026 + 2º sem 1-31 ago/2026 + relatório MTE disponível 16 mar + publicação empresa **31 mar/2026** mandatory); **multas + fiscalização crescente** (multa administrativa **até 3% folha salarial** empregador limitada **100 salários mínimos** + **787 ações 154 autos infração 2025** + setembro/2025 810 empresas visitadas + 217 inspecionadas + **90 autuadas** não publicação relatório); **STF analisa constitucionalidade** Lei 14.611 (decisão expected 2026-2027 — content opportunity DP especialistas + enquanto isso MTE intensifica fiscalização aplicando primeiras multas).
+
+- **Fundação 6 — DP automação 2026 + BPO strategic**: evolução BPO DP (antes terceirização operacional → 2026 **strategic partner** people management + cloud technology + AI + continuous compliance + data analysis); plataformas unificadas (folha + eventos + benefícios + horas + encargos + indicadores um ambiente) + integração DP+RH+Financeiro+Contabilidade + conexões nativas eSocial+FGTS Digital reduzem riscos inconsistência+atrasos+penalidades legais; software DP players BR comparison (Domínio escritório contabilidade tradicional + ContaAzul Pro ERP integrado **único ERP API import Domínio** + Alterdata cloud + Convenia cloud-native + Fortes Tecnologia cloud + Solides + people analytics); AI em DP 2026 use cases (auditoria automática rubricas eSocial pré-envio + predição alertas fiscalização Receita Federal + otimização cálculo folha edge cases + compliance Lei 14.611 auto-validation relatório transparência + previsão verbas rescisórias complex cases).
+
+- **Fundação 7 — Saúde mental + NR-1 atualizada + Portaria 3.665/2023**: **NR-1 atualizada 2026** exige empresas mapear+registrar+adotar medidas prevenir danos saúde mental trabalhadores (omissão identificada fiscalizações = multas+autuações MPT+MTE); ações empresa (mapeamento riscos psicossociais + programas prevenção burnout + políticas after-hours + suporte mental health + documentação preventivas); **Portaria 3.665/2023** trabalho feriados setor comércio depende **previsão expressa Convenção Coletiva Trabalho (CCT)** (antes permitido genericamente, agora CCT-dependent).
+
+- **Fundação 8 — Aplicação content MKT**: **4 audiências detalhadas** (contadores DP construindo audiência LinkedIn escritórios contábeis+DP independentes + agencies B2B servindo DP software ContaAzul/Domínio/Alterdata/Convenia/Fortes/Solides + ecossistema DP/Contábil eventos CRC+Sescon+CFC+Sebrae + thought leaders DP especialistas consultores eSocial+tributaristas+consultorias trabalhistas); cross-pollination matrix DP+RH/Jurídico/Fiscal/Financeiro/TI/IA = **30-55% engagement lift**; workflow setup 8-12 sem + **quarterly review MANDATORY high volatility** (legislação trimestral); **3 templates** (legislative update post estruturado + eSocial 2026 paradigm shift FIM DA DIRF post + Lei 14.611 transparency post); disclaimer mandatory (geral + compliance eSocial+Lei 14.611+Portaria 671+Reforma Tributária 2026 requerem legal counsel+consultor eSocial).
+
+- **18 Anti-patterns**: generic DP content sem updates legislação trimestral + ignorar FIM DA DIRF 2026 paradigm shift mensalization + confundir RH strategic com DP operational + CPF único identificador 2026 ignorado + Tabela 03 reformulada códigos genéricos persistentes + Layout S-1.3+Sectigo sem checklist técnico + salário mínimo R$ 1.621+IRRF R$ 5.000 isenção ignorados em calculadoras + encargos +80% custo total ignorado em comparações PJ vs CLT + Portaria 671 REP-C/A/P confused + banco horas 10h diária+1 ano max ignorado + prazo 10 dias úteis rescisão+multa 1 salário automatic + INSS rescisão separado por rubrica erro comum + Lei 14.611 100+ empregados+relatório transparência ignorada + multa 3% folha+fiscalização 787 ações 2025 underestimated + STF constitucionalidade não mencionada + NR-1 saúde mental atualizada ignorada + Portaria 3.665/2023 feriados comércio CCT-dependent ignorada + software DP players BR comparison superficial.
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~50 referências (Escola Superiores N eSocial + Omie + Jusbrasil + 2easy + Convenia + Praxio + Econtabil + Ledware + Sinat + Fortes Tecnologia + Inventsoftware folha + Contabilizei + Serasa Experian + Buk Brasil + Calculadora Brasil + Contaja + Calcule.net + Simulabrasil + Solides + Contaja + Flash App + Ortep + PontoGO + Genyo + Oitchau + TOTVS + Factorial HR + Convenia + Barbieri Advogados rescisão + Contábeis + Calculo Juridico + Calcula Online + Casabona Monteiro + iDinheiro + Calculadora Brasil + Lei 14.611 Planalto + Barbieri Advogados Lei 14.611 + Agência Gov MTE Fiscaliza + Transportes Natal + TV Mirante + News Rondônia + MTE Fiscaliza 800 + Relatório MTE oficial + Agência Brasil + Cescon Barrieu STF + Labortime BPO + ContaAzul Domínio + Domínio Atendimento + Alterdata + Conta Azul Ajuda + Fortes Tecnologia + Conta Azul portal).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **Contador DP independente Carlos 41 anos 18 anos especialista CRC escritório contabilidade BH 80 clientes mid-market** building personal brand LinkedIn especialista DP+eSocial 2026 (5 pillars eSocial 2026 paradigm shift series + Lei 14.611 fiscalização crescente + Portaria 671 ponto eletrônico+remote + cross-pollination jurídico/fiscal/RH + case studies anonimizados; ROI 12m audience 1.500→5.000-8.000 + inbound clientes premium tier-up R$5k→R$15k+/cliente + speaking circuit CRC+Sescon);
+  2. **Agency MKT BH 5a 12 funcionários DP/HR Tech specialist BR** (Convenia+Fortes+Solides clients potential; 4 pillars DP domain expertise fluency + case studies ROI documented + industry deep dives BR DP software + contador+CFO+IT buyer language; ROI 12-18m tier-up R$30k→R$80k+/mês deals);
+  3. **CFO empresa midmarket BR Renata 38 anos B2B SaaS 350 funcionários $40M ARR distributed teams BR+Argentina+Mexico** (Lei 14.611 aplica + S-1.3 + Reforma Tributária 2026; 5 pillars CFO+DP intersection NICHE — DP compliance CFO perspective + Lei 14.611 CFO compliance + Reforma Tributária CFO impact + distributed teams BR+LatAm + DP automation CFO ROI; build-in-public boundaries pre-Series C; ROI 12m audience 2.000→6.000-9.000 CFOs+CHROs+founders);
+  4. **Dr. Joao 52 contador CRC + advogado trabalhista 25 anos ex-consultor multinacionais virando autor+speaker DP/eSocial 2026** (5.000 followers LinkedIn ja palestrou CRC eventos; 6 eixos academic+accessible bridge — frameworks proprietários 5-7 (Joao Method eSocial multi-CNPJ + Compliance trabalhista + Lei 14.611+LGPD+reforma + DP+jurídico+fiscal triangulation + International hiring BR+LatAm) viram capítulos livro + eSocial 2026 paradigm shift series + Lei 14.611 deep analysis + cross-pollination jurídico/fiscal/RH/IA + industry thinking + book launch sequence; cadence 5-7 LinkedIn + 1-2 Substack/mês + Medium English + 1-2 podcasts/mês + 2-3 keynotes/quarter; ROI 18m audience 5.000→20.000+ + email 3-5k + livro 5-10k cópias + workshops+consulting+speaking sustainable; differentiating contador CRC+advogado RARE combination 25 anos+ex-consultor multinacionais).
+
+### Bloco F EXPANDIDO 9/13 (1 mãe + 12 filhas)
+
+| # | Skill | Status |
+|---|-------|--------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | ✅ v2.1.0 |
+| 1 | `dominio-ti-mkt` | ✅ v2.2.0 |
+| 2 | `dominio-juridico-mkt` | ✅ v2.3.0 |
+| 3 | `dominio-empreendedorismo-mkt` | ✅ v2.4.0 |
+| 4 | `dominio-negocios-mkt` | ✅ v2.5.0 |
+| 5 | `dominio-ia-mkt` (skill-MÃE IA) | ✅ v2.6.0 |
+| 6 | `tecnicas-ia-claude-gemini-mkt` (filha de IA — material user) | ✅ v2.7.0 |
+| 7 | `dominio-rh-mkt` | ✅ v2.8.0 |
+| 8 | **`dominio-dp-mkt`** | **✅ v2.9.0 (NOVA — 1.271 linhas, HIGH)** |
+| 9-12 | financeiro + fiscal + adm + iot | ⏸️ |
+
+### Estatísticas globais
+
+- **42 skills implementadas / 57.025 linhas totais**
+- **17 skills volatility `high` (trimestral)**
+- 18 skills volatility `medium` (semestral)
+- 7 skills volatility `low` (anual)
+- **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Domínio Vertical 9/13**
+
+### Próxima skill (Bloco F filha 9/12)
+
+- `dominio-financeiro-mkt` — Financeiro aplicado a posts MKT — cash flow management + FP&A + treasury + DRE + capital structure + finance management + fundraising posts
+
+---
+
 ## 2.8.0 (2026-05-08) — Bloco F Domínio Vertical 8/13 — `dominio-rh-mkt`
 
 ### Adicionado

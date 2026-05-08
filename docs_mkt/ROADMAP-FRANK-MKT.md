@@ -174,7 +174,8 @@ frank-mkt-plugin/
 | `dominio-ia-mkt` (5ª filha Bloco F = SKILL-MÃE IA) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.557 | **high (3 meses)** |
 | `tecnicas-ia-claude-gemini-mkt` (6ª filha Bloco F — filha de IA mãe) | ✅ Implementada (2026-05-08, v0.1.0 — material proprietário user Alexandre Jalkh sintetizado) | 1.403 | **medium (6 meses)** |
 | `dominio-rh-mkt` (7ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.419 | **medium (6 meses)** |
-| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 8/13** (mãe + 7 filhas + 5 planejadas) | **12.058** | — |
+| `dominio-dp-mkt` (8ª filha Bloco F — DP operational complementar RH) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.271 | **high (3 meses)** |
+| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 9/13** (mãe + 8 filhas + 4 planejadas) | **13.329** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
