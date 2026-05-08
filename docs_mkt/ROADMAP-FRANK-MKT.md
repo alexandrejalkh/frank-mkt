@@ -169,7 +169,8 @@ frank-mkt-plugin/
 | `dominio-vertical-fundamentos` (mãe Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.347 | **low (12 meses)** |
 | `dominio-ti-mkt` (1ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.533 | **medium (6 meses)** |
 | `dominio-juridico-mkt` (2ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo + frank_juridico_garden integrado) | 1.688 | **high (3 meses)** |
-| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 3/13** (mãe + 2 filhas + 10 planejadas) | **4.568** | — |
+| `dominio-empreendedorismo-mkt` (3ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.452 | **medium (6 meses)** |
+| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 4/13** (mãe + 3 filhas + 9 planejadas) | **6.020** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

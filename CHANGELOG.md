@@ -1,5 +1,35 @@
 # Changelog — Frank MKT
 
+## 2.4.0 (2026-05-08) — Bloco F Domínio Vertical 4/13 — `dominio-empreendedorismo-mkt`
+
+### Adicionado
+
+- **Skill `dominio-empreendedorismo-mkt`** (`skills/dominio-empreendedorismo-mkt/SKILL.md`, **1.452 linhas**, volatility **`medium` (6 meses)** — frameworks empreendedorismo consolidados 2011-2026 mas evoluindo com AI-native/agentic + Founder Mode set/2024 novo paradigma + build-in-public maturando, **pesquisa de campo** — 6 web searches em 2026-05-08: YC Y Combinator startup marketing 2026 founder-led growth content; build in public 2026 founder marketing startup growth Twitter LinkedIn; bootstrap vs venture backed startup marketing 2026 SaaS; founder mode 2026 Paul Graham startup marketing thought leadership; empreendedorismo Brasil 2026 Sebrae startup marketing conteudo founder; lean startup product market fit marketing 2026 PMF metrics indie hackers SaaS. **3ª FILHA Bloco F** (após `dominio-ti-mkt` e `dominio-juridico-mkt`). **Foco crucial**: produzir CONTEÚDO MKT educational sobre jornada empreendedora — **NÃO substitui consultoria estratégica/financeira/jurídica startup** (mentor 1-on-1, fractional CFO, advisor, tax advisor, advogado societário). **8 fundações + aplicação**: (1) Cenário 2026 BR + Global — Sebrae Startup Day 21 mar/2026 **380+ municípios** + Startup Summit Florianópolis 26-28 ago/2026 17 trilhas + Prêmio Sebrae **R$ 250k**; YC Summer 2026 15 RFS (Defense AI + Voice AI + Regulated AI + Vertical agents); funding state 2026 (median seed **142 dias** + Series A 2025 **$2,8M médio**); **Default Alive** > Default Dead; bootstrap renaissance via AI tools + no-code; (2) Lean Startup Eric Ries 2011 — Build-Measure-Learn + MVP (NÃO produto rascunho) + 10 tipos pivot + Innovation Accounting + Lean Canvas Ash Maurya; (3) YC playbook 6 mantras core ("Make something people want" + "Talk to users 50+" + "Do things that don't scale" + "Default alive" + "Make 10 customers love you" + "Move fast"); 4.150+ companies portfolio; tools ecosystem (Typa + Stormy + Kite); (4) **Founder Mode (Paul Graham set/2024)** — vs Manager Mode "professional fakers"; PitchBook **median valuation growth $3.6M HIGHER** sob founder-CEOs; examples (Steve Jobs + Brian Chesky + Elon Musk + Jensen Huang); controversies (NÃO gender-neutral em prática women founders penalizadas + risk toxic micromanagement + key person risk); (5) Build-in-public Sam Altman strategy — "share thinking not tactics" + "talk industry broadly not company specifically"; 5 categorias compartilhar; **7 boundaries críticos** NÃO compartilhar (customer data sem permissão LGPD + team personal/conflict + competitive intel + legal-sensitive + hype antes delivery + family info + operational beneficiando atacantes); ROI documentado (Pieter Levels +500k followers ~7 anos + indie hackers 30-60% novos customers + inbound hiring 5-10x); (6) Bootstrap vs VC duas filosofias — Bootstrap (Mailchimp 17a → $12B + Basecamp + GitHub + Atlassian 8a + Calendly 7a) vs VC (OpenAI $300B+ + Stripe $50B+ + **Anthropic $61.5B 2025**); convergência 2026 híbridos (tiny seed + bootstrap + revenue-based financing + customer-funded); (7) **PMF — 5 sinais convergentes 2026**: Sean Ellis test **>40% "muito decepcionados"** + D30 cohort retention (B2B SaaS 40-60% / Consumer 25-40% / Marketplaces 20-35%) + NPS >50 + **CAC payback <12 meses** + organic growth rising MoM; retention curve healthy plateau alto vs leaky bucket; timeline median (B2B SaaS 12-18m + Consumer 10-14m + Marketplaces 18-22m); **PMF era AI/agentic — "Indispensability Index"** (produto resolve enquanto user dorme); (8) Aplicação content MKT — 4 audiências (founders LinkedIn/X/Substack + agencies B2B + ecossistema Sebrae/YC + thought leaders ex-founders); cross-pollination matrix Empreendedorismo+TI/Jurídico/Negócios/IA/RH/Financeiro = **35-60% engagement lift**; workflow setup 8-12 semanas + quarterly review; **4 templates** (monthly metrics build-in-public ético + pivot announcement + founder mode reflection + industry thinking Sam Altman style); disclaimer mandatory templates. **18 anti-patterns** (hustle culture glorification + survivor bias cherry-picking + vanity metrics flexing + fake transparency + founder savior complex + PMF claim prematuro + founder mode toxic + hype vaporware + customer name dropping + co-founder beef público + NPS faked + heroismo mythology vazio). **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~30 referências (Eric Ries Lean Startup, Ash Maurya Running Lean, Marc Andreessen, Sean Ellis, Paul Graham essays Founder Mode + Default Alive + Do Things That Don't Scale, YC Library/Blog/RFS, Pieter Levels @levelsio, Sam Altman strategy, Indie Hackers, ChartMogul Bootstrap vs VC SaaS Growth Report, Founderpath, Rho, Mag Startup PMF Founders Guide 2026, eAmped, Calmops, 7-Fit Framework, Sebrae Tendências + Startup Day + Prêmio R$250k, PitchBook Founder Mode valuation growth, Fortune, Inc.com, Lenny Rachitsky, First Round Review, Founders Corner Growth Playbook 2026). **4 exemplos comportamentais detalhados** (solo founder bootstrapping SaaS B2B 14 meses 3 alavancas + founder VC-backed exit moderado $12M storytelling honest waterfall structure + agency MKT B2B servindo startups YC-track BR 3 pillars + ex-founder mulher virando thought leader + author 18 meses sequence livro mid-2027 + women founders perspective underserved BR + healthcare SaaS regulated nicho).
+
+### Bloco F EXPANDIDO 4/13 (1 mãe + 12 filhas)
+
+| # | Skill | Status |
+|---|-------|--------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | ✅ v2.1.0 |
+| 1 | `dominio-ti-mkt` | ✅ v2.2.0 |
+| 2 | `dominio-juridico-mkt` | ✅ v2.3.0 |
+| 3 | **`dominio-empreendedorismo-mkt`** | **✅ v2.4.0 (NOVA — 1.452 linhas, medium)** |
+| 4-12 | negócios + ia (mãe + filha) + rh + dp + financeiro + fiscal + adm + iot | ⏸️ |
+
+### Estatísticas globais
+
+- **37 skills implementadas / 49.716 linhas totais**
+- 15 skills volatility `high` (trimestral)
+- **15 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Domínio Vertical 4/13**
+
+### Próxima skill (Bloco F filha 4/12)
+
+- `dominio-negocios-mkt` — modelos B2B/B2C/B2B2C/marketplace + unit economics + M&A + IPO + valuation + frameworks BCG/Porter + due diligence MKT angle + Series A-G playbooks + scale-up strategies + portfolio strategy
+
+---
+
 ## 2.3.0 (2026-05-08) — Bloco F Domínio Vertical 3/13 — `dominio-juridico-mkt` (frank_juridico_garden integration)
 
 ### Adicionado
