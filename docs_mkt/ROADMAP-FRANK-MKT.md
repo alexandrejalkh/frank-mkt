@@ -211,6 +211,13 @@ frank-mkt-plugin/
 | `vies-cognitivo` (2ª SKILL Bloco Psicologia & Influência — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.063 | **medium (6 meses)** |
 | `prova-social-honesta` (3ª SKILL Bloco Psicologia & Influência — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 859 | **medium (6 meses)** |
 | **🎉 Bloco Psicologia & Influência COMPLETO** | **✅ 3/3** (gatilhos-eticos + vies-cognitivo + prova-social-honesta) | **2.970** | — |
+| `conhecimento-meta-ads` (1ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 788 | **high (3 meses)** |
+| `conhecimento-google-ads` (2ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 859 | **high (3 meses)** |
+| `conhecimento-linkedin-ads` (3ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 602 | **high (3 meses)** |
+| `conhecimento-ga4` (4ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.163 | **high (3 meses)** |
+| `conhecimento-search-console` (5ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 910 | **high (3 meses)** |
+| `conhecimento-conar-cdc` (6ª SKILL Bloco Conhecimento de Plataforma — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.305 | **high (3 meses)** |
+| **🎉 Bloco Conhecimento de Plataforma COMPLETO** | **✅ 6/6** (conhecimento-meta-ads + conhecimento-google-ads + conhecimento-linkedin-ads + conhecimento-ga4 + conhecimento-search-console + conhecimento-conar-cdc) | **5.627** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

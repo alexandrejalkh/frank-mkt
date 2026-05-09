@@ -1,5 +1,73 @@
 # Changelog — Frank MKT
 
+## 2.27.0 (2026-05-09) — 🎉🎉🎉🎉🎉🎉 MILESTONE 15 BLOCOS COMPLETOS — Conhecimento de Plataforma FECHADO 6/6 (6 skills paralelas — volatility HIGH 3m)
+
+### Adicionado em paralelo simultâneo (6 agentes — 4ª paralelização do plugin)
+
+**Estratégia**: 4ª paralelização do plugin com 6 agentes simultâneos. Brief com lesson learned aplicada (headers literais explícitos). **Volatility HIGH (3 meses)** específica deste bloco — plataformas Meta/Google/LinkedIn + analytics (GA4/Search Console) + regulação Brasil (CONAR/CDC) mudam rapidamente. Próxima revalidação obrigatória: **2026-08-09**.
+
+#### 1. `conhecimento-meta-ads` (1ª SKILL — 788 linhas, high 3m)
+
+6 web searches: Meta Ads Manager + Advantage+ AI campaigns + bidding CBO/ABO + benchmarks + Brasil LGPD CAPI + iOS 14.5 ATT EMQ.
+
+8 fundações: Meta Ads Foundations + **Advantage+ Shopping Campaigns (ASC) com 22-32% ROAS lift** + Andromeda 500+ sinais por leilão + CAPI Conversions API EMQ targets (Purchase 8.8-9.3 + AddToCart 8.0+) + recovery 60-80% pós-iOS 14.5 ATT (75-85% opt-out) + Audiences (Custom + Lookalike 1-10% + Special Ad Categories) + Creative Best Practices 2026 (Reels 9:16 + Stories + Feed 1:1/4:5 + 3-second hook + sound-on 70%+) + **Brasil 2026** (cases Magalu/Mercado Livre/Nubank/iFood/Ambev + LGPD compliance + CTWA Click-to-WhatsApp Ads Brasil mercado mais maduro mundo + BRL CPM $7-12 BR vs $23 US + CPC R$ 0,80-2,50 + ROAS DTC 2.5-4x sustentável) + Mensuração (Triple Whale + Northbeam + ROAS targets) + Aplicação MKT.
+
+#### 2. `conhecimento-google-ads` (2ª SKILL — 859 linhas, high 3m)
+
+6 web searches: Pmax Smart Bidding + RSA Quality Score + YouTube Ads + benchmarks + Brasil LGPD GA4 + Consent Mode v2.
+
+8 fundações: Google Ads Foundations + **Performance Max domina 2026 (62% cliques + 82% contas rodam ao menos 1 Pmax vs 8% em 2022 + default e-commerce 2024+)** + tROAS substituiu tCPA default 2026 (+38% ROAS vs Manual CPC) + RSA + **Quality Score 10 = -50% CPC vs QS 1 = +400% CPC** (Core Web Vitals input direto Landing Page Experience) + YouTube Ads + **YouTube Shorts 9:16 nativo + UGC + som ativo (vertical 3x completion rate vs landscape repurposed + +20% conversão)** + Audiences + **Brasil 2026** + **Consent Mode v2 sozinho 15-Jun-2026** (ad_storage Google Ads autoridade única, Google Signals deixa co-controlar; sem v2 + Enhanced Conversions = 20-40% conversões perdidas) + Mensuração + Aplicação MKT.
+
+#### 3. `conhecimento-linkedin-ads` (3ª SKILL — 602 linhas, high 3m)
+
+6 web searches: Sponsored Content Lead Gen Forms + bidding benchmarks + ABM Matched Audiences + Conversation/Document Ads + Brasil B2B SaaS + Insight Tag.
+
+8 fundações: LinkedIn Ads Foundations (1B+ members 200+ countries) + Sponsored Content + **Lead Gen Forms 6.1% CVR mediana B2B (até 13% mediana, 10-18% range) vs landing page externa 2-6% — uplift 50-200% + CPL benchmarks gated USD 45 / webinar USD 55 / demo USD 115 / contact sales USD 150** + **Buying Group Targeting** (5-Fev-2026 launch: targetar clusters pré-definidos decisores "IT Buying Committee") + **Thought Leader Ads (TLAs) 6x superior CTR 2.68% + CPC USD 2.29 vs Single Image 0.42%** (sender = pessoa real, não Company Page) + ABM + Matched Audiences + **Conversation Ads frequency cap rígido 1 ad / 30 dias / membro / sponsor 2026** + **Cohort-based ROAS 180/365 dias** (sales cycle B2B SaaS mediana 281 dias first-touch → closed-won, ROAS 7-30 dias subestima brutalmente o canal) + Brasil 2026 (Stone/Pipefy/RD Station/iFood B2B + BRL CPC R$ 25-80 + LGPD Insight Tag) + Aplicação MKT.
+
+#### 4. `conhecimento-ga4` (4ª SKILL — 1.163 linhas, high 3m)
+
+6 web searches: GA4 framework event model migration + Explorations + BigQuery export + Consent Mode v2 + GTM sGTM + ecommerce.
+
+8 fundações: GA4 Foundations + Migration UA→GA4 (Jul-2023 sunset + 14 meses retention default + 4 default channels + Engagement Rate >> Bounce Rate KPI moderno) + Events 4-categorias + dataLayer + 6 Explorations + sample 10M + Conversions/Key Events rename 2024 + DDA Data-Driven Attribution default + BigQuery export free tier + queries canônicas + custos reais BR + **LGPD + Consent Mode v2 + TCF v2.3 mandatory 28-Fev-2026 + sGTM Stape/Cloud Run** + Audiences + predictive metrics + Ecommerce 10 events + plataformas BR (Shopify/VTEX/Magento/Loja Integrada/Nuvemshop) + Looker Studio vs Mixpanel/Amplitude/Hotjar/FullStory + padrões Magalu/Mercado Livre/Nubank/iFood + audit pós-migração 90 dias mandatory (estatística 4.7 discrepâncias média) + Aplicação MKT.
+
+#### 5. `conhecimento-search-console` (5ª SKILL — 910 linhas, high 3m)
+
+6 web searches: GSC framework Performance Index Coverage + Core Web Vitals LCP INP CLS + URL Inspection mobile-first + GSC API + Bing IndexNow + AI Overviews SGE.
+
+8 fundações: GSC Foundations + Performance Reports + Index Coverage + URL Inspection + **Core Web Vitals 2026 (LCP <2.5s + INP <200ms substituiu FID Mar-2024 metric mais comumente falhada ~43% sites + CLS <0.1 + CrUX field data + Lab vs Field)** + Sitemaps + Indexing API + Brasil 2026 + Bing Webmaster Tools + IndexNow protocol Microsoft (Google **NÃO adotou** até Fev-2026 + Bing alimenta Microsoft Copilot/ChatGPT search/DuckDuckGo + 22% cliques Bing via IndexNow) + **AI Overviews tracking 2024-2026** (GSC tracking nativo Jun-2025 + >48% SERPs Mar-2026 + impacto -18% a -25% tráfego orgânico + queda CTR pós #1 31.7%→23.4% + cristal "AI Overviews pegam conteúdo e não retornam tráfego") + Aplicação MKT.
+
+#### 6. `conhecimento-conar-cdc` (6ª SKILL — 1.305 linhas, high 3m, FECHA BLOCO)
+
+6 web searches: CONAR CBARP código + CDC Lei 8.078 publicidade + CONAR Anexo P influenciadores + LGPD publicidade + Senacon Procon multas + publicidade infantil.
+
+8 fundações: **CONAR Foundations** (fundado 5-Maio-1980 + CBARP 50 artigos + 21+ Anexos + 4 sanções advertência/alteração/sustação/divulgação pública + CONAR NÃO aplica multas auto-regulação) + **CDC Art. 30/36/37/38** texto literal (ônus prova Art. 38 regra ouro: "se não pode provar agora, não publique") + **6 Anexos CONAR críticos 2026**: P (influenciadores + **Lei 15.325 Jan-2026**), Q (comparativos com fonte+data+categoria+geografia), H/J (álcool), S (apostas Lei 14.790/2023), T (cripto Lei 14.478/2022), U (greenwashing CADE) + LGPD Interface Publicidade + **Casos Enforcement 2024-2026 nominais**: Senacon **R$ 70M multas/2024**, teles 5G "primeira versão" (Oi R$ 1,3M + Vivo R$ 1,4M + TIM R$ 2M), **ECA Digital Lei 15.211/2025 vigor 17-Mar-2026**, **ANPD agência plena Lei 15.352/2026**, Procon-SP 79% reconhecem publicidade enganosa + 4 níveis publicidade infantil + 9 órgãos enforcement + **8 templates práticos** (disclaimer + #publi + comparativo Anexo Q + claim ESG + oferta Art. 30 + banner cookies LGPD válido + LIA retargeting + defesa CONAR) + Aplicação MKT.
+
+### 🎉🎉🎉🎉🎉🎉 MILESTONE 15 BLOCOS COMPLETOS — Conhecimento de Plataforma FECHADO 6/6
+
+| # | Skill | v | Linhas | Volatility |
+|---|-------|---|-------:|------------|
+| 1 | **`conhecimento-meta-ads`** | **v2.27.0 (paralela)** | **788** | high (3m) |
+| 2 | **`conhecimento-google-ads`** | **v2.27.0 (paralela)** | **859** | high (3m) |
+| 3 | **`conhecimento-linkedin-ads`** | **v2.27.0 (paralela)** | **602** | high (3m) |
+| 4 | **`conhecimento-ga4`** | **v2.27.0 (paralela)** | **1.163** | high (3m) |
+| 5 | **`conhecimento-search-console`** | **v2.27.0 (paralela)** | **910** | high (3m) |
+| 6 | **`conhecimento-conar-cdc`** | **v2.27.0 (paralela)** | **1.305** | high (3m) |
+| **TOTAL Bloco** | | ✅ **6/6 COMPLETO** | **5.627** | — |
+
+**15 BLOCOS COMPLETOS**: SEO 7/7 + Mídia Social 10/10 + Comunicação Visual & IA 4/4 + Multi-Platform 3/3 + Persuasão 2/2 + MKT Não-Tradicional 2/2 + MKT & Estratégia 5/5 + Bloco F EXPANDIDO 13/13 + Bloco E Documentos 2/2 + Pesquisa 6/6 + Corporativo & Humanitário 6/6 + Copy & Redação 4/4 + UX/UI 4/4 + Psicologia & Influência 3/3 + **Conhecimento de Plataforma 6/6**.
+
+### Estatísticas globais
+
+- **77 skills implementadas / 93.695 linhas totais**
+- **24 high (trimestral)** + 46 medium (semestral) + 7 low (anual)
+- **15 BLOCOS COMPLETOS** (77 das ~83 skills planejadas — **93% concluído**)
+
+### Próximo
+
+Após Conhecimento de Plataforma FECHADO 6/6, blocos restantes: Meta-skill 1 + MKT & Estratégia 2º lote 5 + Infraestrutura slash 8 + Agentes 14.
+
+---
+
 ## 2.26.0 (2026-05-09) — 🎉🎉🎉🎉🎉 MILESTONE 14 BLOCOS COMPLETOS — UX/UI 4/4 + Psicologia & Influência 3/3 FECHADOS (7 skills paralelas)
 
 ### Adicionado em paralelo simultâneo (7 agentes — 3ª paralelização do plugin, recordista)
