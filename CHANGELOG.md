@@ -1,5 +1,83 @@
 # Changelog — Frank MKT
 
+## 2.28.0 (2026-05-09) — 🎉🎉🎉🎉🎉🎉🎉 MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS — Meta-skill 1/1 + MKT & Estratégia 2º lote 5/5
+
+### Adicionado em paralelo simultâneo (6 agentes — 5ª paralelização do plugin)
+
+**Estratégia**: 5ª e última paralelização para fechar todas as 83 skills planejadas. 6 agentes simultâneos com brief reforçado (lesson learned aplicada). **Resultado**: 6/6 estrutura template strict completa (validação grep confirmou Anti-Patterns 18 + 18 Regras de Ouro + Exemplos Comportamentais + Checklist em todos). Zero correção manual.
+
+#### 1. `manutencao-skills` (Meta-skill — FECHA Bloco Meta-skill 1/1)
+
+(`skills/manutencao-skills/SKILL.md`, **958 linhas**, medium 6m, 6 web searches: documentation maintenance lifecycle + knowledge management staleness + content audit + content versioning semver + prompt engineering Claude maintenance + living documentation enterprise wiki).
+
+8 fundações: **Volatility Tiers framework com critérios de decisão explícitos** (high 3m / medium 6m / low 12m + pergunta-chave + 4 indicadores por tier) mapeada a TODAS as 77+ outras skills + Versionamento Semver + Frontmatter (last_review + next_review + volatility) + Re-validação via 6 web searches paralelas obrigatórias + **Lifecycle 4-stage formalizado** (Creation → Update → Deprecation → Sunset com checklists obrigatórios + coexistência 30-90 dias + critérios MAJOR/MINOR/PATCH semver alinhados semver.org spec) + Trackers Sync 4-way (INDEX + CHANGELOG + plugin.json + ROADMAP + bonus MEMORY.md user-level) + Brasil 2026 (LGPD + cultural codes + ASCII PT-BR rationale) + **Paralelização 4 agentes documentada com lessons learned reais v2.24/v2.25/v2.26/v2.27** (recordista 7 agentes simultâneos v2.26.0 + brief prescritivo template + "ZERO correção manual quando bem instruído") + Aplicação 4 audiências (Maintainer Alexandre / Founder Marina B2B SaaS / Plugin developer Bruno frank-jur / Knowledge manager Camila FMCG Confluence).
+
+#### 2. `growth-hacking` (1ª SKILL MKT & Estratégia 2º lote — 895 linhas, medium 6m)
+
+6 web searches: AARRR pirate metrics + ICE/RICE prioritization + viral loops K-factor + Sean Ellis PMF survey + growth marketing Brasil cases + Reforge Balfour.
+
+8 fundações: AARRR Pirate Metrics McClure 2007 + PMF Sean Ellis 40% Survey + ICE/RICE prioritization + **Viral Loops K-factor** (K = invitations × conversion rate; K>1 = self-sustaining; cases Dropbox/Hotmail/PayPal/Tinder) + Growth Experiments weekly cadence + **Reforge 4-Fits Brian Balfour + Andrew Chen Cold Start Problem** + AI Growth Course 2025 + **Brasil cases concretos** (Nubank word-of-mouth K~0.5-0.7 sem programa formal + iFood 3-sided + couriers as growth channel + cidade-por-cidade atomic network + Magalu Lu avatar 60M followers + Mercado Livre 2-sided + Mercado Pago wrapper) + Mensuração + Aplicação MKT.
+
+4 personas: Mariana founder pre-PMF + Rafael CMO e-commerce R$200M GMV + Camila PM Growth fintech + Lucas dono agência R$8k→R$25k/mês.
+
+#### 3. `product-marketing` (2ª SKILL MKT & Estratégia 2º lote — 831 linhas, medium 6m)
+
+6 web searches: PMM discipline + April Dunford Obviously Awesome + Pragmatic Institute PMA + sales enablement battlecards + VOC research + Brasil PMM SaaS B2B.
+
+8 fundações: PMM Foundations 4 responsabilidades core + **April Dunford 5+1 components** (competitive alternatives + unique attributes + value + best-fit customers + market category + trends — workshop 10 passos format edição revisada Fev-2026) + **Product Launches Tier 1/2/3** (lead times 12-24/6-12/1-3 semanas + investimento US$ 100k-1M/20-100k/mínimo + benchmarks PMA 2026 cadência top-quartile 4.1/ano + pipeline lift +38%) + Sales Enablement Battlecards + **VOC interview protocol JTBD-style** (5-8 minimum saturation + Riverside/Dovetail/Notably/Gong) + Brasil 2026 (Stone/Pipefy/RD Station/Gupy/Conta Azul/Mottu + salaries BRL R$ 5-60k+) + Mensuração + Aplicação MKT.
+
+#### 4. `account-based-marketing` (3ª SKILL MKT & Estratégia 2º lote — 1.045 linhas, medium 6m)
+
+6 web searches: ABM Demandbase 6sense Terminus + intent data Bombora + 1:1 vs 1:few vs 1:many + buying committee 6.8 stakeholders + Brasil cases + ROI benchmarks.
+
+8 fundações: ABM Foundations 1:1 strategic 5-25 contas / 1:few cluster 25-100 / 1:many programmatic 100-1000+ + **Buying Committee evolution** (HBR/Gartner 2017 6.8 → Gartner 2023 8-13 → Forrester 2024 13 internos + 9 externos = 22) + LinkedIn Buying Group Targeting Feb-2026 + Intent Data (Bombora topic + G2 buyer + 6sense AI predictive + ZoomInfo) + **Plataformas comparison com pricing real** (6sense $80-150K + Demandbase $60-120K + Terminus $25-60K + RollWorks $15-45K + Madison Logic $30-80K) + Sales+Marketing Alignment + 5 ABM Plays templates + Brasil 2026 (Stone/Pipefy/RD Station/Conta Azul + LGPD + LinkedIn dominante + cultura relational + nota cautela "não inventar casos") + Aplicação MKT.
+
+#### 5. `pricing-strategy` (4ª SKILL MKT & Estratégia 2º lote — 738 linhas, medium 6m)
+
+6 web searches: pricing models value-based + Van Westendorp PSM + Conjoint analysis + Hermann Simon Ramanujam + SaaS freemium tiered + Brasil BRL pricing.
+
+8 fundações: Pricing Models 8 modelos (cost-plus/competitive/value-based/dynamic/penetration/skim/bundling/freemium) + **Van Westendorp PSM rigoroso** (4 questões + 4 pontos OPP/IPP/PMC/PME + sample N>=200 + extensions Newton/Miller/Smith MRI/RA + comparação Conjoint $2-10k vs $15-50k+) + **Conjoint Analysis 2026** (CBC/ACBC/MaxDiff + Sawtooth/Conjointly/Qualtrics + sample 200-500+ + critique Ibbaka value stories alternative) + **Hermann Simon + Madhavan Ramanujam Monetizing Innovation 2016** (9 pricing mistakes + EVE framework exemplo USD 1.081/mês capture rate 25% + Simon-Kucher 30+ países 10.000+ projects) + SaaS Pricing 2026 (Good-Better-Best 80% adoption + freemium conversion 2-5% / 8-15% best-in-class + hybrid 43%→61% projetado end-2026 Chargebee + 47% pilots outcome-based Gartner) + **Brasil 2026** (CDC Art. 30 obrigação oferta + Reforma Tributária LC 214/2025 IBS+CBS + LGPD Art. 6/20 dynamic pricing risk + 7 cases Nubank/iFood/Magalu/Stone/MercadoLivre/Hotmart/RD Station/TOTVS) + Mensuração + Aplicação MKT.
+
+#### 6. `go-to-market-strategy` (5ª SKILL MKT & Estratégia 2º lote — 1.046 linhas, medium 6m, FECHA BLOCO)
+
+6 web searches: GTM PLG SLG CLG + Wes Bush PLG + SLG enterprise + GTM playbook ICP + Bessemer Cloud Index + Brasil GTM.
+
+8+ fundações: GTM Foundations 6 elementos + canvas + **PLG Wes Bush + Reforge** (5 pilares + PLG 2.0 TTV <60s + Slack/Zoom/Notion/Figma + benchmarks 5x faster growth, 30% lower CAC) + **SLG MEDDIC/MEDDPICC** (Salesforce/Workday/ServiceNow + AE-led + ABM + 6-12 month cycles + ACV $50k-500k+) + CLG Orbit framework 4 modelos (HubSpot Inbound + Notion creators + GitHub + Reforge) + **Hybrid PLG-SLG mainstream 2026** (Wes Bush hybrid + bottoms-up signal + sales-assisted close + Datadog/MongoDB/Twilio + OpenView 67% NRR target hit) + **Bessemer Cloud Index benchmarks 2026** (Magic Number >1.0 + NRR >120% + GRR >90% + CAC payback <12mo + Rule of 40 >=40 + 51% public SaaS usage-based 2026 vs 27% 2021 + $2.00 gasto/$1 ARR mediana +14% YoY) + **5 cases Brasil canônicos** (Pipefy PLG hybrid global-first Curitiba $65M ARR 100+ países + Stone SLG door-to-door fintech $2.53B + RD Station content+CLG TOTVS R$1.86B + Conta Azul PLG SMB + Hotmart marketplace+CLG creators) + Aplicação MKT.
+
+5 exemplos: Founder pre-Series A motion narrative + CMO refresh adjacent expansion + Founder Brasil-to-US (Pipefy reference) + CRO build SLG após PLG (Datadog reference) + Agência GTM consulting retainer.
+
+### 🎉🎉🎉🎉🎉🎉🎉 MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS
+
+#### Meta-skill 1/1
+| Skill | v | Linhas |
+|-------|---|-------:|
+| **`manutencao-skills`** | **v2.28.0 (paralela)** | **958** |
+
+#### MKT & Estratégia 2º lote 5/5
+| # | Skill | v | Linhas |
+|---|-------|---|-------:|
+| 1 | **`growth-hacking`** | **v2.28.0 (paralela)** | **895** |
+| 2 | **`product-marketing`** | **v2.28.0 (paralela)** | **831** |
+| 3 | **`account-based-marketing`** | **v2.28.0 (paralela)** | **1.045** |
+| 4 | **`pricing-strategy`** | **v2.28.0 (paralela)** | **738** |
+| 5 | **`go-to-market-strategy`** | **v2.28.0 (paralela)** | **1.046** |
+| **TOTAL** | | ✅ **5/5** | **4.555** |
+
+**17 BLOCOS COMPLETOS**: SEO 7/7 + Mídia Social 10/10 + Comunicação Visual & IA 4/4 + Multi-Platform 3/3 + Persuasão 2/2 + MKT Não-Tradicional 2/2 + MKT & Estratégia 1º lote 5/5 + Bloco F EXPANDIDO 13/13 + Bloco E Documentos 2/2 + Pesquisa 6/6 + Corporativo & Humanitário 6/6 + Copy & Redação 4/4 + UX/UI 4/4 + Psicologia & Influência 3/3 + Conhecimento de Plataforma 6/6 + **Meta-skill 1/1** + **MKT & Estratégia 2º lote 5/5**.
+
+### Estatísticas globais
+
+- **83 skills implementadas / 99.208 linhas totais — 100% SKILLS PLANEJADAS**
+- 24 high (trimestral) + **52 medium (semestral)** + 7 low (anual)
+- **17 BLOCOS COMPLETOS**
+
+### Próximo (não-skills, formato diferente)
+
+- **Infraestrutura slash commands (8)** — `init`, `stack`, `save-session`, `help`, `audit`, `review`, `juiz`, `perfil`
+- **Agentes (14)** — `frank-mkt` persona principal + `perfilador-mercado` + `investigador` + `redator-hacker` + `auditor` + `social-media-linkedin/instagram/facebook` + `juiz` + `seo-strategist` + `ux-ui-revisor` + `psicologia-influencia` + `frank-corporativo` + `social-humanitario`
+
+---
+
 ## 2.27.0 (2026-05-09) — 🎉🎉🎉🎉🎉🎉 MILESTONE 15 BLOCOS COMPLETOS — Conhecimento de Plataforma FECHADO 6/6 (6 skills paralelas — volatility HIGH 3m)
 
 ### Adicionado em paralelo simultâneo (6 agentes — 4ª paralelização do plugin)

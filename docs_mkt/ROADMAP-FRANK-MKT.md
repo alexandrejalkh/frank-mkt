@@ -218,6 +218,14 @@ frank-mkt-plugin/
 | `conhecimento-search-console` (5ª SKILL Bloco Conhecimento de Plataforma — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 910 | **high (3 meses)** |
 | `conhecimento-conar-cdc` (6ª SKILL Bloco Conhecimento de Plataforma — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.305 | **high (3 meses)** |
 | **🎉 Bloco Conhecimento de Plataforma COMPLETO** | **✅ 6/6** (conhecimento-meta-ads + conhecimento-google-ads + conhecimento-linkedin-ads + conhecimento-ga4 + conhecimento-search-console + conhecimento-conar-cdc) | **5.627** | — |
+| `manutencao-skills` (Meta-skill — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 958 | **medium (6 meses)** |
+| **🎉 Bloco Meta-skill COMPLETO** | **✅ 1/1** (manutencao-skills) | **958** | — |
+| `growth-hacking` (1ª SKILL Bloco MKT & Estratégia 2º lote — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 895 | **medium (6 meses)** |
+| `product-marketing` (2ª SKILL Bloco MKT & Estratégia 2º lote — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 831 | **medium (6 meses)** |
+| `account-based-marketing` (3ª SKILL Bloco MKT & Estratégia 2º lote — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.045 | **medium (6 meses)** |
+| `pricing-strategy` (4ª SKILL Bloco MKT & Estratégia 2º lote — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 738 | **medium (6 meses)** |
+| `go-to-market-strategy` (5ª SKILL Bloco MKT & Estratégia 2º lote — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.046 | **medium (6 meses)** |
+| **🎉 Bloco MKT & Estratégia 2º lote COMPLETO** | **✅ 5/5** (growth-hacking + product-marketing + account-based-marketing + pricing-strategy + go-to-market-strategy) | **4.555** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

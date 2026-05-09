@@ -2,11 +2,11 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.27.0 — 2026-05-09) — 🎉🎉🎉🎉🎉🎉 15 BLOCOS COMPLETOS — Conhecimento de Plataforma FECHADO 6/6
+## Status (v2.28.0 — 2026-05-09) — 🎉🎉🎉🎉🎉🎉🎉 17 BLOCOS COMPLETOS — Meta-skill 1/1 + MKT & Estratégia 2º lote 5/5 FECHADOS — **100% SKILLS PLANEJADAS**
 
-**77 skills implementadas / 93.695 linhas totais.**
+**83 skills implementadas / 99.208 linhas totais.**
 
-🎉🎉🎉🎉🎉🎉 **MILESTONE 15 BLOCOS COMPLETOS** — Conhecimento de Plataforma FECHADO 6/6 com 6 skills criadas em **paralelo simultâneo** (4ª paralelização do plugin): `conhecimento-meta-ads` + `conhecimento-google-ads` + `conhecimento-linkedin-ads` + `conhecimento-ga4` + `conhecimento-search-console` + `conhecimento-conar-cdc`. **Volatility HIGH (3 meses)** — plataformas e regulação Brasil mudam rápido.
+🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 (`growth-hacking` + `product-marketing` + `account-based-marketing` + `pricing-strategy` + `go-to-market-strategy`) com 6 skills criadas em **paralelo simultâneo** (5ª paralelização do plugin).
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -16,8 +16,8 @@
 | **Multi-Platform Strategy** | ✅ **3/3** | 4.344 |
 | **Persuasão & Engajamento** | ✅ **2/2** | 2.827 |
 | **Marketing Não-Tradicional** | ✅ **2/2** | 2.642 |
-| **Marketing & Estratégia** | ✅ **5/5** | 7.871 |
-| Marketing & Estratégia | ⏸️ 0/5 | — |
+| **Marketing & Estratégia (1º lote)** | ✅ **5/5** | 7.871 |
+| **Marketing & Estratégia (2º lote)** | ✅ **5/5** | 4.555 |
 | **Domínio Vertical (Bloco F — EXPANDIDO)** | ✅ **13/13** | 18.856 |
 | **Bloco E Documentos Corporativos** | ✅ **2/2** | 1.947 |
 | **Pesquisa & Inteligência de Mercado** | ✅ **6/6** | 4.338 |
@@ -26,11 +26,13 @@
 | **UX/UI** | ✅ **4/4** | 4.714 |
 | **Psicologia & Influência** | ✅ **3/3** | 2.970 |
 | **Conhecimento de Plataforma** | ✅ **6/6** | 5.627 |
+| **Meta-skill** | ✅ **1/1** | 958 |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
-| Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **77/~83** | **93.695** |
+| **TOTAL SKILLS** | **83/83** ✅ | **99.208** |
 
-**Volatility:** 46 skills `medium` (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **52 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+
+**Restantes (não-skills, formato diferente)**: Infraestrutura slash commands (8) + Agentes (14).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
