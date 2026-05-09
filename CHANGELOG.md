@@ -1,5 +1,50 @@
 # Changelog — Frank MKT
 
+## 2.23.0 (2026-05-08) — Bloco Corporativo & Humanitário 2/6 — `employer-branding`
+
+### Adicionado
+
+- **Skill `employer-branding`** (`skills/employer-branding/SKILL.md`, **833 linhas**, volatility **medium (6 meses)**, **6 web searches** 2026-05-08: EVP framework strategy + LinkedIn Talent Insights benchmarks + Glassdoor employer reputation management + recruitment marketing Brasil mercado + GPTW Brasil LinkedIn melhores empresas + employee retention culture engagement B2B SaaS). **2ª SKILL Bloco Corporativo & Humanitário**. **8 fundações 2026**:
+
+- **Fundação 1 — EVP Framework 2026** Tandehill 2003 + Universum/Edelman; EVP interno vs Employer Brand externo (Recruitics/AIHR); 3 elementos (Pillars + Narrative + Strapline); 5 categorias (Compensation + Benefits + Career + Work environment + Company); aspiracional vs realidade test (Edelman: cynicism amplifier se gap); 4 etapas discovery (Listen + Research + Synthesize + Articulate test); audiences segmentation (tech/sales/frontline/Gen Z/Millennials/Gen X/Boomers); **50% more qualified candidates + 28% lower turnover + 43% less cost-per-hire + 49% more applications** com EVP compelling.
+
+- **Fundação 2 — Talent Attraction PESO-Style 2026** recruitment marketing PESO model aplicado talento (Paid+Earned+Shared+Owned); Paid (LinkedIn Recruiter $8.5-30k/seat + Indeed + Glassdoor + Welcome to Jungle BR + 99jobs + Vagas + programmatic Joveo/Appcast); Earned (LinkedIn Top Companies 10ª edição 28-Apr-2026 + Glassdoor Best Places + GPTW + Best Workplaces Infojobs + Comparably + Built In + Cannes/Webby); Shared (employee advocacy + Glassdoor organic + LinkedIn + Reddit + Slack + Discord); Owned (career site + engineering blog + podcast + newsletter + referral program + EGC); LinkedIn dominante (1.2 bi members + 12 bi data points + video posts 1.4× engagement + TBI strong companies grew 20% faster); Brasil platforms (Gupy ATS leader + Solides + Kenoby + Vagas + Catho + Infojobs + 99jobs + Trampos + LinkedIn BR + Geek Hunter + Revelo).
+
+- **Fundação 3 — Glassdoor + LinkedIn Reputation Management** **83% job seekers research reviews/ratings antes apply** (DSMN8); 2/3 candidatos influenciados management responses; 75% professionals check employer brand reputation (LinkedIn Brasil); **Glassdoor management response framework** (<72h cadence + professional + on-brand + CHRO voice + personalize + negative review playbook + positive amplify); 7 anti-patterns (defensive + threatening + outing + generic copy-paste + ignoring + over-responding negative + fake reviews); LinkedIn Company Page Life tab + Career tab + funcionarios sharing + C-suite visibility + Top Companies submission + Talent Insights audit; cross-platform monthly audit Glassdoor+LinkedIn+Indeed+Comparably+LoveMondays.
+
+- **Fundação 4 — GPTW Brasil + LinkedIn Top Companies 2026** GPTW pioneer global; 5 dimensões Trust Index (Credibilidade + Respeito + Imparcialidade + Orgulho + Camaradagem) + 9 Cultural Management Practices Culture Audit; 70%+ Trust Index threshold certificação; categorias Brasil (Pequenas/Médias/Grandes/Mulher/IT/Saúde); LinkedIn Top Companies 2026 Brasil **10ª edição lançada 28-Apr-2026** Top 25 carreira; metodologia DIFFERENT GPTW (LinkedIn aggregated profile data vs GPTW climate research employee survey); **Best Workplaces Infojobs 2026** + **Top Employers Brasil** + **150-175 Melhores GPTW** + **100 Melhores São Paulo Gazeta**; **Air Branding Brasil pioneer 2015** primeira agência especializada; **Employer Branding Conference 2026 Brasil** Apr-2026 themes (AI literacy + Gen Z + 5 generations + hybrid + 95.1% talent shortage).
+
+- **Fundação 5 — Recruitment Marketing Brasil 2026** **95.1% organizações dificuldade talento qualificado** (GRH Brasil); war on talent (tech+engineering+saúde+comercial+construção); recruiting consultivo > vendor; soft skills decisive (communication + adaptability + emotional intelligence + teamwork); candidate experience mandatory (clear processes + structured feedback + humanizado); employer branding 80% C-suite priority; EVP estruturada -43% custos atração; AI integration recruiting (Gupy AI + Solides AI + LinkedIn AI matching); diversity intentional metrics; remote/hybrid 90% talent inacessível se restrito locality; 5 generations coexistence; AI literacy basic skill 2026; Brasil salary inflation 2026 (tech +15-25% senior + sales +10-20% + healthcare +12-18%); deep dive Brasil platforms (Gupy + Solides + Kenoby + Vagas + Catho + Infojobs + 99jobs + Trampos + Rocketmat + Geek Hunter + Programathor + Revelo); 6 tendências jovens talentos.
+
+- **Fundação 6 — Retention Systematic 2026 (B2B SaaS + Brasil)** **B2B SaaS target 90%+ retention**; **replace cost 33% annual salary**; **management critical lever 42% departures preventable + 70% workers willing quit over bad manager**; culture + work-life + career drive 69% departures; engagement global 23% (sad benchmark); high-engagement 21-51% less turnover; **internal mobility strong 5.4y vs 2.9y tenure differential**; manager turnover 6-year high 2026; 5 retention drivers (manager quality + career development + recognition + compensation + work-life flexibility); manager scorecard accountability (turnover + eNPS + mobility + 1:1 cadence + recognition); recognition systematic (peer-to-peer + manager + company-wide + tangible + career milestone); engagement measurement modern (continuous pulse Glint/Culture Amp/Lattice/Officevibe/Feedz BR/Convenia BR + eNPS quarterly + stay interviews + skip-level + sentiment analysis LGPD-compliant); Brasil specifics (vale alimentação + plano saúde + Gympass/Wellhub + auxílio creche + bolsa estudo + 13o + LGPD + sindicatos + PLR + híbrido CLT).
+
+- **Fundação 7 — Mensuração Tier 1 KPIs** 3 tiers (Tier 1 business outcomes cost-per-hire + time-to-hire + quality-of-hire + offer accept + retention 90%+ + replacement cost saved + revenue per employee; Tier 2 brand equity LinkedIn TBI + Glassdoor rating + Company Page followers + career site traffic + application volume/quality + sentiment + GPTW certification; Tier 3 activity ops); funnel metrics talent (awareness → career site → application → screen → interview → offer → accept → 90d → 1y → 5+y); tools (LinkedIn Talent Insights + Gupy/Solides/Kenoby ATS BR + Glint/Culture Amp engagement + Glassdoor Employer Center + GPTW dashboards + Comparably/Built In + Tableau/Looker/PowerBI + SHL/Gallup/IBM Talent Insights enterprise); reporting cadence weekly/monthly/quarterly/annual.
+
+- **Fundação 8 — Aplicação content MKT** 5 audiências (CHRO Tier 1 B3 R$ 800k-2M/ano + CCO+CHRO partnership + CEO leadership visibility 35% team/40% product/25% personal + Founder pre-Series A bootstrap 4-6h/mês + CMO B2B SaaS integrated stack + Agência Air Branding model R$ 80-300k discovery + R$ 30-100k/mês retainer); conteúdo cross-skill (CHRO playbook público + CEO LinkedIn carousel + webinar Talent leaders + case study agência); avoid disclosing (salary bands + layoff plans + GPTW raw data + manager scorecards + negative review templates).
+
+- **18 Anti-patterns** (EVP aspiracional sem realidade + lipstick toxic culture + generic EVP + CEO vision-only + EVP static + Glassdoor ignored + copy-paste responses + fake reviews + reactive attraction + career site institutional + manager quality ignored + internal mobility absent + GPTW sem cultura real + LinkedIn dormant + recognition sporadic + diversity tokenismo + Brasil cultural ignored + employer brand silo CHRO) + **18 Regras de Ouro** (EVP discovery rigorosa + reflete realidade + audience-segmented + PESO talent attraction + Glassdoor <72h responses + GPTW se cultura real + LinkedIn Top Companies submission + manager scorecards + internal mobility formal + recognition systematic + engagement continuous + career site UX dedicada + employee advocacy + Brasil platforms + CLT/LGPD/sindicatos compliance + CHRO+CMO+CEO partnership + mensuração Tier 1 + disclaimer educational) + Checklist Contraditório Interno 10 perguntas + ~70 referências.
+
+- **4 exemplos**: CHRO Patricia Tier 1 B3 listed EVP refresh + GPTW path 24 meses + Founder Marina pre-Series A bootstrap 4-6h/mês + CMO Bruno + CHRO Carla B2B SaaS Series C campaign integrated 12 meses + Agência Estela employer branding service launch 6-month.
+
+### Bloco Corporativo & Humanitário 2/6
+
+| # | Skill | Status | Linhas |
+|---|-------|--------|-------:|
+| 1 | `comunicacao-corporativa` | ✅ v2.22.0 | 737 |
+| 2 | **`employer-branding`** | **✅ v2.23.0 (NOVA — 833 linhas, medium)** | **833** |
+| 3 | `comunicacao-crise` | ⏸️ Próxima | — |
+| 4 | `esg-comunicacao` | ⏸️ | — |
+| 5 | `terceiro-setor` | ⏸️ | — |
+| 6 | `empreendedorismo-impacto` | ⏸️ | — |
+
+### Estatísticas globais
+
+- **56 skills implementadas / 70.407 linhas totais**
+- 18 high (trimestral) + **31 medium (semestral)** + 7 low (anual)
+- **10 BLOCOS COMPLETOS** + Bloco Corporativo & Humanitário 2/6 (67% concluído)
+
+---
+
 ## 2.22.0 (2026-05-08) — Bloco Corporativo & Humanitário 1/6 — `comunicacao-corporativa`
 
 ### Adicionado

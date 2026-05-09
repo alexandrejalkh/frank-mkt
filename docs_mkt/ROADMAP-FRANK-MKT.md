@@ -191,7 +191,8 @@ frank-mkt-plugin/
 | `competitive-intelligence` (6ª SKILL Bloco Pesquisa — ÚLTIMA) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 666 | **medium (6 meses)** |
 | **🎉 Bloco Pesquisa & Inteligência de Mercado COMPLETO** | **✅ 6/6** (fundamentos + ICP + análise-concorrência + white-space + trendwatching + competitive-intelligence) | **4.338** | — |
 | `comunicacao-corporativa` (1ª SKILL Bloco Corporativo & Humanitário) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 737 | **medium (6 meses)** |
-| **Bloco Corporativo & Humanitário (em construção)** | **🔄 1/6** (1 implementada + 5 pendentes — employer-branding, comunicacao-crise, esg-comunicacao, terceiro-setor, empreendedorismo-impacto) | **737** | — |
+| `employer-branding` (2ª SKILL Bloco Corporativo & Humanitário) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 833 | **medium (6 meses)** |
+| **Bloco Corporativo & Humanitário (em construção)** | **🔄 2/6** (2 implementadas + 4 pendentes — comunicacao-crise, esg-comunicacao, terceiro-setor, empreendedorismo-impacto) | **1.570** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
