@@ -1,5 +1,58 @@
 # Changelog — Frank MKT
 
+## 2.14.0 (2026-05-08) — Bloco E Documentos Corporativos 1/2 — `atas-relatorios-corporativos`
+
+### Adicionado
+
+- **Skill `atas-relatorios-corporativos`** (`skills/atas-relatorios-corporativos/SKILL.md`, **1.073 linhas**, volatility **`medium` (6 meses)** — frameworks corporate documentation foundational decadas (Robert's Rules+Lei 6.404/76+governance principles) MAS aplicação 2026 deslocando: AI meeting minutes +900% YoY, LGPD 2.0 transition, ESG mandatory disclosure, SEC semiannual reform pending, ISSB adoption, **pesquisa de campo** — 6 web searches em 2026-05-08: corporate meeting minutes 2026 best practices governance AI + executive reporting board reports CEO investor quarterly + annual report ESG sustainability disclosure + atas reuniao Brasil compliance LGPD AI + corporate documentation AI tools transcription Otter Fireflies Notion + board reporting governance materials directors. **1ª SKILL Bloco E Documentos Corporativos** (após MILESTONE Bloco F COMPLETO 13/13). **Foco crucial**: produzir CONTEÚDO MKT educational sobre atas reuniao + relatorios executivos + board reports + annual reports + investor relations corporativos — **NÃO substitui Corporate Secretary/Board Secretary + advogado societário + investor relations specialist + ESG consultant**. **8 fundações + aplicação**:
+
+- **Fundação 1 — Corporate Meeting Minutes 2026 AI revolution**: AI meeting minutes search **+900% YoY** early 2026; **66% directors use AI for board work** + 40% want AI access + **22% formal AI governance** (gap 45 pontos critical); 2 categorias tools — general transcription (Otter+Fireflies+Notion AI inadequate boards) vs purpose-built governance (Diligent Smart Minutes+Board Intelligence+BoardBreeze structured summaries+resolutions+legal format); **4 pillars AI confidentiality** (governance-specific+SOC 2 + mandatory human review Corporate Secretary signs + automatic deletion raw audio post-approval + director recording disclosure consent); efficiency gains documented (governance teams **10h/typical board meeting** writing + AI 60-70% reduction).
+
+- **Fundação 2 — Board Meeting Minutes Lei 6.404 + best practices**: importância legal (official corporate record + director liability protection + compliance audit + litigation defense); BR specific (**Lei 6.404/76 Sociedades Anônimas** atas mandatory + **CVM Resolution 80/2022** listed companies + Junta Comercial); **8 elementos obrigatórios** (meta-information+attendees+agenda items+discussion summary NOT verbatim+resolutions specific wording vote count+action items owner deadline+next meeting+sign-off chair+secretary); **5 items NOT to record** litigation risk (verbatim director quotes+privileged legal advice details+personal director conflicts+strategic plans premature+sensitive personnel HR investigations).
+
+- **Fundação 3 — Executive Reporting + Board Reports 2026**: stats macro (**56% directors wish forward-looking focus** + 70% boards digital tools + 35% AI integrated + 38% directors AI deployment top priority + 42% directors technology adoption major investment); **SEC reporting reform proposal** semiannual (75-year framework reform pending); **8 sections standard board report** (executive summary+financial performance+operational metrics+strategic initiatives+risks compliance+people culture+ESG sustainability+appendices); forward-looking vs backward-looking shift (reduce historical financial deep-dive+increase scenario planning+AI strategic+CEO succession).
+
+- **Fundação 4 — Annual Reports + ESG Disclosure 2026**: **ESG mandatory shift** narrative-heavy → measurable metrics + SOX-style internal controls (traceability+documentation+sign-off) + **Limited assurance Scope 1+2 emissions normalizing** + ISSB-aligned reports 2026 Australia+Hong Kong+Malaysia+Singapore largest listed; **ESG data lineage market $1.68B 2025 → $2.05B 2026** +22%; global regulatory fragmentation best practice **NOT one report per jurisdiction** mas **ONE internal truth system + export formats**; ISSB IFRS S1+S2; **8 sections annual report** (letter stakeholders+business overview+financial highlights+ESG sustainability+governance+risk factors+audited financials+compliance legal).
+
+- **Fundação 5 — AI Tools Meeting Transcription 2026**: top general transcription (Otter.ai real-time collaboration king + "Otter Channels" Slack-like + creative teams brainstorming; Fireflies.ai CRM automation king + "Fred" Salesforce/HubSpot/Slack native + revenue teams; Notion AI knowledge base embedded + Notion power users; Mem.ai+Reflect+Fathom+Grain+TL;DV+Notta); **purpose-built governance** (Diligent Smart Minutes + Board Intelligence + BoardBreeze + Nasdaq Boardvantage); **Meeting Intelligence Platform 2026 standard** beyond transcription (extract sentiment+CRM entries+seamless interoperability); productivity impact **18 hours/week meetings + 74% follow-up admin reduction**.
+
+- **Fundação 6 — LGPD 2.0 + AI Governance Brasil 2026**: **LGPD 2.0 transition educational → rigorous posture** + ANPD able apply higher cumulative fines especially sensitive data large volumes; **AI Law Project + algorithmic governance** walking together (companies AI sem structured governance = regulatory risk zone); compliance digitalization shift reactive manual → intelligent automated monitorable governance + consolidated platforms (digital channels+policy approval+training+risk management dashboards+automated documentation); AI investments BR exceed **US$ 3.4B 2026 +30% YoY**; risk analysis transforms LGPD into real practice + SOX-style.
+
+- **Fundação 7 — Investor Relations + Quarterly Communications**: forward-looking communications > backward; AI integration disclosure mandatory; ESG materiality focus; transparency stability post-2023 layoffs; **5 sections standard earnings call** (opening remarks CEO+financial review CFO+strategic update+Q&A analysts+closing); **pay-for-performance disclosure 2026 5-year** vs 3-year shift + time-based equity considered positive.
+
+- **Fundação 8 — Aplicação content MKT**: **4 audiências** (Corporate Secretaries/Board Secretaries LinkedIn + agencies B2B governance tech vendors Diligent/Board Intelligence/BoardBreeze + ecossistema IBGC/ABRAPS/ABRASCA/IBRI BR + thought leaders corporate governance ex-Corporate Secretaries); cross-pollination **Atas+Jurídico/IA/Negócios/Financeiro/Fiscal/RH/ADM = 35-65% engagement lift** (max 65% Atas+Jurídico governance+jurídico overlap maior + 60% Atas+IA governance+AI sofisticados); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (AI meeting minutes governance post + Board minutes structure post + ESG mandatory disclosure post); disclaimer mandatory (geral + compliance LGPD+Lei 6.404+CVM+ISSB).
+
+- **18 Anti-patterns**: general transcription Otter for boards inadequate + AI meeting minutes sem governance (66% usage / 22% formal) + verbatim quotes board minutes litigation + privileged legal advice detailed waiver + strategic plans premature M&A leak + backward-looking 56% directors want forward + ESG narrative-heavy vs measurable + multiple jurisdiction reports vs one truth + SEC quarterly assumed (semiannual pending) + AI confidentiality ignored boards + no mandatory human review AI minutes + raw audio retained post-approval + no director recording disclosure consent + LGPD 2.0 educational mindset (rigorous shift) + 3-year pay-for-performance assumed (5-year shift) + AI investments NOT disclosed (38% top priority) + ISSB ignored BR + 18 hours/week meetings sem AI tools.
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~40 referências (Diligent + AGB + BoardBreeze + Board Intelligence + Directors&Boards + Diligent Corporate Governance + EY + SEC + Farient + Vantedge + Covington Burling + Russell Reynolds + Corporate Board Member + PwC + Paul Hastings + ESG Dive + ERM + DFIN + Harvard Corp Gov + Newpolis + Freshfields + Hogan Lovells + SYS4B + Gopliance + LGPD2U + NDM + Decripte + Computer Weekly + Amblegis + UMEVO + Guideflow + Photes + ALM Corp + Convo + Broadridge + Baker Botts).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **Corporate Secretary listed company B3 Patricia 45 12 anos 2.500 followers** — 5 pillars AI meeting minutes + Board minutes Lei 6.404 + ESG mandatory + LGPD 2.0+AI BR + Cross-skill IA+Jurídico+Negócios; cadence 4-5 LinkedIn long-form + Substack + IBGC speaking; ROI 12m audience 2.500→7.000-10.000 Corporate Secretaries+GCs+CFOs;
+  2. **Agency MKT BH 4a 10 funcionários governance tech specialist BR** (Diligent BR/Board Intelligence/BoardBreeze potential clients; 4 pillars governance domain expertise + case studies ROI + industry deep dives BR + Corporate Secretary+GC+CFO buyer language; ROI 12-18m tier-up R$30k→R$80k+/mês deals);
+  3. **General Counsel midmarket BR Series B raised $25M ARR Roberto 42** — 5 pillars GC perspective board + AI governance gap + LGPD 2.0 critical + Lei 6.404 modernization + cross-skill jurídico/IA/negócios; build-in-public boundaries pre-Series C;
+  4. **Helena 55 ex-Corporate Secretary Fortune 500 BR + 25 anos governance + board member 4 author book "Governança Corporativa Brasil 2027" mid-2027 + courses paid 8.000 followers** — 6 eixos academic+accessible bridge — frameworks proprietários 5-7 (Helena Method governance + board minutes BR + ESG ISSB BR + AI governance + IPO prep + crisis management) + corporate governance 2026 trends + LGPD 2.0+AI Law analysis + cross-pollination + BR-specific + book launch sequence; ROI 18m audience 8.000→18.000-25.000 + email 4-7k + livro 5-12k cópias.
+
+### Bloco E Documentos Corporativos 1/2
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | **`atas-relatorios-corporativos`** | **✅ v2.14.0 (NOVA — 1.073 linhas, medium)** |
+| 2 | `comunicacoes-corporativas` | ⏸️ Próxima |
+
+### Estatísticas globais
+
+- **47 skills implementadas / 63.625 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **22 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- **🎉 8 BLOCOS COMPLETOS** + Bloco E Documentos Corporativos 1/2
+
+### Próxima skill (Bloco E filha 2/2)
+
+- `comunicacoes-corporativas` — 2ª SKILL Bloco E — comunicações internas/externas + crisis communication + investor relations + employer brand corporate. Fechará Bloco E 2/2.
+
+---
+
 ## 2.13.0 (2026-05-08) — 🎉 MILESTONE Bloco F COMPLETO 13/13 — `dominio-iot-mkt` (ÚLTIMA filha)
 
 ### 🎉 MILESTONE: Bloco F Domínio Vertical EXPANDIDO COMPLETO
