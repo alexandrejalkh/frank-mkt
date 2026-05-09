@@ -178,7 +178,8 @@ frank-mkt-plugin/
 | `dominio-financeiro-mkt` (9ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.447 | **medium (6 meses)** |
 | `dominio-fiscal-mkt` (10ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.379 | **high (3 meses)** |
 | `dominio-adm-mkt` (11ª filha Bloco F) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.250 | **medium (6 meses)** |
-| **Bloco F Domínio Vertical EXPANDIDO (em construção)** | **🔄 12/13** (mãe + 11 filhas + 1 planejada — última iot) | **17.405** | — |
+| `dominio-iot-mkt` (12ª filha Bloco F — ÚLTIMA, M5 Stack inside) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.451 | **medium (6 meses)** |
+| **🎉 Bloco F Domínio Vertical EXPANDIDO COMPLETO** | **✅ 13/13** (mãe + 12 filhas implementadas) | **18.856** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

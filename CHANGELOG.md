@@ -1,5 +1,100 @@
 # Changelog — Frank MKT
 
+## 2.13.0 (2026-05-08) — 🎉 MILESTONE Bloco F COMPLETO 13/13 — `dominio-iot-mkt` (ÚLTIMA filha)
+
+### 🎉 MILESTONE: Bloco F Domínio Vertical EXPANDIDO COMPLETO
+
+**1 mãe + 12 filhas implementadas** em uma sessão maratona 2026-05-08:
+
+| # | Skill | v | Linhas | Volatility |
+|---|-------|---|--------|------------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | 2.1.0 | 1.347 | low |
+| 1 | `dominio-ti-mkt` | 2.2.0 | 1.533 | medium |
+| 2 | `dominio-juridico-mkt` | 2.3.0 | 1.688 | high |
+| 3 | `dominio-empreendedorismo-mkt` | 2.4.0 | 1.452 | medium |
+| 4 | `dominio-negocios-mkt` | 2.5.0 | 1.659 | medium |
+| 5 | `dominio-ia-mkt` (skill-MÃE IA) | 2.6.0 | 1.557 | high |
+| 6 | `tecnicas-ia-claude-gemini-mkt` (material user) | 2.7.0 | 1.403 | medium |
+| 7 | `dominio-rh-mkt` | 2.8.0 | 1.419 | medium |
+| 8 | `dominio-dp-mkt` | 2.9.0 | 1.271 | high |
+| 9 | `dominio-financeiro-mkt` | 2.10.0 | 1.447 | medium |
+| 10 | `dominio-fiscal-mkt` | 2.11.0 | 1.379 | high |
+| 11 | `dominio-adm-mkt` | 2.12.0 | 1.250 | medium |
+| 12 | **`dominio-iot-mkt`** | **2.13.0** | **1.451** | **medium** |
+
+**Total Bloco F**: 13 skills / 18.856 linhas.
+
+### Adicionado
+
+- **Skill `dominio-iot-mkt`** (`skills/dominio-iot-mkt/SKILL.md`, **1.451 linhas**, volatility **`medium` (6 meses)** — IoT foundations estáveis MAS aplicação 2026 deslocando rapidamente: AIoT convergence + ambient IoT (Walmart) + Smart Packaging 4.0 + edge AI 88% latency reduction + brand activations evolving + Brasil 88,5% expansão MAS desafio escala, **pesquisa de campo** — 6 web searches em 2026-05-08: IoT marketing 2026 ambient sensors brand activation retail + M5 Stack ESP32 development boards prototyping + smart packaging IoT QR NFC consumer engagement digital twin + IoT AI convergence edge computing predictive analytics + interactive installations brand activations technology experiential + IoT Brasil 2026 mercado adoção indústria 4.0. **🎉 12ª FILHA Bloco F = ÚLTIMA, fecha 13/13**. **Foco crucial**: produzir CONTEÚDO MKT educational sobre IoT applications + M5 Stack prototipagem + ambient marketing + smart packaging + AIoT + brand activations interativas — **NÃO substitui consultoria IoT/embedded engineer + AIoT specialist + smart packaging consultancy + brand activation agency**. **8 fundações + aplicação**:
+
+- **Fundação 1 — IoT Marketing 2026 Ambient IoT**: stats macro (IoT retail $66B 2024 → $230B 2032; IoT retail sector $57.30B 2025 → **$350.85B 2032**); **ambient IoT paradigm shift** (Wiliot stamp-sized devices + bluetooth + **self-generating power harvest radio energy NO BATTERIES** + inexpensive); **Walmart deployment 2026** millions ambient IoT sensors pallets supply chain + **first large-scale deployment ambient IoT retail** + nationwide expansion 2026; 3 categorias applications (hyper-targeted indoor experiences **indoor positioning 10cm accuracy 2026** + smart shelving+inventory replenishment + customer behavior insights heatmaps); ambient marketing IoT-enabled (smart products tracking usage + smart home consumer behavior + connected packaging post-purchase + wearables fitness/wellness real-time).
+
+- **Fundação 2 — M5 Stack ESP32 inside USER-MENTIONED FOCUS**: M5Stack open-source modular toolkits IoT ESP32 (stackable modules + 4 frameworks + rapid prototyping + production-ready); product lines (**Core2** ESP32-D0WDQ6-V3 dual-core LX6 240MHz + 2-inch capacitive touch + Wi-Fi + battery+speaker+microphone; **Tough** industrial-grade dual-core LX6 240MHz + IP67 dustproof+waterproof + industrial field control+smart buildings+outdoor; **Basic Core** ESP32 + 16MB FLASH + 2-inch IPS + speaker+TFCard entry-level; **ATOM** compact embedded; **Stick** portable wearable); **4 frameworks**: Arduino IDE C/C++ familiar + UIFlow visual blocks Scratch-like rapid prototyping + ESP-IDF native maximum control production-grade + MicroPython faster development; **6 use cases**: education+STEM + industrial HMI + IoT product development + smart home+ambient + wearables+portable + brand activations+experiential; comparison alternativas (M5 Stack modular+display+casing pros vs higher cost+ecosystem; vs Raspberry Pi Linux+ecosystem mas higher power+cost; vs Arduino bare ESP32 lowest cost+flexibility mas more wiring; vs Particle.io cloud commercial-grade mas subscription; vs Adafruit Feather quality+docs mas less integrated displays).
+
+- **Fundação 3 — Smart Packaging 2026 RFID+QR+NFC+IoT**: market $20.26B 2025 → **$29.95B 2034** ~50% growth decade; **Smart Packaging 4.0** material-based sensors + cyber-physical systems convergence + IoT+RFID+NFC embedded + transform physical/chemical signals → digital data; **4 tecnologias**: RFID long-distance 10m+ bulk reading **Walmart 2026 millions deployment** + QR codes universal smartphone+trackable+sustainability info + **NFC tags tap-to-connect NO APP DOWNLOADS** instant access $0.10-1/tag UI bridge product→user + IoT sensors temperature monitoring cold chain pharma+food+humidity+shock+tamper-evidence+active GPS tracking; **5 use cases consumer brands**: authenticity verification anti-counterfeit (LV+Hermes+Rolex pharma), brand storytelling immersive AR experience+sustainability+behind-scenes, loyalty+rewards NFC scan→points+reorder+personalized offers, supply chain transparency multi-tier Uyghur+EU compliance, cold chain+safety pharma+food FEFO data-driven logistics.
+
+- **Fundação 4 — AIoT Convergence 2026 CRITICAL**: KaaIoT thesis AIoT defines industrial+healthcare+energy+smart cities real time; **Brasil integração IoT+IA lidera 67,2%** transformação setor; **edge AI revolution 2026**: edge AI chipsets reduce latency+energy **88%** + immediate on-device inference + minimize cloud dependency + hybrid cloud-edge architectures **23.9% CAGR** + distributed intelligence > centralized; **predictive maintenance + anomaly detection STANDARD IIoT 2026** ML models learn "normal" each machine context + flag deviations + **edge predictive maintenance 25-30% downtime reduction**; **digital twins** virtual replicas + simulation+optimization+predict outcomes before real-world; **OT+IT convergence** breaking traditional silos + integrate shop-floor+ERP+supply chain + end-to-end visibility.
+
+- **Fundação 5 — Brand Activations Interativas 2026**: market $86.66B + 5.28% CAGR; AI-powered personalization real-time (events adapt attendee behavior+preferences+movement patterns); **5 formats interactive installations**: motion/gesture walls full-body reactive Kinect-style + product-triggered RFID/NFC/QR bridge merchandise→digital storytelling + immersive environments projection mapping+sensory + VR/AR experiences + IoT sensor-driven ambient environmental responses; **always-on experience ecosystems** beyond isolated event (VR walkthroughs + AR layers + recap + press kits continue post-teardown); examples Coachella+SXSW+Starbucks reactive lighting+sound+LED transformations; **M5 Stack DIY brand activations** rapid prototyping accessible + modular + Wi-Fi cloud built-in vs custom embedded $80-150k.
+
+- **Fundação 6 — Brasil IoT 2026 context-specific**: stats macro **88,5% profissionais projetam expansão IoT** (47,5% moderado + 41% acelerado); mercado **amadureceu tecnologicamente** mas desafio transformar capacidade → adoção/escala; setores principais **Indústria 4.0 lidera 17%** + utilities 15,1% + logística+transporte 13,2%; tendências tecnológicas **integração IoT+IA 67,2%** lidera transformação + expansão 5G + edge computing + regulamentação ANATEL; foco aplicações dados+análises preditivas 40% + eficiência operacional ROI driven; players BR (Pix Force IoT industrial + Mouts TI automação + Pahc Indústria 4.0 + Mind Group consultoria + EngDB engenharia + ABES+ABINEE associações) + multinacionais (Siemens BR + Schneider + Rockwell + Bosch + AWS IoT + Azure IoT); eventos (IoT Latin America + FIESP IoT + ABINEE Tec + Sebrae Indústria 4.0 + Futurecom + CIAB Febraban).
+
+- **Fundação 7 — Setor-specifico IoT applications 2026**: Manufacturing+Industry 4.0 (predictive maintenance 25-30% + quality control AI vision + asset tracking + energy optimization + worker safety wearables + OEE) + Retail+e-commerce (ambient IoT Walmart-style + smart shelves+replenishment + customer heatmaps + indoor positioning 10cm + smart fitting rooms + loss prevention) + Healthcare+Pharma (cold chain vaccines+medications + asset tracking medical equipment + patient monitoring wearables + smart packaging anti-counterfeit + drug authenticity + chronic conditions wearables) + Logistics+Supply Chain (GPS fleet+cargo + cold chain + last-mile delivery + theft detection + predictive ETA + multi-tier transparency) + Smart cities+Utilities (smart lighting + traffic management + water leak detection + air quality + smart parking + waste optimization) + Agriculture+AgTech (soil moisture + weather stations + livestock tracking + precision agriculture drones + greenhouse + Brazilian agribusiness leadership LatAm).
+
+- **Fundação 8 — Aplicação content MKT**: **4 audiências detalhadas** (CTOs/Heads-of-IoT construindo audiência LinkedIn + agencies B2B servindo IoT vendors Wiliot+M5 Stack+AWS IoT+Azure IoT+Twilio+Pix Force BR + ecossistema IoT BR FIESP/Sebrae/ABINEE/ABES + thought leaders IoT/AIoT); cross-pollination matrix IoT+IA/ADM/TI/Jurídico/Empreendedorismo/Negócios/Financeiro/Fiscal/RH/DP = **30-65% engagement lift** (max 65% IoT+IA AIoT 67,2% BR + 60% IoT+TI developer + 55% IoT+ADM supply chain); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (AIoT predictive maintenance ROI post + M5 Stack rapid prototyping post + Smart Packaging consumer engagement post); disclaimer mandatory (geral + compliance LGPD+ANATEL+ANVISA).
+
+- **18 Anti-patterns**: generic IoT sem updates trimestral + AIoT hype sem ROI documented + ambient IoT confusion regular IoT (stamp-sized+no batteries differentiator) + M5 Stack vs custom embedded confusion (prototyping vs production) + NFC vs QR confusion (tap-to-connect no apps) + smart packaging hype sem LGPD+ANVISA + edge AI dismissed paradigm shift real + predictive maintenance overclaimed sem 25-30% evidence + digital twins hype sem use case + brand activation budget custom $80-150k vs M5 Stack $12-30k + AI personalization ignored events + Brasil context ignored 88,5%+17%+67,2% + 5G dependency ignored massive + LGPD IoT data privacy ignored + ANATEL homologação BR-specific + Manufacturing OEE ignored Industry 4.0 + OT+IT convergence ignored breaking silos + always-on ecosystems vs isolated event.
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~50 referências (Shopify+Emerline+Wiliot+Fortune Business Insights+Fast Company+Mobidev+Brand Pulse+Metadesk+M5Stack+ESPboards+Circuit Digest+Packnode+Towards Packaging+Ficuspax+Wiley+RFIDhy+RT Insights+ManufactureNow+IoT Business News+KaaIoT+MachineCDN+ZEDEDA+Julia Charles+iDEKO+Interactive Dallas+Utsubo+One Show+Event Marketer+BizBash+TI Inside+DocManagement+Mundo Marketing+Pahc+ABES+Mind Group).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **CTO IoT scale-up B2B BR manufacturing predictive maintenance Series A raised $15M ARR Roberto 38 3.500 followers** (5 pillars AIoT convergence+edge AI + Manufacturing 4.0 frameworks + Cross-skill IA+ADM+TI + Brasil IoT context + Industry thinking; build-in-public boundaries pre-Series B; ROI 12m audience 3.500→10.000-15.000 CTOs+IoT specialists+manufacturing leaders);
+  2. **Agency MKT BH 5a 12 funcionários IoT specialist BR** (Pix Force/Mouts TI/Pahc Automação/EngDB clients potential + multinacionais Siemens BR/AWS IoT; 4 pillars IoT domain expertise fluency + Case studies IoT ROI + Industry deep dives BR + CTO+IoT engineer+manufacturer buyer language; ROI 12-18m tier-up R$40k → R$100k+/mês deals);
+  3. **Brand consumer healthtech BR $120M revenue activation Coachella/SXSW/Lollapalooza Marketing director Mariana 36** (5 pillars IoT-powered brand activations + M5 Stack DIY + Smart Packaging NFC + AIoT consumer experiences + Healthcare regulated context LGPD Art 11+ANVISA cross-skill jurídico; pre-event teaser + during event live + post-event recap content; positioning niche underserved BR consumer brands+IoT angle);
+  4. **Marcelo 54 ex-CTO Fortune 500 manufacturing 15 anos + ex-CTO scale-up IoT exit acquisition $250M 2024 board 4 advisor 8 author book "AIoT Brasil 2027" + courses paid 12.000 followers** (6 eixos academic+accessible bridge — Eixo 1 frameworks proprietários 5-7 (Marcelo Method scale-up IoT manufacturing + AIoT integration BR roadmap + Edge AI ROI predictive maintenance + Smart Packaging healthcare regulated + M&A IoT BR-LatAm + Hardware vs cloud OPEX) viram capítulos livro + Eixo 2 AIoT 2026 trends deep dive + Eixo 3 Brasil IoT ecosystem deep + Eixo 4 Cross-pollination Bloco F + Eixo 5 Smart packaging+brand activations + Eixo 6 personal brand+book launch sequence; cadence 5-8 LinkedIn carousels 60% + Substack + Medium English + speaking 2-3/quarter IoT Latin America+FIESP+Futurecom+ABINEE+IoT World global; ROI 18m audience 12.000→25.000-35.000 + email 4-8k subscribers + livro 6-15k cópias 12m + workshops+consulting+speaking sustainable; differentiating ex-CTO Fortune 500 + IoT scale-up exit + 30 anos = RARE combination + AIoT 2026-2027 momentum unique decade-defining).
+
+### 🎉 MILESTONE Bloco F Domínio Vertical EXPANDIDO 13/13 COMPLETO
+
+| # | Skill | v | Linhas | Volatility |
+|---|-------|---|--------|------------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | 2.1.0 | 1.347 | low |
+| 1 | `dominio-ti-mkt` | 2.2.0 | 1.533 | medium |
+| 2 | `dominio-juridico-mkt` | 2.3.0 | 1.688 | high |
+| 3 | `dominio-empreendedorismo-mkt` | 2.4.0 | 1.452 | medium |
+| 4 | `dominio-negocios-mkt` | 2.5.0 | 1.659 | medium |
+| 5 | `dominio-ia-mkt` (skill-MÃE IA) | 2.6.0 | 1.557 | high |
+| 6 | `tecnicas-ia-claude-gemini-mkt` (material user) | 2.7.0 | 1.403 | medium |
+| 7 | `dominio-rh-mkt` | 2.8.0 | 1.419 | medium |
+| 8 | `dominio-dp-mkt` | 2.9.0 | 1.271 | high |
+| 9 | `dominio-financeiro-mkt` | 2.10.0 | 1.447 | medium |
+| 10 | `dominio-fiscal-mkt` | 2.11.0 | 1.379 | high |
+| 11 | `dominio-adm-mkt` | 2.12.0 | 1.250 | medium |
+| 12 | **`dominio-iot-mkt`** | **2.13.0** | **1.451** | **medium** |
+
+### Estatísticas globais
+
+- **46 skills implementadas / 62.552 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **21 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- **🎉 8 BLOCOS COMPLETOS**: 7 blocos principais + Bloco F Domínio Vertical EXPANDIDO **13/13**
+
+### Próximos blocos pendentes
+
+Após Bloco F completo, blocos restantes:
+- Bloco E Documentos Corporativos (2 skills)
+- Pesquisa & Inteligência de Mercado (6 skills)
+- Copy & Redação (4 skills)
+- UX/UI (4 skills)
+- Conhecimento de Plataforma (6 skills)
+- Corporativo & Humanitário (6 skills)
+- Meta-skill (1 skill)
+- Infraestrutura slash commands (8 skills)
+- Agentes (14 agentes)
+
+---
+
 ## 2.12.0 (2026-05-08) — Bloco F Domínio Vertical 12/13 — `dominio-adm-mkt`
 
 ### Adicionado
