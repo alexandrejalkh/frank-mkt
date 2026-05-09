@@ -1,5 +1,95 @@
 # Changelog — Frank MKT
 
+## 2.25.0 (2026-05-09) — 🎉🎉🎉🎉 MILESTONE 12 BLOCOS COMPLETOS — Bloco Copy & Redação FECHADO 4/4 (4 skills paralelas)
+
+### Adicionado em paralelo (4 agentes simultâneos — 2ª paralelização do plugin)
+
+**Estratégia de paralelização** validada novamente após sucesso v2.24.0. Brief prescritivo para cada agente (template + 6 search topics + tamanho 700-900 + ASCII PT-BR + cross-skill refs + estrutura 8 fundações + 18 anti-patterns + 18 Regras + 4 exemplos + checklist + ~50-70 referências). 4 SKILL.md criados em paralelo + validação estrutural pós-retorno + correção manual onde agentes usaram template alternativo (email-marketing e redacao-publicitaria receberam adição manual de seções "18 Regras de Ouro" + "Exemplos Comportamentais" para alinhar com template padrão).
+
+#### 1. Skill `copywriting-conversao` (1ª SKILL Bloco Copy & Redação)
+
+(`skills/copywriting-conversao/SKILL.md`, **776 linhas**, volatility **medium (6 meses)**, 6 web searches: copywriting frameworks AIDA/PAS/BAB + LP conversion + Schwartz long-form + ads copy + Brasil Maccedo/Jobim + neuromarketing Cialdini). **8 fundações 2026**:
+
+- Frameworks Clássicos Conversão (AIDA Lewis 1898 + PAS + BAB + 4Ps + Schwartz 5 awareness levels)
+- Headlines + Hooks (Ogilvy 80% rule + Caples 8 types + Hopkins specificity + Sugarman slippery slide)
+- Long-form Sales Page (Schwartz + Sugarman + 21-step framework)
+- Landing Page Copy 2026 (LIFT model + 4.02% mediana CVR + 11.45% top 25% + 13.5% single CTA vs 10.5% multi = 29% lift + 12-element framework + mobile-first)
+- Ads Copy 2026 (Google RSA CTR 3-5% + Meta 0.90% + LinkedIn 0.44-0.65% + Quality Score 10 = 50% economia CPC + Carousel 2x CTR + LinkedIn Lead Gen 6.1% CVR)
+- Brasil 2026 (Paulo Maccedo 16M+ vendidos + Iuri Jobim Comunidade Copywriting + Erico Rocha PLF + Conrado Adolpho 8Ps + Hotmart R$ 5+ bi mercado + LGPD/CONAR/CDC)
+- Mensuração + A/B Testing (bayesian vs frequentist + Optimizely/VWO/GrowthBook substituindo Google Optimize descontinuado)
+- Aplicação MKT 5 audiências
+
+4 exemplos: Founder pre-Series A + CMO B2B SaaS + Copywriter freelancer + Performance marketer.
+
+#### 2. Skill `storytelling` (2ª SKILL Bloco Copy & Redação)
+
+(`skills/storytelling/SKILL.md`, **1.809 linhas**, volatility **medium (6 meses)**, 6 web searches: Hero Journey Campbell + StoryBrand Donald Miller + Pixar Story Spine + Brand storytelling cases + Brasil narrativas + Case study B2B). **8 fundações 2026**:
+
+- Hero Journey Campbell 1949 monomyth (12 stages Vogler + Star Wars/Matrix/LOTR)
+- StoryBrand Donald Miller 2017 SB7 (character=hero + problem 3-layer + guide=brand + plan + CTA + success + failure + "if you confuse you lose" + 95% B2B confusos)
+- Pixar Story Spine (Kenn Adams 1991 + "because of that" causalidade) + Vonnegut 6 emotional arcs (MIT Computational Story Lab 1.327 books: Rise/Fall/Man-in-Hole/Icarus/Cinderella/Oedipus)
+- Brand Storytelling iconicos (Apple Think Different 1997 + Nike Just Do It 1988 + Patagonia "Don't Buy This Jacket"/Worn Wear + Dove Real Beauty 22 anos arc Evolution/Sketches + Liquid Death Outlaw + Stanley viral)
+- Cinematic Copywriting (3-act structure + Show vs Tell + 5 sensory + dialogue + tension + transformation)
+- Brasil 2026 storytelling (Magalu Lu 30+ anos + Natura "Bem Estar Bem" 57 anos + Nubank Anti-Banco IPO NYSE + Itaú + Casas Bahia jingle + Boticário + Havaianas + Guaraná + 5 sensibilidades culturais BR: WhatsApp-first/jeitinho/família/saudade/regional)
+- Case Study B2B SaaS (customer-as-hero formula 7 stages + authenticity over polish 2026 +37%)
+- Aplicação MKT 5 audiências + 3 templates operacionais (About Us page Pixar spine + Founder LinkedIn pinned post Man-in-Hole + Email nurture 5-email Pixar sequence)
+
+4 exemplos: B2B SaaS brand foundation + case study Magalu BR + founder LinkedIn Man-in-Hole pinned + DTC Outlaw BR Gen Z 2026.
+
+#### 3. Skill `email-marketing` (3ª SKILL Bloco Copy & Redação)
+
+(`skills/email-marketing/SKILL.md`, **1.607 linhas**, volatility **medium (6 meses)**, 6 web searches: email strategy + deliverability SPF/DKIM/DMARC + benchmarks + plataformas + Brasil RD Station/E-goi + cold outreach B2B). **8 fundações 2026**:
+
+- Email Marketing ROI Foundations (DMA $36 ROI per $1 + #1 marketing channel + lifecycle stages awareness/nurture/conversion/retention/winback)
+- Deliverability 2026 (SPF + DKIM + DMARC + BIMI + Gmail/Yahoo Feb 2024 → Nov 2025 enforcement rejeição ativa + warmup domínio 4-6 semanas + Postmaster Tools + IP dedicado vs shared)
+- Email Types (newsletter + drip + nurturing + transactional + promotional + behavioral + re-engagement + abandoned cart)
+- Subject Lines + Open Rates (curiosity gap + personalização first-name -50% effective vs old days + emoji 1 max + length 30-50 chars + benchmarks B2B 21.5%/B2C 19.7%/SaaS 21.3%)
+- Body Copy + CTAs + A/B Testing (single CTA primary Hick's law + plain-text-styled B2B + visual rich B2C + bayesian vs frequentist + sample size 5k+ CTR test)
+- Brasil 2026 (8 plataformas: RD Station market leader B2B + E-goi multicanal + MailerLite simplicidade + Brevo high-volume + Klaviyo ecommerce + ActiveCampaign automation + HubSpot all-in-one + Mailchimp pioneer + LGPD bases legais + double opt-in mercado regulado + sanções ANPD reais)
+- Cold Email Outreach B2B (queda reply rate ~7% → 1-5% medio + 3-email sequence canônica hook+reframe+breakup + multi-channel sweet spot 8-12 touchpoints + intent-based personalization 5min pesquisa = 3-5x reply rate)
+- Aplicação MKT 5 audiências (founder bootstrapping + CMO B2B mid-market + lifecycle ecommerce + creator newsletter + founder regulado Brasil)
+
+4 exemplos: Founder Marina FoodTech + CMO Bruno B2B SaaS Series C + Lifecycle Carla DTC ecommerce + Founder Daniel Healthtech LGPD-first.
+
+#### 4. Skill `redacao-publicitaria` (4ª SKILL Bloco Copy & Redação — ÚLTIMA, FECHA BLOCO)
+
+(`skills/redacao-publicitaria/SKILL.md`, **1.893 linhas**, volatility **medium (6 meses)**, 6 web searches: redação publicitária classics + Cannes Lions 2026 + Wave Festival Brasil + redatores Olivetto/Nizan + slogan/jingle frameworks + print/outdoor/radio/TV). **8 fundações 2026**:
+
+- Redação Publicitária vs Copywriting Conversão (distinção crítica brand/awareness/emotional vs direct response/conversion + Binet/Field IPA 60/40 regra + tabela completa quando usar cada)
+- Bernbach DDB Creative Revolution 1960s (5 revolutions + Volkswagen "Think Small" 1959/Lemon/Avis "We Try Harder") + Ogilvy (11 rules + Hathaway/Rolls/Dove) + Leo Burnett (inherent drama + Marlboro/Tony Tiger) + Mary Wells (primeira mulher CEO + I Love NY)
+- Slogan + Tagline + Jingle Frameworks (Apple "Think Different" + Nike "Just Do It" + L'Oréal "Because You're Worth It" + 5 frameworks tagline positioning/adjective/command/paradoxo/cultural hook + tagline anatomy 3-7 palavras + memorável + diferenciador + ownable)
+- Print + Outdoor (one-page anatomy + visual hierarchy 3 níveis + headline + body + CTA + brand mark + OOH max 6-8 palavras + Volkswagen "Think Small" 1959 DDB + Absolut Vodka 25 anos)
+- Radio + TV + Audio (jingles + voice + script frameworks + 30s/60s formats + sonic branding 5 elementos: jingle/sonic logo/voice/sound effects/music bed + cases Intel bong + Netflix tudum + Coca-Cola jingles +50 anos + CTV skip-friendly era)
+- **Brasil 2026** (Washington Olivetto W/Brasil — Primeiro Sutiã/Garoto Bombril/Casal Unibanco/Hitler Folha + Nizan Guanaes DM9/ABC/Africa + Marcelo Tas + Luiz Sanches Almap BBDO + safra atual Roberto Pereira/Eduardo Lima/Sergio Valente/Keka Morelle/João Livi/GUT/David SP/VML + 14 cases BR icônicos + Magazine Luiza Lu narrative + Itaú "Feito Para Você" + Brahma "Refrescante" + Skol jingle + Boticário campanhas décadas)
+- Premiações 2026 (Cannes Lions Grand Prix Three Words/Sounds Right/Caption/Shot on iPhone + AB InBev 3x Creative Marketer + Wave Festival Brasil + El Ojo Iberoamerica + Clio Awards + Effie Awards effectiveness + AMI/ABA/Caboré BR + calendário 2026)
+- Aplicação MKT 5 audiências (CMO + Redator senior + Diretor criação + Agência + Brand manager)
+
+4 exemplos: CMO Roberto B3 listed manifesto rebrand + Redator senior Lucas Cannes Lions submission + Diretor criação Patricia challenger DTC Outlaw + Brand manager Sofia jingle radio classic FMCG revival.
+
+### 🎉🎉🎉🎉 MILESTONE 12 BLOCOS COMPLETOS — Bloco Copy & Redação FECHADO 4/4
+
+| # | Skill | v | Linhas |
+|---|-------|---|-------:|
+| 1 | **`copywriting-conversao`** | **v2.25.0 (paralela)** | **776** |
+| 2 | **`storytelling`** | **v2.25.0 (paralela)** | **1.809** |
+| 3 | **`email-marketing`** | **v2.25.0 (paralela)** | **1.607** |
+| 4 | **`redacao-publicitaria`** | **v2.25.0 (paralela)** | **1.893** |
+| **TOTAL Bloco** | | ✅ **4/4 COMPLETO** | **6.085** |
+
+**12 BLOCOS COMPLETOS**: SEO 7/7 + Mídia Social 10/10 + Comunicação Visual & IA 4/4 + Multi-Platform 3/3 + Persuasão 2/2 + MKT Não-Tradicional 2/2 + MKT & Estratégia 5/5 + Bloco F EXPANDIDO 13/13 + Bloco E Documentos 2/2 + Pesquisa 6/6 + Corporativo & Humanitário 6/6 + **Copy & Redação 4/4**.
+
+### Estatísticas globais
+
+- **64 skills implementadas / 80.384 linhas totais**
+- 18 high (trimestral) + **39 medium (semestral)** + 7 low (anual)
+- **12 BLOCOS COMPLETOS** (64 das ~83 skills planejadas — **77% concluído**)
+
+### Próximo
+
+Após Bloco Copy & Redação COMPLETO 4/4, blocos restantes: UX/UI 4 + Psicologia & Influência 3 + Conhecimento Plataforma 6 + Meta-skill 1 + MKT & Estratégia 2º lote 5 + Infraestrutura slash 8 + Agentes 14.
+
+---
+
 ## 2.24.0 (2026-05-08) — 🎉🎉🎉 MILESTONE 11 BLOCOS COMPLETOS — Bloco Corporativo & Humanitário FECHADO 6/6 (4 skills paralelas)
 
 ### Adicionado em paralelo (4 agentes simultâneos)

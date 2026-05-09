@@ -197,6 +197,11 @@ frank-mkt-plugin/
 | `terceiro-setor` (5ª SKILL Bloco Corporativo & Humanitário — paralela) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 837 | **medium (6 meses)** |
 | `empreendedorismo-impacto` (6ª SKILL Bloco Corporativo & Humanitário — ÚLTIMA paralela) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 879 | **medium (6 meses)** |
 | **🎉 Bloco Corporativo & Humanitário COMPLETO** | **✅ 6/6** (comunicacao-corporativa + employer-branding + comunicacao-crise + esg-comunicacao + terceiro-setor + empreendedorismo-impacto) | **5.462** | — |
+| `copywriting-conversao` (1ª SKILL Bloco Copy & Redação — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 776 | **medium (6 meses)** |
+| `storytelling` (2ª SKILL Bloco Copy & Redação — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.809 | **medium (6 meses)** |
+| `email-marketing` (3ª SKILL Bloco Copy & Redação — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.607 | **medium (6 meses)** |
+| `redacao-publicitaria` (4ª SKILL Bloco Copy & Redação — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.893 | **medium (6 meses)** |
+| **🎉 Bloco Copy & Redação COMPLETO** | **✅ 4/4** (copywriting-conversao + storytelling + email-marketing + redacao-publicitaria) | **6.085** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
