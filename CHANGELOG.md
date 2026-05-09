@@ -1,5 +1,74 @@
 # Changelog — Frank MKT
 
+## 2.15.0 (2026-05-08) — 🎉 MILESTONE 9 BLOCOS COMPLETOS — `comunicacoes-corporativas` (ÚLTIMA Bloco E)
+
+### 🎉 MILESTONE 9 BLOCOS COMPLETOS
+
+Esta release fecha **Bloco E Documentos Corporativos 2/2** + alcança **9 BLOCOS COMPLETOS** plugin Frank-MKT:
+- 7 blocos principais (SEO + Mídia Social + Comunicação Visual & IA + Multi-Platform + Persuasão + Não-Tradicional + Marketing & Estratégia).
+- Bloco F Domínio Vertical EXPANDIDO 13/13 (mãe + 12 filhas).
+- **Bloco E Documentos Corporativos 2/2** (atas-relatorios-corporativos + comunicacoes-corporativas).
+
+### Adicionado
+
+- **Skill `comunicacoes-corporativas`** (`skills/comunicacoes-corporativas/SKILL.md`, **874 linhas**, volatility **`medium` (6 meses)** — frameworks corporate communications foundational decadas (Edward Bernays + Grunig+Hunt + crisis models) MAS aplicação 2026 deslocando: AI integration PR 55% + IC identity crisis + crisis digital-first hours-not-days + IR reset year multi-channel + Workvivo Forrester Wave Leader, **pesquisa de campo** — 6 web searches em 2026-05-08: corporate communications 2026 trends + crisis communication 2026 strategy + internal communications 2026 platforms Workvivo + media relations PR 2026 AI press release + comunicacao corporativa Brasil 2026 + investor relations 2026 communications quarterly. **🎉 ÚLTIMA SKILL Bloco E — fecha 2/2** (irmã `atas-relatorios-corporativos` v2.14.0). **Foco crucial**: produzir CONTEÚDO MKT educational sobre comunicações corporativas internas + externas + crisis + IR + employer brand corporate level — **NÃO substitui PR agency + IC consultancy + crisis specialist + IR firm + ESG comms specialist**. **8 fundações + aplicação**:
+
+- **Fundação 1 — IC Role Shift 2026**: IC professionals 2026 stop identifying as **"communicators" → "organizational effectiveness"**; mediating function → guiding function; trust+transparency timely communication; consistent storytelling values+purpose+wins → culture lived experience; CEO+leadership storytelling **authenticity+accessibility+visibility**; AI+human paradox (AI tool NOT substitute, strategic work BEFORE first word); **data-driven measurement IC as marketing 2026**; **visual+asynchronous standard** (graphic designer first writer second); employee well-being integration burnout retention threat.
+
+- **Fundação 2 — IC Tools Landscape 2026**: **Workvivo Forrester Wave Leader 2026** (Zoom-powered, integrates IC+social+intranet, mobile design office+field, native 40+ tools Microsoft 365/Google Workspace/Zoom/Slack/BambooHR/Workday/ServiceNow); purpose-built (**Workvivo + Staffbase German leader + Blink frontline + Poppulo + PoliteMail + Sociabble**) > general; **Slack collaboration NOT IC** (no news feed/targeting/analytics/deskless); Microsoft Teams path of least resistance Microsoft 365 customers; **5 functions IC 2026** (two-way leadership/employees + experience+engagement + frontline+remote + measurement+analytics + strategic alignment).
+
+- **Fundação 3 — Crisis Communication 2026**: adaptable plan AI-enabled threats; **reputational risk doesn't wait business hours** (manipulated video+coordinated misinformation+viral posts escalate before leadership briefed); **time critical hours not days** (couple hours target); **cross-functional command center** (PR+marketing+legal+CS+technology) + pre-approved messaging + escalation tiers; **transparency+authenticity > silence/spin** (acknowledge issues early+empathy retain customer trust); channel matters as much as message; **7-step crisis playbook 2026** (1.Monitor+Alert 24/7 social+media+reviews / 2.Assess severity levels 1-5 / 3.Activate command center / 4.Investigate facts rapid+legal / 5.Communicate stakeholders hierarchy+channels / 6.Monitor sentiment real-time adjust / 7.Post-crisis review lessons+plan+recovery).
+
+- **Fundação 4 — Media Relations + PR 2026 AI-Driven**: **55% PR pros AI well integrated workflows** (Meltwater 2026 State of PR); spokesperson training mandatory leadership skill; **Muck Rack 2026 contradiction** — 86% journalists stories from PR pitch / 54% seldom respond pitches (gap = pitch quality issue); journalists want **clear beat relevance 70% + interview access credible sources 58% + original data/research 40%**; AI press releases (analyze trending+optimize+higher rankings); **2026 = course-correct AI slop** (AI editorial assistant NOT writer; human relatable authentic OR lost in sameness); 5 PR trends 2026 (earned media return + human storytelling comeback + AI mature NOT hype + cross-functional integration + measurement sophistication).
+
+- **Fundação 5 — Brasil Comunicação Corporativa 2026**: AI agents escala consolidating (assistentes compras IA); empresas dominam mensagens complexas → vídeos segundos sem perder profundidade; **personalização níveis inéditos** + **microcomunidades autênticas alto valor** (vs reach massivo); **WhatsApp+RCS conversacional dominante**; investimentos digitais BR **+5,2% 2025**; humanização+autenticidade combat ruído+build trust; stats macro **185 milhões usuários internet 86,9%** + **150 milhões redes sociais 70,4%**; players (CDN+Approach+Edelman BR+WeberShandwick+FleishmanHillard+InPress+Leadway+RP1) + ABRACOM+Aberje associações.
+
+- **Fundação 6 — Investor Relations 2026 Reset Year**: **2026 = "reset year" IR** (investor expectations changed); **90% companies fail connect IR + business strategy** + **61% buy-side investors want clearer strategy+KPIs+quarterly links**; old quarterly+conferences → **multi-channel presence** (webcasts+investor days+social+continuous communication); **Generative AI baseline tool** investors+analysts+journalists (materials machine-read structured); **equity story tied measurable evidence** (strategy explained in numbers vs polished messaging); digital-first continuous data-driven engagement systems; IR cost 2026 (small-cap $5-15k/mês + mid-cap $15-35k + large-cap $35-75k+).
+
+- **Fundação 7 — Employer Brand Corporate Level**: distinção crucial corporate vs RH operational (`dominio-rh-mkt` cobre RH operational); **CCO+CHRO joint ownership 2026** (NOT RH-only function); brand consistency external+internal critical; **crisis-resistant employer brand** (layoffs increased 2023-2025); Glassdoor+LinkedIn reviews public; internal-external alignment critical (mismatch detected immediately); cross-functional ownership (CCO+CHRO+CEO).
+
+- **Fundação 8 — Aplicação content MKT**: **4 audiências** (Heads-of-Comms LinkedIn CCOs/IC Directors/PR Directors/IR Heads + agencies B2B comms tech vendors Workvivo/Staffbase/Cision/Meltwater/Q4 Inc/Prezly/Brand24 + ecossistema ABRACOM/Aberje BR + thought leaders communications); cross-pollination **Comms+Atas/Jurídico/RH/IA/Financeiro/Negócios = 35-65% engagement lift** (max 65% Comms+Atas governance overlap + 60% Comms+Jurídico LGPD 2.0+crisis legal+ESG + 60% Comms+RH employer brand+Gen Z); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (IC identity crisis post + Crisis 7-step playbook post + IR reset year 2026 post); disclaimer mandatory.
+
+- **18 Anti-patterns**: IC identifying communicators vs organizational effectiveness 2026 + Slack as IC platform (collaboration NOT IC) + AI as writer (editorial assistant only) + crisis silence/spin (transparency wins) + crisis hours-then-days (hours not days) + crisis PR-only function (cross-functional command center) + generic message all channels (channel matters) + quarterly-only IR (multi-channel 2026) + AI hype IR materials (machine-read structured) + PR pitch volume (54% journalists ignore — quality beat relevance) + AI slop content (course-correct 2026) + spokesperson untrained (mandatory leadership skill) + employer brand RH-only (CCO+CHRO joint) + internal-external mismatch (alignment critical) + synchronous default (async non-urgent + sync high-impact) + writer-first IC (graphic designer first 2026) + quarterly-only investor (continuous engagement) + Brasil canais ignored (WhatsApp+RCS dominante).
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~50 referências (PoliteMail + Connected Company + Gallagher Employee Experience + Poppulo + Sociabble + IBM iX + Ragan + Redefining Comms + Cerkl + UPRAISE PR + Hootsuite + AKCG + Brand24 + Sprinklr + Prezly + WE Interactive + PR Newswire + Workvivo + Guideflow + Siit + Social Edge Consulting + Meltwater + LVB + RoseComm + BigFishPR + Global Results PR + PR Daily + Fletcher Group + Cision + Comunicação Integrada BR + Sing Comunicação + Agência VFR + Portal Comunicação + CMLO + Net2Phone + Sinch + Nasdaq + AMW + Q4 Inc + Sheet Venture + Blue Berry Share).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **CCO scale-up B2B SaaS healthtech BR Carla 44 Series C raised $25M ARR 200 employees 3.000 followers** — 5 pillars IC role shift+leadership storytelling + Crisis communication 2026 + IR pre-IPO prep + AI in comms + Brasil cross-skill; ROI 12m audience 3.000→9.000-13.000 CCOs+CHROs+CFOs+founders+boards; build-in-public boundaries pre-IPO;
+  2. **Agency MKT BH 5a 12 funcionários comms tech specialist BR** (Workvivo BR + Cision LatAm + Meltwater BR clients potential); 4 pillars resumidos (domain expertise + case studies ROI + industry deep dives BR + CCO+IC Director+PR buyer language); ROI 12-18m tier-up R$30k → R$80k+/mês deals;
+  3. **IR Director multinacional listed B3 Novo Mercado Lucas 47 $500M revenue 5.000 followers** — 5 pillars IR reset year + multi-channel + AI baseline + ESG materiality + cross-skill atas/financeiro/jurídico; ROI 12m audience 5.000→12.000-17.000;
+  4. **Ana 56 ex-CCO Fortune 500 BR retail 15 anos + advisor 8 + 25 anos comms virando author book "Comunicação Corporativa Brasil 2027" + courses paid 10.000 followers** — 6 eixos academic+accessible bridge — Eixo 1 frameworks proprietários 5-7 (Ana Method scale-up comms + crisis Brasil + IR pre-IPO + employer brand corporate + AI comms ethics + media training) viram capítulos livro + Eixo 2 IC role shift+leadership storytelling deep + Eixo 3 Crisis communication+AI threats analysis + Eixo 4 IR reset year+Brasil context + Eixo 5 cross-pollination Bloco E+Bloco F filhas + Eixo 6 personal brand+book launch sequence; cadence 5-8 LinkedIn carousels 60% + Substack + Medium English + 1-2 podcasts/mês + 2-3 keynotes/quarter ABRACOM+Aberje+Endeavor; ROI 18m audience 10.000→20.000-28.000 + email 4-7k subscribers + livro 5-12k cópias 12m + workshops+consulting+speaking sustainable.
+
+### 🎉 MILESTONE Bloco E Documentos Corporativos COMPLETO 2/2
+
+| # | Skill | v | Linhas | Volatility |
+|---|-------|---|--------|------------|
+| 1 | `atas-relatorios-corporativos` | 2.14.0 | 1.073 | medium |
+| 2 | **`comunicacoes-corporativas`** | **2.15.0** | **874** | **medium** |
+
+**TOTAL Bloco E**: 2 skills / 1.947 linhas.
+
+### Estatísticas globais
+
+- **48 skills implementadas / 64.499 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **23 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- **🎉 9 BLOCOS COMPLETOS plugin Frank-MKT**
+
+### Próximos blocos pendentes
+
+- Pesquisa & Inteligência de Mercado (6 skills)
+- Copy & Redação (4 skills) — copywriting-conversao + storytelling + email-marketing + redacao-publicitaria
+- UX/UI (4 skills)
+- Conhecimento de Plataforma (6 skills)
+- Corporativo & Humanitário (6 skills)
+- Meta-skill (1 skill)
+- Infraestrutura slash commands (8 skills)
+- Agentes (14 agentes)
+
+---
+
 ## 2.14.0 (2026-05-08) — Bloco E Documentos Corporativos 1/2 — `atas-relatorios-corporativos`
 
 ### Adicionado

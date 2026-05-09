@@ -181,7 +181,8 @@ frank-mkt-plugin/
 | `dominio-iot-mkt` (12ª filha Bloco F — ÚLTIMA, M5 Stack inside) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.451 | **medium (6 meses)** |
 | **🎉 Bloco F Domínio Vertical EXPANDIDO COMPLETO** | **✅ 13/13** (mãe + 12 filhas implementadas) | **18.856** | — |
 | `atas-relatorios-corporativos` (1ª SKILL Bloco E Documentos Corporativos) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 1.073 | **medium (6 meses)** |
-| **Bloco E Documentos Corporativos (em construção)** | **🔄 1/2** (1ª implementada + comunicacoes-corporativas pendente) | **1.073** | — |
+| `comunicacoes-corporativas` (2ª SKILL Bloco E — ÚLTIMA) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 874 | **medium (6 meses)** |
+| **🎉 Bloco E Documentos Corporativos COMPLETO** | **✅ 2/2** (atas-relatorios + comunicacoes) | **1.947** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
