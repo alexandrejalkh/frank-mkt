@@ -1,5 +1,69 @@
 # Changelog — Frank MKT
 
+## 2.12.0 (2026-05-08) — Bloco F Domínio Vertical 12/13 — `dominio-adm-mkt`
+
+### Adicionado
+
+- **Skill `dominio-adm-mkt`** (`skills/dominio-adm-mkt/SKILL.md`, **1.250 linhas**, volatility **`medium` (6 meses)** — frameworks ADM core estáveis (Lean Six Sigma 1986 + Porter 1979 + Strategic Sourcing 1990s + governance principles) MAS aplicação 2026 deslocando trimestral (AI integration supply chain+procurement+governance + ESG enforcement criminal investigations + facilities hybrid 80%+ + COO competency AI fluency mandatory + 55% orgs cut real estate 2025), **pesquisa de campo** — 6 web searches em 2026-05-08: corporate governance 2026 ESG board accountability + supply chain 2026 AI transformation resilience + procurement strategic 2026 vendor management + operations LSS continuous improvement digital + facilities hybrid workplace 2026 + COO LinkedIn 2026 thought leadership. **11ª FILHA Bloco F**. **Foco crucial**: produzir CONTEÚDO MKT educational sobre Administrativo (governance + supply chain + procurement + operations + facilities) — **NÃO substitui consultoria estratégica McKinsey/BCG/Bain ops + CPO/COO fractional + procurement consultancy + facilities IFMA**. **8 fundações + aplicação**:
+
+- **Fundação 1 — Corporate Governance 2026**: board accountability+transparency (skills matrices + individual director disclosure + proactive composition refresh) + **ESG landscape shifts** (political shifts opening door + transição broad commitments→implementation oversight + ESG compliance exercise → competitive differentiator) + **ESG enforcement crescendo 2026** (criminal investigations + litigation + enforcement actions multiple jurisdictions + regulators+prosecutors heightened scrutiny) + **AI governance emerging priority** (agentic AI compliance management + new governance risks + board-level oversight) + greenwashing scrutiny (clear metrics+verified data+transparency progress AND challenges).
+
+- **Fundação 2 — Supply Chain Management 2026**: shift fundamental AI hype/promise → **embed AI use cases proven returns daily operational** + AI in supply chain proof-of-concept → **embedded agentic capabilities core business processes** (2026 = "age of AI supply chain"); AI agents 2026 capabilities (identify risks+opportunities + propose workarounds + onboard suppliers + trigger corrective actions automatically); **"human plus machine" pattern** emerging (copilots repetitive analysis+data reconciliation; people exception management+strategic decisions); **Total Value > Resilience strategic shift** (resilience navigate disruption → Total Value enterprise-wide value maximization active pursuit); 5 trends operacionais (local-for-local production shorten supply chains+closer demand+AI insights + multi-tier transparency standard 2026 **Uyghur Forced Labor Prevention Act** + **EU Digital Product Passport** mandatory beyond tier-1 + centralization GBS Global Business Services + augmented connected workforce AI agents data+exception+routine + real-time visibility multi-tier dashboards).
+
+- **Fundação 3 — Procurement Strategic 2026**: digital procurement integrated platforms (cloud + automation + AI + analytics; transform tactical buying → **strategic business function**); strategic sourcing **total value > price** evaluation (risk + innovation potential + long-term alignment); vendor management lifecycle full (onboarding+qualification → performance monitoring → risk evaluation; centralized supplier databases + scorecards + compliance tracking); **cost optimization documented 2026**: **15-20% cost savings** vs traditional manual + **40% faster cycle times**; **AI-driven sourcing 20% cost savings lowest-risk highest-reward** AI applications enterprises; tools landscape (SAP Ariba enterprise leader + Coupa cloud-native + GEP SMART unified procurement+supply chain + Procol mid-market + Keelvar sourcing optimization auto-bots + Tradogram + Ivalua + Sievo+Spendkey+Workday Strategic Sourcing).
+
+- **Fundação 4 — Operations Management + Lean Six Sigma 2026**: Motorola 1986 origin + DMAIC framework (Define+Measure+Analyze+Improve+Control); **2026 prerequisite for AI** (prevent digital chaos; reduce variation+eliminate defects = AI prerequisite); LSS+digital transformation combination (digital tools detailed data+real-time insights; LSS techniques refine processes+reduce defects; together continuous improvement system → higher quality+lower costs+customer satisfaction); **82% Fortune 500 actively employing LSS** combat operational costs+supply chain volatility; new roles "**Digital Transformation Lead**" + "**Strategic Excellence Manager**" (intersection IT+Finance+Operations; process improvement mandatory prerequisite); DMAIC + Industry 4.0 advanced tools integration (IoT sensors+ML predictive+dashboards real-time).
+
+- **Fundação 5 — Facilities Management + Hybrid 2026**: **~80% occupiers hybrid policy** continuing + traditional one-desk-per-person planning DEAD; **building utilization rate 53%** highest pre-March 2020 (up from 38% 2024 / 35% 2023); **occupancy rate 111% all-time high** (more people allocated than physical seats — substantial increase from 101% 2024); **portfolio optimization top stated objective 2026** (55% organizations cut real estate footprints 2025); **utilization rate top goal 81% CRE teams** (most tracked 83% + most important 29% metric); data-driven decision making (sharing ratios informed 83% job functions + 78% space-utilization data + 68% supply/demand data); **space optimization cut 35% real estate** documented; tools (Skedda desk booking + Nuvolo CMMS+IWMS enterprise + OfficeSpace + Hubstar analytics + Robin hybrid + Hybrid Hero + Envoy + Condeco).
+
+- **Fundação 6 — COO LinkedIn content 2026**: COO public-facing role crescendo dramaticamente; **AI fluency + technology leadership non-negotiable COO competency** (boards expect COO lead AI+automation+technology investments+adoption); **COO + CFO board conversations EBITDA + margin compression + capital allocation**; LinkedIn algorithm formats ranking (carousels 278% more engagement than video + 596% more than text-only + short executive memo videos efficient transmission conviction); 5-pillar COO content framework (Pillar 1 Operations strategy POV sharp opinions+data-driven contrarian+predictions + Pillar 2 AI+technology adoption fluency demonstration+investments analysis+automation lessons + Pillar 3 Cross-functional integration Operations+Finance+IT+HR intersection+board-level + Pillar 4 Industry analysis ops supply chain+procurement+facilities + Pillar 5 Leadership+culture authentic stories); 4 formats (carousel posts highest + short executive memo video 60-90s + text long-form 1500-2500 + document share white papers).
+
+- **Fundação 7 — Cross-jurisdictional + setor-specifico 2026**: manufacturing (LSS+Industry 4.0 heavy + multi-tier transparency Uyghur+EU + Reforma Tributária cadeias longas créditos amplos beneficiados + AI quality control+predictive maintenance) + retail/e-commerce (last-mile delivery+returns+omnichannel+AI demand forecasting+seasonal volatility) + healthcare (ANS+ANVISA compliance + LGPD Art 11 dados sensíveis cross-skill jurídico + patient flow+inventory medical+AI clinical) + SaaS/tech (DevOps+SRE+cloud cost optimization+multi-region availability+AI infrastructure) + logistics 3PL (AI route optimization+predictive ETA+multi-modal+sustainability metrics+blockchain provenance).
+
+- **Fundação 8 — Aplicação content MKT**: **4 audiências** (COOs/Heads-of-Operations LinkedIn + agencies B2B servindo Operations Tech vendors + ecossistema CSCMP/ISM/IFMA/ASQ eventos + thought leaders ops strategy ex-COOs); cross-pollination ADM+Negócios/Financeiro/Fiscal/RH/DP/Jurídico/IA/TI/IoT = **30-55% engagement lift** (max 55% ADM+IA AI agents emergent topic + 50% ADM+Negócios CFO+COO sofisticados + 50% ADM+IoT frontier topic 2026); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (Supply Chain AI transparency post + Procurement digital transformation post + Facilities hybrid optimization post); disclaimer mandatory (geral + compliance ESG+multi-tier+Reforma).
+
+- **18 Anti-patterns**: generic ADM sem updates trimestral + ignorar AI integration supply chain+procurement+governance + ESG narrative disclosure vs implementation oversight + greenwashing claims governance + multi-tier transparency ignored Uyghur+EU mandatory + Resilience focus vs Total Value shift + AI hype supply chain sem embedded results + procurement tactical buying vs strategic total value + vendor management price-only vs total value+risk+innovation + operations LSS standalone vs digital integration + DMAIC framework dismissed old (still relevant 2026) + one-desk-per-person planning vs hybrid 80%+ + facilities cost-only vs employee experience balance + COO content technical-only vs cross-functional integration + AI fluency dismissed IT-only (board-level competency) + carousels not used 278% engagement perdido + Reforma Tributária 2026 ignored ADM impact + single-platform Operations Tech comparison.
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~50 referências (Diligent Corporate Governance Trends + Hogan Lovells ESG compliance + Harvard Corp Gov + Clark Hill + Proxymity + BDO + Infor Supply Chain + KPMG + Dataiku + SCMR + SAP + Supply Chain Dive + Inbound Logistics + Procol Sourcing + Centerpoint Procurement + Focal Point + Vserve Solution + Cflowapps Digital Procurement + Tradogram + Keelvar + Amazon Business + Procurement Tactics + Lean 6 Sigma Hub + 6Sigma Study + WinKaizen + KPI Fire + iCert Global + Anexas + ASQ Conference + Facilities Dive + Skedda + CBRE Hybrid Reality + Nuvolo + OfficeSpace + Hubstar + Hybrid Hero + Manhattan Strategies + CEO Resume Writer + ProResource + INSEAD COO Programme).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **COO B2B SaaS healthtech BR Series C raised $40M ARR 320 employees distributed teams BR+Argentina+Mexico Pedro 44 4.000 followers** (5 pillars AI fluency operations+technology leadership + Supply chain+procurement frameworks + Governance+ESG critical + Cross-skill financeiro/RH/fiscal/jurídico + Industry thinking ops; cadence 4-6 LinkedIn carousels 60% + Substack 1-2/mês + speaking CSCMP+ISM+IFMA+Sebrae+INSEAD; ROI 12m audience 4.000→12.000-18.000 COOs+CFOs+founders+boards);
+  2. **Agency MKT BH 6a 14 funcionários Operations Tech specialist BR** (SAP Ariba+GEP+Coupa+Procol+Skedda clients potential; 4 pillars Operations Tech domain expertise fluency + Case studies Operations Tech ROI documented + Industry deep dives BR Operations Tech + COO+CPO+IT buyer language; ROI 12-18m tier-up R$30k→R$90k+/mês deals);
+  3. **VP Procurement multinacional retail BR $500M revenue spend $200M/ano Carolina 41 6.000 followers ESG champion potential** (5 pillars Strategic sourcing+AI-driven 2026 + Multi-tier transparency+ESG enforcement + Procurement tools landscape 2026 + Brazilian context+Reforma Tributária 2026 + Cross-skill operations/financeiro/IA/sustainability; ROI 12m audience 6.000→15.000-22.000 VPs Procurement+COOs+sustainability champions; positioning niche underserved BR VP Procurement+ESG champion);
+  4. **Roberto 56 ex-COO Fortune 500 BR retail 12 anos + ex-COO scale-up exit acquisition $200M 2024 board 5 advisor 8 author book Operations Strategy mid-2027 + courses paid 18.000 followers** (6 eixos academic+accessible bridge — Eixo 1 frameworks proprietários 5-7 (Roberto Method scale-up operations excellence + Pre-IPO operations preparation + M&A operations DD + AI operations integration + Multi-tier transparency BR-LatAm + COO storytelling Brazilian context) viram capítulos livro + Eixo 2 Operations 2026 trends deep dive + Eixo 3 Governance+ESG critical analysis + Eixo 4 Cross-pollination Bloco F deep dive + Eixo 5 Brazilian+LatAm context + Eixo 6 personal brand+book launch sequence; cadence 5-8 LinkedIn carousels 60%+text 25%+video 15% + Substack 1-2/mês + Medium English + 1-2 podcasts/mês + 2-3 keynotes/quarter CSCMP+ISM+IFMA+ABRAS+Sebrae+Endeavor+global; ROI 18m audience 18.000→40.000+ followers + email 5.000-10.000 subscribers + livro 7.000-18.000 cópias 12m + workshops+consulting+speaking+board sustainable; differentiating ex-COO Fortune 500 + scale-up exit + 30 anos = niche multilayered).
+
+### Bloco F EXPANDIDO 12/13 (1 mãe + 12 filhas)
+
+| # | Skill | Status |
+|---|-------|--------|
+| 0 | `dominio-vertical-fundamentos` (mãe) | ✅ v2.1.0 |
+| 1 | `dominio-ti-mkt` | ✅ v2.2.0 |
+| 2 | `dominio-juridico-mkt` | ✅ v2.3.0 |
+| 3 | `dominio-empreendedorismo-mkt` | ✅ v2.4.0 |
+| 4 | `dominio-negocios-mkt` | ✅ v2.5.0 |
+| 5 | `dominio-ia-mkt` (skill-MÃE IA) | ✅ v2.6.0 |
+| 6 | `tecnicas-ia-claude-gemini-mkt` (filha de IA — material user) | ✅ v2.7.0 |
+| 7 | `dominio-rh-mkt` | ✅ v2.8.0 |
+| 8 | `dominio-dp-mkt` | ✅ v2.9.0 |
+| 9 | `dominio-financeiro-mkt` | ✅ v2.10.0 |
+| 10 | `dominio-fiscal-mkt` | ✅ v2.11.0 |
+| 11 | **`dominio-adm-mkt`** | **✅ v2.12.0 (NOVA — 1.250 linhas, medium)** |
+| 12 | `dominio-iot-mkt` (M5 Stack inside) | ⏸️ ÚLTIMA |
+
+### Estatísticas globais
+
+- **45 skills implementadas / 61.101 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **20 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- **7 BLOCOS PRINCIPAIS COMPLETOS** + **Bloco F Domínio Vertical 12/13**
+
+### Próxima skill (Bloco F filha 12/12 — ÚLTIMA)
+
+- `dominio-iot-mkt` — IoT general fundamentos + **M5 Stack ESP32 specifics inside** + casos uso MKT (ambient marketing + sensores brand + ativações interativas + smart packaging + IoT+IA convergence). Fechará Bloco F 13/13.
+
+---
+
 ## 2.11.0 (2026-05-08) — Bloco F Domínio Vertical 11/13 — `dominio-fiscal-mkt`
 
 ### Adicionado
