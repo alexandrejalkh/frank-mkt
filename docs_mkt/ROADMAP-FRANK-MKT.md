@@ -202,6 +202,15 @@ frank-mkt-plugin/
 | `email-marketing` (3ª SKILL Bloco Copy & Redação — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.607 | **medium (6 meses)** |
 | `redacao-publicitaria` (4ª SKILL Bloco Copy & Redação — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.893 | **medium (6 meses)** |
 | **🎉 Bloco Copy & Redação COMPLETO** | **✅ 4/4** (copywriting-conversao + storytelling + email-marketing + redacao-publicitaria) | **6.085** | — |
+| `ux-heuristicas` (1ª SKILL Bloco UX/UI — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 845 | **medium (6 meses)** |
+| `microcopy` (2ª SKILL Bloco UX/UI — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.884 | **medium (6 meses)** |
+| `acessibilidade-wcag` (3ª SKILL Bloco UX/UI — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.180 | **medium (6 meses)** |
+| `design-system-basico` (4ª SKILL Bloco UX/UI — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 805 | **medium (6 meses)** |
+| **🎉 Bloco UX/UI COMPLETO** | **✅ 4/4** (ux-heuristicas + microcopy + acessibilidade-wcag + design-system-basico) | **4.714** | — |
+| `gatilhos-eticos` (1ª SKILL Bloco Psicologia & Influência — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.048 | **medium (6 meses)** |
+| `vies-cognitivo` (2ª SKILL Bloco Psicologia & Influência — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.063 | **medium (6 meses)** |
+| `prova-social-honesta` (3ª SKILL Bloco Psicologia & Influência — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 859 | **medium (6 meses)** |
+| **🎉 Bloco Psicologia & Influência COMPLETO** | **✅ 3/3** (gatilhos-eticos + vies-cognitivo + prova-social-honesta) | **2.970** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

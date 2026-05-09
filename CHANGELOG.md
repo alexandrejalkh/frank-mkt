@@ -1,5 +1,108 @@
 # Changelog — Frank MKT
 
+## 2.26.0 (2026-05-09) — 🎉🎉🎉🎉🎉 MILESTONE 14 BLOCOS COMPLETOS — UX/UI 4/4 + Psicologia & Influência 3/3 FECHADOS (7 skills paralelas)
+
+### Adicionado em paralelo simultâneo (7 agentes — 3ª paralelização do plugin, recordista)
+
+**Estratégia**: 3ª paralelização do plugin com 7 agentes simultâneos (vs 4 das 2 anteriores). Brief reforçado com **lesson learned 2ª paralelização v2.25.0**: instrução EXPLÍCITA "ESTRUTURA OBRIGATORIA EXATA com headers literais — NÃO USAR NUMERACAO ## 1., ## 2.". Resultado: **7/7 agentes seguiram template strict** (validação grep confirmou Anti-Patterns 18 + 18 Regras de Ouro + Exemplos Comportamentais + Checklist Contraditorio Interno em todos os 7 arquivos). Zero correção manual necessária. Lesson learned validada e propagada.
+
+#### Bloco UX/UI (4 skills)
+
+##### 1. `ux-heuristicas` (1ª SKILL UX/UI)
+
+(`skills/ux-heuristicas/SKILL.md`, **845 linhas**, medium 6m, 6 web searches: Nielsen 10 heuristics + usability testing + UX research methods + cognitive walkthrough + UX Brasil + SUS metrics).
+
+8 fundações: Nielsen 10 heuristics 2024 + UX Research Methods + Usability Testing (5-user rule Nielsen 2000) + Cognitive Walkthrough + Heuristic Evaluation (3-5 evaluators ~75% problemas) + UX Metrics SUS (Brooke 1986 average 68 / 80+ great) + ISO 9241-11 + Brasil 2026 (UX Conference + Cardume + Aela + Mergo + cases Nubank/Itaú/Magalu/iFood/Mercado Livre/Stone/PicPay + LGPD UX implications + 24% PCD IBGE + 75%+ tráfego mobile) + Tools 2026 + Aplicação MKT.
+
+4 personas: Founder odonto SP + PM B2B SaaS Series B + UX designer agência BH + Agência performance SP.
+
+##### 2. `microcopy` (2ª SKILL UX/UI)
+
+(`skills/microcopy/SKILL.md`, **1.884 linhas**, medium 6m, 6 web searches: microcopy framework + UX writing voice/tone + error messages + empty state onboarding + microcopy Brasil PT-BR + Yifrah).
+
+8 fundações: Yifrah Microcopy book + Mailchimp Voice & Tone + 4 Cs (clear/concise/conversational/contextual) + NN/g 4 dimensões voice/tone + Button labels + CTAs (action verbs > nouns) + Error messages Yifrah formula (what/why/what-to-do) + Mailchimp empatia + inline validation CXL +22% + Form labels + helper text + a11y WCAG + Empty states + onboarding + 404 + confirmation dialogs destrutivos + Brasil 2026 (você vs tu decisão + cases Nubank/Magalu/iFood/Itau/GOV.BR + LGPD UX + mercado UX writing BR +340%) + Tools 2026 (Frontitude + Writer.com + Hotjar + axe) + Aplicação MKT.
+
+4 personas: Carolina UX Writer fintech + Bruno PM SaaS B2B + Joana founder solo indie hacker + Henrique content strategist scale-up 10M users.
+
+##### 3. `acessibilidade-wcag` (3ª SKILL UX/UI)
+
+(`skills/acessibilidade-wcag/SKILL.md`, **1.180 linhas**, medium 6m, 6 web searches: WCAG 2.2 + ADA Title III + LBI 13.146 Brasil + screen readers ARIA + color contrast + inclusive design Microsoft).
+
+8 fundações: WCAG 2.2 Foundations W3C 2023 (4 principles POUR + 3 levels A/AA/AAA + 78 success criteria + 9 novos 2.2: 2.4.11/2.4.12/2.4.13 focus + 2.5.7 dragging + 2.5.8 target size 24x24 + 3.2.6 consistent help + 3.3.7 redundant entry + 3.3.8/3.3.9 accessible auth) + ADA Title III lawsuit landscape (5500+/ano + 37% YoY + pro se +40% ChatGPT-driven + California $4k/visit) + EU EAA 2025 + DOJ Title II final rule deadlines 2027-04-26 + Screen Readers ARIA (NVDA 30%+ market + JAWS + VoiceOver + TalkBack) + Keyboard Nav + Focus Management + Color Contrast (4.5:1 AA + 7:1 AAA + colorblindness 8% men) + **Brasil 2026 LBI** (Lei 13.146/2015 Art. 63 obrigatória + Decreto 9.296/2018 + e-MAG 3.1 + ASES validador + IBGE PNAD 2022 18.6MM PCDs / 8.9% adultos + ciclo enforcement MPF/MPSP/MPRJ 2025-2026 + interseção LGPD/LBI) + Tools 2026 (axe DevTools + WAVE + Lighthouse + Stark + Pa11y + Siteimprove + jest-axe + cypress-axe + pa11y-ci) + Aplicação MKT.
+
+**Anti-overlay stance**: AP1 explicitamente desaconselha accessiBe/UserWay (cortes ADA rejeitando + quebra screen readers).
+
+4 personas com snippets HTML/CSS comparativos ruim vs bom.
+
+##### 4. `design-system-basico` (4ª SKILL UX/UI — FECHA BLOCO)
+
+(`skills/design-system-basico/SKILL.md`, **805 linhas**, medium 6m, 6 web searches: design system atomic design + design tokens W3C + Material/HIG/Carbon/Polaris + Storybook Figma + Brasil Nubank/Magalu/Itau cases + ROI enterprise).
+
+8 fundações: Atomic Design Brad Frost 2013 (atoms/molecules/organisms/templates/pages) + **Design Tokens W3C Tokens Format Module 2024-2025.10 estável** (Style Dictionary v4 + Tokens Studio + Terrazzo + Penpot/Figma/Sketch/Framer/Knapsack/Supernova/zeroheight reference implementations + DTCG níveis primitive/semantic/component) + 7 Component Libraries Maturos (Material 3 + Apple HIG + Carbon IBM + Polaris Shopify + Lightning Salesforce + Atlassian + Spectrum Adobe + Fluent Microsoft) + Storybook 8+ stack + Governance (centralized/federated/hybrid) + **Brasil 2026** (Nubank NuDS+NuIS 3.0 open-source + Magalu MagaluUI + Itau ItauDesignSystem + Stone DS + ABCDesign + UX Brasil community) + ROI medido (Forrester 671% TEI + 50% faster shipping enterprise + brand consistency) + Aplicação MKT.
+
+4 personas: founder fintech (R$ 30-50k seed) + PM B2B SaaS 200 pessoas (R$ 2-3M/ano) + Designer DS lead chegando + Agência digital (R$ 80-300k DS premium).
+
+#### Bloco Psicologia & Influência (3 skills)
+
+##### 5. `gatilhos-eticos` (1ª SKILL Psicologia)
+
+(`skills/gatilhos-eticos/SKILL.md`, **1.048 linhas**, medium 6m, 6 web searches: Cialdini 7 principles + dark patterns EU DSA FTC + ethical marketing Nir Eyal + pre-suasion + Brasil CONAR + nudge sludge).
+
+8 fundações: **Cialdini 7 Principles + Unity 2021 7th** (Reciprocity + Commitment/Consistency + Social Proof + Authority + Liking + Scarcity + Unity) cada com mecanismo + aplicação ética + anti-pattern + pesquisa fundadora + caso real + Pre-Suasion 2016 (priming + framing + anchoring + privileged moments) + **Dark Patterns 16 Brignull + EU DSA Art. 25 + caso Amazon FTC USD 2.5 bi (set/2025) + Epic Games USD 245 mi + Digital Fairness Act meados-2026** + Eyal Hooked critique 2014 + Indistract 2019 + Beyond Belief mar/2026 + **Eyal Manipulation Matrix 2x2** (Facilitator/Entertainer/Peddler/Dealer) + Nudge vs Sludge (Thaler/Sunstein 2008 + Sunstein Sludge 2021) + **Brasil 2026** (CONAR Código + CDC Art. 30/36/37/38 + CBARP Art. 1/23/27/28/29/30 + LGPD Art. 6/8/18) + Tools + Aplicação MKT.
+
+4 personas: Carla founder SaaS (trial-to-paid 18% com churn 4% = LTV 2.3x) + Rafael copywriter recusa fake countdown + Juliana UX designer sludge audit + Pedro CMO encerra "últimas 24h" permanente recupera marca.
+
+##### 6. `vies-cognitivo` (2ª SKILL Psicologia)
+
+(`skills/vies-cognitivo/SKILL.md`, **1.063 linhas**, medium 6m, 6 web searches: Kahneman thinking fast slow + cognitive biases 200 + Ariely predictably irrational + behavioral economics + Brasil + ethical use).
+
+8 fundações: Kahneman System 1/2 (Thinking Fast Slow 2011 + Nobel 2002) + Prospect Theory 1979 (4 pilares: reference dependence + loss aversion ~2x + diminishing sensitivity + probability weighting) + **Top 20 Vieses Marketing** (Anchoring + Framing + Decoy + IKEA + Mere exposure + Hyperbolic discounting + Default + Confirmation + Availability + Halo + Sunk Cost + Endowment + Recency + Status quo + Bandwagon + Authority + Reciprocity + Scarcity + Social proof + Zero price) + Ariely Predictably Irrational 2008 (free vs $0.01 + Economist subscription decoy + relativity + Honest Tea + zero price effect) + Cognitive Bias Codex 200+ Wikipedia + Buster Benson 4 categorias (too much info + not enough meaning + need to act fast + what should remember) + **Brasil 2026** (CADE intervenções + ENAP curso comportamental + SciELO 2020 loss-aversion +eficaz BR + cases Magalu/Nubank/iFood/Itau tropicalizados) + Tools + Aplicação MKT.
+
+4 personas com linha CLARIFIES vs OBSCURES (ético vs manipulativo).
+
+##### 7. `prova-social-honesta` (3ª SKILL Psicologia — FECHA BLOCO)
+
+(`skills/prova-social-honesta/SKILL.md`, **859 linhas**, medium 6m, 6 web searches: social proof + customer reviews ethical FTC + case study B2B + influencer ethics CONAR + UGC authentic + Brasil Reclame Aqui).
+
+8 fundações: Cialdini 6 tipos prova social (Experts + Celebrities + Users + Wisdom of crowds + Wisdom of friends + Certifications/Awards) + lift mediano 37% (range 10%-270%) B2B SaaS + Testimonials anatomy + **Reviews ecosystem** (G2 + Capterra + TrustPilot + Trustradius + Reclame Aqui Brasil ouro CI BR 17M reclamações + LinkedIn Recommendations + Google Reviews + management response framework) + Case Studies B2B StoryBrand 7-stage + **Influencer Marketing 2026** (macro/mid/micro/nano + disclosure FTC #ad #sponsored + Brasil CONAR Anexo P + ABRADi + Influency.me + Squid + Stilingue + Buzzmonitor + pricing benchmark BR) + **Brasil 2026** (CONAR Código + CDC Lei 8.078 + Reclame Aqui ouro CI 17M reclamações + ABRADi Código Ética influenciadores + LGPD direito imagem + cases multas + Nubank Selo Excelência) + **FTC Consumer Review Rule 2024+** (multas USD 53.088/violação + 10 warning letters dez/2025) + EU DSA + Digital Fairness Act 2026 + Tools + Aplicação MKT.
+
+4 personas: founder early-stage (15 clientes) + CMO fintech crise reputacional Reclame Aqui + Copywriter freelancer pressionado fabricar testimonials + Agência influencer skincare CONAR Anexo P.
+
+### 🎉🎉🎉🎉🎉 MILESTONE 14 BLOCOS COMPLETOS — UX/UI 4/4 + Psicologia & Influência 3/3 FECHADOS
+
+#### Bloco UX/UI 4/4
+
+| # | Skill | v | Linhas |
+|---|-------|---|-------:|
+| 1 | **`ux-heuristicas`** | **v2.26.0 (paralela)** | **845** |
+| 2 | **`microcopy`** | **v2.26.0 (paralela)** | **1.884** |
+| 3 | **`acessibilidade-wcag`** | **v2.26.0 (paralela)** | **1.180** |
+| 4 | **`design-system-basico`** | **v2.26.0 (paralela)** | **805** |
+| **TOTAL Bloco UX/UI** | | ✅ **4/4 COMPLETO** | **4.714** |
+
+#### Bloco Psicologia & Influência 3/3
+
+| # | Skill | v | Linhas |
+|---|-------|---|-------:|
+| 1 | **`gatilhos-eticos`** | **v2.26.0 (paralela)** | **1.048** |
+| 2 | **`vies-cognitivo`** | **v2.26.0 (paralela)** | **1.063** |
+| 3 | **`prova-social-honesta`** | **v2.26.0 (paralela)** | **859** |
+| **TOTAL Bloco Psicologia** | | ✅ **3/3 COMPLETO** | **2.970** |
+
+**14 BLOCOS COMPLETOS**: SEO 7/7 + Mídia Social 10/10 + Comunicação Visual & IA 4/4 + Multi-Platform 3/3 + Persuasão 2/2 + MKT Não-Tradicional 2/2 + MKT & Estratégia 5/5 + Bloco F EXPANDIDO 13/13 + Bloco E Documentos 2/2 + Pesquisa 6/6 + Corporativo & Humanitário 6/6 + Copy & Redação 4/4 + **UX/UI 4/4** + **Psicologia & Influência 3/3**.
+
+### Estatísticas globais
+
+- **71 skills implementadas / 88.068 linhas totais**
+- 18 high (trimestral) + **46 medium (semestral)** + 7 low (anual)
+- **14 BLOCOS COMPLETOS** (71 das ~83 skills planejadas — **86% concluído**)
+
+### Próximo
+
+Após UX/UI + Psicologia FECHADOS, blocos restantes: Conhecimento Plataforma 6 (high volatility 3m) + Meta-skill 1 + MKT & Estratégia 2º lote 5 + Infraestrutura slash 8 + Agentes 14.
+
+---
+
 ## 2.25.0 (2026-05-09) — 🎉🎉🎉🎉 MILESTONE 12 BLOCOS COMPLETOS — Bloco Copy & Redação FECHADO 4/4 (4 skills paralelas)
 
 ### Adicionado em paralelo (4 agentes simultâneos — 2ª paralelização do plugin)

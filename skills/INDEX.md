@@ -2,11 +2,11 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.25.0 — 2026-05-09) — 🎉🎉🎉🎉 12 BLOCOS COMPLETOS — Bloco Copy & Redação FECHADO 4/4
+## Status (v2.26.0 — 2026-05-09) — 🎉🎉🎉🎉🎉 14 BLOCOS COMPLETOS — UX/UI 4/4 + Psicologia & Influência 3/3 FECHADOS
 
-**64 skills implementadas / 80.384 linhas totais.**
+**71 skills implementadas / 88.068 linhas totais.**
 
-🎉🎉🎉🎉 **MILESTONE 12 BLOCOS COMPLETOS** — Bloco Copy & Redação FECHADO 4/4 com 4 skills criadas em **paralelo** (4 agentes simultâneos): `copywriting-conversao` + `storytelling` + `email-marketing` + `redacao-publicitaria`.
+🎉🎉🎉🎉🎉 **MILESTONE 14 BLOCOS COMPLETOS** — UX/UI FECHADO 4/4 + Psicologia & Influência FECHADO 3/3 com 7 skills criadas em **paralelo simultâneo** (3ª paralelização do plugin — 7 agentes): `ux-heuristicas` + `microcopy` + `acessibilidade-wcag` + `design-system-basico` + `gatilhos-eticos` + `vies-cognitivo` + `prova-social-honesta`.
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -23,14 +23,14 @@
 | **Pesquisa & Inteligência de Mercado** | ✅ **6/6** | 4.338 |
 | **Corporativo & Humanitário** | ✅ **6/6** | 5.462 |
 | **Copy & Redação** | ✅ **4/4** | 6.085 |
-| UX/UI | ⏸️ 0/4 | — |
-| Psicologia & Influência (overlap parcial) | ⏸️ 0/3 | — |
+| **UX/UI** | ✅ **4/4** | 4.714 |
+| **Psicologia & Influência** | ✅ **3/3** | 2.970 |
 | Conhecimento de Plataforma | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **64/~83** | **80.384** |
+| **TOTAL** | **71/~83** | **88.068** |
 
-**Volatility:** **39 skills `medium`** (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **46 skills `medium`** (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 
