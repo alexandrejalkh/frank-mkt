@@ -1,5 +1,51 @@
 # Changelog — Frank MKT
 
+## 2.20.0 (2026-05-08) — Bloco Pesquisa 5/6 — `trendwatching`
+
+### Adicionado
+
+- **Skill `trendwatching`** (`skills/trendwatching/SKILL.md`, **656 linhas**, volatility **medium (6 meses)**, **6 web searches** 2026-05-08: trendwatching methodology emerging trends consumer + cool hunting fashion lifestyle + trend prediction tools Google Trends Glimpse + macro trends megatrends PWC McKinsey + tendencias consumo Brasil WGSN Mintel + weak signals strategic foresight Wendy Schultz STEEP). **5ª SKILL Bloco Pesquisa**. **8 fundações 2026**:
+
+- **Fundação 1 — TrendWatching Methodology** TrendWatching.com 2002 100+ spotters Purpose-Driven Innovation; 3 levels (megatrends decadas+macro 5-10y+micro months-2y); 2026 Top trends (Hyper-segmentation essential + Values-Driven 69% consumers + Human Pride counter-AI craft+imperfection).
+
+- **Fundação 2 — Weak Signals + Strategic Foresight** Ansoff 1975 + Wendy Schultz Jigsaw Foresight+Infinite Futures+OECD Expert Group; STEEP framework (Social+Tech+Economic+Environmental+Political); Manoa method Schultz 2015 future NOT binary multiple scenarios; horizon scanning systematic (academic+patents+niche+government+conferences).
+
+- **Fundação 3 — Cool Hunting + Trend Forecasting Tools** Gladwell 1997 New Yorker origin; WGSN London 1998 Future Consumer 2026-2028 $5-100k+/year subscriptions; Mintel London 1972 7 condutores; Trend Hunter 2005 Toronto crowdsourced; Heuritech AI fashion (zebra +21% EU/+17% US Spring 2026); 2026 fashion shifts (Quiet luxury OUT/Loud luxury IN + maximalism return + gold resurgence stability + jumbo polka dots+harlequin+thick stripes); Coachella 2026 bohemian → tougher stripped back.
+
+- **Fundação 4 — Trend Prediction Tools 2026** Google Trends free limitação only data ALREADY known; Glimpse Chrome extension 150k users 4.9-star **87% accuracy 12 months** blend Exploding Topics+Google Trends; Exploding Topics $249/mo Pro early discovery algorithmic search+social+e-commerce; Pulsar AI social listening; Trendalytics AI fashion+festival; **search + social combined critical** (social leads days-weeks; both rising broad consumer; social only niche; search only SEO opportunity vs cultural gap).
+
+- **Fundação 5 — Macro Trends 2026** PWC Global Outlook **61% CEOs growth optimism** (up 58% YoY); McKinsey **GenAI $2.6-4.4T annual value**; Deloitte Human Capital "Re-recording Symbiosis"; **Agent AI 2026** autonomous virtual colleague digital workforce; consumer **quality > price 47% value-seekers**; 5 macro divergences Khat Analytics (AI haves/have-nots + premium/value polarization + sustainability genuine/greenwashing + human craft/AI generation + globalization/localization).
+
+- **Fundação 6 — Brasil 2026 WGSN+Mintel** WGSN Consumidor Futuro 2026 **fim romantização consumo** declínio cultura "mimo" Z+Millennials questionando consumo excessivo; sentimento "**Anseio**" 2026 (abandonaram sonhos+lidaram perdas → desejo recapturar+reimaginar); **52% BR experiência > objetos** economia experiência mesmo alto custo vida; 4 perfis WGSN (Esperançosos+Autônomos+Imparciais+Sinérgicos); 2026 = Ano Redirecionamento; Mintel 7 condutores (bem-estar saúde+arredores ambiente+tecnologia+direitos respeito/proteção+identidade+valor+experiências).
+
+- **Fundação 7 — Common Mistakes + Best Practices** 10 erros (trend vs fad confused + single source + confirmation bias + recency bias + Western-centric + search-only + mainstream coverage + AI blind trust + no hypothesis testing + Brasil ignored); 5 best practices (triangulate WGSN+Mintel+Trend Hunter+Glimpse+Pulsar + STEEP framework + search+social combined + test hypotheses qualitative + Brasil context).
+
+- **Fundação 8 — Aplicação content MKT** 4 audiências (founders/CMOs LinkedIn trend timing + product managers opportunity discovery + content creators cool hunting niche + thought leaders foresight); cross-pollination **Trendwatching+Pesquisa fundamentos/White-space/Empreendedorismo/IA = 35-65% engagement lift** (max 65% Trendwatching+White-space gaps revealed signals + 60% Pesquisa fundamentos integrated + 60% Empreendedorismo founder timing); 3 templates (STEEP analysis post + Glimpse 87% tool review post + WGSN BR fim romantização post).
+
+- **18 Anti-patterns** + **18 Regras de Ouro** + Checklist 10 perguntas + ~50 referências.
+
+- **4 exemplos**: Founder pre-launch trends Marina + CMO planning year Roberto + Content creator fashion Lucas + Ex-CSO foresight Ana.
+
+### Bloco Pesquisa 5/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1-4 | (anteriores) | ✅ |
+| 5 | **`trendwatching`** | **✅ v2.20.0 (NOVA — 656 linhas, medium)** |
+| 6 | `competitive-intelligence` | ⏸️ Próxima ÚLTIMA Pesquisa |
+
+### Estatísticas globais
+
+- **53 skills implementadas / 68.171 linhas totais**
+- 18 high (trimestral) + **28 medium (semestral)** + 7 low (anual)
+- 9 BLOCOS COMPLETOS + Bloco Pesquisa 5/6 (83% bloco)
+
+### Próxima skill (Bloco Pesquisa 6/6 — ÚLTIMA, fechará Bloco)
+
+- `competitive-intelligence` — CI advanced + war games + battlecards + win-loss analysis + market intelligence ops
+
+---
+
 ## 2.19.0 (2026-05-08) — Bloco Pesquisa 4/6 — `white-space-analysis`
 
 ### Adicionado
