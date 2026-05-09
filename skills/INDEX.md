@@ -2,11 +2,11 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.21.0 — 2026-05-08) — 🎉 10 BLOCOS COMPLETOS + Bloco Pesquisa COMPLETO 6/6
+## Status (v2.22.0 — 2026-05-08) — 10 BLOCOS COMPLETOS + Bloco Corporativo & Humanitário 1/6
 
-**54 skills implementadas / 68.837 linhas totais.**
+**55 skills implementadas / 69.574 linhas totais.**
 
-🎉🎉 **10 BLOCOS COMPLETOS** — Bloco Pesquisa & Inteligência de Mercado FECHADO 6/6.
+🎉🎉 **10 BLOCOS COMPLETOS** + iniciado **Bloco Corporativo & Humanitário** (1/6 — `comunicacao-corporativa`).
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -21,16 +21,16 @@
 | **Domínio Vertical (Bloco F — EXPANDIDO)** | ✅ **13/13** | 18.856 |
 | **Bloco E Documentos Corporativos** | ✅ **2/2** | 1.947 |
 | **Pesquisa & Inteligência de Mercado** | ✅ **6/6** | 4.338 |
+| Corporativo & Humanitário | 🔄 1/6 | 737 |
 | Copy & Redação | ⏸️ 0/4 | — |
 | UX/UI | ⏸️ 0/4 | — |
 | Psicologia & Influência (overlap parcial) | ⏸️ 0/2 | — |
 | Conhecimento de Plataforma | ⏸️ 0/6 | — |
-| Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **54/~83** | **68.837** |
+| **TOTAL** | **55/~83** | **69.574** |
 
-**Volatility:** **29 skills `medium`** (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **30 skills `medium`** (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 

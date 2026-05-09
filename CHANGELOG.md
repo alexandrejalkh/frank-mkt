@@ -1,5 +1,50 @@
 # Changelog — Frank MKT
 
+## 2.22.0 (2026-05-08) — Bloco Corporativo & Humanitário 1/6 — `comunicacao-corporativa`
+
+### Adicionado
+
+- **Skill `comunicacao-corporativa`** (`skills/comunicacao-corporativa/SKILL.md`, **737 linhas**, volatility **medium (6 meses)**, **6 web searches** 2026-05-08: corporate communications strategic PR institutional + internal communications employee engagement + corporate storytelling narrative CEO + stakeholder ESG investor relations + comunicação corporativa Brasil ABERJE ABRACOM + PR trends earned media digital). **1ª SKILL Bloco Corporativo & Humanitário**. **8 fundações 2026**:
+
+- **Fundação 1 — PESO Model + Narrativa Unificada** Gini Dietrich 2014 canonical 2026 (Paid+Earned+Shared+Owned); integração 2026 não opcional Caliber/Walker Sands; narrativa unificada backbone all comms (purpose+vision+mission+values+tagline+proof points+stories); 4 testes consistência (3-stakeholder cross-check + CEO test 90s + junior employee test + crisis test); anti-patterns (multi-purpose vacuous + inconsistência cross-stakeholder + performative greenwashing + CEO contradictions + updates frequentes).
+
+- **Fundação 2 — Leadership Visibility 2026** "audiences trust people not logos" (Caliber); 73% B2B buyers trust thought leadership > ads; LinkedIn "storyteller" postings doubled YoY (Stuart Bruce); CEO posts 3-10x company posts engagement; 3 níveis maturity (basic/intentional/thought leader); Brasil cases (Luiza Trajano + David Velez + Andre Esteves + Roberto Setubal); ROI documentado (premium 5-15% + talent +30-60% + investor confidence + crisis credibility).
+
+- **Fundação 3 — Comunicação Interna 2026** Top goals (engagement + leadership comm 40% + change mgmt 30%); challenges (hybrid+frontline+Gen Z+AI+constant change + 1 em 5 IC single-person team + 10% sem dedicated); 15 best practices (personalização+two-way+data-driven+multi-channel+mobile-first+visual heavy+frontline-specific+manager cascade+AI personalização+measurement+crisis playbook+leader visibility+recognition+inclusion+feedback loops <30d); tools stack (Sociabble/Staffbase/Firstup/Workvivo enterprise + Slack/Teams + Beekeeper frontline + Glint/Culture Amp surveys + Brasil Feedz/Convenia).
+
+- **Fundação 4 — AI-Driven PR + Generative Engine Optimization (GEO)** **80% B2B discovery via AI engines** (ChatGPT/Gemini/Perplexity); SEO PR substituido por GEO 2026 (Caliber); AI engines treinados earned media authoritative outlets → Tier 1 matter MAIS (NYT/WSJ/Forbes/Valor/Estadão/Reuters/Bloomberg/FT); long-form > short + quotes nominais + statistical claims sourced + Wikipedia presence accuracy; tactical 2026 (slow PR Media Minefield + hyperpersonalization PRLab + snackable thought leadership + earned media standards rising + authenticity > polish); KPIs novos (AI citation rate + Wikipedia accuracy).
+
+- **Fundação 5 — Investor Relations + ESG Communication** IR market US$ 3.3 bi 2025 → US$ 3.64 bi 2026 → US$ 5.32 bi 2030; **86% large companies disclose sustainability** + ESG-mandated assets US$ 35 trilhões; ESG mandatory regulatory (CSRD EU + SEC US + B3 Brasil); integrated reporting (ESG aligned annual financial); ESG Communication Excellence Framework Tandfonline 2026 (strategic+two-way+material+authentic+integrated); frameworks (GRI+SASB+TCFD+ISSB+CSRD+B3); IR Brasil (B3 listed DFP/ITR/fato relevante CVM Instrução 480 + Investor Day + roadshow + Apimec + Abrasca); stakeholder map (institutional+sell-side+buy-side+retail+proxy advisors+ratings+ESG raters+activists).
+
+- **Fundação 6 — Brasil 2026 ABERJE/ABRACOM** **R$ 30 bi/ano mercado** (Aberje); 38% empresas aumentando 2025; prioridades (assessoria imprensa 56% + conteúdo multiplataforma 51% + eventos 40% + branded content 32% + IC 31%); ABERJE 1967 + MBA Aberje/FGV + Prêmio ABERJE; ABRACOM 360 squads model (Rede Comunicação 2026 + áreas transversais dados/crises/tendências/treinamentos); tendências (D&I+ESG+storytelling+ágeis+comunicação para transição); top agências (CDN+FSB+Edelman+InPress+Burson+Weber Shandwick+JeffreyGroup+Rede Comunicação+Approach+Maquina CW+Tatica); imprensa Tier 1 (Valor+Estadão+Folha+Globo+IstoÉ Dinheiro+Exame+Veja) + premium B2B (NeoFeed+Brazil Journal+Pipeline+TheCap+InfoMoney+Money Times); LGPD impacto (press release+IR+cookies+right to be forgotten).
+
+- **Fundação 7 — Mensuração Beyond Impressions 2026** "impressions won't satisfy boards" (Caliber); hierarquia 3 tiers (Tier 1 business outcomes revenue/premium/talent/LTV/market cap + Tier 2 trust/reputation NPS/SOV/AI citation rate/Wikipedia + Tier 3 activity ops); tools (Brandwatch/Sprinklr/Talkwalker social + AlphaSense/Sintilio AI media + Cision/Muck Rack/Meltwater earned + RepTrak + Edelman + Glint/Culture Amp internal + GA4 owned + Salesforce/HubSpot attribution + Brasil MediaMonitors/IBOPE/RepTrak BR); cadence weekly/monthly/quarterly/annual.
+
+- **Fundação 8 — Aplicação content MKT** 5 audiências (CEO Tier 1 B3 Roberto Level 2-3 visibility + CCO Carla PESO 30/25/15/30 + CMO Bruno B2B SaaS thought leadership + Founder Marina pre-Series A bootstrap 4-6h/mês + Agência Estela 360 squads); conteúdo cross-skill (CCO playbook público + CEO LinkedIn carousel + webinar IR + case study agência); avoid disclosing (media targets + IC sensitive + crisis scenarios + stakeholder map + budget specific).
+
+- **18 Anti-patterns** (vacuous narrative+multi-stakeholder inconsistency+performative purpose+CEO ghost LinkedIn+press release mass pitching+impressions-only KPIs+IC broadcast-only+frontline excluded+annual survey only+PESO unbalanced+slow earned tactical+GEO/AI ignored+ESG greenwashing+IR scripted+crisis sem playbook+Wikipedia ignored+owned content quarterly+Brasil cultural copy mecânico) + **18 Regras de Ouro** (narrative unified+PESO integrated+leadership visibility Level 2+two-way IC+personalização+GEO strategy+slow PR+ESG material data-backed+IR institutional+crisis playbook+mensuração Tier 1+Brasil cultural codes+ABRACOM 360 squad+continuous data-driven+mobile-first frontline+owned engine+authenticity+disclaimer educational) + Checklist Contraditório Interno 10 perguntas + ~70 referências.
+
+- **4 exemplos**: CEO Roberto Tier 1 B3 leadership visibility upgrade 90 dias + CCO Carla B2B SaaS Series C PESO rebuild 12 meses + Founder Marina pre-Series A bootstrap 4-6h/mês + Agência Estela São Paulo ABRACOM 360 model 6-month transformation.
+
+### Bloco Corporativo & Humanitário 1/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | **`comunicacao-corporativa`** | **✅ v2.22.0 (NOVA — 737 linhas, medium)** |
+| 2 | `employer-branding` | ⏸️ Próxima |
+| 3 | `comunicacao-crise` | ⏸️ |
+| 4 | `esg-comunicacao` | ⏸️ |
+| 5 | `terceiro-setor` | ⏸️ |
+| 6 | `empreendedorismo-impacto` | ⏸️ |
+
+### Estatísticas globais
+
+- **55 skills implementadas / 69.574 linhas totais**
+- 18 high (trimestral) + **30 medium (semestral)** + 7 low (anual)
+- **10 BLOCOS COMPLETOS** + Bloco Corporativo & Humanitário 1/6 (66% concluído)
+
+---
+
 ## 2.21.0 (2026-05-08) — 🎉 MILESTONE 10 BLOCOS COMPLETOS — Bloco Pesquisa & Inteligência FECHADO 6/6 — `competitive-intelligence`
 
 ### Adicionado
