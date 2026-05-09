@@ -1,5 +1,58 @@
 # Changelog — Frank MKT
 
+## 2.17.0 (2026-05-08) — Bloco Pesquisa 2/6 — `persona-icp-deep` (🎉 50 SKILLS)
+
+### Adicionado
+
+- **Skill `persona-icp-deep`** (`skills/persona-icp-deep/SKILL.md`, **833 linhas**, volatility **`medium` (6 meses)** — frameworks foundational decadas (Christensen JTBD 2003 + Ulwick ODI 2002 + Cooper personas 1999) MAS aplicação 2026 deslocando: 67% B2B rep-free + 92% vendor in mind + ICP scoring sofisticado + answer engines + AI continuous discovery + Brasil omnicanalidade, **pesquisa de campo** — 6 web searches 2026-05-08: buyer persona ICP B2B SaaS framework + JTBD Christensen Ulwick + buyer journey customer mapping + customer interviews techniques + persona Brasil segmentação + ICP scoring firmographics behavioral. **2ª SKILL Bloco Pesquisa & Inteligência**. **8 fundações + aplicação**:
+
+- **Fundação 1 — ICP vs Buyer Persona Distinção**: ICP=organizational characteristics company-level (firmographics+triggers+macro) "where+when" / Persona=individual person-level (role+motivations+communication) "who+how"; **ICP 3-part Sybill framework** (Firmographics static data revenue+headcount+geography+industry+tech / Triggers proxy urgency hiring VP+Series B+missed earnings "where chaos there budget" / Macro trends industry+regulatory+tech); business impact (**B2B SaaS ICP defined 68% higher win rate** SiriusDecisions + 36% retention + 38% win); **answer engines** ChatGPT+Perplexity+Gemini visibility critical (cannot define = invisible purchase intent).
+
+- **Fundação 2 — JTBD Framework**: Tony Ulwick (Strategyn) original creator 2002 ODI methodology; Clayton Christensen popularized post-2003 (theory conceptual); Bob Moesta Demand-Side Sales practical; distinção theory vs methodology; **Ulwick ODI 86% success rate** vs **industry average 17%** (5x improvement hundreds engagements); tools (Opportunity Algorithm quantitative + outcome-based segmentation + JTBD Growth Strategy Matrix); JTBD principle "people buy products to get job done"; real examples (Airbnb belonging+local NOT just sleeping / Fitbit manage personal health NOT tracking / Zoom remote connect NOT video calls); **5 forces Moesta** (Push current pain + Pull new attraction + Anxiety fear new + Habit current familiarity + Outcome desired result).
+
+- **Fundação 3 — Buyer Journey 2026 5 stages sweet spot**: 3 stages too simple, 8 paralysis, 5 sweet spot; stages canonical (Awareness recognize problem + Research investigate + Consideration evaluate + Decision select+negotiate + Onboarding implement+train + Usage regular); B2B touchpoints **15-266 per deal** AVG 76 across 3.7 channels; **10 interaction channels** (up 5 in 2016); **67% B2B prefer rep-free** (up 61% YoY) + **92% have vendor in mind BEFORE evaluating** + **B2B buying cycle 10.1 months** (down 11.3 economic pressure); **70% maps fail** (built without direct customer input — projection vs reality); successful mapping requires real buyer input + CRM-connected stages + plan keep data fresh.
+
+- **Fundação 4 — Customer Interviews 2026**: 4 types (Exploratory discovery map landscape+pains+behaviors / Generative innovation motivations+aspirations+unmet desires / Usability test designs / Feedback refine existing); best practices (define clear objectives + recruit right participants + craft thoughtful open-ended questions); interview technique **curiosity > telling** "listen more than talk" + resist proposing solutions ("what if we built X" = shifted discovery to validation); **continuous discovery** principle Teresa Torres (vs one-off snapshot in time); AI synthesis platforms (Quals AI real human interviews 24h + Conveo AI + Listen Labs + Dovetail repository); **AI synthesis NOT replacement** (human design+verify+synthesize+decide).
+
+- **Fundação 5 — ICP Scoring 2026 3 Data Layers**: numeric **0-100 score per account**; 3 layers stacked specific order (Firmographics first 40 points industry+revenue+headcount+growth+geography+funding / Technographics second 30 points CRM type+tools+integration / Intent+behavioral signals third 30 points content consumption+LinkedIn engagement+visitor data+triggers+search); data sources (CRM HubSpot+Salesforce company size+lifecycle+deal history + enrichment **Apollo+ZoomInfo+Clearbit+Cognism** technographics+funding + ad platforms Google+LinkedIn+Meta + intent platforms **6sense+Demandbase+Bombora**); **67% B2B rep-free** Gartner March 2026 = intent signals from content consumption+digital research **earliest+most reliable indicators** active buying cycle.
+
+- **Fundação 6 — Brasil Personas 2026**: consumidor digital perfil core mais **analítico+menos impulsivo** equilibra preço+frete+segurança busca valor superar loja física NÃO compra impulso primeiro link; análise+confiança valoriza transparência (notificações claras = trust; falha entrega = confiança despenca); **omnicanalidade** múltiplos pontos contato (loja+website+apps+social+WhatsApp+marketplaces) alterna fluido durante jornada; segmentação evolution **personalização comportamental IA** identifica padrões interesse+preferência (uso+clicks+histórico+contexto) sem dados sensíveis adapta tom+formato+proposta; tendências marketing digital BR (agentes IA escala + CDPs first-party data central + **bem-estar físico+emocional+mental criterion escolha** não aspiracional); WhatsApp+RCS dominantes + microcomunidades autênticas alto valor.
+
+- **Fundação 7 — Common Mistakes + Best Practices**: 10 erros (persona sem ICP B2B + static persona + demographic-only + too many personas >5 + no JTBD context + buyer journey 70% maps fail no input + ICP scoring firmographics only + AI replace humans + answer engines ignored + Brasil ignored); 5 best practices 2026 (ICP first B2B+persona second + 3-part framework + JTBD Ulwick ODI integrate + continuous discovery vs one-off + score 0-100 numeric 3 layers).
+
+- **Fundação 8 — Aplicação content MKT**: 4 audiências (CMOs/Heads-of-Growth LinkedIn CMOs+Demand Gen+ABM Heads + agencies B2B servindo CRM/ABM tech HubSpot/Salesforce/Apollo/ZoomInfo/6sense/Demandbase + ecossistema BR research+strategy + thought leaders ex-CMOs); cross-pollination **Persona+Pesquisa fundamentos/Empreendedorismo/Negócios/IA = 35-65% engagement lift** (max 65% Persona+Pesquisa fundamentos integrated TAM+ICP + 60% Persona+Empreendedorismo founder + 55% Persona+Negócios strategy); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (ICP 3-part framework post + JTBD Ulwick ODI post + Buyer journey 2026 post); disclaimer mandatory.
+
+- **18 Anti-patterns** + **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~45 referências (Sybill+RightLeft+Only-B2B+Miroverse+HubSpot+FullFunnel+Salesmotion+MRR Unlocked+Ulwick+Strategyn+JTBD Book+GoPractice+Built In+Christensen Institute+Great Question+ProductPlan+Hubble+Prospeo+Cognism+Dreamdata+Coveo+Qualtrics+B2B International+Outset+Formbricks+Lyssna+GainHQ+IxDF+User Interviews+Centercode+NN/G+E-commerce Brasil+Creative Hut+Amper+Growthspree+Landbase+Salesfully+Daydream+Factors+Ai SaaS Writer+SaaS Hero+Pintel).
+
+- **4 exemplos comportamentais detalhados**: (1) Founder pre-Series A definindo ICP Marina 34 healthtech; (2) Agency MKT BH CRM/ABM specialist BR; (3) CMO scale-up LinkedIn Roberto 42; (4) Ex-CMO author book persona/ICP BR 2027 Ana 55.
+
+### 🎉 MARCO 50 SKILLS plugin Frank-MKT
+
+### Bloco Pesquisa & Inteligência 2/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | `pesquisa-mercado-fundamentos` | ✅ v2.16.0 |
+| 2 | **`persona-icp-deep`** | **✅ v2.17.0 (NOVA — 833 linhas, medium)** |
+| 3 | `analise-concorrencia` | ⏸️ Próxima |
+| 4 | `white-space-analysis` | ⏸️ Planejada |
+| 5 | `trendwatching` | ⏸️ Planejada |
+| 6 | `competitive-intelligence` | ⏸️ Planejada |
+
+### Estatísticas globais
+
+- **🎉 50 skills implementadas / 66.238 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **25 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- 9 BLOCOS COMPLETOS + Bloco Pesquisa 2/6
+
+### Próxima skill (Bloco Pesquisa 3/6)
+
+- `analise-concorrencia` — Competitive analysis frameworks (Porter+SWOT+positioning maps + competitive intelligence basics)
+
+---
+
 ## 2.16.0 (2026-05-08) — Bloco Pesquisa & Inteligência 1/6 — `pesquisa-mercado-fundamentos`
 
 ### Adicionado
