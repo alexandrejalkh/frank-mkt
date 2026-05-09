@@ -1,5 +1,62 @@
 # Changelog — Frank MKT
 
+## 2.16.0 (2026-05-08) — Bloco Pesquisa & Inteligência 1/6 — `pesquisa-mercado-fundamentos`
+
+### Adicionado
+
+- **Skill `pesquisa-mercado-fundamentos`** (`skills/pesquisa-mercado-fundamentos/SKILL.md`, **906 linhas**, volatility **`medium` (6 meses)** — frameworks foundational TAM SAM SOM (Ash Maurya 2010s) MAS aplicação 2026 deslocando: AI 95% researchers + market intelligence platforms maturing + VCs reject top-down + Brasil DataSebrae+IBGE methodology updates 2022, **pesquisa de campo** — 6 web searches em 2026-05-08: TAM SAM SOM market sizing 2026 + market research B2B SaaS + market intelligence platforms Statista CB Insights Crunchbase + qualitative quantitative AI 2026 + pesquisa mercado Brasil IBGE Sebrae + market sizing bottom up top down VC pitch deck. **1ª SKILL Bloco Pesquisa & Inteligência de Mercado** (6 skills total). **Foco crucial**: produzir CONTEÚDO MKT educational sobre TAM/SAM/SOM sizing + research methodology + market intelligence platforms + AI integration + Brasil sources + pitch deck market slide — **NÃO substitui market research firm (McKinsey/BCG/Forrester/Gartner) + research consultant + statistical methodology specialist**. **8 fundações + aplicação**:
+
+- **Fundação 1 — TAM SAM SOM Framework 2026**: definitions atualizadas (TAM total demand zero competitors / SAM addressable GTM / SOM realistic 3-5 years 0.5-2% Year 1-3 conservative / PAM optional future); 2 metodologias (top-down Statista/Gartner narrows filters + bottom-up price×ICP×volume); **VCs 2026 reject top-down "Statista summaries" + bottom-up grounding mandatory**; best practice **BOTH approaches converge** (founder understands every angle); **VC expectations $1B+ TAM Series A / $5B+ Series B / $10B+ Series C** fund economics; sources tier 1 (Gartner+Forrester+IDC+McKinsey+BCG); avoid (random blogs+press releases+unsourced).
+
+- **Fundação 2 — Research Methodology 2026**: primary research (surveys+interviews+focus groups+observation+experiments) vs secondary (industry reports+government data+academic+trade+internal); **AI integration 95% researchers** transcription+pattern detection+theme identification (Cognitive Future); AI-powered interviewers thousands participants quickly inexpensively; traditional weeks → AI hours analysis; mixed methods sequential (quant→qual) OR concurrent (simultaneous); sample sizes B2B n=100 / B2C n=400 minimums; qualitative 20-30 interviews saturation; AI tool categories (end-to-end Quals AI/Conveo/Listen Labs + qualitative analysis NVivo/Atlas.ti/Dovetail + research ops User Interviews/Respondent/Prolific); critical principle **AI accelerator NOT replacement** (design+verification human judgment).
+
+- **Fundação 3 — Market Intelligence Platforms 2026**: **CB Insights** Mosaic Score AI predicting company health $50-200k+/year (VCs+PE+corporate strategy) + **Statista** 60.000+ topics secondary aggregator $39-2.499/year + **Crunchbase** broader simpler $49-399/month + **Alpha Sense** AI financial documents $5-12k/year + **S&P Global** institutional $20-50k+ + **PitchBook** PE/VC; trend 2026 integrated platforms continuous learning > isolated studies; market intelligence vs marketing intelligence (SegmentStream+Gainsight) distinction.
+
+- **Fundação 4 — Brasil Research Sources 2026**: **IBGE official** (Demografia Empresas 2016+ updates 2022 + PAS Pesquisa Anual Serviços + PAC since 1988 + PNAD Contínua employment+income + CENSO 2022 baseline + Pesquisa Mensal Comércio); **DataSebrae** (Pulso Pequenos Negócios trimestral since 2022 + Demografia empresas + Biblioteca estudos free + monitoramento setorial); Sebrae 2026 expectativas (ambiente incerteza + percepções econômicas+inflação+desempenho + decisões cautelosas); custom research BR (Datafolha+Ipec+IBOPE Inteligência pricing R$50k-500k+); acadêmico (FGV+INSPER+USP IBRE FGV índices); sectoriais (ABRAS supermercados+ABF franchising+ABRASEL alimentação+CNI indústria+ABDI digital); government (Receita Federal+CAGED+RAIS+CVM capitais+Banco Central BR+ANATEL telecom).
+
+- **Fundação 5 — Pitch Deck Market Slide 2026**: **2026 fundraising market tougher than 2021** (Waveup); VCs running tighter ICP math + demanding bottom-up grounding + rejecting top-down "Statista summaries"; **strongest decks show BOTH approaches converge** (founder understands every angle); 3 questions VCs ask market slide (is market big enough + is now right time + do you understand to win); bottom-up framework Underscore VC (ICP precisely + universe + business model + addressable revenue + validate sources); market slide structure (headline thesis + 3-tier diagram + numbers per tier + methodology note + source citations + growth rate CAGR + now timing); 5 anti-patterns (top-down only Statista + TAM headline vs SOM execution + no methodology + inflated SOM >5% Year 3 + generic sources).
+
+- **Fundação 6 — B2B SaaS Market 2026 example application**: stats macro Mordor Intelligence **$492.34B 2026 → $1.578T 2031 CAGR 26.24%** drivers gen-AI copilots+cloud-first+usage-based pricing; top-down example global software $1.7T → SaaS 30% → B2B 80% = ~$400B (close Mordor); bottom-up healthtech BR niche example (3.500 facilities × R$60k ACV = R$210M TAM); **convergence test reveals discrepancy** (top-down inflates niche markets; bottom-up more accurate).
+
+- **Fundação 7 — Common Mistakes + Calibration**: 10 erros comuns (top-down only + TAM headline + no methodology + inflated SOM + generic sources + zero competitors assumption + ACV list price + mature market greenfield + geographic over-claim + no CAGR); calibration techniques **triangulation 3 methods** (top-down + bottom-up + comparable); sensitivity analysis **3 scenarios** (conservative + base + aggressive); convergent solid number / divergent investigate why; VCs respect conservative-realistic > aggressive-only.
+
+- **Fundação 8 — Aplicação content MKT**: 4 audiências (Heads-of-Strategy/Founders LinkedIn CSOs+Strategy Directors+Founders+research analysts + agencies B2B research tech vendors CB Insights/Statista/Crunchbase/Alpha Sense/Quals AI + ecossistema BR ABEP/ANPAD/ANEP+ESOMAR Brasil + thought leaders ex-CSOs); cross-pollination **Pesquisa+Empreendedorismo/Negócios/IA/Perfilamento = 35-65% engagement lift** (max 65% Pesquisa+Empreendedorismo founders+VCs market sizing pitch decks + 60% Pesquisa+Negócios business strategy+competitive analysis + 55% Pesquisa+IA AI research tools); workflow setup 8-12 sem + quarterly review medium volatility; **3 templates** (TAM SAM SOM bottom-up post + AI research methodology post + Brasil sources research post); disclaimer mandatory (educational + sources/benchmarks variam + cross-skill empreendedorismo+negocios+IA mandatory).
+
+- **18 Anti-patterns**: top-down only Statista summary + TAM as headline (SOM matters execution) + no methodology disclosure + inflated SOM >5% Year 3 + generic sources random blogs + zero competitors assumption + ACV = list price (vs realistic discounted) + mature market as greenfield + geographic over-claim global without proof + no CAGR static unrealistic + AI replaces humans (accelerator not replacement) + sample too small (<n=100 B2B / <n=400 B2C) + single methodology vs triangulation + no sensitivity single scenario + Brasil ignored + DataSebrae+IBGE ignored BR projects + Sebrae trimestral missed + VC bottom-up ignored top-down rejected.
+
+- **18 Regras de Ouro** + Checklist Contraditório Interno 10 perguntas + ~45 referências (ICanPitch+CharliA+Preuve+Zenitdata+Forum VC+VantaInsights+Optimal Jon+HubSpot+TheDigiZone+Antler+Mordor+Verified+Business Research+Growth Navigate+Vena+SaaS Capital+Cypris+Alpha Sense+Quantilope+Biobrain+CB Insights+Crunchbase+Qubit+SegmentStream+S&P Global+HBR+Quals+Sopact+Cognitive Future+Sage+Conveo+Listenlabs+DataSebrae+IBGE+Sebrae PR+Waveup+Qubit+Underscore+OpenVC+Pitch Doctor).
+
+- **4 exemplos comportamentais detalhados**:
+  1. **Founder pre-Series A pitch deck market slide Marina 34 $1.2M ARR healthtech BR 1.500 followers** (5 pillars + bottom-up rigoroso vs Statista; ROI 6m audience 1.500→4.500 + pre-A credibility);
+  2. **Agency MKT BH 5a 12 funcionarios research tech specialist BR** (CB Insights LatAm + Quals AI + Conveo clients potential; ROI 12-18m R$30k → R$80k+/mês);
+  3. **CSO scale-up Series B Roberto 42 B2B SaaS BR $20M ARR 4.000 followers** (5 pillars market sizing + AI research + Brasil context + cross-skill empreendedorismo/IA; ROI 12m 4.000→11.000);
+  4. **Ana 55 ex-CSO Fortune 500 BR + 25 anos research autora book "Pesquisa de Mercado Brasil 2027" mid-2027 9.000 followers** (6 EIXOS 18m → audience 9.000→20.000+ + livro 5-10k cópias).
+
+### Bloco Pesquisa & Inteligência 1/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | **`pesquisa-mercado-fundamentos`** | **✅ v2.16.0 (NOVA — 906 linhas, medium)** |
+| 2 | `persona-icp-deep` | ⏸️ Próxima |
+| 3 | `analise-concorrencia` | ⏸️ Planejada |
+| 4 | `white-space-analysis` | ⏸️ Planejada |
+| 5 | `trendwatching` | ⏸️ Planejada |
+| 6 | `competitive-intelligence` | ⏸️ Planejada |
+
+### Estatísticas globais
+
+- **49 skills implementadas / 65.405 linhas totais**
+- 18 skills volatility `high` (trimestral)
+- **24 skills volatility `medium` (semestral)**
+- 7 skills volatility `low` (anual)
+- 9 BLOCOS COMPLETOS + Bloco Pesquisa 1/6
+
+### Próxima skill (Bloco Pesquisa 2/6)
+
+- `persona-icp-deep` — 2ª SKILL Bloco Pesquisa — persona research + ICP deep + buyer journey + jobs-to-be-done.
+
+---
+
 ## 2.15.0 (2026-05-08) — 🎉 MILESTONE 9 BLOCOS COMPLETOS — `comunicacoes-corporativas` (ÚLTIMA Bloco E)
 
 ### 🎉 MILESTONE 9 BLOCOS COMPLETOS
