@@ -186,7 +186,8 @@ frank-mkt-plugin/
 | `pesquisa-mercado-fundamentos` (1ª SKILL Bloco Pesquisa & Inteligência) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 906 | **medium (6 meses)** |
 | `persona-icp-deep` (2ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 833 | **medium (6 meses)** |
 | `analise-concorrencia` (3ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 612 | **medium (6 meses)** |
-| **Bloco Pesquisa & Inteligência (em construção)** | **🔄 3/6** (3 implementadas + 3 pendentes) | **2.351** | — |
+| `white-space-analysis` (4ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 665 | **medium (6 meses)** |
+| **Bloco Pesquisa & Inteligência (em construção)** | **🔄 4/6** (4 implementadas + 2 pendentes) | **3.016** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

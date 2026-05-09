@@ -1,5 +1,54 @@
 # Changelog — Frank MKT
 
+## 2.19.0 (2026-05-08) — Bloco Pesquisa 4/6 — `white-space-analysis`
+
+### Adicionado
+
+- **Skill `white-space-analysis`** (`skills/white-space-analysis/SKILL.md`, **665 linhas**, volatility **medium (6 meses)**, **6 web searches** 2026-05-08: Blue Ocean Kim Mauborgne uncontested markets + white space market gaps + market gap startup unserved + ODI Ulwick opportunity score + Christensen disruptive innovation + oportunidade BR nichos). **4ª SKILL Bloco Pesquisa**. **8 fundações 2026**:
+
+- **Fundação 1 — Blue Ocean Strategy** Kim+Mauborgne 2004 HBR + **2026 Enhanced Edition forthcoming**; INSEAD professors + 2023 4 leading thinkers 100 anos HBR; Value Innovation differentiation+low cost simultaneous; 4 Actions ERRC Grid (Eliminate+Reduce+Raise+Create); Strategy Canvas X+Y axes; 6 paths discovery (alternatives+groups+buyers+complementary+functional/emotional+time); examples Cirque du Soleil+Yellow Tail+Wii+Tesla+OpenAI+Notion+Airbnb.
+
+- **Fundação 2 — White Space Analysis Methodology** 3 types gaps (functional partial+poorly + emotional unacknowledged + occasion contexts unserved); frameworks (SWOT+Gap most grounded + Ansoff Matrix penetration/development/diversification + Visual Mapping); Euromonitor triangulation (Passport+audits+retailer interviews+social listening+surveys+expert interviews); discovery techniques 2026 (audience gaps beginners-only + format gaps video-only + price gaps $19-or-$299 + geographic regional + search volume+social combined emerging trends BEFORE mainstream).
+
+- **Fundação 3 — ODI Opportunity Algorithm Ulwick** 1991 Strategyn 30+ years 1.500+ engagements **86% success vs 17% industry 5x improvement**; formula **Importance + (Importance - Satisfaction) = Opportunity** (>15 extreme + 12-15 low-hanging fruit + <12 saturated); 5 steps (define market job-level + discover 50-150 outcomes + quantify importance/satisfaction survey + calculate scores + innovate solutions); outcomes vs needs distinction (specific+measurable+controllable+action-independent vs vague solution-biased).
+
+- **Fundação 4 — Disruptive Innovation Christensen** 1990s HBS coined term + NOT breakthrough technologies making good products better → **accessible+affordable**; 2 types (low-end disruption bottom market good-enough lower margins incumbents move upstream Amazon+3D printing $4-10k+BYD EVs / new-market disruption non-consumption new customers Netflix+GenAI consulting); Innovator's Dilemma 1997 successful incumbents fail listening current customers blocking disruption; modern relevance 2025-2026 (BYD eating Western automakers + GenAI threatening professional services + open-source AI vs closed).
+
+- **Fundação 5 — Brasil 2026 Nichos** características BR (recursos naturais abundantes + jovem conectada + startups expansão + agronegócio+tecnologia+energia renovável+economia criativa); nichos subexplorados (idosos 60+ + PCDs + veganos/plant-based + LGBTQIAP+ + mulheres 50+ saúde+estética+finanças); setores em alta (sustentabilidade **+40% vendas Sebrae** + saúde mental online + e-commerce nicho pets exóticos+mobilidade urbana+cosméticos naturais+veganos+plus size + tecnologia/IA todos setores + setor pet assinaturas+bem-estar); modelos negócio promissores (infoprodutos sem estoque/logística + subscription boxes + marketplace verticais + SaaS micro-nichos).
+
+- **Fundação 6 — Common Mistakes** 10 erros (gap com saturated + Blue Ocean sem ERRC + ODI sem quantificação + Christensen sem distinção 2 tipos + search only sem social + audience único + Brasil ignored + sustentabilidade lip service vs +40% Sebrae + pet+saúde mental ignored + infoprodutos dismissed); 5 best practices (combined frameworks + quantitative validation ODI + search+social signals combined + 3 gaps consideradas + Brasil context).
+
+- **Fundação 7 — Tools + AI 2026** search trends (Google Trends free + Exploding Topics $249/mo + Glimpse browser); social listening (Brand24 $39-249 + Mention $41-419 + Sprout Social $249-499); market intelligence (CB Insights+Crunchbase+PitchBook); AI synthesis (ChatGPT+Claude+Gemini reviews+surveys → opportunity scores + trend prediction); specialized (Spate NYC whitespace beauty + Glimpse consumer trends).
+
+- **Fundação 8 — Aplicação content MKT** 4 audiências (founders/Heads-of-Strategy LinkedIn + product managers + agencies B2B innovation tools + thought leaders innovation); cross-pollination **White-space+Pesquisa fundamentos/Persona ICP/Análise concorrência/Empreendedorismo = 35-65% engagement lift** (max 65% White-space+Análise concorrência gaps competitive + 65% White-space+Empreendedorismo founder discovery + 60% Pesquisa fundamentos integrated TAM+gaps + 60% Persona/ICP unmet needs); 3 templates (Blue Ocean ERRC Grid post + ODI Opportunity Algorithm post + Brasil nichos subexplorados 2026 post).
+
+- **18 Anti-patterns** + **18 Regras de Ouro** + Checklist 10 perguntas + ~40 referências.
+
+- **4 exemplos**: Founder pre-A descobrindo blue ocean Marina + Product Manager unmet needs Roberto + CSO scale-up Pedro + Ex-CSO author book innovation BR 2027 Ana.
+
+### Bloco Pesquisa 4/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | `pesquisa-mercado-fundamentos` | ✅ v2.16.0 |
+| 2 | `persona-icp-deep` | ✅ v2.17.0 |
+| 3 | `analise-concorrencia` | ✅ v2.18.0 |
+| 4 | **`white-space-analysis`** | **✅ v2.19.0 (NOVA — 665 linhas, medium)** |
+| 5 | `trendwatching` | ⏸️ Próxima |
+| 6 | `competitive-intelligence` | ⏸️ Planejada |
+
+### Estatísticas globais
+
+- **52 skills implementadas / 67.515 linhas totais**
+- 18 high (trimestral) + **27 medium (semestral)** + 7 low (anual)
+- 9 BLOCOS COMPLETOS + Bloco Pesquisa 4/6 (67% bloco)
+
+### Próxima skill (Bloco Pesquisa 5/6)
+
+- `trendwatching` — trend identification + cool hunting + early signals + weak signals + trends prediction methodology
+
+---
+
 ## 2.18.0 (2026-05-08) — Bloco Pesquisa 3/6 — `analise-concorrencia`
 
 ### Adicionado
