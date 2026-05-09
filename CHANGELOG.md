@@ -1,5 +1,97 @@
 # Changelog — Frank MKT
 
+## 2.24.0 (2026-05-08) — 🎉🎉🎉 MILESTONE 11 BLOCOS COMPLETOS — Bloco Corporativo & Humanitário FECHADO 6/6 (4 skills paralelas)
+
+### Adicionado em paralelo (4 agentes simultâneos)
+
+**Estratégia de paralelização**: 4 agentes general-purpose foram spawnados em paralelo via Task tool, cada um com brief prescritivo (template padrão + 6 search topics + tamanho 700-900 linhas + ASCII PT-BR + cross-skill refs + estrutura 8 fundações). Cada agente fez 6 web searches + criou SKILL.md autocontido. Trackers e commit consolidados centralizadamente. **Qualidade mantida** — todos os 4 arquivos validados estruturalmente (8 fundações + 18 anti-patterns + 18 Regras de Ouro + 4 exemplos + checklist + ~70 referências hyperlinks).
+
+#### 1. Skill `comunicacao-crise` (3ª SKILL Bloco Corporativo)
+
+(`skills/comunicacao-crise/SKILL.md`, **1.080 linhas**, volatility **medium (6 meses)**, 6 web searches: crisis communication framework + crisis management Edelman trust + social media crisis + LGPD ANPD breach Brasil + comunicacao crise Brasil cases + holding statement dark site CEO apology). **8 fundações 2026**:
+
+- Crisis Communication Framework Histórico (Tylenol J&J 1982 + Coombs SCCT 3 clusters + Benoit Image Repair 5 categorias) com cases 2007-2026 (BP/Equifax/VW/Chipotle/Boeing/Wells Fargo/Wirecard)
+- Crisis Playbook 2026 (pre-crisis + dark site + holding statements + spokesperson selection)
+- Social Media Crisis 2026 (Golden 15 Minutes + viral cycle + AI deepfakes + forensic tools Reality Defender/Truepic/Sensity AI)
+- LGPD/ANPD Breach Notification Brasil (Resolução CD/ANPD 15/2024, prazo 3 dias úteis vs 72h GDPR, plataforma SUPER, 9 itens conteúdo, multas até R$ 50M, casos Telefônica R$ 2.6M + JBS R$ 200k)
+- Reputation Recovery (RepTrak + Edelman Trust Barometer + Time-to-Trust)
+- Brasil 2026 cases (Carrefour/Joao Alberto Freitas 2020 + Ype + Americanas + Light + Vale Brumadinho + JBS) + agências (FleishmanHillard BR + Edelman + CDN + FSB + In Press + Maquina CW + Approach + CrisisGo + Cortex Intelligence + pricing R$ 30-150k mid + R$ 200-500k Tier 1)
+- CEO Apology Framework + Holding Statements + Spokesperson selection
+- Aplicação MKT 5 audiências
+
+4 exemplos densos: data breach LGPD 800k clientes + viral racism TikTok mid-cap + layoff 800 SaaS Series C (Brian Chesky model) + AI deepfake founder Series A.
+
+#### 2. Skill `esg-comunicacao` (4ª SKILL Bloco Corporativo)
+
+(`skills/esg-comunicacao/SKILL.md`, **1.096 linhas**, volatility **medium (6 meses)**, 6 web searches: ESG communication strategic + integrated reporting GRI/SASB/ISSB + materiality assessment double + ESG Brasil B3 CVM + climate disclosure CSRD + purpose-driven Gen Z B Corp). **8 fundações 2026**:
+
+- ESG Framework Global (US$ 35T mandated assets + 86% large companies disclose + 5 fontes value: cost reduction/revenue uplift/risk mitigation/capital access/license to operate)
+- Frameworks Reporting (GRI 1972 voluntary + SASB→ISSB IFRS S1+S2 + TCFD/TNFD + CSRD EU 2024+ + Omnibus 61% cut + ECGT vigor 27 Set 2026)
+- Materiality Assessment (double materiality CSRD: financial + impact / single materiality ISSB / 10-step ESRS workflow + Credibl reconciliation)
+- Greenwashing Avoidance + Greenhushing Balance (7 sins TerraChoice + FTC Green Guides + EU Green Claims Directive + Brasil CADE/CONAR/Senacon + cases VW Dieselgate + DWS + Goldman + H&M + risco simétrico greenhushing 25% companies South Pole report)
+- Climate Disclosure 2026 (Scope 1+2+3 + SBTi + net-zero 2050)
+- **Brasil 2026 ESG** (CVM Res 193/2023 + 217/218/219/2024 mandatory janeiro 2026 + B3 ISE/ICO2/IDIVERSA + ABRASCA + IBGC + ABNT + Pacto Global Brasil + Ethos + GVces FGV + Imaflora + setores Vale/Mariana/Brumadinho + JBS/Amazônia + Petrobras transition + Natura B Corp)
+- ESG Communication Tactical (annual sustainability reports + investor presentations + customer-facing + employee + community engagement)
+- Aplicação MKT 5 audiências
+
+4 exemplos: Helena CSO Vale + Felipe Magalu IR + Daniel agtech Cerrado + Patricia Petrobras transition.
+
+#### 3. Skill `terceiro-setor` (5ª SKILL Bloco Corporativo)
+
+(`skills/terceiro-setor/SKILL.md`, **837 linhas**, volatility **medium (6 meses)**, 6 web searches: nonprofit communication + impact reporting AA1000 SROI + corporate philanthropy CSR + terceiro setor Brasil ABONG GIFE Pacto Global + cause marketing Gen Z + nonprofit storytelling). **8 fundações 2026**:
+
+- Nonprofit communication framework (mission + theory of change + stakeholder map donors/beneficiaries/employees/volunteers/community/government)
+- Impact Reporting (AA1000 4 principles Inclusivity+Materiality+Responsiveness+Impact + AA1000AS Type 1/2 + SROI 7 principles + IRIS+ 600+ metrics GIIN + Theory of Change Logic Model 7 elementos + 4-layer impact reporting)
+- Corporate Philanthropy Strategic (Porter & Kramer 2002 + CSR vs CSV 2011 HBR + ESG corporate giving)
+- Cause Marketing 2026 (Patagonia donate profits + TOMS one-for-one critique + Dove Real Beauty + Brasil Magazine Luiza/Natura)
+- **Brasil 2026 terceiro setor** (Lei 13.019/2014 MROSC + Lei 9.790/1999 OSCIP + Lei 9.637/1998 OS + 800k+ ONGs + ABONG + GIFE 130+ associados R$ 4 bi/ano + Pacto Global ONU Rede Brasil 2400+ signatários segunda maior rede mundial + FIFE 2026 Recife + Fundação Lemann + Itaú Social + Roberto Marinho + Alana + Ayrton Senna)
+- Donor Engagement Digital (storytelling + monthly giving + crowdfunding + peer-to-peer + matching gifts + legacy giving)
+- Anti-greenwashing/woke-washing/virtue signaling (Bud Light Mulvaney $1B loss + VW Dieselgate + BP "Beyond Petroleum" + HSBC Bali ASA ban + Shell + 7-point detection + 10-point anti-greenwashing framework)
+- Aplicação MKT 5 audiências (Founder ONG + CCO B3 + CSR Manager multinacional + Agência cause + Founder B Corp)
+
+4 exemplos: Founder ONG Marina (R$ 800k → R$ 3M + AA1000 + Pacto Global) + CCO Bruno B3 (50→12 projetos + GIFE 18m) + CSR Camila multinacional (Pacto Global CoP + GIFE Censo) + Founder B Corp Daniela (Series A R$ 30M + B Impact 110+).
+
+#### 4. Skill `empreendedorismo-impacto` (6ª SKILL Bloco Corporativo — ÚLTIMA, FECHA BLOCO)
+
+(`skills/empreendedorismo-impacto/SKILL.md`, **879 linhas**, volatility **medium (6 meses)**, 6 web searches: social entrepreneurship 2026 + B Corp certification + impact investing GIIN IRIS + Brasil Pipe.Social Quintessa ASE + Endeavor Sebrae + founder narrative purpose-driven). **8 fundações 2026**:
+
+- Empreendedorismo de Impacto Framework (3 testes IMP canônicos: intentionality + measurability + additionality + spectrum traditional → impact-first + ODS 2030)
+- B Corp Certification (B Lab 2006 + 9.000+ globally + 200+ Brasil + B Impact Assessment 200 perguntas + V2.1 Standards 2026 mudança points→mandatory requirements 7 areas + governance/workers/community/environment/customers + Best for the World ranking)
+- Impact Investing 2026 (GIIN US$ 1.5T AUM + IRIS+ 600+ indicators + spectrum returns first→impact first + impact bonds + outcome-based finance + 5 dimensions)
+- **Brasil ecossistema impacto 2026** (Pipe.Social 1.011 negócios + Quintessa aceleradora + ICE + Yunus Negócios Sociais Brasil + Sitawi Finanças do Bem + Vox Capital partners Daniel Izzo+Kelly Michel+Mariana Chaves + MOV + Positive + Bemtevi + ASE Brasil + Coalizão pelo Impacto meta 6 ecossistemas/600 negócios)
+- Endeavor Brasil 2026 (250+ empreendedores high-impact + screening rigoroso + global mentoring + Sebrae empreendedorismo + cases Velez/Junqueira Nubank + Furio Creditas + Trajano Magalu + Marcelo XP)
+- Founder Narrative Purpose-Driven (origin story + theory of change pessoal + LinkedIn + earned media + investor pitches purpose-aligned)
+- Anti-Patterns Impact-Washing (purpose-washing + greenwashing + impact theater + virtue signaling + tokenism + critique TOMS academic)
+- Aplicação MKT 6 audiências (Founder impacto + Scaleup founder + Agência + Aceleradora + Conselho + Investidor impacto)
+
+4 exemplos: Marina FoodTech pre-Series A + Carlos Edtech Series B B Corp+integrated reporting + Aceleradora Quintessa-style 2026 + Vox Capital partner GIIN signatory.
+
+### 🎉🎉🎉 MILESTONE 11 BLOCOS COMPLETOS — Bloco Corporativo & Humanitário FECHADO 6/6
+
+| # | Skill | v | Linhas |
+|---|-------|---|-------:|
+| 1 | `comunicacao-corporativa` | v2.22.0 | 737 |
+| 2 | `employer-branding` | v2.23.0 | 833 |
+| 3 | **`comunicacao-crise`** | **v2.24.0 (paralela)** | **1.080** |
+| 4 | **`esg-comunicacao`** | **v2.24.0 (paralela)** | **1.096** |
+| 5 | **`terceiro-setor`** | **v2.24.0 (paralela)** | **837** |
+| 6 | **`empreendedorismo-impacto`** | **v2.24.0 (paralela)** | **879** |
+| **TOTAL Bloco** | | ✅ **6/6 COMPLETO** | **5.462** |
+
+**11 BLOCOS COMPLETOS**: SEO 7/7 + Mídia Social 10/10 + Comunicação Visual & IA 4/4 + Multi-Platform 3/3 + Persuasão 2/2 + MKT Não-Tradicional 2/2 + MKT & Estratégia 5/5 + Bloco F EXPANDIDO 13/13 + Bloco E Documentos 2/2 + Pesquisa 6/6 + **Corporativo & Humanitário 6/6**.
+
+### Estatísticas globais
+
+- **60 skills implementadas / 74.299 linhas totais**
+- 18 high (trimestral) + **35 medium (semestral)** + 7 low (anual)
+- **11 BLOCOS COMPLETOS** (60 das ~83 skills planejadas — **72% concluído**)
+
+### Próximo
+
+Após Bloco Corporativo & Humanitário COMPLETO 6/6, blocos restantes: Copy & Redação 4 + UX/UI 4 + Conhecimento Plataforma 6 + Meta-skill 1 + Marketing & Estratégia 2º lote 5 + Infraestrutura slash 8 + Agentes 14.
+
+---
+
 ## 2.23.0 (2026-05-08) — Bloco Corporativo & Humanitário 2/6 — `employer-branding`
 
 ### Adicionado
