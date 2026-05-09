@@ -2,11 +2,11 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.20.0 — 2026-05-08) — 9 BLOCOS COMPLETOS + Bloco Pesquisa 5/6
+## Status (v2.21.0 — 2026-05-08) — 🎉 10 BLOCOS COMPLETOS + Bloco Pesquisa COMPLETO 6/6
 
-**53 skills implementadas / 68.171 linhas totais.**
+**54 skills implementadas / 68.837 linhas totais.**
 
-🎉 **9 BLOCOS COMPLETOS** + iniciado Bloco Pesquisa & Inteligência de Mercado.
+🎉🎉 **10 BLOCOS COMPLETOS** — Bloco Pesquisa & Inteligência de Mercado FECHADO 6/6.
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -20,7 +20,7 @@
 | Marketing & Estratégia | ⏸️ 0/5 | — |
 | **Domínio Vertical (Bloco F — EXPANDIDO)** | ✅ **13/13** | 18.856 |
 | **Bloco E Documentos Corporativos** | ✅ **2/2** | 1.947 |
-| Pesquisa & Inteligência de Mercado | 🔄 5/6 | 3.672 |
+| **Pesquisa & Inteligência de Mercado** | ✅ **6/6** | 4.338 |
 | Copy & Redação | ⏸️ 0/4 | — |
 | UX/UI | ⏸️ 0/4 | — |
 | Psicologia & Influência (overlap parcial) | ⏸️ 0/2 | — |
@@ -28,9 +28,9 @@
 | Corporativo & Humanitário | ⏸️ 0/6 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | Meta-skill | ⏸️ 0/1 | — |
-| **TOTAL** | **53/~83** | **68.171** |
+| **TOTAL** | **54/~83** | **68.837** |
 
-**Volatility:** 28 skills `medium` (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **29 skills `medium`** (re-validar a cada 6 meses) + **18 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-07/08-08) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 

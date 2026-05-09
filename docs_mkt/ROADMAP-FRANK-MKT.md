@@ -188,7 +188,8 @@ frank-mkt-plugin/
 | `analise-concorrencia` (3ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 612 | **medium (6 meses)** |
 | `white-space-analysis` (4ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 665 | **medium (6 meses)** |
 | `trendwatching` (5ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 656 | **medium (6 meses)** |
-| **Bloco Pesquisa & Inteligência (em construção)** | **🔄 5/6** (5 implementadas + 1 pendente — última: competitive-intelligence) | **3.672** | — |
+| `competitive-intelligence` (6ª SKILL Bloco Pesquisa — ÚLTIMA) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 666 | **medium (6 meses)** |
+| **🎉 Bloco Pesquisa & Inteligência de Mercado COMPLETO** | **✅ 6/6** (fundamentos + ICP + análise-concorrência + white-space + trendwatching + competitive-intelligence) | **4.338** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

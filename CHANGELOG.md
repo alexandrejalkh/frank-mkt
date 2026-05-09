@@ -1,5 +1,57 @@
 # Changelog — Frank MKT
 
+## 2.21.0 (2026-05-08) — 🎉 MILESTONE 10 BLOCOS COMPLETOS — Bloco Pesquisa & Inteligência FECHADO 6/6 — `competitive-intelligence`
+
+### Adicionado
+
+- **Skill `competitive-intelligence`** (`skills/competitive-intelligence/SKILL.md`, **666 linhas**, volatility **medium (6 meses)**, **6 web searches** 2026-05-08: SCIP framework methodology + war games strategic 2026 simulation + battlecards Crayon Klue templates + win-loss Clozd interviews + market intelligence operations + CI ethics SCIP code conduct). **6ª SKILL Bloco Pesquisa ÚLTIMA, fechou bloco COMPLETO 6/6**. **8 fundações 2026**:
+
+- **Fundação 1 — SCIP Framework + 3 Funções Core** SCIP (Strategic Consortium of Intelligence Professionals) renomeada Apr-2023 25k+ membros 120 países; 3 funções core (research+analysis+enablement); 4 níveis intelligence (strategic+tactical+operational+counter-intelligence); placement organização (PMM Ops mais comum B2B SaaS / GTM Ops / Sales Ops / Strategy / Marketing / Standalone CSO/CEO).
+
+- **Fundação 2 — War Games + Scenario Planning Combined** corporate wargaming structured role-playing workshops Aurora GPS+Octopus+Proactive Worldwide; estrutura clássica (pre-game 4-6 semanas + Day 1 briefing + 3 rounds + debrief); war game (simulate moves) vs scenario planning (map plausible futures) — combined best practice 2026; quando rodar (pre-launch+M&A defense+novo entrant+pricing war+strategic plan stress-test); custos USD 50-200k facilitador externo + 200-500h-pessoa interno.
+
+- **Fundação 3 — Battlecards Sales Enablement** Crayon: **71% empresas com battlecards aumento win rate**, **93% destes >20% lift**, **90% top sales teams usam**, **15% higher win rate** vs sem; plataformas Klue/Crayon $15-30k/ano + HiResteve.ai 2026 entrant; Universal Framework anatomy (header+exec summary+at-a-glance+strengths+weaknesses+pricing+differentiators+discovery+objection+trap setting+proof points+win/loss patterns); 4 tipos (discovery+win-loss+universal+champion); **stale battlecard pior que none** anti-pattern #1; cadence (Tier 1 mensal / Tier 2 trimestral / Tier 3 semestral); PMM owner típico.
+
+- **Fundação 4 — Win-Loss Analysis Clozd Methodology** premium consulting firm software+human; **68% empresas que compartilham win-loss insights cross-departamento aumentam win rate**; B2B win rate benchmark 25-40%; estrutura entrevista (30-45 min + open broad + 4 core topics solution requirements/pricing/competitive landscape/sales experience + close); sample size N=20-30 trimestral mínimo statistical; mix 60% wins / 40% losses; plataformas (Clozd premium + DoubleCheck + Anova AI + UserIntuition.ai 2026 + DIY); NUNCA sales rep envolvido (viesado), preferível terceiro neutro 95% taxa abertura.
+
+- **Fundação 5 — Market Intelligence Operations** **74% líderes reconhecem necessidade M&CI program 12 meses** (Gartner); ROI típico 3-10x; 7 passos (objetivos+stakeholders+KITs+source intelligence+frameworks+distribution+measure); tools stack 2026 (Klue+Crayon+AlphaSense+Contify+WatchMyCompetitor+HiResteve.ai + Visualping/Distill social listening + Brandwatch/Sprinklr + Brasil-specific SERPRO/Receita/JUCESP/INPI/CVM/B3); roles (CI Lead+research analyst+analysis analyst+enablement specialist+ops); budget tiers ($0 bootstrap → $50-100k small → $200-500k medium → $1M+ enterprise).
+
+- **Fundação 6 — SCIP Ethics + Legal Boundaries Brasil 2026** SCIP Code 9 princípios (transparency identity + confidentiality + ethics ambassador); **práticas ANTIÉTICAS proibidas mesmo se "legais"** (pretexting + dumpster diving + bugging + bribing + stealing + hacking + honey-trap + false social media identity); legal framework Brasil (LGPD Lei 13.709/2018 ANPD multas 2% faturamento até R$ 50M + Código Penal Art 154-A invasão dispositivo + Art 158 extorsão + Art 171 estelionato pretexting + Lei 9.279/96 Art 195 concorrência desleal 5 anos + CADE atos concentração) + global (EEA + CFAA + DTSA + GDPR + CCPA); práticas ÉTICAS aceitáveis (web research público + social listening público + conferências transparente + job postings + customer interviews voluntário + ex-employee se NDA respeitado + mystery shopping identidade real + patent monitoring + financial filings); **Octopus 4-question test** (transparency+ethics+legal+resilience).
+
+- **Fundação 7 — CI Brasil 2026 Especificidades** LGPD enforcement maturando ANPD ativa; Receita+JUCESP públicos CNPJ lookup + capital social + sócios; CVM B3 listed DFP/ITR/fato relevante ouro; INPI patents+marcas gratuito; CADE M&A pendentes; TJ-SP/RJ processos públicos; **Reclame Aqui ouro CI Brasil** buyer pain points concorrentes; Glassdoor/LoveMondays culturais; LinkedIn Brasil high penetration executivos; imprensa especializada (Valor+Estadão+Folha+IstoÉ+Exame+NeoFeed+Brazil Journal); concorrentes Brasil 2026 (tradicionais nacionais + novatos digitais Nubank/Stone + multinacionais cautelosos LGPD + globais SaaS B2B + plataformas chinesas Shein/Temu/TikTok Shop disrupting); war games Brasil cenários (tarifas Trump 2.0 + Pix vs maquininhas + Open Finance + eleição 2026 + IA generativa).
+
+- **Fundação 8 — Aplicação content MKT** 5 audiências (founder bootstrap $0 + CMO Series B $300k/ano + CSO enterprise $1M+/ano + PMM battlecard owner + sales enablement leader); cross-pollination **Pesquisa fundamentos+ICP+Análise concorrência+White-space+Trendwatching+CI = stack pesquisa completo**; conteúdo MKT cross-skill (LinkedIn founder learnings war game + CMO playbook CI program + webinar PMM battlecard + case study C-level win-loss); avoid disclosing (lista competitors monitor + battlecards conteúdo + win-loss raw quotes LGPD + war game outputs detalhados + tools pricing).
+
+- **18 Anti-patterns** (CI=espionagem+CI sem objetivo+battlecard stale+win-loss conduzido sales+war game sem prep+sem buy-in+isolado+spying employees+comprar dados ilegais+LGPD violation+battlecard better at everything+N=3 anedótico+sem debrief+tool sem analyst+só competitors diretos+counter-intel zero+vazamento confidential+misrepresentation conferences) + **18 Regras de Ouro** (SCIP Code+identity transparency+KITs primeiro+3 funções+universal framework+Clozd neutro+N=20-30+war game annual+distribution channels+LGPD compliance+4-question test+counter-intel baseline+tools tier ICP+cadence reviews+C-suite buy-in+cross-functional+disclaimer educational+memória longitudinal) + Checklist Contraditório Interno 10 perguntas + ~50 referências.
+
+- **4 exemplos**: Founder Marina FoodTech CI bootstrap + CMO Roberto B2B SaaS Series B program scaling + PMM Daniel battlecard launch response 24h + CSO Ana enterprise counter-intelligence audit.
+
+### 🎉 MILESTONE 10 BLOCOS COMPLETOS — Bloco Pesquisa & Inteligência de Mercado FECHADO 6/6
+
+| # | Skill | Status | Linhas |
+|---|-------|--------|-------:|
+| 1 | `pesquisa-mercado-fundamentos` | ✅ v2.16.0 | 906 |
+| 2 | `persona-icp-deep` | ✅ v2.17.0 | 833 |
+| 3 | `analise-concorrencia` | ✅ v2.18.0 | 612 |
+| 4 | `white-space-analysis` | ✅ v2.19.0 | 665 |
+| 5 | `trendwatching` | ✅ v2.20.0 | 656 |
+| 6 | **`competitive-intelligence`** | **✅ v2.21.0 (NOVA — 666 linhas, medium)** | **666** |
+| **TOTAL** | | ✅ **6/6 COMPLETO** | **4.338** |
+
+**10 BLOCOS COMPLETOS**: SEO Estendido + Mídia Social + Comunicação Visual & IA + Multi-Platform Strategy + Persuasão & Engajamento + Marketing Não-Tradicional + Marketing & Estratégia + Domínio Vertical (Bloco F EXPANDIDO 13/13) + Bloco E Documentos Corporativos + **Pesquisa & Inteligência de Mercado**.
+
+### Estatísticas globais
+
+- **54 skills implementadas / 68.837 linhas totais**
+- 18 high (trimestral) + **29 medium (semestral)** + 7 low (anual)
+- **10 BLOCOS COMPLETOS** (54 das ~83 skills planejadas — **65% concluído**)
+
+### Próximo
+
+Após Bloco Pesquisa COMPLETO 6/6, blocos restantes: Copy & Redação 4 + UX/UI 4 + Conhecimento Plataforma 6 + Corporativo Humanitário 6 + Meta-skill 1 + Marketing & Estratégia 5 (segundo lote) + Infraestrutura slash 8 + Agentes 14.
+
+---
+
 ## 2.20.0 (2026-05-08) — Bloco Pesquisa 5/6 — `trendwatching`
 
 ### Adicionado
