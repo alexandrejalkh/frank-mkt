@@ -185,7 +185,8 @@ frank-mkt-plugin/
 | **🎉 Bloco E Documentos Corporativos COMPLETO** | **✅ 2/2** (atas-relatorios + comunicacoes) | **1.947** | — |
 | `pesquisa-mercado-fundamentos` (1ª SKILL Bloco Pesquisa & Inteligência) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 906 | **medium (6 meses)** |
 | `persona-icp-deep` (2ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 833 | **medium (6 meses)** |
-| **Bloco Pesquisa & Inteligência (em construção)** | **🔄 2/6** (2 implementadas + 4 pendentes) | **1.739** | — |
+| `analise-concorrencia` (3ª SKILL Bloco Pesquisa) | ✅ Implementada (2026-05-08, v0.1.0 — pesquisa de campo) | 612 | **medium (6 meses)** |
+| **Bloco Pesquisa & Inteligência (em construção)** | **🔄 3/6** (3 implementadas + 3 pendentes) | **2.351** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

@@ -1,5 +1,54 @@
 # Changelog — Frank MKT
 
+## 2.18.0 (2026-05-08) — Bloco Pesquisa 3/6 — `analise-concorrencia`
+
+### Adicionado
+
+- **Skill `analise-concorrencia`** (`skills/analise-concorrencia/SKILL.md`, **612 linhas**, volatility **`medium` (6 meses)** — frameworks foundational decadas Porter 1979+SWOT 1960s+perceptual maps marketing 1970s MAS aplicação 2026 deslocando: AI SWOT execution + 89% Fortune 500 still use + battlecards 71% win rate improvement + e-commerce BR R$258B 2026 + tools landscape maturing, **pesquisa de campo** — 6 web searches em 2026-05-08: competitive analysis Porter five forces B2B SaaS + SWOT analysis modern AI integration + positioning map perceptual brand differentiation + competitive benchmarking SaaS B2B KPIs + competitor monitoring tools Crayon Klue Kompyte + análise concorrência Brasil 2026. **3ª SKILL Bloco Pesquisa & Inteligência**. **8 fundações 2026**:
+
+- **Fundação 1 — Porter Five Forces 2026 B2B SaaS**: 5 forces (rivalry+entrants+substitutes+suppliers+buyers); B2B SaaS application (industry rivalry fierce stakes high differentiation critical NOT just price; threat new entrants high barriers some niches BUT open-source+cloud lower barriers others; threat substitutes > direct competitors AI agents could obsolete categories; B2B bargaining power buyers concentrated easy switching price-sensitive; suppliers cloud providers AWS+Azure+GCP significant power); modern relevance 2026 (core principles remain + 93% companies digital-first Foundry 2023 + intensified rivalry).
+
+- **Fundação 2 — SWOT 2026 + AI Integration**: Albert Humphrey 1960s Stanford; **89% Fortune 500 still use** + 72% strategic planning 2026 + **2.8x more likely achieve strategic goals**; components internal (Strengths capabilities+resources / Weaknesses gaps+limitations) external (Opportunities trends+shifts / Threats competitors+economic); AI transformation 2026 (weeks→seconds 10-K+earnings+market data + AI assumption testing every claim evaluated against sentiment+benchmarks+metrics + AI stress-test simulating market conditions); common mistake vague superficial statements describe any company; **TOWS Matrix** reverse SWOT (SO+ST+WO+WT strategies actionable).
+
+- **Fundação 3 — Perceptual Maps + Brand Positioning**: visual technique 2D graph (X+Y axes 4 quadrants) brands plotted attributes similar=close different=far; strategic uses (identify position vs competitors + reveal unclaimed attributes white-space + track sentiment + craft positioning + find "nirvana point" customer ideal); how to build (define target market + 2 attributes important customers + survey rate + plot 2D + analyze quadrants crowded vs empty); modern approach 2026 living tools (re-cut by segment+occasion + refreshed new data + paired quantitative models + AI-augmented).
+
+- **Fundação 4 — Competitive Benchmarking 2026**: 5 types (competitive vs rivals + strategic models+positioning + process workflows + performance KPIs + internal cross-units); critical SaaS KPIs (**SaaS Triangle Gross Margin 75%+ / CAC Payback <15 months / NRR 101%+**); other key (AVG B2B SaaS CAC $1,200 + B2B sales cycle **134 days +25% vs previous** + conversions 1.5-2.5% visitor-to-lead + 45-55% lead-to-MQL top); two-level reporting 2026 (executive scorecards quarterly investor-grade + operational dashboards weekly leading indicators); tracking frequency (digital signals weekly+continuous + financial+strategic quarterly + full review bi-annual); critical principle comparison set RELEVANT (same industry + similar deal size + comparable GTM motion).
+
+- **Fundação 5 — Competitive Intelligence Tools 2026**: market leaders (**Crayon enterprise leader 2014+ 3x PMA Pulse 2021-2023 best CI software** battlecards mature widely adopted CRM integration $20-40k/year / **Klue G2 4.8/5 across 428+ reviews** battlecards+win-loss+AI insights large CI programs $20-40k / **Kompyte now part Semrush** website+digital tracking automation marketing-led starts $300/month / Contify+Trackmore alternatives); battlecards impact (**competitors show up 68% deals** + **teams using battlecards 71% improved win rates** + **93% see increases exceeding 20%**); pricing tiers (mid-market $300-500/mo + standard $5-15k/year + enterprise $20-40k/year).
+
+- **Fundação 6 — Brasil Análise Concorrência 2026**: cenário (**e-commerce BR R$258B 2026 projeção** + **70% lojas virtuais BR usam IA** otimizar + IA mais madura afastando investimento impulso); posicionamento marca trends (**autenticidade > campanhas tradicionais** Gen Z+Millennial + comunicar propósito+história+valores + ROI pressure ascendente + CPC+CPL subindo + leilões anúncios concorridos + dados segmentação restritos LGPD); metodologia BR (avaliar produto/serviço qualidade+variedade+diferenciais + marketing comunicação+canais+posicionamento + experiência cliente atendimento+ambiente+jornada); players locais consolidados (Mercado Livre+Amazon BR+Magazine Luiza e-commerce + iFood+Rappi+Uber Eats delivery + Nubank+Itaú+Bradesco financeiro + TOTVS+Senior+Sankhya ERP + Stone+PagSeguro+Mercado Pago fintech).
+
+- **Fundação 7 — Common Mistakes + Best Practices**: 10 erros (SWOT generic vague describe any company + Porter only vs combined + static one-off vs continuous + direct competitors only ignore substitutes+entrants + no quantitative validation + wrong comparison set enterprise vs SMB + battlecards not used 68% deals + tools enterprise only $20-40k mid-market $300/mo Kompyte ignored + AI replace humans + Brasil context ignored); 5 best practices (combined frameworks Porter+SWOT+perceptual+benchmarking + AI assumption testing stress-test + continuous monitoring vs annual + battlecards integrated sales enablement + quarterly+bi-annual review cadence).
+
+- **Fundação 8 — Aplicação content MKT**: 4 audiências (CMOs/Heads-of-Strategy LinkedIn CSOs+CMOs+CI Directors + agencies B2B servindo CI tools Crayon+Klue+Kompyte+Contify+Trackmore + ecossistema BR research+strategy + thought leaders competitive strategy ex-CMOs/CSOs); cross-pollination **Análise+Pesquisa fundamentos/Persona ICP/Posicionamento marca/Negócios = 35-65% engagement lift** (max 65% Análise+Posicionamento perceptual maps direct application + 60% Análise+Pesquisa fundamentos integrated + 60% Análise+Negócios Porter strategy frameworks); 3 templates (Porter Five Forces B2B SaaS post + SWOT + AI assumption testing post + Battlecards 68% deals + 71% win rate post); disclaimer mandatory.
+
+- **18 Anti-patterns** + **18 Regras de Ouro** + Checklist 10 perguntas + ~37 referências.
+
+- **4 exemplos**: Founder pre-Series A análise competitive Marina + Agency BH CI tools specialist + CMO scale-up Roberto + Ex-CSO author book Ana.
+
+### Bloco Pesquisa & Inteligência 3/6
+
+| # | Skill | Status |
+|---|-------|--------|
+| 1 | `pesquisa-mercado-fundamentos` | ✅ v2.16.0 |
+| 2 | `persona-icp-deep` | ✅ v2.17.0 |
+| 3 | **`analise-concorrencia`** | **✅ v2.18.0 (NOVA — 612 linhas, medium)** |
+| 4 | `white-space-analysis` | ⏸️ Próxima |
+| 5 | `trendwatching` | ⏸️ Planejada |
+| 6 | `competitive-intelligence` | ⏸️ Planejada |
+
+### Estatísticas globais
+
+- **51 skills implementadas / 66.850 linhas totais**
+- 18 high (trimestral) + **26 medium (semestral)** + 7 low (anual)
+- 9 BLOCOS COMPLETOS + Bloco Pesquisa 3/6
+
+### Próxima skill (Bloco Pesquisa 4/6)
+
+- `white-space-analysis` — gaps + opportunities + blue ocean strategy + uncontested markets
+
+---
+
 ## 2.17.0 (2026-05-08) — Bloco Pesquisa 2/6 — `persona-icp-deep` (🎉 50 SKILLS)
 
 ### Adicionado
