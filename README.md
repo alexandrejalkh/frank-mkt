@@ -1,168 +1,211 @@
 # Frank MKT — Plugin Claude Code
 
-Consultor de Marketing, SEO, Mídias Sociais e Inteligência de Mercado que opera como plugin do Claude Code. Persona unificada com motor cognitivo, Contraditório Interno obrigatório, Perfilador de Mercado e skills com decaimento temporal. Inspirado na arquitetura do Frank Jurídico TI.
+Consultor de Marketing, SEO, Mídias Sociais e Inteligência de Mercado que opera como plugin do Claude Code. Persona unificada com motor cognitivo, Contraditório Interno obrigatório, Perfilador de Mercado e skills com decaimento temporal. Foco Brasil 2026 (LGPD + CONAR + CDC + cultura tropicalizada).
 
-> **Status (v0.6.0 — 2026-05-08):** **17 skills implementadas / 20.815 linhas totais**. **2 blocos principais COMPLETOS**.
+> **Status v2.32.0 — 2026-05-09 — 🚀🚀🚀 PLUGIN 100% COMPLETO**
 >
-> - ✅ **Bloco SEO completo** (7/7 skills, 9.853 linhas): `seo-fundamentos`, `seo-keywords`, `seo-on-page`, `seo-tecnico`, `seo-link-building`, `conteudo-evergreen`, `seo-ai-otimizacao`.
-> - ✅ **Bloco Mídia Social COMPLETO** (10/10 skills, 10.962 linhas): `social-media-fundamentos`, `linkedin-organico`, `x-twitter`, `youtube-shorts`, `instagram-feed-reels`, `tiktok-criativo`, `facebook-organico`, `linkedin-ads`, `instagram-ads`, `facebook-ads`.
-> - ⏸️ **Demais blocos não iniciados**: Infraestrutura (8 slash commands), Marketing & Estratégia (5), Copy & Redação (4), Pesquisa & Inteligência de Mercado (6), UX/UI (4), Psicologia & Influência (3), Conhecimento de Plataforma (6), Corporativo & Humanitário (6), Meta-skill (1).
-> - ⏸️ **Agentes não iniciados**: 14 planejados (apenas placeholder `agents/README.md`).
+> **114 artefatos / 119.089 linhas totais**:
+> - ✅ **92 skills** em **18 blocos completos** (107.548 linhas)
+> - ✅ **8 slash commands** (3.529 linhas)
+> - ✅ **14 agentes especialistas** (8.012 linhas)
 >
-> **12 skills com pesquisa de campo** (volatility `high`, re-validar a cada 3 meses): `seo-ai-otimizacao` + 11 mídia social. **5 skills volatility `medium`** (re-validar a cada 6 meses): SEO clássicas.
+> **Volatility distribution**:
+> - **24 skills `high`** (re-validar 3 meses) — plataformas Meta/Google/LinkedIn, GA4, Search Console, CONAR/CDC, tendências
+> - **61 skills `medium`** (re-validar 6 meses) — frameworks, métricas, copy de plataforma, brand-design
+> - **7 skills `low`** (re-validar 12 meses) — metodologias, psicologia, princípios UX
 >
-> Snapshot detalhado: [`../docs_mkt/SNAPSHOT-2026-05-07.md`](../docs_mkt/SNAPSHOT-2026-05-07.md).
-> Roadmap: [`../docs_mkt/ROADMAP-FRANK-MKT.md`](../docs_mkt/ROADMAP-FRANK-MKT.md).
+> Roadmap completo: [`docs_mkt/ROADMAP-FRANK-MKT.md`](docs_mkt/ROADMAP-FRANK-MKT.md). Histórico: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Instalação
 
 ```bash
-# 1. Adicionar o marketplace (ainda a definir)
-claude plugin marketplace add <url-do-marketplace>
+# Adicionar como marketplace local (este repo)
+claude plugin marketplace add https://github.com/alexandrejalkh/frank-mkt.git
 
-# 2. Instalar o plugin
-claude plugin install frank-mkt@<marketplace> --scope project
+# Instalar
+claude plugin install frank-mkt --scope project
 
-# 3. Abrir Claude Code no projeto/cliente
+# Abrir Claude Code no projeto/cliente
 claude
 
-# 4. Configurar o caso/cliente
-/frank-mkt:init
+# Configurar caso/cliente
+/frank-mkt:init [nome-cliente]
 ```
 
-## O que o Frank-MKT vai fazer
+## O que o Frank-MKT faz
 
-- **Persona unificada de marketing & inteligência de mercado** — fala a língua do CMO, fundador, head de growth, social media, redator, designer e analista de pesquisa.
+- **Persona unificada de marketing & inteligência de mercado** — fala a língua do CMO, fundador, head de growth, CHRO, social media, redator, designer, brand designer, analista de pesquisa, IR, ESG officer.
 - **Motor cognitivo com fases** — leitura do interlocutor, perfilamento de mercado/persona, custo-benefício de canal/mensagem, construção de conceito/copy/plano, contraditório interno.
-- **Cristal C0 "NÃO CHUTAR"** — regra imutável: não apresentar suposição (de mercado, de público, de número) como fato. Na dúvida, perguntar ou pesquisar.
-- **Contraditório Interno** — obrigatório em toda análise de campanha, posicionamento ou peça relevante.
-- **Perfilador de Mercado** — agente dedicado a sizing, persona, canal, concorrência e oportunidade.
-- **Auditor de peças** — varredura mecânica PASS/FAIL em copy, post, landing, briefing, plano de mídia.
-- **Decaimento temporal** — skills volúveis (algoritmos de plataforma, tendências, regras Meta/LinkedIn/Google) reavaliadas a cada 1–3 meses.
-- **Memória persistente** — `.frank-mkt/` preserva cliente, marca, persona, voz, decisões, cristais e histórico de campanhas.
+- **Cristal C0 "NÃO CHUTAR"** — regra imutável: não apresentar suposição (de mercado, público, número) como fato. Na dúvida, pergunta ou pesquisa.
+- **Contraditório Interno** — checklist de 10 perguntas obrigatório em toda análise de campanha, posicionamento ou peça relevante.
+- **Decaimento temporal** — skills volúveis (algoritmos plataforma, regulação, tendências) reavaliadas a cada 3 meses; metodologias estáveis a cada 12 meses.
+- **Brasil-first** — LGPD/CONAR/CDC/CVM/ANPD compliance embutido + cases nacionais (Magalu, Nubank, Itaú, iFood, Stone, Pipefy, RD Station) + ferramentas tropicalizadas (Pix, ClickSign, RD Station, Gupy).
+- **Memória persistente** — `.frank-mkt/` preserva cliente, marca, persona, voz, decisões e histórico de campanhas.
 
-## Modos de Operação (planejados)
+## 18 Blocos de Skills (92/92 implementadas)
 
-| Modo | Quando ativa | O que entrega |
-|------|--------------|---------------|
-| **Marketing** | Campanha, posicionamento, jornada, funil | Plano, big idea, copy, mensagem-chave |
-| **SEO** | Conteúdo orgânico, ranking, autoridade | Estratégia de keywords, briefing SEO, auditoria on-page |
-| **Mídia social** | LinkedIn, Instagram, Facebook, X, TikTok | Calendário editorial, post, carrossel, roteiro de vídeo |
-| **Pesquisa de mercado** | Sizing, concorrente, persona, white-space | Relatório, framework, recomendação |
-| **Corporativo** | Comunicação interna, employer branding, RP | Posicionamento, narrativa, peça institucional |
-| **Empreendedorismo / impacto** | Negócio nascente, social/humanitário | Tese, MVP de comunicação, narrativa de propósito |
+| Bloco | Skills | Linhas | Volatility típica |
+|-------|-------:|-------:|-------------------|
+| **SEO Estendido** | 7 | 9.853 | medium-high |
+| **Mídia Social** | 10 | 10.962 | high |
+| **Comunicação Visual & IA** | 4 | 5.197 | medium |
+| **Multi-Platform Strategy** | 3 | 4.344 | medium-low |
+| **Persuasão & Engajamento** | 2 | 2.827 | low-medium |
+| **Marketing Não-Tradicional** | 2 | 2.642 | medium |
+| **Marketing & Estratégia (1º lote)** | 5 | 7.871 | low-medium |
+| **Domínio Vertical (Bloco F EXPANDIDO)** | 13 | 18.856 | medium |
+| **Documentos Corporativos** | 2 | 1.947 | medium |
+| **Pesquisa & Inteligência de Mercado** | 6 | 4.338 | medium |
+| **Corporativo & Humanitário** | 6 | 5.462 | medium |
+| **Copy & Redação** | 4 | 6.085 | medium |
+| **UX/UI** | 4 | 4.714 | medium |
+| **Psicologia & Influência** | 3 | 2.970 | medium |
+| **Conhecimento de Plataforma** | 6 | 5.627 | **high (3m)** |
+| **Meta-skill** | 1 | 958 | medium |
+| **Marketing & Estratégia (2º lote)** | 5 | 4.555 | medium |
+| **Skills Avançadas / Experimentais** | 1 | 1.234 | medium |
+| **Identidade Visual Corporativa / Brand Design** | 8 | 7.106 | medium |
+| **TOTAL** | **92** | **107.548** | |
 
-## Comandos (planejados)
+INDEX completo de todas as skills com volatility, linhas e cross-references: [`skills/INDEX.md`](skills/INDEX.md).
 
-| Comando | O que faz |
-|---------|-----------|
-| `/frank-mkt:init` | Configura `.frank-mkt/` do cliente/marca |
-| `/frank-mkt:stack` | Exibe estado atual (marca, persona, campanhas) |
-| `/frank-mkt:save-session` | Salva log estruturado da sessão |
-| `/frank-mkt:help` | Lista comandos, agentes e skills |
-| `/frank-mkt:audit [arq]` | Auditoria mecânica PASS/FAIL de peça |
-| `/frank-mkt:review` | Review qualitativo de campanha/peça |
-| `/frank-mkt:juiz` | Convoca Juiz para divergência entre modos |
-| `/frank-mkt:perfil [mercado]` | Convoca Perfilador de Mercado |
+## 8 Slash Commands
 
-## Agentes (planejados)
+| Comando | Linhas | Função |
+|---------|-------:|--------|
+| `/frank-mkt:init` | 560 | Configura `.frank-mkt/` cliente — estrutura marca/persona/campanhas/decisões/entregáveis/pesquisa |
+| `/frank-mkt:stack` | 348 | Estado atual do projeto (marca + persona + campanhas + decisões + entregáveis recentes) |
+| `/frank-mkt:save-session` | 359 | Log estruturado da sessão em `.frank-mkt/sessoes/` |
+| `/frank-mkt:help` | 403 | Menu navegável: 8 commands + 14 agentes + 92 skills agrupadas |
+| `/frank-mkt:audit` | 467 | Varredura mecânica PASS/FAIL (7 tipos peça: copy/post/landing/briefing/plano-mídia/deck/email) |
+| `/frank-mkt:review` | 509 | Review qualitativo multi-agent (narrativa + execução + arbitragem) |
+| `/frank-mkt:juiz` | 439 | Arbitra divergência entre agentes (6 critérios hierárquicos) |
+| `/frank-mkt:perfil` | 444 | Perfilador de Mercado: TAM/SAM/SOM + ICP + concorrência + white-space + trends |
 
-> Lista detalhada e priorizada em [`../docs_mkt/ROADMAP-FRANK-MKT.md`](../docs_mkt/ROADMAP-FRANK-MKT.md).
+## 14 Agentes Especialistas
 
-- `frank-mkt` — Principal (persona + motor cognitivo + contraditório)
-- `juiz` — Arbitrador imparcial de divergência entre modos
-- `auditor` — Varredura mecânica de peças (regras PASS/FAIL)
-- `investigador` — Entrevista interlocutor, extrai fatos da marca/produto
-- `perfilador-mercado` — Sizing, persona, concorrência, white-space
-- `redator-hacker` — Copy de alta conversão + ética anti-dark-pattern
-- `seo-strategist` — Conteúdo orgânico, keywords, autoridade
-- `social-media-linkedin` — Foco em LinkedIn (B2B, employer brand, thought leadership)
-- `social-media-instagram` — Foco em Instagram/Reels/Stories
-- `social-media-facebook` — Foco em Facebook (orgânico + ads)
-- `ux-ui-revisor` — Revisão de interface, hierarquia, acessibilidade
-- `psicologia-influencia` — Gatilhos, viés cognitivo, ética
-- `frank-corporativo` — Comunicação corporativa, RP, employer branding
-- `social-humanitario` — Causas, propósito, ESG, terceiro setor
+| Agente | Modelo | Função |
+|--------|--------|--------|
+| `frank-mkt` | opus | **Persona principal** — orquestra 92 skills + 13 agentes + 8 commands |
+| `juiz` | opus | Arbitrador imparcial — 6 critérios hierárquicos (compliance > ética > estratégia > evidência > audiência > custo-benefício) |
+| `auditor` | sonnet | Varredura mecânica PASS/FAIL — 7 checklists, 3 níveis severidade |
+| `investigador` | sonnet | Entrevista estruturada interlocutor — 5 blocos de perguntas |
+| `perfilador-mercado` | opus | Análise mercado 5 frentes — sizing + ICP + concorrência + white-space + trends |
+| `redator-hacker` | opus | Copy alta conversão **ANTI-dark-pattern** — Schwartz/Cialdini/Ogilvy/Maccedo/Iuri Jobim |
+| `seo-strategist` | opus | SEO + GEO 2026 (80% B2B discovery via AI engines) + Core Web Vitals INP |
+| `social-media-linkedin` | opus | B2B + Lead Gen Forms 6.1% CVR + TLAs 6x CTR + Buying Group Targeting |
+| `social-media-instagram` | opus | Reels-first 2026 + Brasil micro-influência #1 + CTWA |
+| `social-media-facebook` | sonnet | Audiência 35-65 + Groups + Marketplace + CAPI iOS 14.5+ |
+| `ux-ui-revisor` | opus | Nielsen 10 + WCAG 2.2 (9 novos critérios) + Core Web Vitals + Brasil LBI |
+| `psicologia-influencia` | opus | Cialdini 7 + Kahneman + **ANTI-dark-pattern firme** (Brignull 16 + EU DSA) |
+| `frank-corporativo` | opus | PESO + GEO + IR + ESG + Crisis + Employer Branding + ABERJE/ABRACOM |
+| `social-humanitario` | opus | Causas + ESG + AA1000 + SROI + Brasil ABONG/GIFE/Pacto Global ONU + ANTI-greenwashing |
 
-## Skills (planejadas)
+## Cross-Skill Orchestration
 
-> INDEX completo em [`skills/INDEX.md`](skills/INDEX.md).
+Frank-MKT invoca skills automaticamente baseado no contexto. Exemplo de fluxo típico:
 
-Áreas:
+```
+Cliente: "Preciso lançar produto B2B SaaS no Brasil"
 
-- **Infra** — init, stack, save-session, help, audit, review, juiz, perfil.
-- **Marketing & estratégia** — posicionamento, branding, funil, jornada, big idea.
-- **Copy & redação** — copy de conversão, storytelling, headline, e-mail.
-- **SEO** — keywords, on-page, técnico, link building, conteúdo evergreen.
-- **Mídias sociais** — LinkedIn, Instagram, Facebook, TikTok, X — orgânico e ads.
-- **Pesquisa & inteligência de mercado** — sizing, persona, concorrência, white-space.
-- **UX/UI** — heurísticas, acessibilidade, microcopy, design system.
-- **Psicologia & influência** — gatilhos éticos, viés cognitivo, prova social.
-- **Conhecimento de plataforma** — Meta Ads, Google Ads, LinkedIn Ads, GA4, Search Console.
-- **Corporativo & humanitário** — RP, employer branding, ESG, terceiro setor.
-- **Meta-skill** — manutenção-skills (re-grounding, decaimento temporal).
+Frank-MKT invoca em ordem:
+1. /frank-mkt:init → cria .frank-mkt/ estrutura
+2. agente investigador → entrevista 5 blocos (marca + produto + persona + interlocutor + objetivos)
+3. /frank-mkt:perfil "B2B SaaS Brasil" → perfilador-mercado (TAM/SAM/SOM + ICP + concorrência + trends)
+4. skill branding → archetype + voice + brand DNA
+5. skill posicionamento-marca → STP + Trout & Ries POV
+6. skill big-idea → núcleo unificador + tagline
+7. skill go-to-market-strategy → PLG/SLG/CLG motion + GTM canvas
+8. skill copywriting-conversao → headlines + CTAs + frameworks
+9. skill linkedin-organico → conteúdo orgânico B2B
+10. skill conhecimento-linkedin-ads → Lead Gen Forms + ABM
+11. /frank-mkt:audit → varredura mecânica PASS/FAIL pré-entrega
+12. /frank-mkt:review → review qualitativo multi-agent
+13. /frank-mkt:save-session → log estruturado
+```
 
 ## Decaimento Temporal
 
 Toda skill declara no frontmatter YAML:
 
 ```yaml
-last_verified: 2026-05-07
-next_review: 2026-08-07
-volatility: high | medium | low | very-low
-regrounding_sources:
-  - "https://..."
+volatility: high | medium | low
+last_review: 2026-05-09
+next_review: 2026-08-09  # = 3 meses se high, 6 meses se medium, 12 meses se low
 ```
 
-Tiers (proposta inicial — refinar por skill):
+**Tiers**:
+- **high (3 meses)** — Plataformas Meta/Google/LinkedIn, GA4, Search Console, CONAR/CDC, tendências, AI search
+- **medium (6 meses)** — Frameworks, métricas-padrão, copy de plataforma, brand-design
+- **low (12 meses)** — Metodologias (Cialdini, Kahneman, Trout & Ries, Christensen JTBD), princípios UX
 
-- **high** (1–3 meses): regras de plataforma (Meta, LinkedIn, Google), algoritmo de feed, política de ads, tendências de criativo.
-- **medium** (6 meses): SEO técnico, GA4/Search Console, frameworks de pesquisa, métricas-padrão de plataforma.
-- **low** (12 meses): metodologias (contraditório, perfilamento, jornada), psicologia da persuasão, princípios de UX.
-- **very-low** (24 meses): infra do plugin (init, stack, audit, review, help, save-session, juiz).
+A skill `manutencao-skills` documenta o processo completo de re-validação + lifecycle (Creation → Update → Deprecation → Sunset).
 
-### Hook SessionStart
+## Regras imutáveis
 
-A cada sessão aberta, `hooks/check-skills-vencidas.sh` verifica `next_review` de todas as skills e lista as vencidas. Silencioso quando nenhuma está vencida.
+- **NÃO CHUTAR** (cristal C0) — suposição de mercado/público/número nunca é fato
+- **Não inventar** dado de mercado, share, CAC, LTV, métrica de plataforma, case real
+- **Não criar** copy enganoso, dark pattern, prova social falsa, depoimento fabricado
+- **Não orientar** greenwashing, pinkwashing, manipulação eleitoral, fake countdown, fake scarcity
+- **Não gerar** peça que viole CDC, LGPD, CONAR, ANPD, regras de plataforma
+- **Contraditório Interno** sempre ativo em peça relevante (10 perguntas)
+- **Avisar decaimento temporal** de skill vencida ao carregá-la
+- **Disclaimer educational mandatory** — content educacional, não substitui assessoria jurídica/regulatória/estratégica
 
-### Re-grounding é sob demanda
+## Brasil 2026 — specificidades embutidas
 
-Frank avisa quando carrega skill vencida. Usuário decide se vale re-validar naquele caso concreto. Sem atualização automática proativa.
-
-## Regras imutáveis (planejadas)
-
-- **NÃO CHUTAR** (cristal C0) — suposição de mercado/público/número nunca é fato. Na dúvida, perguntar ou pesquisar.
-- Não inventar dado de mercado, share, CAC, LTV, métrica de plataforma, case real.
-- Não criar copy enganoso, dark pattern, prova social falsa, depoimento fabricado.
-- Não orientar greenwashing, pinkwashing, manipulação eleitoral.
-- Não gerar peça que viole CDC, LGPD, CONAR, regras de plataforma (Meta, LinkedIn, Google).
-- Contraditório Interno SEMPRE ativo em peça relevante.
-- Avisar decaimento temporal de skill vencida ao carregá-la.
+- **Regulação**: LGPD (Lei 13.709/2018) + ANPD agência plena (Lei 15.352/2026) + CONAR Anexo P influencers (Lei 15.325 Jan-2026) + CDC Art. 30/36/37/38 + CVM Resolução 193/2023 mandatory ESG Jan-2026 + ECA Digital Lei 15.211/2025 vigência 17-Mar-2026 + Lei E-Commerce + WCAG 2.2 + LBI 13.146/2015
+- **Mercado**: comunicação corporativa R$ 30 bi/ano (Aberje) + 95.1% empresas Brasil dificuldade qualificado (ManpowerGroup) + 800k+ ONGs + GIFE 130+ associados R$ 4 bi/ano + Pacto Global ONU 2.400+ signatários (segunda maior rede mundial)
+- **Plataformas**: RD Station market leader B2B + Gupy ATS + ClickSign assinatura digital líder + Reclame Aqui ouro CI BR (17M reclamações)
+- **Cases canônicos**: Magalu Lu 30+ anos + Nubank purple #820AD1 + Itaú orange #EC7000 + Stone door-to-door + iFood + Boticário rebrand 2024 + Pipefy global-first Curitiba + Natura Crer Para Ver R$ 30M+/ano 30+ anos
 
 ## Atualização
 
 ```bash
-claude plugin marketplace update <marketplace>
-claude plugin update frank-mkt@<marketplace> --scope project
+claude plugin marketplace update https://github.com/alexandrejalkh/frank-mkt.git
+claude plugin update frank-mkt --scope project
 ```
 
 ## Remoção
 
 ```bash
-claude plugin disable frank-mkt@<marketplace>
+claude plugin disable frank-mkt
 # ou
-claude plugin uninstall frank-mkt@<marketplace>
+claude plugin uninstall frank-mkt
 ```
 
 O diretório `.frank-mkt/` permanece no projeto — remover manualmente se desejado.
 
+## Estrutura do repositório
+
+```
+frank-mkt/
+├── .claude-plugin/
+│   └── plugin.json           # manifest do plugin
+├── skills/                   # 92 skills em 18 blocos
+│   ├── INDEX.md              # mapa completo de skills
+│   └── <nome-skill>/SKILL.md # cada skill em pasta dedicada
+├── commands/                 # 8 slash commands
+│   └── <nome-command>.md
+├── agents/                   # 14 agentes especialistas
+│   └── <nome-agente>.md
+├── docs_mkt/
+│   └── ROADMAP-FRANK-MKT.md  # roadmap detalhado
+├── README.md                 # este arquivo
+└── CHANGELOG.md              # histórico de versões
+```
+
 ## Versão
 
-**0.6.0** (2026-05-08) — 🎉 **17 skills implementadas, 20.815 linhas**. **2 blocos principais COMPLETOS**: SEO Estendido (7/7) + Mídia Social (10/10). Ver [CHANGELOG.md](CHANGELOG.md) para histórico detalhado.
+**v2.32.0** (2026-05-09) — 🚀 **PLUGIN 100% COMPLETO**: 114 artefatos (92 skills + 8 commands + 14 agentes) / 119.089 linhas. Ver [CHANGELOG.md](CHANGELOG.md) para histórico detalhado v0.1.0 → v2.32.0.
 
 ## Autor
 
-Alexandre Jalkh — SPKR Serviços e Consultoria de Informática LTDA
+**Alexandre Jalkh** — SPKR Serviços e Consultoria de Informática LTDA
+
+## Licença
+
+UNLICENSED — uso restrito conforme termos definidos pelo autor. Distribuição ou modificação requer autorização expressa.
 
 ## Filosofia
 
