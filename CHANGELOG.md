@@ -1,5 +1,51 @@
 # Changelog — Frank MKT
 
+## 2.29.0 (2026-05-09) — 🚀 SKILL INOVADORA `svg-engineering-ia` — Skills Avançadas / Experimentais 1/1 + MARCO 100K LINHAS
+
+### Adicionado
+
+**Skill `svg-engineering-ia`** — primeira skill da nova categoria **Skills Avançadas / Experimentais**, criada com **pesquisa profunda** (16 web searches em 4 rounds vs 6 padrão) cobrindo: fundamentos SVG W3C 2.0 + LLMs gerando SVG (estado da arte 2026) + bitmap-vetor + rasterização + composição complexa + auto-validação IA sem visão + tooling híbrido.
+
+(`skills/svg-engineering-ia/SKILL.md`, **1.234 linhas**, volatility **medium (6 meses)**, **16 web searches** em 4 rounds especializados:
+- Round 1 (Fundamentos): SVG 2.0 W3C + path commands + ARIA accessibility + SVGO optimization
+- Round 2 (LLMs): VGBench EMNLP 2024 + Claude SVG + GPT-4 SVG + image-to-SVG diffusion
+- Round 3 (Conversão): Potrace/AutoTrace + Resvg/Sharp/Headless Chrome + composition + p5.js generative
+- Round 4 (Validação): SVG validators + libraries D3/GSAP + editors Figma/Inkscape/Boxy SVG + LLM self-validation metrics)
+
+**8 fundações 2026 — INOVAÇÃO METODOLÓGICA**:
+
+1. **SVG Foundations + W3C Specification 2.0** — paths (M/L/C/Q/A/Z) + viewBox + transforms + symbols + groups + W3C normative + Josh Comeau Interactive Guide + Smashing Magazine 2025
+2. **LLMs Gerando SVG: Estado da Arte 2026** — VGBench (EMNLP 2024 4279 QA + 5845 captions) + SVGenius (2025 PSS metric) + LLM4SVG (CVPR 2025) + Chat2SVG (CVPR 2025 LLM+diffusion+SDS+PyDiffVG) + OmniSVG (VLM unified) + Pelican-on-Bicycle benchmark Simon Willison Nov-2025 + Claude Design Apr-2026 Anthropic Labs Opus 4.7 + GPT-4 weak low-level SVG reasoning
+3. **Bitmap → SVG (Vetorização)** — Potrace Peter Selinger + AutoTrace + Modern AI tracing CNN design intent vs pixel edges + VectoSolve/Vectorizer.AI/SVG Genie/Adobe Illustrator Image Trace
+4. **SVG → Bitmap (Rasterização)** — Resvg Rust 2017+ surpassed librsvg 2021 + resvg-js WASM + rsvg-convert + ImageMagick limitations + Sharp Node.js + Headless Chrome highest fidelity + comparação tools matrix
+5. **Composição Complexa** — paths combinados + transforms aninhados (right-to-left) + symbols+use DRY + clipPath (hard) vs mask (soft) distinção crítica + filter primitives (feGaussianBlur+feOffset+feMerge+feComposite+feColorMatrix) + drop-shadow classic + gradients linear/radial + animation CSS/GSAP (NÃO SMIL deprecated)
+6. **Auto-Validação IA Sem Visão (INOVAÇÃO METODOLÓGICA)** — PSS Path-Structure Similarity Score (SVGenius 2025) + checklist heurístico 6 dimensões (estrutura sintática + geometria + composição + acessibilidade + performance + estética) + render-loop self-correction pattern + decomposição Comeau-style + validators externos (W3C + SVG Genie + Sanitizer + svgcheck)
+7. **Tooling Híbrido + Workflow IA-Humano** — editors comparison 2026 (Illustrator + Affinity + Inkscape + Figma + Boxy SVG + Sketch) + SVGO/SVGOMG (30-80% reduction + 80-90% combinado Gzip) + libraries (D3 4.4M weekly + GSAP 60FPS + Snap.svg + Two.js + Paper.js) + p5.js 2.0 Apr-2025 (variable fonts + JS shaders + OKLab) + workflow 5 fases (brief→refine→variations→optimize→deploy)
+8. **Aplicação Content MKT 5 audiências** — Founder MVP bootstrap (Marina FoodTech R$ 0 budget Claude+Inkscape+SVGOMG 4 horas) + Brand Designer agência premium (Carla 6-8 semanas R$ 80-300k Illustrator+Figma+Boxy SVG+Frontify) + Dev frontend SaaS (Bruno D3+GSAP+Resvg-js+Sharp+SVGO build pipeline) + Agência icon system (Estela 100+ ícones Claude batch+junior refine+senior approve) + Frank-MKT cross-skill orchestration (10 steps integrados)
+
+4 exemplos comportamentais densos com KPIs + Riscos + Disclaimers.
+
+18 anti-patterns (achar que LLM "vê" + prompt monolítico + paths não fechados + acessibilidade ignorada + cores hardcoded + SMIL animations + pular SVGO + vetorizar foto realista + Artifacts producao sem refine + omitir viewBox + inline styles + texto sem fallback fonts + stroke sem width + mask quando deveria clipPath + não testar renderers + decimal precision excessiva + não usar symbol+use + esquecer xmlns) + 18 Regras de Ouro + Checklist Contraditório Interno 10 perguntas + ~80 referências hyperlinks markdown organizadas em 11 categorias + Cross-Skill References (relação detalhada com 8 skills brand-design futuras + skills existentes) + Integração Ecossistema Frank-MKT.
+
+### Por que INOVADORA
+
+(a) Trata gap real LLM-texto vs geração vetorial complexa **NÃO coberto** por outras skills do plugin;
+(b) Sintetiza estado da arte acadêmico (4 papers CVPR/EMNLP 2024-2025) com prática industrial (Anthropic Claude Design Apr-2026 + 8 ferramentas comerciais);
+(c) Traz **framework auto-validação metodológica** para Claude validar criticamente próprios SVGs sem visão (PSS metric + checklist heurístico 6 dimensões + render-loop + decomposição Comeau-style);
+(d) **Base ferramental** para skills brand-design futuras (logo-design-process + iconografia-corporativa + 6 outras em construção).
+
+### Estatísticas globais
+
+- **84 skills implementadas / 100.442 linhas totais** — 🚀 **MARCO 100K LINHAS** atingido
+- 24 high (trimestral) + **53 medium (semestral)** + 7 low (anual)
+- 17 BLOCOS COMPLETOS + Skills Avançadas / Experimentais 1/1 (categoria nova) + Brand Design 0/8 (em construção)
+
+### Próximo
+
+Bloco Identidade Visual Corporativa / Brand Design (8 skills) em paralelo: `logo-design-process`, `brand-book-methodology`, `paleta-cores-corporativa`, `tipografia-corporativa`, `iconografia-corporativa`, `templates-corporativos-comerciais`, `apresentacoes-decks-corporativos`, `print-papelaria-collateral`. Esta skill `svg-engineering-ia` serve como base ferramental para todas elas.
+
+---
+
 ## 2.28.0 (2026-05-09) — 🎉🎉🎉🎉🎉🎉🎉 MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS — Meta-skill 1/1 + MKT & Estratégia 2º lote 5/5
 
 ### Adicionado em paralelo simultâneo (6 agentes — 5ª paralelização do plugin)

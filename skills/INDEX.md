@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.28.0 — 2026-05-09) — 🎉🎉🎉🎉🎉🎉🎉 17 BLOCOS COMPLETOS — Meta-skill 1/1 + MKT & Estratégia 2º lote 5/5 FECHADOS — **100% SKILLS PLANEJADAS**
+## Status (v2.29.0 — 2026-05-09) — 17 BLOCOS COMPLETOS + Skill Inovadora `svg-engineering-ia` (Skills Avançadas / Experimentais 1/1)
 
-**83 skills implementadas / 99.208 linhas totais.**
+**84 skills implementadas / 100.442 linhas totais.**
 
 🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 (`growth-hacking` + `product-marketing` + `account-based-marketing` + `pricing-strategy` + `go-to-market-strategy`) com 6 skills criadas em **paralelo simultâneo** (5ª paralelização do plugin).
 
@@ -27,12 +27,16 @@
 | **Psicologia & Influência** | ✅ **3/3** | 2.970 |
 | **Conhecimento de Plataforma** | ✅ **6/6** | 5.627 |
 | **Meta-skill** | ✅ **1/1** | 958 |
+| **Skills Avançadas / Experimentais** | ✅ **1/1** (svg-engineering-ia inovadora) | 1.234 |
+| Identidade Visual Corporativa / Brand Design | 🟡 0/8 | — |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
-| **TOTAL SKILLS** | **83/83** ✅ | **99.208** |
+| **TOTAL SKILLS** | **84/92** | **100.442** |
 
-**Volatility:** **52 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **53 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
-**Restantes (não-skills, formato diferente)**: Infraestrutura slash commands (8) + Agentes (14).
+**Restantes**: 8 skills Brand Design 🟡 (logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa + iconografia-corporativa + templates-corporativos-comerciais + apresentacoes-decks-corporativos + print-papelaria-collateral) + Infraestrutura slash commands (8) + Agentes (14).
+
+🚀 **MARCO 100K LINHAS atingido** com `svg-engineering-ia` (1.234 linhas).
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 

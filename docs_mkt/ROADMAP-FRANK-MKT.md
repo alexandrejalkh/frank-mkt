@@ -120,7 +120,30 @@ frank-mkt-plugin/
 
 `manutencao-skills`
 
-**Total previsto: ~58 skills** (vs. 49 do Jurídico TI). Pode crescer/reduzir conforme refinamento.
+### Skills Avançadas / Experimentais (1 — em construção)
+
+`svg-engineering-ia` — **NOVA SKILL INOVADORA**: especializada em geração de SVG via Claude (e LLMs em geral) para resolver o problema de criação de imagens vetoriais complexas. Cobertura proposta: técnicas e conceitos de SVG; geração programática de imagens complexas; metodologias de composição de múltiplos vetores; vetorização de bitmap; rasterização de SVG; estudo de como IA consegue gerar SVG válido e esteticamente correto sem feedback visual; guias oficiais (W3C SVG 2.0 + MDN + svg.dev); técnicas para Claude validar criticamente seus próprios SVGs (auto-crítica + métricas geométricas + heurísticas); criação de novas técnicas próprias para problemas residuais (composição complexa + precisão geométrica + harmonia visual sem visualização). **Inovadora**: trata o gap real entre LLMs (texto-only) e geração de arte vetorial complexa.
+
+### Identidade Visual Corporativa / Brand Design (8 — em construção)
+
+**Novo bloco planejado para fechar gap de ~50-60% do trabalho de identidade visual corporativa** que o plugin não cobre hoje (logo + manual marca + paleta + tipografia + ícones + templates concretos + papelaria + collateral). Camada executiva complementar à camada estratégica (`branding` + `posicionamento-marca` + `big-idea` já implementadas).
+
+`logo-design-process`, `brand-book-methodology`, `paleta-cores-corporativa`, `tipografia-corporativa`, `iconografia-corporativa`, `templates-corporativos-comerciais`, `apresentacoes-decks-corporativos`, `print-papelaria-collateral`
+
+**Cobertura proposta**:
+
+- **`logo-design-process`** — princípios design (Paul Rand + Saul Bass + Massimo Vignelli) + processo (research → conceito → sketch → digital → variações → entregáveis .svg/.png/.pdf/.eps) + validação (escala + monocromático + reverso + contexto) + cases brasileiros (Magalu/Nubank/Itaú/Boticário rebrands)
+- **`brand-book-methodology`** — estrutura canônica manual de identidade (5 seções: Marca + Cores + Tipografia + Aplicações + Don'ts) + ferramentas (Figma + Frontify + Zeroheight + InDesign) + governança versão + uso por terceiros + cases (Airbnb DLS + IBM Carbon + Spotify Encore)
+- **`paleta-cores-corporativa`** — paleta primária/secundária/terciária + acessibilidade WCAG contraste 4.5:1 AA / 7:1 AAA + Pantone PMS + conversão RGB/CMYK/HEX + dark mode + cultural meaning (cores Brasil vs global)
+- **`tipografia-corporativa`** — escolha tipográfica + hierarquia (display/heading/body/caption) + licenciamento (Google Fonts free + Adobe Fonts subscription + custom enterprise) + fallbacks web + variable fonts 2026 + acessibilidade
+- **`iconografia-corporativa`** — sistema de ícones consistente (Stroke vs Fill + grid 24/32px + line weight) + biblioteca + Lucide/Heroicons/Phosphor referencias + custom set process + integração com `svg-engineering-ia` para geração via Claude
+- **`templates-corporativos-comerciais`** — estrutura visual padrão para propostas comerciais + contratos + modelos para sistemas SaaS (UI templates) + cover/header/footer + tom comercial brasileiro + integração assinatura digital (DocuSign + ClickSign Brasil)
+- **`apresentacoes-decks-corporativos`** — pitch deck (Sequoia template + Y Combinator) + sales deck (Gong/Chorus best practices) + investor deck (a16z/Bessemer references) + board presentation + master slides PowerPoint/Keynote/Google Slides + brand-aligned visual templates
+- **`print-papelaria-collateral`** — cartão visita + papel timbrado + envelope + assinatura email HTML + folder/flyer/banner/roll-up + sinalização interna/externa + brindes corporativos + grid layout + bleed/safety areas + briefing gráfico para fornecedor
+
+**Sinergia com `svg-engineering-ia`**: skill base (Skills Avançadas / Experimentais) fornece técnicas de geração vetorial via Claude para alimentar `logo-design-process` (logos + variações), `iconografia-corporativa` (sistema ícones), e ilustrações spot dentro de `templates-corporativos-comerciais` e `apresentacoes-decks-corporativos`.
+
+**Total previsto: ~58 skills** (vs. 49 do Jurídico TI) — ATUALIZADO: **92 skills** (83 implementadas + 1 svg-engineering-ia + 8 brand-design = 9 em construção).
 
 ### Status de implementação
 
@@ -226,6 +249,17 @@ frank-mkt-plugin/
 | `pricing-strategy` (4ª SKILL Bloco MKT & Estratégia 2º lote — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 738 | **medium (6 meses)** |
 | `go-to-market-strategy` (5ª SKILL Bloco MKT & Estratégia 2º lote — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.046 | **medium (6 meses)** |
 | **🎉 Bloco MKT & Estratégia 2º lote COMPLETO** | **✅ 5/5** (growth-hacking + product-marketing + account-based-marketing + pricing-strategy + go-to-market-strategy) | **4.555** | — |
+| `svg-engineering-ia` (Skills Avançadas / Experimentais — INOVADORA) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa profunda 16 web searches em 4 rounds) | **1.234** | **medium (6 meses)** |
+| **🎉 Bloco Skills Avançadas / Experimentais COMPLETO** | **✅ 1/1** (svg-engineering-ia inovadora — base ferramental para 8 skills brand-design) | **1.234** | — |
+| `logo-design-process` (1ª SKILL Bloco Identidade Visual Corporativa / Brand Design) | 🟡 **Em construção** — Paul Rand + Saul Bass + Vignelli + processo design + variações + entregáveis + cases Brasil | — | **medium (6 meses)** projetada |
+| `brand-book-methodology` (2ª SKILL Brand Design) | 🟡 **Em construção** — manual identidade 5 seções + Figma/Frontify/Zeroheight + governança + cases Airbnb DLS/IBM Carbon/Spotify Encore | — | **medium (6 meses)** projetada |
+| `paleta-cores-corporativa` (3ª SKILL Brand Design) | 🟡 **Em construção** — paleta + WCAG contraste + Pantone + RGB/CMYK + dark mode + cultural meaning Brasil | — | **medium (6 meses)** projetada |
+| `tipografia-corporativa` (4ª SKILL Brand Design) | 🟡 **Em construção** — escolha tipográfica + hierarquia + licenciamento + variable fonts + acessibilidade | — | **medium (6 meses)** projetada |
+| `iconografia-corporativa` (5ª SKILL Brand Design) | 🟡 **Em construção** — sistema ícones + grid 24/32px + Lucide/Heroicons/Phosphor + custom + integração SVG-IA | — | **medium (6 meses)** projetada |
+| `templates-corporativos-comerciais` (6ª SKILL Brand Design) | 🟡 **Em construção** — propostas + contratos + modelos sistemas SaaS + DocuSign/ClickSign Brasil | — | **medium (6 meses)** projetada |
+| `apresentacoes-decks-corporativos` (7ª SKILL Brand Design) | 🟡 **Em construção** — pitch (Sequoia/YC) + sales (Gong/Chorus) + investor (a16z/Bessemer) + board + master slides | — | **medium (6 meses)** projetada |
+| `print-papelaria-collateral` (8ª SKILL Brand Design — ÚLTIMA) | 🟡 **Em construção** — cartão visita + papel timbrado + assinatura email + folder/flyer/banner/sinalização + brindes | — | **medium (6 meses)** projetada |
+| **🟡 Bloco Identidade Visual Corporativa / Brand Design (em construção)** | **🟡 0/8** (8 skills planejadas — fecha gap brand-design) | — | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 

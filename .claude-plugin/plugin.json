@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.28.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.28.0 — **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** com fechamento Meta-skill 1/1 (manutencao-skills) + MKT & Estrategia 2o lote 5/5 (growth-hacking + product-marketing + account-based-marketing + pricing-strategy + go-to-market-strategy), 6 skills criadas em paralelo via 6 agentes simultaneos (5a paralelizacao plugin). 83 skills totais, 99.208 linhas. 24 high (trimestral); 52 medium (semestral); 7 low (anual). Restantes nao-skills: Infraestrutura slash commands (8) + Agentes (14).",
+  "version": "2.29.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.29.0 — Skill INOVADORA `svg-engineering-ia` (Skills Avancadas / Experimentais 1/1) criada com pesquisa profunda 16 web searches em 4 rounds especializados — trata gap real LLMs gerando SVG sem visao (VGBench EMNLP 2024 + SVGenius 2025 + LLM4SVG CVPR 2025 + Chat2SVG + OmniSVG + Claude Design Apr-2026). 84 skills totais, 100.442 linhas (MARCO 100K). 24 high (trimestral); 53 medium (semestral); 7 low (anual). Em construcao: Brand Design 8 skills + Infraestrutura slash 8 + Agentes 14.",
   "author": {
     "name": "Alexandre Jalkh"
   },
