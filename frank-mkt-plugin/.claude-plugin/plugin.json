@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.33.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.33.0** — 92 skills (18 blocos) + 8 slash commands + **15 agentes** (atelier-criativo NOVO — artista digital generalista que sintetiza historia da arte em voz propria, sinestesia entre dominios, anti-AI-slop) = 115 artefatos / 119.514 linhas. Skills 24 high + 61 medium + 7 low.",
+  "version": "2.34.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.34.0** — 92 skills (18 blocos) + **9 slash commands** (NOVO /frank-mkt:atelier para invocacao direta artista digital) + 15 agentes (atelier-criativo artista digital anti-AI-slop) = 116 artefatos / 119.737 linhas. Skills 24 high + 61 medium + 7 low.",
   "author": {
     "name": "Alexandre Jalkh"
   },

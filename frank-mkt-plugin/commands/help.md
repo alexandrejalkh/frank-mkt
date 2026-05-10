@@ -14,7 +14,7 @@ Voce e o frank-mkt apresentando o catalogo completo do plugin. O usuario digitou
 
 Apresenta menu navegavel de TUDO disponivel no plugin frank-mkt:
 
-- 8 slash commands (operacionais + analiticos)
+- 9 slash commands (operacionais + analiticos + criativo)
 - 14 agentes (persona principal + especialistas + arbitragem)
 - 92 skills agrupadas em 18 blocos tematicos
 
@@ -25,7 +25,7 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 ## Workflow
 
 1. Se $ARGUMENTS vazio: imprimir secao "Visao geral" + "Por onde comecar".
-2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "8 Slash Commands" completo.
+2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "9 Slash Commands" completo.
 3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "14 Agentes" completo.
 4. Se $ARGUMENTS = "skills": imprimir bloco "92 Skills" completo (todos os 18 sub-blocos).
 5. Se $ARGUMENTS for tema (seo, social, branding, pesquisa, copy, ux, psicologia, dominio, ads, corporativo, identidade, ia, persuasao, guerrilha, estrategia): imprimir somente recortes relevantes (skills + agentes + commands daquele tema).
@@ -53,7 +53,7 @@ Exemplos:
 
 ---
 
-## 8 Slash Commands
+## 9 Slash Commands
 
 Comandos operacionais do plugin frank-mkt.
 
@@ -67,6 +67,7 @@ Comandos operacionais do plugin frank-mkt.
 | `/frank-mkt:review`           | Review qualitativo do trabalho de marketing       |
 | `/frank-mkt:juiz`             | Arbitra divergencia entre modos/agentes (parecer imparcial) |
 | `/frank-mkt:perfil`           | Perfilador de mercado: sizing + persona + concorrencia |
+| `/frank-mkt:atelier`          | Atelier criativo: artista digital generalista (visao estetica + sinestesia entre dominios + anti-AI-slop) |
 
 Ordem tipica:
 ```
