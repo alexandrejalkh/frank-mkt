@@ -18,18 +18,29 @@ Consultor de Marketing, SEO, Mídias Sociais e Inteligência de Mercado que oper
 
 ## Instalação
 
-```bash
-# Adicionar como marketplace local (este repo)
+Guia completo: [docs_mkt/INSTALACAO.md](docs_mkt/INSTALACAO.md)
+
+```powershell
+# 1. Adicionar marketplace
 claude plugin marketplace add https://github.com/alexandrejalkh/frank-mkt.git
 
-# Instalar
+# 2. Instalar plugin
 claude plugin install frank-mkt --scope project
 
-# Abrir Claude Code no projeto/cliente
+# 3. Abrir Claude Code
 claude
 
-# Configurar caso/cliente
+# 4. Inicializar caso/cliente
 /frank-mkt:init [nome-cliente]
+```
+
+**Verificação**: dentro do Claude Code, rode `/frank-mkt:help` — deve listar 8 commands + 14 agentes + 92 skills.
+
+**Re-instalação após updates**: se já tinha versão anterior do marketplace adicionado, force refresh:
+```powershell
+claude plugin marketplace remove frank-mkt
+claude plugin marketplace add https://github.com/alexandrejalkh/frank-mkt.git
+claude plugin install frank-mkt --scope project
 ```
 
 ## O que o Frank-MKT faz
@@ -178,22 +189,32 @@ O diretório `.frank-mkt/` permanece no projeto — remover manualmente se desej
 
 ## Estrutura do repositório
 
+Padrão Claude Code marketplace canônico (validado em 2026-05-09):
+
 ```
-frank-mkt/
+frank-mkt/                              # repo root
 ├── .claude-plugin/
-│   └── plugin.json           # manifest do plugin
-├── skills/                   # 92 skills em 18 blocos
-│   ├── INDEX.md              # mapa completo de skills
-│   └── <nome-skill>/SKILL.md # cada skill em pasta dedicada
-├── commands/                 # 8 slash commands
-│   └── <nome-command>.md
-├── agents/                   # 14 agentes especialistas
-│   └── <nome-agente>.md
+│   └── marketplace.json                # Marketplace manifest
+├── README.md                           # Este arquivo
 ├── docs_mkt/
-│   └── ROADMAP-FRANK-MKT.md  # roadmap detalhado
-├── README.md                 # este arquivo
-└── CHANGELOG.md              # histórico de versões
+│   ├── ROADMAP-FRANK-MKT.md            # Roadmap detalhado
+│   └── INSTALACAO.md                   # Guia instalação completo
+└── frank-mkt-plugin/                   # Plugin em subpasta dedicada
+    ├── .claude-plugin/
+    │   └── plugin.json                 # Plugin manifest
+    ├── CHANGELOG.md
+    ├── settings.json
+    ├── skills/                         # 92 skills em 18 blocos
+    │   ├── INDEX.md                    # Mapa completo
+    │   └── <nome-skill>/SKILL.md
+    ├── commands/                       # 8 slash commands
+    │   └── <nome-command>.md
+    ├── agents/                         # 14 agentes especialistas
+    │   └── <nome-agente>.md
+    └── hooks/                          # Hooks (check-skills-vencidas)
 ```
+
+**Por que plugin em subpasta dedicada?** Padrão Claude Code marketplace 2026 — `marketplace.json` na ROOT lista plugins com `source: "./pasta-plugin"`. Plugin na ROOT direta não funciona com `source: "."`.
 
 ## Versão
 
