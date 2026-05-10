@@ -1,11 +1,11 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.32.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN 100% COMPLETO v2.32.0** — 92 skills (18 blocos) + 8 slash commands + 14 agentes = 114 artefatos / 119.089 linhas. Skills 24 high + 61 medium + 7 low. 8a paralelizacao RECORDISTA 14 agentes simultaneos fechou plugin completo. Distribuicao: skills/ + commands/ + agents/.",
+  "version": "2.33.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.33.0** — 92 skills (18 blocos) + 8 slash commands + **15 agentes** (atelier-criativo NOVO — artista digital generalista que sintetiza historia da arte em voz propria, sinestesia entre dominios, anti-AI-slop) = 115 artefatos / 119.514 linhas. Skills 24 high + 61 medium + 7 low.",
   "author": {
     "name": "Alexandre Jalkh"
   },
   "license": "UNLICENSED",
-  "keywords": ["marketing", "seo", "linkedin", "instagram", "facebook", "social-media", "market-research", "branding", "copywriting", "ux", "ui", "design-visual", "ia-generativa", "audio-ia", "sonic-branding", "empreendedorismo", "psicologia-influencia"]
+  "keywords": ["marketing", "seo", "linkedin", "instagram", "facebook", "social-media", "market-research", "branding", "copywriting", "ux", "ui", "design-visual", "ia-generativa", "audio-ia", "sonic-branding", "empreendedorismo", "psicologia-influencia", "arte-digital", "criacao-artistica", "sinestesia"]
 }
