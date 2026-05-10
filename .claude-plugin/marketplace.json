@@ -1,0 +1,24 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "frank-mkt",
+  "owner": {
+    "name": "Alexandre Jalkh"
+  },
+  "metadata": {
+    "description": "Marketplace do plugin Frank-MKT — consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado para Brasil 2026",
+    "version": "2.32.0"
+  },
+  "plugins": [
+    {
+      "name": "frank-mkt",
+      "source": ".",
+      "description": "Consultor de Marketing/SEO/Midias Sociais/Inteligencia de Mercado Brasil 2026 — 92 skills (18 blocos) + 8 slash commands + 14 agentes = 114 artefatos. LGPD/CONAR/CDC compliance + cases Magalu/Nubank/Itau + ANTI-dark-pattern + GEO 2026 + Decaimento Temporal por volatility tier.",
+      "version": "2.32.0",
+      "author": {
+        "name": "Alexandre Jalkh"
+      },
+      "category": "marketing",
+      "tags": ["marketing", "seo", "linkedin", "instagram", "facebook", "social-media", "market-research", "branding", "copywriting", "ux", "ui", "design-visual", "ia-generativa", "empreendedorismo", "brasil", "lgpd", "conar", "esg"]
+    }
+  ]
+}
