@@ -259,7 +259,15 @@ frank-mkt-plugin/
 | `templates-corporativos-comerciais` (6ª SKILL Brand Design) | 🟡 **Em construção** — propostas + contratos + modelos sistemas SaaS + DocuSign/ClickSign Brasil | — | **medium (6 meses)** projetada |
 | `apresentacoes-decks-corporativos` (7ª SKILL Brand Design) | 🟡 **Em construção** — pitch (Sequoia/YC) + sales (Gong/Chorus) + investor (a16z/Bessemer) + board + master slides | — | **medium (6 meses)** projetada |
 | `print-papelaria-collateral` (8ª SKILL Brand Design — ÚLTIMA) | 🟡 **Em construção** — cartão visita + papel timbrado + assinatura email + folder/flyer/banner/sinalização + brindes | — | **medium (6 meses)** projetada |
-| **🟡 Bloco Identidade Visual Corporativa / Brand Design (em construção)** | **🟡 0/8** (8 skills planejadas — fecha gap brand-design) | — | — |
+| `logo-design-process` (1ª SKILL Bloco Identidade Visual Corporativa / Brand Design — paralela RECORDISTA 8 agentes) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.102 | **medium (6 meses)** |
+| `brand-book-methodology` (2ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 779 | **medium (6 meses)** |
+| `paleta-cores-corporativa` (3ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 895 | **medium (6 meses)** |
+| `tipografia-corporativa` (4ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 1.088 | **medium (6 meses)** |
+| `iconografia-corporativa` (5ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 774 | **medium (6 meses)** |
+| `templates-corporativos-comerciais` (6ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 809 | **medium (6 meses)** |
+| `apresentacoes-decks-corporativos` (7ª SKILL — paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 748 | **medium (6 meses)** |
+| `print-papelaria-collateral` (8ª SKILL — ÚLTIMA paralela) | ✅ Implementada (2026-05-09, v0.1.0 — pesquisa de campo) | 911 | **medium (6 meses)** |
+| **🎉 Bloco Identidade Visual Corporativa / Brand Design COMPLETO** | **✅ 8/8** (logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa + iconografia-corporativa + templates-corporativos-comerciais + apresentacoes-decks-corporativos + print-papelaria-collateral) | **7.106** | — |
 | **Bloco F Domínio Vertical aplicado a MKT (NOVO planejado)** | **⏸️ 0/6** | — | — |
 | Demais blocos planejados (Documentos Corporativos + Pesquisa + Copy + UX/UI + Plataforma + Corporativo + Meta + Infra + Agentes) | Planejados | — | — |
 
