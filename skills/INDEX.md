@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.31.0 — 2026-05-09) — 18 BLOCOS COMPLETOS + Slash Commands COMPLETO 8/8
+## Status (v2.32.0 — 2026-05-09) — 🚀🚀🚀 PLUGIN FRANK-MKT 100% COMPLETO — 92 skills + 8 commands + 14 agentes
 
-**92 skills + 8 slash commands implementados / 111.077 linhas totais.**
+**92 skills + 8 slash commands + 14 agentes / 119.089 linhas totais.**
 
 🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 (`growth-hacking` + `product-marketing` + `account-based-marketing` + `pricing-strategy` + `go-to-market-strategy`) com 6 skills criadas em **paralelo simultâneo** (5ª paralelização do plugin).
 
@@ -34,9 +34,29 @@
 
 **Volatility:** **61 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
-**Restantes**: Agentes (14) — em construção.
+**Plugin completo**: 92 skills (18 blocos) + 8 slash commands + 14 agentes = **114 artefatos**.
 
-🚀 **MARCO 100K LINHAS atingido** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** (92/92) + **8/8 Slash Commands COMPLETOS**!
+🚀🚀🚀 **PLUGIN FRANK-MKT 100% COMPLETO** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** (92/92) + **8/8 Slash Commands COMPLETOS** + **14/14 Agentes COMPLETOS**!
+
+## Agentes (14/14 COMPLETO — v2.32.0)
+
+| Agente | Linhas | Função |
+|--------|-------:|--------|
+| `frank-mkt` | 447 | Persona principal — orquestra 92 skills + 13 agentes + 8 commands |
+| `juiz` | 534 | Arbitra divergência entre agentes (6 critérios hierárquicos) |
+| `auditor` | 454 | Varredura mecânica PASS/FAIL (7 tipos peça) |
+| `investigador` | 699 | Entrevista estruturada interlocutor (5 blocos perguntas) |
+| `perfilador-mercado` | 582 | Análise mercado 5 frentes (TAM/ICP/concorrência/white-space/trends) |
+| `redator-hacker` | 583 | Copy alta conversão ANTI-dark-pattern + frameworks Schwartz/Cialdini/Brasil |
+| `seo-strategist` | 636 | SEO + GEO 2026 + Core Web Vitals INP + Brasil |
+| `social-media-linkedin` | 602 | B2B + Lead Gen 6.1% CVR + TLAs 6x CTR + Buying Group Targeting |
+| `social-media-instagram` | 530 | Reels-first 2026 + Brasil micro-influência #1 + CTWA |
+| `social-media-facebook` | 774 | Audiência 35-65 + Groups + Marketplace + CAPI iOS 14.5+ |
+| `ux-ui-revisor` | 523 | Nielsen 10 + WCAG 2.2 + Core Web Vitals + LBI Brasil |
+| `psicologia-influencia` | 574 | Cialdini 7 + Kahneman + ANTI-dark-pattern firme + Brignull 16 + EU DSA |
+| `frank-corporativo` | 574 | PESO + GEO 2026 + IR + ESG + Crisis + Employer + ABERJE/ABRACOM |
+| `social-humanitario` | 500 | Causas + ESG + AA1000 + SROI + Brasil ABONG/GIFE/Pacto Global ONU |
+| **TOTAL** | **8.012** | |
 
 ## Slash Commands (8/8 COMPLETO — v2.31.0)
 

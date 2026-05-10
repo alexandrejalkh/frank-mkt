@@ -1,5 +1,86 @@
 # Changelog — Frank MKT
 
+## 2.32.0 (2026-05-09) — 🚀🚀🚀 PLUGIN FRANK-MKT 100% COMPLETO — 14/14 Agentes FECHADOS (8ª paralelização RECORDISTA absoluto)
+
+### Adicionado em paralelo simultâneo (14 agentes — 8ª paralelização do plugin, NOVO RECORDISTA)
+
+**Estratégia**: 8ª paralelização com **14 agentes simultâneos** (vs 8 do recordista anterior). Brief específico por agente com persona + tools + delegations + cross-skill orchestration. **14/14 estrutura template strict** (frontmatter YAML + identidade + skills consultadas + frameworks + workflow + cross-skill + disclaimer).
+
+#### Os 14 Agentes Frank-MKT
+
+1. **`frank-mkt`** (447 linhas, opus) — Persona principal default. Orquestra 92 skills + 13 agentes especialistas + 8 commands. 7 princípios fundamentais (Brasil-first + ASCII PT-BR + cross-skill + Contraditório Interno + disclaimer + decaimento + honestidade).
+
+2. **`juiz`** (534 linhas, opus) — Arbitrador imparcial. 6 critérios hierárquicos lexicográficos (compliance → ética → estratégia → evidência → audiência → custo-benefício). Nunca empata. 4 tipos decisão (A vence / B vence / aprovação condicional / rejeição mútua + terceira via).
+
+3. **`auditor`** (454 linhas, sonnet) — Varredura mecânica PASS/FAIL. 7 checklists detalhados (copy + post + landing + briefing + plano-mídia + deck + email). 3 níveis severidade (CRÍTICO bloqueia / WARNING / OK).
+
+4. **`investigador`** (699 linhas, sonnet) — Entrevista estruturada interlocutor. 5 blocos questionário (marca + produto + persona + interlocutor + objetivos). 4 modos execução (completo / express / update / bloco único). Salva `.frank-mkt/marca/`, `persona/`, `decisoes/`.
+
+5. **`perfilador-mercado`** (582 linhas, opus) — Análise mercado 5 frentes (Sizing TAM/SAM/SOM + Persona ICP JTBD + Concorrência Porter + White-Space + Trends). Brasil specificity forte (PIX + Open Finance + Drex + classes C/D + Sebrae + IBGE).
+
+6. **`redator-hacker`** (583 linhas, opus) — Copy alta conversão ANTI-dark-pattern. Frameworks Schwartz/Cialdini/Ogilvy/Caples/Sugarman + Brasil (Maccedo + Iuri Jobim + Erico Rocha PLF + Conrado Adolpho 8Ps). 7 princípios éticos NÃO-NEGOCIÁVEIS.
+
+7. **`seo-strategist`** (636 linhas, opus) — SEO + GEO 2026 (80% B2B discovery via AI engines) + Core Web Vitals INP <200ms (substituiu FID Mar-2024) + Brasil (queries 30-40% mais longas + mobile 78%). Stack 7 skills SEO.
+
+8. **`social-media-linkedin`** (602 linhas, opus) — B2B + Lead Gen Forms 6.1% CVR + Thought Leader Ads 6x CTR + Buying Group Targeting Feb-2026 + Brasil B2B SaaS dominante (Stone + Pipefy + RD Station).
+
+9. **`social-media-instagram`** (530 linhas, opus) — Reels-first 2026 + Brasil mercado #1 micro-influência globalmente + CONAR Anexo P + Lei 15.325 Jan-2026 + CTWA Click-to-WhatsApp Ads (Brasil mais maduro mundo).
+
+10. **`social-media-facebook`** (774 linhas, sonnet) — Audiência 35-65 dominante + Groups > Pages (30-60% reach vs 2-5%) + Marketplace forte interior Brasil + CAPI server-side mandatory + Advantage+ AI 80% ecom 2026.
+
+11. **`ux-ui-revisor`** (523 linhas, opus) — Nielsen 10 heurísticas + WCAG 2.2 (9 novos critérios: 2.4.11/12/13 + 2.5.7/8 + 3.2.6 + 3.3.7/8/9) + Core Web Vitals (INP <200ms vilão long tasks ~43% sites falham) + Brasil LBI 13.146 + ABNT NBR 17225:2025.
+
+12. **`psicologia-influencia`** (574 linhas, opus) — Cialdini 7 + Unity 2021 + Kahneman System 1/2 + Top 20 vieses + ANTI-dark-pattern FIRME (Brignull 16 + EU DSA Art 25 + FTC) + Brasil (CONAR Anexo P + Lei 15.325/2026 + CDC + LGPD). Verdict APROVADO/RESSALVAS/BLOQUEIO.
+
+13. **`frank-corporativo`** (574 linhas, opus) — PESO Model + Leadership Visibility 2026 + GEO + IR (CVM + B3 + APIMEC) + ESG (US$ 35T mandated + ISSB IFRS S1+S2 + CSRD + CVM 193/2023 vigência Jan-2026) + Crisis (Tylenol + LGPD/ANPD 3 dias úteis + AI deepfake) + Employer Branding (Brasil 95.1% talent shortage).
+
+14. **`social-humanitario`** (500 linhas, opus, FECHA 14/14) — AA1000AP 4 princípios + SROI 7 princípios + Theory of Change + IRIS+ 600+ metrics + Lei 13.019 MROSC + GIFE 130+ R$ 4 bi/ano + Pacto Global ONU Rede Brasil 2.400+ signatários (segunda maior mundial) + B Corp 280+ Brasil + ANTI-greenwashing/woke-washing FIRME (cases Bud Light $1B + VW Dieselgate $30B + BP + HSBC + cases positivos Natura Crer Para Ver R$ 30M+/ano 30+ anos).
+
+### 14/14 Agentes COMPLETOS
+
+| # | Agente | Linhas | Model |
+|---|--------|-------:|-------|
+| 1 | `frank-mkt` | 447 | opus |
+| 2 | `juiz` | 534 | opus |
+| 3 | `auditor` | 454 | sonnet |
+| 4 | `investigador` | 699 | sonnet |
+| 5 | `perfilador-mercado` | 582 | opus |
+| 6 | `redator-hacker` | 583 | opus |
+| 7 | `seo-strategist` | 636 | opus |
+| 8 | `social-media-linkedin` | 602 | opus |
+| 9 | `social-media-instagram` | 530 | opus |
+| 10 | `social-media-facebook` | 774 | sonnet |
+| 11 | `ux-ui-revisor` | 523 | opus |
+| 12 | `psicologia-influencia` | 574 | opus |
+| 13 | `frank-corporativo` | 574 | opus |
+| 14 | `social-humanitario` | 500 | opus |
+| **TOTAL** | | ✅ **14/14 COMPLETO** | **8.012** |
+
+### 🚀🚀🚀 PLUGIN FRANK-MKT 100% COMPLETO
+
+| Categoria | Quantidade | Linhas |
+|-----------|-----------:|-------:|
+| Skills (18 blocos) | 92 | 107.548 |
+| Slash Commands | 8 | 3.529 |
+| Agentes | 14 | 8.012 |
+| **TOTAL** | **114 artefatos** | **119.089** |
+
+### Estatísticas globais finais
+
+- **114 artefatos / 119.089 linhas totais**
+- 18 BLOCOS COMPLETOS skills + 8/8 Slash Commands + 14/14 Agentes
+- 24 high (trimestral) + 61 medium (semestral) + 7 low (anual) skills
+- **Plugin frank-mkt 100% completo conforme ROADMAP**
+
+### Lessons learned 8ª paralelização (RECORDISTA 14 agentes)
+
+- **14 agentes simultâneos** funcionou (vs 8 do recordista v2.30.0)
+- 14/14 estrutura template strict (zero correção manual)
+- Tempo total: ~8-12 minutos para 8.012 linhas (vs 2-3h sequencial)
+- Brief com persona + tools + delegations + cross-skill obrigatório
+
+---
+
 ## 2.31.0 (2026-05-09) — 8/8 Slash Commands COMPLETO — Bloco Infraestrutura FECHADO
 
 ### Adicionado em paralelo (8 agentes — 7ª paralelização do plugin)

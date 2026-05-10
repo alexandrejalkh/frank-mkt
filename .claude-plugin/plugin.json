@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.31.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. v2.31.0 — 18 BLOCOS COMPLETOS skills (92/92) + 8/8 Slash Commands COMPLETOS (init + stack + save-session + help + audit + review + juiz + perfil) via 7a paralelizacao 8 agentes. 92 skills + 8 slash commands, 111.077 linhas. 24 high (trimestral); 61 medium (semestral); 7 low (anual). Restantes: 14 Agentes em construcao.",
+  "version": "2.32.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN 100% COMPLETO v2.32.0** — 92 skills (18 blocos) + 8 slash commands + 14 agentes = 114 artefatos / 119.089 linhas. Skills 24 high + 61 medium + 7 low. 8a paralelizacao RECORDISTA 14 agentes simultaneos fechou plugin completo. Distribuicao: skills/ + commands/ + agents/.",
   "author": {
     "name": "Alexandre Jalkh"
   },
