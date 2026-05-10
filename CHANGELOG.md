@@ -1,5 +1,55 @@
 # Changelog — Frank MKT
 
+## 2.31.0 (2026-05-09) — 8/8 Slash Commands COMPLETO — Bloco Infraestrutura FECHADO
+
+### Adicionado em paralelo (8 agentes — 7ª paralelização do plugin)
+
+**Estratégia**: 7ª paralelização — 8 slash commands em `commands/` (formato Claude Code: frontmatter YAML + instruções markdown). Brief específico para cada comando com workflow + output format + cross-skill references + disclaimer educational.
+
+#### 8 Slash Commands
+
+1. **`/frank-mkt:init`** (560 linhas) — Configura `.frank-mkt/` cliente: estrutura marca/persona/campanhas/decisoes/entregaveis/pesquisa + 10 templates concretos (README + identidade + voice-tone + visual + ICP + JTBD + campanhas + log decisões + ADR-template + concorrentes + trends) + idempotência (verifica pre-existência + merge preservando).
+
+2. **`/frank-mkt:stack`** (348 linhas) — Mostra estado atual lendo `.frank-mkt/`: 6 blocos output (MARCA + PERSONA ICP + CAMPANHAS ATIVAS + DECISÕES RECENTES + ENTREGÁVEIS RECENTES + PESQUISA) + filtros por seção + 8 cenários de borda + read-only.
+
+3. **`/frank-mkt:save-session`** (359 linhas) — Salva log estruturado sessão em `.frank-mkt/sessoes/`: 9 seções (cabeçalho + contexto + decisões + skills invocadas + entregáveis + próximos passos + skills sugeridas + riscos + decisões adiadas + notas + disclaimer) + atualiza log de decisões + 3 casos uso concretos.
+
+4. **`/frank-mkt:help`** (403 linhas) — Menu navegável completo: 8 commands + 14 agentes + 92 skills agrupadas em 19 sub-blocos + 17 filtros temáticos cross-cut + 6 fluxos de uso típicos (lançamento + conteúdo orgânico + ads + corporativo/crise + identidade visual + resolução divergência).
+
+5. **`/frank-mkt:audit`** (467 linhas) — Varredura mecânica PASS/FAIL: 7 checklists (copy/post social/landing/briefing/plano de mídia/deck/email) + 3 níveis severidade (CRÍTICO bloqueia entrega + WARNING + OK) + heurísticas detecção tipo + cross-skill 23 skills + integração com `/review` (qualitativo) e `/audit` outras famílias.
+
+6. **`/frank-mkt:review`** (509 linhas) — Review qualitativo multi-agent: 4 camadas (Frank-MKT principal + agente especialista + Juiz arbitragem + síntese consolidada) + 7 tipos peça com auto-seleção agentes + 8 foco-áreas + diferenciação explícita vs `/audit` + tabela erros comuns.
+
+7. **`/frank-mkt:juiz`** (439 linhas) — Arbitra divergência entre agentes: 6 critérios hierárquicos (compliance regulatório > ética > estratégia > evidência > audiência > custo-benefício) + quando invocar/não + exemplo completo (countdown Black Friday redator-hacker vs psicologia-influencia) + nunca empata.
+
+8. **`/frank-mkt:perfil`** (444 linhas) — Perfilador de Mercado 5 frentes: SIZING TAM/SAM/SOM + PERSONA ICP JTBD + CONCORRÊNCIA Porter + WHITE-SPACE + TRENDS + 6 modos foco + Brasil specificity (Pix + LGPD + reforma tributária + ESG SBT) + exemplo completo FoodTech B2B Brasil + cross-skill 5 core + 5 auxiliares.
+
+### 8/8 Slash Commands Bloco Infraestrutura COMPLETO
+
+| # | Command | Linhas | Função core |
+|---|---------|-------:|-------------|
+| 1 | `/frank-mkt:init` | 560 | Setup `.frank-mkt/` |
+| 2 | `/frank-mkt:stack` | 348 | Estado atual |
+| 3 | `/frank-mkt:save-session` | 359 | Log sessão |
+| 4 | `/frank-mkt:help` | 403 | Menu navegável |
+| 5 | `/frank-mkt:audit` | 467 | PASS/FAIL mecânico |
+| 6 | `/frank-mkt:review` | 509 | Qualitativo multi-agent |
+| 7 | `/frank-mkt:juiz` | 439 | Arbitragem divergência |
+| 8 | `/frank-mkt:perfil` | 444 | Perfilador mercado |
+| **TOTAL** | | ✅ **8/8 COMPLETO** | **3.529** |
+
+### Estatísticas globais
+
+- **92 skills + 8 slash commands** / 111.077 linhas totais
+- 24 high (trimestral) + 61 medium (semestral) + 7 low (anual) skills
+- 18 BLOCOS COMPLETOS skills + Slash Commands COMPLETO
+
+### Próximo
+
+14 agentes em paralelo (`agents/*.md`): frank-mkt persona principal + juiz + auditor + investigador + perfilador-mercado + redator-hacker + seo-strategist + social-media-linkedin/instagram/facebook + ux-ui-revisor + psicologia-influencia + frank-corporativo + social-humanitario.
+
+---
+
 ## 2.30.0 (2026-05-09) — 🎉🎉🎉🎉🎉🎉🎉🎉 MILESTONE 18 BLOCOS COMPLETOS — Bloco Identidade Visual Corporativa / Brand Design FECHADO 8/8 — **100% SKILLS PLANEJADAS** (92/92) — RECORDISTA 8 AGENTES PARALELOS
 
 ### Adicionado em paralelo simultâneo (8 agentes — 6ª paralelização do plugin, RECORDISTA absoluto)
