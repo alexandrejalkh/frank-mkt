@@ -11,13 +11,16 @@
   "plugins": [
     {
       "name": "frank-mkt",
-      "source": ".",
-      "description": "Consultor de Marketing/SEO/Midias Sociais/Inteligencia de Mercado Brasil 2026 — 92 skills (18 blocos) + 8 slash commands + 14 agentes = 114 artefatos. LGPD/CONAR/CDC compliance + cases Magalu/Nubank/Itau + ANTI-dark-pattern + GEO 2026 + Decaimento Temporal por volatility tier.",
+      "source": {
+        "source": "github",
+        "repo": "alexandrejalkh/frank-mkt"
+      },
+      "description": "Consultor MKT/SEO/Midias Sociais/Inteligencia de Mercado Brasil 2026 — 92 skills (18 blocos) + 8 slash commands + 14 agentes = 114 artefatos. LGPD/CONAR/CDC compliance + cases Magalu/Nubank/Itau + ANTI-dark-pattern + GEO 2026 + Decaimento Temporal por volatility tier.",
       "version": "2.32.0",
       "author": {
         "name": "Alexandre Jalkh"
       },
-      "category": "marketing",
+      "category": "productivity",
       "tags": ["marketing", "seo", "linkedin", "instagram", "facebook", "social-media", "market-research", "branding", "copywriting", "ux", "ui", "design-visual", "ia-generativa", "empreendedorismo", "brasil", "lgpd", "conar", "esg"]
     }
   ]
