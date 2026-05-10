@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.34.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.34.0** — 92 skills (18 blocos) + **9 slash commands** (NOVO /frank-mkt:atelier para invocacao direta artista digital) + 15 agentes (atelier-criativo artista digital anti-AI-slop) = 116 artefatos / 119.737 linhas. Skills 24 high + 61 medium + 7 low.",
+  "version": "2.35.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.35.0** — 92 skills (18 blocos) + 9 slash commands + 15 agentes. Comando /frank-mkt:init agora cria DOC MESTRE de identidade visual (.frank-mkt/marca/identidade-visual.md) com 12 secoes (visao estetica + logo + paleta + tipografia + iconografia + formas + fotografia + ilustracao + movimento + aplicacoes + decisoes + versionamento). Atelier-criativo persiste decisoes esteticas neste doc + log decisoes. Skills 24 high + 61 medium + 7 low.",
   "author": {
     "name": "Alexandre Jalkh"
   },

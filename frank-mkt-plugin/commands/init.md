@@ -22,7 +22,7 @@ Use `$ARGUMENTS` como nome do cliente/marca. Se vazio, usar literal `cliente` co
 +-- marca/
 |   +-- identidade.md      # Brand DNA (cross-skill: branding + posicionamento-marca)
 |   +-- voice-tone.md      # Voz + tom de marca (cross-skill: branding)
-|   +-- visual.md          # Identidade visual (cross-skill: logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa)
+|   +-- identidade-visual.md  # DOC MESTRE de identidade visual: cores + tipografia + iconografia + logo + formas + estilo fotografico + ilustracao + animacao + aplicacoes + decisoes (cross-skill: 8 skills Bloco Brand Design + atelier-criativo agente)
 +-- persona/
 |   +-- icp.md             # Ideal Customer Profile (cross-skill: persona-icp-deep)
 |   +-- jtbd.md            # Jobs-to-be-Done (cross-skill: persona-icp-deep)
@@ -69,7 +69,10 @@ Use `$ARGUMENTS` como nome do cliente/marca. Se vazio, usar literal `cliente` co
 
 ## Indice
 
-- `marca/` — Brand DNA, voz, identidade visual
+- `marca/`
+  - `identidade.md` — Brand DNA + posicionamento + big idea
+  - `voice-tone.md` — Voz + tom de marca
+  - `identidade-visual.md` — **DOC MESTRE de design**: cores + tipografia + iconografia + logo + formas + estilo fotografico + ilustracao + animacao + aplicacoes + decisoes
 - `persona/` — ICP + Jobs-to-be-Done
 - `campanhas/` — Campanhas ativas e arquivadas
 - `decisoes/` — ADRs + log cronologico
@@ -85,9 +88,10 @@ Use `$ARGUMENTS` como nome do cliente/marca. Se vazio, usar literal `cliente` co
 
 ## Como usar
 
-1. Preencher `marca/identidade.md` (skill: branding).
+1. Preencher `marca/identidade.md` (skill: branding + posicionamento-marca + big-idea).
 2. Preencher `persona/icp.md` (skill: persona-icp-deep ou comando /frank-mkt:perfil).
-3. Documentar decisoes em `decisoes/log.md`.
+3. **Construir `marca/identidade-visual.md` ao longo do projeto** (atualizar a cada decisao de design via agente atelier-criativo + 8 skills Bloco Brand Design).
+4. Documentar decisoes em `decisoes/log.md` com rationale.
 4. Versionar `.frank-mkt/` no Git do cliente.
 
 ## Disclaimer
@@ -188,55 +192,290 @@ Conteudo gerado por LLM com apoio do plugin Frank-MKT. Conteudo educational, nao
 - "[frase 2]"
 ```
 
-### `.frank-mkt/marca/visual.md`
+### `.frank-mkt/marca/identidade-visual.md`
+
+> DOC MESTRE de identidade visual. Tudo decidido sobre design grafico vai para ca. Atualizado por: agente `atelier-criativo` (visao + sintese), 8 skills Bloco Brand Design (rigor tecnico), agente `frank-corporativo` (compliance institucional). Uma fonte unica de verdade — quando algo muda, atualizar este arquivo + adicionar entrada em `decisoes/log.md` com rationale.
 
 ```markdown
 # Identidade Visual — {{NOME_CLIENTE}}
 
-> Cross-skill: logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa + iconografia-corporativa.
+> Documento mestre. Cross-skill: logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa + iconografia-corporativa + print-papelaria-collateral + apresentacoes-decks-corporativos + templates-corporativos-comerciais + svg-engineering-ia + composicao-visual + agente atelier-criativo.
 
-## Logo
+**Status**: [discovery | concept | refining | approved | production]
+**Ultima atualizacao**: {{DATA}}
+**Owner**: [brand designer / atelier-criativo / aprovador final]
+**Versao**: v0.1.0 (incrementar a cada mudanca substantiva)
 
-- Versao principal: [path para SVG em entregaveis/visual/]
-- Variacoes: horizontal / vertical / monograma / favicon
-- Area de respiro: [X = altura da letra principal]
-- Tamanho minimo: [px digital / mm impresso]
-- Usos proibidos: [stretch, rotacao, cores nao oficiais, sombra]
+---
 
-## Paleta de cores
+## 1. Visao estetica + filosofia (atelier-criativo)
 
-| Nome | HEX | RGB | CMYK | Pantone | Uso |
-|---|---|---|---|---|---|
-| Primaria | #XXXXXX | | | | CTA, links |
-| Secundaria | #XXXXXX | | | | apoio |
-| Neutra escura | #XXXXXX | | | | texto |
-| Neutra clara | #XXXXXX | | | | bg |
-| Acento | #XXXXXX | | | | destaque |
+> Antes de qualquer especificacao tecnica, capturar **a posicao estetica defendida**.
 
-## Tipografia
+- **Posicao estetica em 1 frase**: [ex: "rigor de grid Vignelli + paleta tropical Tarsila aplicada com restricao"]
+- **Referencias cross-domain** (3-5 de dominios diferentes):
+  - Designer/movimento: [ex: Massimo Vignelli — minimalismo italiano]
+  - Cinema: [ex: Wong Kar-wai — cor saturada lirica]
+  - Musica: [ex: Tom Jobim — sintese sofisticada]
+  - Arquitetura: [ex: Lina Bo Bardi — popular elevado]
+  - Brasil: [ex: Tarsila — modernismo antropofagico]
+- **Subtexto emocional**: [o que cliente sente ao ver/usar o material]
+- **Anti-AI-slop checklist**: [Evitamos: gradiente neon generico? sem-serif arredondada padrao? simetria perfeita calma?]
 
-- Fonte primaria: [nome] — usos: titulos
-- Fonte secundaria: [nome] — usos: corpo
-- Fallbacks web: [stack CSS]
-- Hierarquia (H1-H6 + body + caption): [tamanhos + line-height]
+---
 
-## Iconografia
+## 2. Logo
 
-- Estilo: [outline / filled / duotone / hybrid]
-- Grid: [24x24 / 32x32]
-- Stroke width: [Xpx]
+> Cross-skill: logo-design-process. Arquivos finais em `entregaveis/visual/logo/`.
 
-## Imagens / Fotografia
+### Versoes
+- Principal (color): [path .svg + .pdf + .eps + .png 512px]
+- Horizontal: [path]
+- Vertical: [path]
+- Monograma/icone: [path]
+- Favicon (16/32/64px): [path]
+- Monocromatico positivo (preto): [path]
+- Monocromatico negativo (branco): [path]
+- Reverso (sobre fundo escuro): [path]
 
-- Estilo: [editorial / corporativo / lifestyle / abstrato]
-- Tratamento: [color grading / B&W / duotone]
-- Bibliotecas autorizadas: [Unsplash / Pexels / banco proprio]
+### Especificacoes tecnicas
+- **Construcao**: [grid + proporcoes baseadas em X = altura letra principal]
+- **Area de respiro minima**: [X em todas direcoes]
+- **Tamanho minimo digital**: [Xpx — abaixo disto nao usar]
+- **Tamanho minimo impresso**: [Xmm]
+- **Cores tecnicas**: [HEX + Pantone + CMYK declarados em secao 3]
 
-## Aplicacoes
+### Don'ts (5-7 violacoes proibidas)
+1. Stretch horizontal/vertical
+2. Rotacao alem de 90/180/270 graus
+3. Aplicacao de sombra/contorno/gradiente nao especificados
+4. Substituicao de cores fora da paleta oficial
+5. Aplicacao sobre fundo de baixo contraste (<4.5:1 WCAG AA)
+6. [adicionar conforme caso]
 
-- Web: [link CSS tokens]
-- Apresentacoes: [link template em entregaveis/decks/]
-- Impressos: [link template em entregaveis/visual/]
+---
+
+## 3. Paleta de cores
+
+> Cross-skill: paleta-cores-corporativa. WCAG 2.2 contrast 4.5:1 AA / 7:1 AAA.
+
+### Paleta principal
+
+| Nome semantico | HEX | RGB | CMYK | Pantone | OKLCH | Uso |
+|----------------|-----|-----|------|---------|-------|-----|
+| Primary | #XXXXXX | r,g,b | c,m,y,k | XXX C | L% C h | CTA, links, destaque |
+| Primary-dark | #XXXXXX | | | | | hover, active |
+| Primary-light | #XXXXXX | | | | | bg subtil |
+| Secondary | #XXXXXX | | | | | apoio narrativo |
+| Accent | #XXXXXX | | | | | acento isolado |
+
+### Neutros
+
+| Nome | HEX | Uso |
+|------|-----|-----|
+| Black-95 (texto principal) | #0A0A0A | corpo de texto |
+| Gray-70 (texto secundario) | #4A4A4A | metadata, captions |
+| Gray-40 (borders) | #B0B0B0 | divisores, borders |
+| Gray-15 (bg subtle) | #E8E8E8 | bg alternativo |
+| White (bg principal) | #FFFFFF | bg primario |
+
+### Cores semanticas (UI)
+
+| Token | HEX | Uso |
+|-------|-----|-----|
+| Success | #XXXXXX | confirmacao, validacao |
+| Warning | #XXXXXX | atencao, alerta leve |
+| Error | #XXXXXX | erro critico, recusa |
+| Info | #XXXXXX | informacao neutra |
+
+### Dark mode
+
+| Token | Light HEX | Dark HEX |
+|-------|-----------|----------|
+| bg-primary | #FFFFFF | #0A0A0A |
+| text-primary | #0A0A0A | #F5F5F5 |
+| Primary | #XXXXXX | #XXXXXX (ajustado) |
+| ... | | |
+
+### WCAG contrast ratios validados
+
+| Combinacao | Ratio | Nivel |
+|------------|-------|-------|
+| Black-95 sobre White | 19:1 | AAA |
+| Primary sobre White | X:1 | [AA / AAA] |
+| White sobre Primary | X:1 | [AA / AAA] |
+| Gray-70 sobre White | X:1 | [AA / AAA] |
+
+### Cultural meaning + rationale
+- **Por que esta paleta**: [argumento estetico defendido — ex: "primary roxo profundo evoca autoridade Itau ao mesmo tempo modernidade Nubank, sem cair no cliche de nenhum dos dois"]
+- **Cores explicitamente evitadas**: [ex: "verde-amarelo bandeira generico", "purple Nubank exato", "orange Itau exato"]
+
+---
+
+## 4. Tipografia
+
+> Cross-skill: tipografia-corporativa. Licenciamento + fallbacks + variable fonts.
+
+### Familias
+
+| Funcao | Fonte | Variantes usadas | Licenca | Fallback web |
+|--------|-------|------------------|---------|--------------|
+| Display | [nome] | Light/Regular/Bold | [Google Fonts free / Adobe Fonts / Custom] | system-ui, -apple-system, sans-serif |
+| Heading | [nome] | Regular/Bold | | |
+| Body | [nome] | Regular/Italic/Bold | | |
+| Mono (codigo) | [nome] | Regular | | ui-monospace, monospace |
+
+### Hierarquia (modular scale)
+
+| Token | Tamanho | Line-height | Tracking | Peso | Uso |
+|-------|---------|-------------|----------|------|-----|
+| display | 64px | 1.05 | -0.02em | 700 | hero |
+| h1 | 48px | 1.1 | -0.01em | 700 | titulo principal |
+| h2 | 36px | 1.15 | -0.005em | 600 | secao |
+| h3 | 28px | 1.2 | 0 | 600 | subsecao |
+| h4 | 22px | 1.3 | 0 | 500 | bloco |
+| body-lg | 18px | 1.6 | 0 | 400 | leitura confortavel |
+| body | 16px | 1.6 | 0 | 400 | corpo padrao |
+| caption | 14px | 1.5 | 0.01em | 400 | metadata |
+| small | 12px | 1.5 | 0.02em | 400 | legendas, footer |
+
+### Decisoes tipograficas
+- **Por que esta combinacao**: [argumento — ex: "Inter Variable porque suporta acentos pt-BR perfeitamente + variable axes para fluidez + open-source (zero custo licenca)"]
+- **Tipografia explicitamente evitada**: [ex: "sans-serif arredondada padrao AI-slop tipo Plus Jakarta sem motivo"]
+
+---
+
+## 5. Iconografia
+
+> Cross-skill: iconografia-corporativa + svg-engineering-ia. Sistema consistente.
+
+- **Estilo**: [outline / filled / duotone / hybrid]
+- **Grid base**: [24x24 / 32x32 px]
+- **Stroke weight**: [1.5px / 2px / 2.5px] (consistente em todo set)
+- **Cantos**: [round / sharp / hybrid] — radius [Xpx]
+- **Library base** (se aplicavel): [Lucide / Heroicons / Phosphor / Tabler / custom]
+- **Custom set count**: [N icones proprios alem da library]
+- **Path**: [`entregaveis/visual/icons/`]
+- **Distribuicao**: [npm package / Figma library / static SVG files]
+
+### Exemplos de aplicacao
+- Botao primary com icone left: [path icone + tamanho]
+- Botao icon-only: [tamanho minimo touch target 44x44]
+- Icone em texto (inline): [tamanho 1em + alinhamento baseline]
+
+---
+
+## 6. Formas + motivos visuais
+
+> Linguagem geometrica recorrente — alem de logo+icones. NOVO em 2026 — patterns estao voltando.
+
+- **Forma assinatura** (se houver): [ex: arco curvo Niemeyer + linha Vignelli combinados em motivo proprio]
+- **Padroes geometricos**: [path para SVG]
+- **Texturas**: [aplicacao + uso]
+- **Grid de pagina**: [12 colunas web / 6 mobile / margens / gutters]
+- **Proporcoes**: [golden ratio / regra dos tercos / modular scale 1.25x / 1.333x / 1.5x]
+
+---
+
+## 7. Estilo fotografico
+
+> Cross-skill: composicao-visual + geracao-imagens-ia.
+
+- **Direcao geral**: [editorial / corporativo / lifestyle / abstrato / documental]
+- **Color grading**: [warm / cool / desaturated / saturated / B&W / duotone]
+- **Composicao tipica**: [centro / regra dos tercos / simetrica / assimetrica]
+- **Iluminacao**: [natural / studio / golden hour / dramatica chiaroscuro]
+- **People**: [diversidade obrigatoria + faixas etarias + contextos]
+- **Objetos**: [estilo + ambiente]
+- **Bibliotecas autorizadas**: [Unsplash / Pexels / Getty / banco proprio cliente]
+- **Bibliotecas proibidas**: [stock photo generico AI-gerado]
+- **AI generation policy**: [Midjourney v6+ permitido / DALL-E 3 OK / proibido para faces humanas reais]
+
+---
+
+## 8. Estilo ilustrativo
+
+- **Tipo**: [flat / 3D isometrico / line art / collage / hand-drawn / vector minimal]
+- **Paleta usada em ilustracao**: [paleta principal / variacao com cores adicionais / monocromatica]
+- **Personagens**: [estilo + diversidade + traços]
+- **Cenarios**: [abstrato / realista / hibrido]
+- **Inspiracao**: [referencias declaradas]
+- **Path**: [`entregaveis/visual/illustrations/`]
+
+---
+
+## 9. Movimento + animacao
+
+> Cross-skill: composicao-visual + audio-musica-ia (sonic branding). NAO usar SMIL — use CSS/GSAP.
+
+- **Tipo**: [GSAP / CSS animations / Framer Motion / Lottie]
+- **Easing padrao**: [cubic-bezier(0.4, 0.0, 0.2, 1) — Material standard / custom]
+- **Duracoes**: [microinteracao 150ms / transicao 300ms / hero 600-1000ms]
+- **Mood**: [snappy / smooth / bouncy / linear classico]
+- **Sonic branding** (se aplicavel): [logo audio + microsounds UI]
+
+---
+
+## 10. Aplicacoes
+
+> Como a identidade vive em cada medium. Cross-skill: print-papelaria-collateral + apresentacoes-decks-corporativos + templates-corporativos-comerciais.
+
+### Web
+- **CSS tokens**: [path tokens.css ou design-tokens.json]
+- **Sistema componentes**: [Storybook / Figma library / custom]
+- **Responsive breakpoints**: [mobile <640 / tablet 640-1024 / desktop >1024]
+
+### Apresentacoes
+- **Master slides**: [path em `entregaveis/decks/`]
+- **Templates**: [pitch / sales / investor / board / training]
+- **Plataforma**: [PowerPoint / Keynote / Google Slides / Pitch.com / Tome]
+
+### Impressos
+- **Cartao visita**: [path artwork em `entregaveis/visual/print/`]
+- **Papel timbrado**: [path]
+- **Folder/flyer/banner**: [paths]
+- **Especificacoes producao**: [bleed 3mm + safety + CMYK + 300dpi + paper Couche/Triplex]
+
+### Sinalizacao (se aplicavel)
+- **Interna/externa**: [especificacoes]
+- **ABNT NBR 9050 + 16537** compliance: [LBI Brasil — sinalizacao tatil, braille, altura]
+
+### Email
+- **Signature HTML**: [path template]
+- **Newsletter template**: [path]
+
+### Brindes corporativos
+- **Itens**: [caneta / caneca / camiseta / squeeze / eco-friendly]
+- **Aplicacao logo**: [posicao + tamanho + tecnica de impressao]
+
+### Social media
+- **Templates por plataforma**: [path em `entregaveis/visual/social/`]
+- **Formatos**: [LinkedIn 1200x627, Instagram 1080x1080/1080x1920, Facebook 1200x630]
+
+---
+
+## 11. Decisoes + rationale (log de evolucao)
+
+> Toda mudanca neste documento tambem deve ter entrada em `decisoes/log.md` com argumento estetico.
+
+| Data | Decisao | Rationale | Quem aprovou |
+|------|---------|-----------|--------------|
+| {{DATA}} | Inicializacao do documento | Setup inicial via /frank-mkt:init | sistema |
+| | | | |
+
+---
+
+## 12. Versionamento
+
+- **v0.1.0** ({{DATA}}): documento criado, esqueleto preenchido com placeholders
+- **v0.2.0** (a definir): primeira definicao de paleta + tipografia + logo concept
+- **v1.0.0** (a definir): aprovado para producao + brand book exportado
+
+---
+
+## Disclaimer
+
+Conteudo gerado por LLM com apoio do plugin Frank-MKT (skills Brand Design + agente atelier-criativo). Conteudo educational, nao substitui designer humano senior em projeto comercial seria. Validacao humana obrigatoria antes de publicacao. Cross-skill complementar: logo-design-process + brand-book-methodology + paleta-cores-corporativa + tipografia-corporativa + iconografia-corporativa + print-papelaria-collateral + apresentacoes-decks-corporativos + templates-corporativos-comerciais + svg-engineering-ia + composicao-visual + geracao-imagens-ia + audio-musica-ia + acessibilidade-wcag + branding + posicionamento-marca + big-idea + agente atelier-criativo + agente frank-corporativo.
 ```
 
 ### `.frank-mkt/persona/icp.md`
