@@ -1,6 +1,6 @@
 # Instalação Frank-MKT
 
-Guia de instalação validado em 2026-05-11 (v2.36.0) — testado e funcional.
+Guia de instalação validado em 2026-05-11 (v2.37.1) — testado e funcional.
 
 ## Pré-requisitos
 
@@ -62,9 +62,9 @@ Cria estrutura `.frank-mkt/` no projeto com pastas:
 ```
 
 Deve listar:
-- 9 slash commands (inclui `/frank-mkt:atelier`)
-- 15 agentes (inclui `atelier-criativo` — artista digital anti-AI-slop)
-- 92 skills agrupadas em 18 blocos
+- 10 slash commands (inclui `/frank-mkt:atelier` + `/frank-mkt:gerar-infografico`)
+- 16 agentes (inclui `atelier-criativo` artista digital + `renderer-visual` operacional render-loop)
+- 93 skills agrupadas em 18 blocos (Skills Avancadas 2/2: svg-engineering-ia + render-loop-svg)
 
 ## Atualização
 
@@ -145,9 +145,9 @@ frank-mkt/                              # GitHub repo root
     │   └── plugin.json
     ├── CHANGELOG.md
     ├── settings.json
-    ├── skills/                         # 92 skills (18 blocos)
-    ├── commands/                       # 9 slash commands (inclui /atelier)
-    ├── agents/                         # 15 agentes (inclui atelier-criativo)
+    ├── skills/                         # 93 skills (18 blocos)
+    ├── commands/                       # 10 slash commands (inclui /atelier + /gerar-infografico)
+    ├── agents/                         # 16 agentes (inclui atelier-criativo + renderer-visual)
     └── hooks/                          # SessionStart check-skills-vencidas
 ```
 
@@ -159,4 +159,4 @@ frank-mkt/                              # GitHub repo root
 
 ## Versão
 
-**v2.36.0** (2026-05-11) — Plugin 100% completo: 92 skills + 9 commands + 15 agentes = **116 artefatos** / 119.768 linhas. v2.36.0 e drift repair (sincroniza documentacao v2.32 → v2.35).
+**v2.37.1** (2026-05-11) — Plugin: 93 skills + 10 commands + 16 agentes = **119 artefatos** / ~121.463 linhas. v2.37.0 adicionou render-loop visual real (skill render-loop-svg + agente renderer-visual + command /frank-mkt:gerar-infografico). v2.37.1 e drift repair pos-v2.37.0 (sincroniza docs_mkt + headings mid-file + corrige ASCII).

@@ -3,10 +3,10 @@
 > Documento-fonte para o plugin `frank-mkt-plugin/`. Não é versionado pelo plugin — fica em `docs_mkt/` para evolução livre.
 
 **Data inicial:** 2026-05-07
-**Versão atual do plugin:** **v2.36.0** (atualizada em 2026-05-11 — drift repair sincronizando docs com estado real)
+**Versão atual do plugin:** **v2.37.1** (atualizada em 2026-05-11 — render-loop visual + drift repair pos-v2.37.0)
 **Modelo de referência:** `frank-juridico-ti-plugin/` (v1.5.3)
 
-> ⚠️ **Nota historica (2026-05-11):** este Roadmap foi escrito em 2026-05-07 quando o plugin estava em v0.5.0 com 11 skills implementadas e ~58 skills previstas. **O plugin avancou MUITO ALEM** do roadmap original — hoje (v2.36.0) tem **92 skills implementadas em 18 blocos completos + 9 slash commands + 15 agentes = 116 artefatos / ~119.768 linhas**. As secoes abaixo sao preservadas como **historia do projeto**, mas refletem o plano inicial, NAO o estado atual. Para estado atual ver: `frank-mkt-plugin/skills/INDEX.md` (v2.36.0).
+> ⚠️ **Nota historica (2026-05-11):** este Roadmap foi escrito em 2026-05-07 quando o plugin estava em v0.5.0 com 11 skills implementadas e ~58 skills previstas. **O plugin avancou MUITO ALEM** do roadmap original — hoje (v2.37.1) tem **93 skills implementadas em 18 blocos completos + Skills Avancadas 2/2 (svg-engineering-ia + render-loop-svg) + 10 slash commands + 16 agentes = 119 artefatos / ~121.463 linhas**. As secoes abaixo sao preservadas como **historia do projeto**, mas refletem o plano inicial, NAO o estado atual. Para estado atual ver: `frank-mkt-plugin/skills/INDEX.md` (v2.37.1).
 
 **Snapshots historicos das sessoes principais:**
 - [`SNAPSHOT-2026-05-07.md`](SNAPSHOT-2026-05-07.md) — fim sessao 1 (v0.5.0)

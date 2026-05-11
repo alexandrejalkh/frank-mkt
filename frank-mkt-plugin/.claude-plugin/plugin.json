@@ -1,7 +1,7 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.37.0",
+  "version": "2.37.1",
   "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.37.0** — 93 skills (18 blocos + Skills Avancadas) + 10 slash commands + 16 agentes = 119 artefatos / ~121.463 linhas. v2.37.0 adiciona render-loop visual real para gerar SVG/HTML denso sem output cego: nova skill render-loop-svg (1065 linhas) + agente renderer-visual com Bash (296 linhas) + comando /frank-mkt:gerar-infografico (320 linhas) + principio em manutencao-skills (anti-pattern 19 + regra 19). Cristal capturado em sessao de teste 2026-05-11 (Gestuum poster cientifico subiu de ~40% para ~85% paridade visual com render-loop). Skills 24 high + 62 medium + 7 low.",
   "author": {
     "name": "Alexandre Jalkh"

@@ -1,5 +1,57 @@
 # Changelog — Frank MKT
 
+## 2.37.1 (2026-05-11) — POST-AUDIT FIX — drift + Guardian + IA-typical corrigidos
+
+Auditoria pos-v2.37.0 com 4 agentes especialistas (`frank-pentest:arquiteto`, `frank-pentest:lost-in-middle`, `frank-pentest:source-auditor`, `frank-dev:guardian-agent`) detectou 14 issues. Esta release de patch corrige todos.
+
+### Arquiteto: APROVADO (6/6 recomendacoes seguidas)
+Implementacao seguiu integralmente o parecer arquitetural anterior. Sem mudanca nesta release. 3 notas LOW/INFO opcionais ficaram para futuro (smoke test CI, loop circular detection, matriz tooling no agente).
+
+### Lost-in-middle: 7 drifts NOVOS detectados (ironia auto-referencial)
+
+v2.37.0 criou drift do mesmo padrao que v2.36.0 reparou. Corrigido em v2.37.1:
+
+- **docs_mkt/INSTALACAO.md** v2.36.0 -> v2.37.1; contagens 92/9/15 -> 93/10/16; menciona renderer-visual + /gerar-infografico
+- **docs_mkt/ROADMAP-FRANK-MKT.md** nota historica v2.36.0 -> v2.37.1; contagens atualizadas
+- **skills/INDEX.md** linha 30 Skills Avancadas 2.299 -> 2.301 (off-by-2 corrigido); linha 33 TOTAL SKILLS 92/92 -> 93/93 + 107.548 -> 108.619 (resolvendo auto-contradicao com header L5)
+- **agents/frank-mkt.md** linha 48 "92 skills em 18 BLOCOS" -> "93 skills"; linha 180 "Total: 92" -> "Total: 93"; linha 176-178 BLOCO 18 reformulado de "(2): svg-engineering-ia + manutencao-skills" para "(3): svg-engineering-ia + render-loop-svg + manutencao-skills"; linha 184 "(14)" -> "(15)"; path hardcoded `D:\4nk\frank-mkt\skills\` substituido por path relativo `frank-mkt-plugin/skills/`
+- **commands/help.md** linhas 28-30 workflow + L56/L82/L109 headings "9 Slash Commands / 15 Agentes / 92 Skills" -> "10 Slash Commands / 16 Agentes / 93 Skills" (resolvendo auto-contradicao mid-file entre headings e tabelas)
+
+### Guardian: 5 violacoes corrigidas
+
+- **agents/renderer-visual.md:27** typo `## Princpio fundamental` -> `## Principio fundamental`
+- **agents/renderer-visual.md:276** typo `crItico de arte` -> `critico de arte` (I maiusculo no meio da palavra sugeria acento corrompido)
+- **agents/renderer-visual.md:164** seta Unicode `→` substituida por `->` ASCII
+- **commands/gerar-infografico.md:298** acento `nó` -> `no` (violava ASCII PT-BR)
+- **commands/gerar-infografico.md:281-291** 6 setas Unicode `↓` no diagrama de dependencias substituidas por `|`/`v` ASCII
+- **skills/render-loop-svg/SKILL.md** ~15 setas Unicode `→`, `↓` substituidas globalmente por `->`, `v` ASCII; resolvido `←` em linha 1040. Agora coerente com `ascii_only: true` declarado no frontmatter.
+
+### Source-auditor: 2 findings MEDIUM corrigidos
+
+- **"8 dimensoes" fabricado** — auditor detectou que o aprendizado_infografico.md original NAO numera as dimensoes do checklist como "8". Reformulado em 3 arquivos para ser honesto sobre a origem: "checklist heuristico de 6 dimensoes objetivas + 2 condicionais (fidelidade vs referencia quando aplicavel + coerencia interna)". Adicionada nota explicita: "derivado da sessao Gestuum 2026-05-11 — replicar para validar como framework generalizavel".
+- **Generalizacao N=1 indevida** — "~85% paridade visual" e "+45 pontos do loop" sao numeros legitimos do caso Gestuum mas tinham sido reescritos como "teto realista de SVG-via-LLM" e "limite pratico". Reformulado para "observado em N=1 caso documentado (Gestuum, 2026-05-11) — replicar para validar". Honestidade cientifica preservada.
+
+Findings LOW de source-auditor (hedging, tabela exaustiva, disclaimer aglutinado, auto-referencia circular, tom consultor) deixados como debito tecnico — nao comprometem utilidade do conteudo.
+
+### Metadados sincronizados
+
+- `plugin.json`: 2.37.0 -> 2.37.1
+- `marketplace.json`: 2.37.1 (top + plugin entry)
+
+### Sem mudanca em runtime
+
+Esta release **nao altera comportamento** de skills/agentes/commands. Apenas corrige drift documental + Guardian compliance + 2 padroes IA-typical MEDIUM. Plugin v2.37.0 continua funcionando identico ao runtime. Restore point: tag `v2.37.0`.
+
+```
+git reset --hard v2.37.0  # se necessario reverter
+```
+
+### Licao auto-referencial
+
+Ironia importante registrada: v2.37.0 reparou drift v2.32->v2.35 (CHANGELOG, INDEX, help.md) mas ESQUECEU docs_mkt/ + criou novo drift de auto-contradicao mid-file em help.md/frank-mkt.md/INDEX.md. Causa raiz: contagens hardcoded em N arquivos sem CI/lint para validar. Vetor #6 drift de protocolo continua ativo. **Recomendacao para futuro**: CI script cross-artifact (proxima release v2.38.0+) validando que contagens 93/10/16 batem em todos os arquivos correlatos. Por ora, manutencao manual disciplinada.
+
+---
+
 ## 2.37.0 (2026-05-11) — RENDER-LOOP VISUAL — operacionaliza feedback visual real para SVG/HTML
 
 ### Adicionado

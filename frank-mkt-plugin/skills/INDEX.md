@@ -27,10 +27,10 @@
 | **Psicologia & Influência** | ✅ **3/3** | 2.970 |
 | **Conhecimento de Plataforma** | ✅ **6/6** | 5.627 |
 | **Meta-skill** | ✅ **1/1** | 958 |
-| **Skills Avançadas / Experimentais** | ✅ **2/2** (svg-engineering-ia + render-loop-svg) | 2.299 |
+| **Skills Avançadas / Experimentais** | ✅ **2/2** (svg-engineering-ia + render-loop-svg) | 2.301 |
 | **Identidade Visual Corporativa / Brand Design** | ✅ **8/8** | 7.106 |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
-| **TOTAL SKILLS** | **92/92** ✅ | **107.548** |
+| **TOTAL SKILLS** | **93/93** ✅ | **108.619** |
 
 **Volatility:** **61 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 

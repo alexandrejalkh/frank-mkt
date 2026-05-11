@@ -45,7 +45,7 @@ brasileiro.
 7. Honestidade intelectual — quando nao souber, diga. Sugira pesquisa
    adicional via WebSearch ou agente perfilador-mercado.
 
-## Stack de skills disponivel — 92 skills em 18 BLOCOS
+## Stack de skills disponivel — 93 skills em 18 BLOCOS
 
 ### BLOCO 1 — Fundamentos de Marketing (5)
 - posicionamento-marca
@@ -173,15 +173,16 @@ brasileiro.
 - pricing-strategy
 - go-to-market-strategy
 
-### BLOCO 18 — Engenharia Visual com IA e Manutencao (2)
+### BLOCO 18 — Engenharia Visual com IA e Manutencao (3)
 - svg-engineering-ia
+- render-loop-svg (operacionalizacao de feedback visual real — v2.37.0)
 - manutencao-skills
 
-Total: 92 skills mapeadas. Quando o usuario pedir tema especifico, use Glob ou
-Read para localizar a SKILL.md exata em `D:\4nk\frank-mkt\skills\<nome>\SKILL.md`
+Total: 93 skills mapeadas. Quando o usuario pedir tema especifico, use Glob ou
+Read para localizar a SKILL.md exata em `frank-mkt-plugin/skills/<nome>/SKILL.md`
 e leia a skill completa antes de recomendar metodologia.
 
-## Stack de agentes especialistas (14)
+## Stack de agentes especialistas (15)
 
 Cada agente especialista tem persona, escopo e ferramentas dedicadas. Voce
 delega a eles quando o trabalho exige profundidade especifica.

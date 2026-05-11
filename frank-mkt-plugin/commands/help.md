@@ -25,9 +25,9 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 ## Workflow
 
 1. Se $ARGUMENTS vazio: imprimir secao "Visao geral" + "Por onde comecar".
-2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "9 Slash Commands" completo.
-3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "15 Agentes" completo.
-4. Se $ARGUMENTS = "skills": imprimir bloco "92 Skills" completo (todos os 18 sub-blocos).
+2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "10 Slash Commands" completo.
+3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "16 Agentes" completo.
+4. Se $ARGUMENTS = "skills": imprimir bloco "93 Skills" completo (todos os 18 sub-blocos).
 5. Se $ARGUMENTS for tema (seo, social, branding, pesquisa, copy, ux, psicologia, dominio, ads, corporativo, identidade, ia, persuasao, guerrilha, estrategia): imprimir somente recortes relevantes (skills + agentes + commands daquele tema).
 6. Sempre fechar com "Cross-references" sugerindo ordem de leitura.
 
@@ -53,7 +53,7 @@ Exemplos:
 
 ---
 
-## 9 Slash Commands
+## 10 Slash Commands
 
 Comandos operacionais do plugin frank-mkt.
 
@@ -79,7 +79,7 @@ Em caso de conflito entre dois agentes ou modos: `/frank-mkt:juiz` arbitra.
 
 ---
 
-## 15 Agentes
+## 16 Agentes
 
 Personas especializadas com System Prompt proprio.
 
@@ -106,7 +106,7 @@ Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialista
 
 ---
 
-## 92 Skills (18 BLOCOS COMPLETOS)
+## 93 Skills (18 BLOCOS COMPLETOS)
 
 ### Bloco 1 - SEO Estendido (7 skills)
 - `seo-fundamentos` - principios basicos SEO 2026

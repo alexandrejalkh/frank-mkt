@@ -76,16 +76,16 @@ Diferenca de **+45 pontos** veio do loop, nao de prompt melhor.
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  [1] LLM gera arquivo:                                       │
-│      Write tool → arquivo.svg / arquivo.html                │
+│      Write tool -> arquivo.svg / arquivo.html                │
 │                                                              │
 │  [2] LLM renderiza via headless browser:                    │
-│      Bash/PowerShell → msedge --headless --screenshot       │
+│      Bash/PowerShell -> msedge --headless --screenshot       │
 │                                                              │
 │  [3] Browser produz PNG do arquivo:                          │
-│      filesystem → arquivo.png                                │
+│      filesystem -> arquivo.png                                │
 │                                                              │
 │  [4] LLM le PNG com tool multimodal:                         │
-│      Read(arquivo.png) → imagem entra no contexto           │
+│      Read(arquivo.png) -> imagem entra no contexto           │
 │                                                              │
 │  [5] LLM AVALIA visualmente o output                         │
 │      (modelo e multimodal na entrada)                       │
@@ -417,7 +417,7 @@ Aguardar 1.2s pos-comando (race condition).
 
 Verificar PNG foi criado + tem tamanho razoavel (>1KB).
 
-Em falha: tentar fallback chain (Chrome → Playwright se Node disponivel → Resvg-js → Inkscape → reportar AUSENCIA de tooling).
+Em falha: tentar fallback chain (Chrome -> Playwright se Node disponivel -> Resvg-js -> Inkscape -> reportar AUSENCIA de tooling).
 
 ### Passo 3 — Read multimodal do PNG
 
@@ -427,9 +427,13 @@ Se `reference_png` foi fornecido, ler tambem — ambos no contexto para comparac
 
 **Limite pratico**: Read tool aceita imagens ate ~20 MB. PNGs renderizados ficam tipicamente 50KB-2MB. Sem problema em 99% dos casos.
 
-### Passo 4 — Avaliacao visual sistematica (8 dimensoes)
+### Passo 4 — Avaliacao visual sistematica (checklist heuristico)
 
-Aplicar checklist:
+Aplicar checklist heuristico — **6 dimensoes objetivas + 2 condicionais**:
+
+> ⚠️ **Origem do checklist**: derivado da sessao de teste 2026-05-11 com poster Gestuum (`docs_mkt/aprendizado_infografico.md`). NAO e framework academico validado em N casos — e proposta operacional. Replicar em mais casos para validar/refinar.
+
+**6 dimensoes objetivas (sempre aplicaveis):**
 
 #### Dim 1: Alinhamento
 - Elementos respeitam grid declarado?
@@ -463,17 +467,19 @@ Aplicar checklist:
 - Default alvo 70-95% (mais baixo: minimal calmo; mais alto: poster denso).
 - Vazio respira ou parece bug?
 
-#### Dim 7: Fidelidade vs referencia (se aplicavel)
+**2 dimensoes condicionais (quando dados disponiveis):**
+
+#### Dim 7: Fidelidade vs referencia (SO se reference_png fornecido)
 - Paridade comunicacional: conteudo essencial presente?
 - Paridade estetica: aparencia geral compativel?
 - Gap especifico: o que mudou?
 
-#### Dim 8: Coerencia interna
+#### Dim 8: Coerencia interna (SO se SVG ≥ 200 linhas ou multi-elemento)
 - Stroke widths consistentes (set inteiro 2px)?
 - Paleta respeitada (sem cores fora do brief)?
 - Estilo unificado (nao mistura flat com gradient sem proposito)?
 
-Para cada dimensao: PASS / WARN / FAIL + observacao especifica.
+Para cada dimensao aplicavel: PASS / WARN / FAIL + observacao especifica.
 
 ### Passo 5 — Decisao + reporte
 
@@ -482,7 +488,7 @@ Output estruturado:
 ```markdown
 [RENDER-LOOP — iteracao N]
 
-Renderizado: arquivo.svg → arquivo_render.png (1024x1536, 0.8s)
+Renderizado: arquivo.svg -> arquivo_render.png (1024x1536, 0.8s)
 
 Findings por dimensao:
 - Alinhamento:  PASS
@@ -528,7 +534,7 @@ Loop para quando QUALQUER uma:
 Mesmo sem todos PASS, aceitar pode fazer sentido se:
 
 - Issues remanescentes sao **esteticos subjetivos** (vs objetivos)
-- Gap vs referencia ja em **85%+ paridade comunicacional** (limite pratico de SVG-via-LLM)
+- Gap vs referencia ja em **85%+ paridade comunicacional** (valor observado em N=1 — caso Gestuum 2026-05-11; replicar para validar como benchmark generalizavel)
 - Iteracao adicional traria custo > beneficio (lei dos retornos decrescentes)
 - Issue critico exige redesign (atelier-criativo decide), nao iteracao incremental
 
@@ -588,7 +594,7 @@ Causa: SVG `viewBox="0 0 800 600"` mas `--window-size=1024,1536` — proporcoes 
 Fix:
 - Opcao A: SVG ter `viewBox` proporcional ao window-size desejado
 - Opcao B: SVG ter `preserveAspectRatio="xMidYMid meet"` (centra + escala para fit)
-- Opcao C: window-size matching viewBox (ex: viewBox 800x600 → window-size 1600,1200 para 2x)
+- Opcao C: window-size matching viewBox (ex: viewBox 800x600 -> window-size 1600,1200 para 2x)
 
 ### Pitfall 4 — Font fallbacks silenciosos
 
@@ -659,7 +665,7 @@ Reportar **paridade quantificada**:
 - Paridade comunicacional: X% (conteudo essencial coberto)
 - Paridade estetica: Y% (aparencia geral compativel)
 
-Limite pratico para SVG-via-LLM vs Imagen-via-diffusion: ~85% estetica e teto realista. Acima disso exige caminho hibrido.
+Observado em N=1 caso documentado (Gestuum, 2026-05-11): SVG-via-LLM atingiu ~85% paridade estetica vs Imagen-via-diffusion. **NAO e teto universal validado** — e amostra unica. Acima disso pode exigir caminho hibrido. Replicar em mais casos antes de tratar como benchmark.
 
 ### Heuristicas de qualidade alem do checklist
 
@@ -811,7 +817,7 @@ Caso real: poster Gestuum (Science Fair 2026) atingiu 85% paridade com Imagen vi
 
 13. **Confiar render unico para SVG critico.** Em producao, validar em 2+ renderers (Edge + Resvg) se filters complexos.
 
-14. **Esquecer fallback chain.** Falha em Edge nao significa parar; tentar Chrome → Playwright → Resvg → Inkscape.
+14. **Esquecer fallback chain.** Falha em Edge nao significa parar; tentar Chrome -> Playwright -> Resvg -> Inkscape.
 
 15. **Loop quando ja convergiu.** Aceitar 85% paridade se gap remanescente e estetico subjetivo.
 
@@ -839,7 +845,7 @@ Caso real: poster Gestuum (Science Fair 2026) atingiu 85% paridade com Imagen vi
 
 9. **Sempre reportar AUSENCIA de tooling honestamente.** Inventar render mental e crime.
 
-10. **Sempre tentar fallback chain antes de desistir.** Edge → Chrome → Playwright → Resvg → Inkscape.
+10. **Sempre tentar fallback chain antes de desistir.** Edge -> Chrome -> Playwright -> Resvg -> Inkscape.
 
 11. **Sempre quantificar paridade quando referencia fornecida.** "X% comunicacional / Y% estetica".
 
@@ -876,7 +882,7 @@ Acao:
 Output:
 ```
 [RENDER-LOOP iteracao 1/5]
-Renderizado: logo.svg → logo_render.png (800x800)
+Renderizado: logo.svg -> logo_render.png (800x800)
 Findings: 8 dimensoes PASS
 Recomendacao: ACEITAR
 ```
@@ -1034,15 +1040,15 @@ Se qualquer resposta levantar duvida grave, voltar uma etapa.
 
 ```
 atelier-criativo (visao estetica)
-       ↓
+       v
 [gera SVG via svg-engineering-ia]
-       ↓
-renderer-visual (Bash + Read multimodal)  ← ESTA SKILL E A REFERENCIA TECNICA DESSE AGENTE
-       ↓
+       v
+renderer-visual (Bash + Read multimodal)  <-- ESTA SKILL E A REFERENCIA TECNICA DESSE AGENTE
+       v
 [loop iterativo]
-       ↓
+       v
 [aceitar OU iterar OU descartar]
-       ↓
+       v
 entrega ao usuario
 ```
 

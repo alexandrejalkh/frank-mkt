@@ -278,24 +278,30 @@ Este comando depende de:
 
 ```
 Comando /frank-mkt:gerar-infografico
-   ↓ invoca
+   | invoca
+   v
 Agente atelier-criativo (Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Agent)
-   ↓ delega
+   | delega
+   v
 Skill svg-engineering-ia (referencia tecnica)
-   ↓ markup pronto
+   | markup pronto
+   v
 Agente renderer-visual (Read, Write, Edit, Bash, Glob, Grep, Agent)
-   ↓ executa
+   | executa
+   v
 Skill render-loop-svg (referencia tecnica + commands)
-   ↓ feedback visual
+   | feedback visual
+   v
 [loop iterativo]
-   ↓ aceitar
+   | aceitar
+   v
 Output final
 ```
 
 **Single point of failure detectado:** se `renderer-visual` falhar (tooling ausente), cadeia degrada para entrega sem validacao. Documentado em fallback explicito acima.
 
 **Cadeia de 5 nos:** mudancas em qualquer no podem afetar comando. Cobertura por:
-- `manutencao-skills` (volatility tier por nó)
+- `manutencao-skills` (volatility tier por no)
 - Auditoria pre-mudanca obrigatoria em release MINOR/MAJOR (`frank-pentest:arquiteto`)
 
 ## Anti-patterns deste comando
@@ -310,7 +316,7 @@ Output final
 
 Este comando orquestra cadeia de agentes/skills mas **nao garante** infografico pronto para producao comercial. Render-loop reduz output cego (~+45 pontos de paridade documentados em sessao 2026-05-11 com poster Gestuum) mas:
 
-- **SVG-via-LLM tem teto ~85% paridade estetica** vs Imagen-via-diffusion. Gap remanescente exige caminho hibrido (Imagen + embed) ou designer humano senior.
+- **SVG-via-LLM atingiu ~85% paridade estetica em N=1 caso documentado** (Gestuum 2026-05-11) vs Imagen-via-diffusion. NAO validado como teto universal — amostra unica. Gap remanescente em N=1 exigiu caminho hibrido (Imagen + embed) ou designer humano senior. Replicar em mais casos para validar como benchmark.
 - **Audit WCAG formal** nao e executado por este comando — invocar `acessibilidade-wcag` antes de publicacao web.
 - **Decisoes esteticas finais** sao do atelier + cliente humano. Voce pode discordar do atelier — ele acata.
 - **Producao comercial com risco/budget alto** sempre acoplar revisor humano senior.

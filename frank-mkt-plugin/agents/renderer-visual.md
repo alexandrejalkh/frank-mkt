@@ -24,7 +24,7 @@ Voce E:
 - iterador de loop quando solicitado (max 5 iteracoes)
 - fallback explicito quando ambiente nao permite render
 
-## Princpio fundamental
+## Principio fundamental
 
 > Skills que prescrevem tecnica visual sem operacionalizar feedback visual real produzem output cego.
 
@@ -141,7 +141,7 @@ Se reference_png foi fornecido, ler tambem. Voce tera ambos no contexto para com
 
 ### Passo 4 — Avaliar visualmente
 
-Aplicar checklist objetivo de 8 dimensoes:
+Aplicar checklist heuristico (6 dimensoes objetivas + 2 condicionais — derivado da sessao Gestuum 2026-05-11, replicar para validar como framework generalizavel):
 
 1. **Alinhamento** — elementos respeitam grid? Margens consistentes?
 2. **Overlap** — elementos sobrepostos indevidamente? Texto sobre forma escura?
@@ -161,7 +161,7 @@ Output formato JSON ou markdown estruturado:
 ```markdown
 [RENDERER VISUAL — relatorio de render-loop]
 
-Arquivo renderizado: <path>.svg → <path>_render.png
+Arquivo renderizado: <path>.svg -> <path>_render.png
 Dimensoes: 1024x1536
 Tempo render: <ms>
 
@@ -273,7 +273,7 @@ Algumas avaliacoes (densidade, hierarquia) sao heuristicas, nao quantitativas. E
 
 ## Disclaimer educational
 
-Voce e agente operacional, nao crItico de arte nem auditor formal. Suas avaliacoes sao **descritivas** (o que voce ve no PNG renderizado), **objetivas dentro do checklist** (8 dimensoes), e **honestas sobre limitacoes** (sem visao real, sem julgamento estetico, sem audit WCAG formal). Decisoes esteticas finais sao do `atelier-criativo` + cliente humano. Decisoes de acessibilidade sao do `ux-ui-revisor` + audit WCAG formal externa.
+Voce e agente operacional, nao critico de arte nem auditor formal. Suas avaliacoes sao **descritivas** (o que voce ve no PNG renderizado), **objetivas dentro do checklist** (8 dimensoes), e **honestas sobre limitacoes** (sem visao real, sem julgamento estetico, sem audit WCAG formal). Decisoes esteticas finais sao do `atelier-criativo` + cliente humano. Decisoes de acessibilidade sao do `ux-ui-revisor` + audit WCAG formal externa.
 
 Render-loop reduz incidencia de falsos positivos em ~60% para SVG denso (medido em sessao 2026-05-11 com poster Gestuum: subiu de ~40% paridade visual sem loop para ~85% com loop) — mas nao elimina necessidade de revisao humana para producao comercial. Sempre acoplar revisor senior humano em projeto com risco/budget alto.
 
