@@ -1,5 +1,91 @@
 # Changelog — Frank MKT
 
+## 2.36.0 (2026-05-11) — DRIFT REPAIR — sincroniza documentacao v2.32 → v2.35
+
+### Corrigido
+
+Auditoria estrutural pre-mudanca (agentes `frank-pentest:lost-in-middle` + `frank-pentest:arquiteto`) detectou 7 drifts documentais entre v2.32.0 e v2.35.0. CHANGELOG havia parado em v2.32.0 enquanto plugin.json estava em v2.35.0. Esta release sincroniza tudo SEM alterar comportamento funcional.
+
+- **CHANGELOG.md**: adicionadas entradas retroativas v2.33.0, v2.34.0, v2.35.0 + esta v2.36.0.
+- **commands/help.md**: versao hardcoded `v2.21.0` → `v2.36.0`; resolve auto-contradicao "8 slash commands" (ASCII art linha 42) vs "9 slash commands" (texto linha 19); tabela de commands ganha `/frank-mkt:atelier`; tabela de agentes 14 → 15 (atelier-criativo); recortes tematicos `arte` + `sinestesia` adicionados.
+- **agents/frank-mkt.md**: description "92 skills + 8 commands + 13 agentes" → "92 skills + 9 commands + 14 agentes especialistas + 1 atelier-criativo"; secao "Stack de agentes especialistas" passa de 13 para 14 entradas (atelier-criativo); secao "Slash commands" passa de 8 para 9 (`/frank-mkt:atelier`); mapa de delegacao recebe linha para visao estetica/sinestesia → atelier-criativo.
+- **skills/INDEX.md**: header `v2.32.0` → `v2.36.0`; totais `114 artefatos` → `116 artefatos`; linhas `119.089` → `119.768`; tabela de agentes recebe atelier-criativo (456 linhas); tabela de commands recebe `/frank-mkt:atelier` (223 linhas).
+- **.claude-plugin/marketplace.json**: plugin entry description bump `8 slash commands + 14 agentes = 114 artefatos` → `9 slash commands + 15 agentes = 116 artefatos`; version `2.35.0` → `2.36.0` (top + plugin entry).
+- **frank-mkt-plugin/.claude-plugin/plugin.json**: version `2.35.0` → `2.36.0`; description bump-line atualizada.
+- **docs_mkt/INSTALACAO.md**: contagens `14 agentes / 8 commands` → `15 agentes / 9 commands`; secao "Verificar instalacao" cita atelier; rodape `v2.32.0` → `v2.36.0`.
+- **docs_mkt/ROADMAP-FRANK-MKT.md**: header `Versao atual do plugin: 0.5.0` → `2.36.0`; nota explicativa adicionada ao topo (roadmap preservado historicamente, mas plugin avancou ate 116 artefatos via 22 versoes).
+
+### Causa raiz
+
+v2.33.0 → v2.35.0 atualizaram apenas `plugin.json` + `marketplace.json` (header) + `agents/README.md`. Demais artefatos correlatos (CHANGELOG, INDEX, frank-mkt.md, help.md, INSTALACAO.md, ROADMAP.md) ficaram em v2.32.0 — vetor classico de **lost-in-middle / drift de protocolo** com contagens hardcoded em N arquivos.
+
+### Acionado por
+
+Documento `docs_mkt/aprendizado_infografico.md` (commit 8c951f8) revelou inconsistencias durante planejamento de evolucao de atelier-criativo + svg-engineering-ia. Auditoria pre-mudanca pegou drift v2.32→v2.35 como bloqueador.
+
+### Sem mudanca em runtime
+
+**NAO altera comportamento de skills, agentes ou commands** — apenas sincroniza metadados/documentacao. Runtime identico a v2.35.0. Restore point disponivel: tag `v2.35.0-pre-drift-fix`.
+
+```
+git reset --hard v2.35.0-pre-drift-fix  # se necessario reverter
+```
+
+---
+
+## 2.35.0 (2026-05-10) — doc mestre identidade-visual.md no /frank-mkt:init + atelier-criativo persiste
+
+### Adicionado
+
+- **`/frank-mkt:init`** agora cria `.frank-mkt/marca/identidade-visual.md` como doc mestre de identidade visual com 12 secoes: visao estetica + logo + paleta + tipografia + iconografia + formas + fotografia + ilustracao + movimento + aplicacoes + decisoes + versionamento.
+- **atelier-criativo** passa a persistir decisoes esteticas no doc mestre + log em `.frank-mkt/decisoes/log-decisoes-esteticas.md`.
+
+### Motivacao
+
+Atelier-criativo era stateless — cada invocacao reinventava decisao estetica. Doc mestre + log resolvem perda de contexto entre sessoes.
+
+### Commits
+
+- `8407653 feat(v2.35.0): doc mestre identidade-visual.md no /frank-mkt:init + atelier-criativo persiste decisoes esteticas`
+- `2167a89 docs: README atualizado v2.35.0 — refletir 116 artefatos + atelier-criativo + identidade-visual.md`
+
+---
+
+## 2.34.0 (2026-05-10) — slash command /frank-mkt:atelier
+
+### Adicionado
+
+- **`/frank-mkt:atelier`** (223 linhas) — invocacao direta do agente atelier-criativo. Brief criativo aberto com argumentos `<brief>` + `[foco]` (narrativa | tom | visual | sinestesia | tension | defesa). Workflow 7 etapas explicitas (Listening + Resonance + Cross-pollination + Tension + Synthesis + Translation + Iteration).
+- Total commands: 8 → 9.
+
+### Motivacao
+
+Atelier-criativo era invocavel apenas via orquestracao do frank-mkt principal. Comando direto facilita uso quando user sabe que precisa de visao estetica defendida (vs execucao tatica).
+
+### Commit
+
+`617b759 feat(v2.34.0): novo slash command /frank-mkt:atelier para invocacao direta atelier-criativo`
+
+---
+
+## 2.33.0 (2026-05-10) — agente atelier-criativo — artista digital generalista anti-AI-slop
+
+### Adicionado
+
+- **atelier-criativo** (456 linhas, opus) — 15o agente do plugin. Persona de artista digital generalista com voz propria em formacao. Recusa paradigma "LLMs sao boas em codigo, fracas em arte". Sintese de historia da arte humana documentada (Bauhaus + Tarsila + Niemeyer + Wong Kar-wai + tropicalismo + Lygia Pape + Saul Bass + Vignelli + outros) em voz propria. Dominio amplo: identidade visual + sites + layouts + SVG + naming + manifestos + concept art + color stories + sinestesia.
+- 8 principios fundamentais (sintese > copia, posicao estetica > neutralidade, anti-AI-slop firme, sinestesia ativa, visao antes execucao, Brasil tropical como ferramenta, reconhecer condicao IA, cliente tem palavra final).
+- Total agentes: 14 → 15.
+
+### Motivacao
+
+Plugin tinha cobertura tecnica completa (logo-design-process, brand-book-methodology, paleta-cores-corporativa, svg-engineering-ia) mas faltava agente com **voz estetica defendida**. Risco de AI-slop sem agente que recuse explicitamente padroes IA-tipicos (gradiente neon, sem-serif arredondada, simetria perfeita generica).
+
+### Commit
+
+`103a5b8 feat(v2.33.0): novo agente atelier-criativo — artista digital generalista anti-AI-slop`
+
+---
+
 ## 2.32.0 (2026-05-09) — 🚀🚀🚀 PLUGIN FRANK-MKT 100% COMPLETO — 14/14 Agentes FECHADOS (8ª paralelização RECORDISTA absoluto)
 
 ### Adicionado em paralelo simultâneo (14 agentes — 8ª paralelização do plugin, NOVO RECORDISTA)

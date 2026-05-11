@@ -1,6 +1,6 @@
 # Instalação Frank-MKT
 
-Guia de instalação validado em 2026-05-09 — testado e funcional.
+Guia de instalação validado em 2026-05-11 (v2.36.0) — testado e funcional.
 
 ## Pré-requisitos
 
@@ -62,8 +62,8 @@ Cria estrutura `.frank-mkt/` no projeto com pastas:
 ```
 
 Deve listar:
-- 8 slash commands
-- 14 agentes especialistas
+- 9 slash commands (inclui `/frank-mkt:atelier`)
+- 15 agentes (inclui `atelier-criativo` — artista digital anti-AI-slop)
 - 92 skills agrupadas em 18 blocos
 
 ## Atualização
@@ -145,10 +145,10 @@ frank-mkt/                              # GitHub repo root
     │   └── plugin.json
     ├── CHANGELOG.md
     ├── settings.json
-    ├── skills/                         # 92 skills
-    ├── commands/                       # 8 slash commands
-    ├── agents/                         # 14 agentes
-    └── hooks/
+    ├── skills/                         # 92 skills (18 blocos)
+    ├── commands/                       # 9 slash commands (inclui /atelier)
+    ├── agents/                         # 15 agentes (inclui atelier-criativo)
+    └── hooks/                          # SessionStart check-skills-vencidas
 ```
 
 ## Suporte
@@ -159,4 +159,4 @@ frank-mkt/                              # GitHub repo root
 
 ## Versão
 
-**v2.32.0** (2026-05-09) — Plugin 100% completo: 92 skills + 8 commands + 14 agentes = 114 artefatos.
+**v2.36.0** (2026-05-11) — Plugin 100% completo: 92 skills + 9 commands + 15 agentes = **116 artefatos** / 119.768 linhas. v2.36.0 e drift repair (sincroniza documentacao v2.32 → v2.35).

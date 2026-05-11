@@ -15,7 +15,7 @@ Voce e o frank-mkt apresentando o catalogo completo do plugin. O usuario digitou
 Apresenta menu navegavel de TUDO disponivel no plugin frank-mkt:
 
 - 9 slash commands (operacionais + analiticos + criativo)
-- 14 agentes (persona principal + especialistas + arbitragem)
+- 15 agentes (persona principal + 13 especialistas + atelier-criativo)
 - 92 skills agrupadas em 18 blocos tematicos
 
 Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao geral compacta + sugestao de proxima leitura.
@@ -26,7 +26,7 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 1. Se $ARGUMENTS vazio: imprimir secao "Visao geral" + "Por onde comecar".
 2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "9 Slash Commands" completo.
-3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "14 Agentes" completo.
+3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "15 Agentes" completo.
 4. Se $ARGUMENTS = "skills": imprimir bloco "92 Skills" completo (todos os 18 sub-blocos).
 5. Se $ARGUMENTS for tema (seo, social, branding, pesquisa, copy, ux, psicologia, dominio, ads, corporativo, identidade, ia, persuasao, guerrilha, estrategia): imprimir somente recortes relevantes (skills + agentes + commands daquele tema).
 6. Sempre fechar com "Cross-references" sugerindo ordem de leitura.
@@ -35,15 +35,15 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 ## Visao geral
 
-Plugin frank-mkt v2.21.0 - marketing + comunicacao + branding sob arquitetura Claude Code.
+Plugin frank-mkt v2.36.0 - marketing + comunicacao + branding sob arquitetura Claude Code.
 
 ```
-8  slash commands  -> operacao do plugin
-14 agentes         -> personas especialistas
+9  slash commands  -> operacao do plugin (inclui /frank-mkt:atelier)
+15 agentes         -> personas especialistas (inclui atelier-criativo)
 92 skills (18 blocos) -> conhecimento ativavel
 ```
 
-Filtros aceitos: commands | agentes | skills | seo | social | branding | pesquisa | copy | ux | psicologia | dominio | ads | corporativo | identidade | ia | persuasao | guerrilha | estrategia
+Filtros aceitos: commands | agentes | skills | seo | social | branding | pesquisa | copy | ux | psicologia | dominio | ads | corporativo | identidade | ia | persuasao | guerrilha | estrategia | arte | sinestesia
 
 Exemplos:
 - `/frank-mkt:help` -> visao geral
@@ -78,7 +78,7 @@ Em caso de conflito entre dois agentes ou modos: `/frank-mkt:juiz` arbitra.
 
 ---
 
-## 14 Agentes
+## 15 Agentes
 
 Personas especializadas com System Prompt proprio.
 
@@ -97,9 +97,10 @@ Personas especializadas com System Prompt proprio.
 | `ux-ui-revisor`              | Heuristicas Nielsen + microcopy + acessibilidade   |
 | `psicologia-influencia`      | Gatilhos eticos + viesses cognitivos               |
 | `frank-corporativo`          | Comunicacao corporativa (atas, releases, internas) |
-| `social-humanitario`         | Causas + ESG + terceiro setor                       |
+| `social-humanitario`         | Causas + ESG + terceiro setor                      |
+| `atelier-criativo`           | Artista digital generalista - visao estetica + sinestesia + anti-AI-slop |
 
-Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialistas executam, `auditor` valida, `juiz` arbitra divergencias.
+Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialistas executam, `auditor` valida, `juiz` arbitra divergencias. `atelier-criativo` invocado quando brief tem ambiguidade estetica real ou cruza dominios (visual + textual + musical + conceitual).
 
 ---
 
@@ -291,8 +292,18 @@ Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialista
 
 ### Filtro `identidade`
 - Skills: 8 skills do Bloco 19 (Identidade Visual Corporativa / Brand Design)
-- Agente: `frank-mkt`
-- Comando: `/frank-mkt:review`
+- Agente: `atelier-criativo` (visao estetica) + `frank-mkt` (orquestracao)
+- Comandos: `/frank-mkt:atelier`, `/frank-mkt:review`
+
+### Filtro `arte`
+- Skills: `svg-engineering-ia`, `logo-design-process`, `brand-book-methodology`, `paleta-cores-corporativa`, `tipografia-corporativa`, `iconografia-corporativa`, `composicao-visual`, `geracao-imagens-ia`, `audio-musica-ia`
+- Agente: `atelier-criativo` (artista digital generalista anti-AI-slop)
+- Comando: `/frank-mkt:atelier`
+
+### Filtro `sinestesia`
+- Skills: `audio-musica-ia`, `geracao-imagens-ia`, `composicao-visual`, `svg-engineering-ia`, `storytelling`, `big-idea`
+- Agente: `atelier-criativo` (laboratorio sinestesia cross-domain)
+- Comando: `/frank-mkt:atelier "<brief>" sinestesia`
 
 ### Filtro `ia`
 - Skills: `dominio-ia-mkt`, `tecnicas-ia-claude-gemini-mkt`, `geracao-imagens-ia`, `audio-musica-ia`, `svg-engineering-ia`, `seo-ai-otimizacao`
