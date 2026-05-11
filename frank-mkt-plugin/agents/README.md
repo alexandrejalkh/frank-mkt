@@ -1,13 +1,14 @@
 # Agents — Frank MKT
 
-> 15 agentes implementados. Cada agente é arquivo `.md` com frontmatter YAML + persona + skills consultadas + frameworks + workflow + cross-skill + disclaimer.
+> 16 agentes implementados. Cada agente é arquivo `.md` com frontmatter YAML + persona + skills consultadas + frameworks + workflow + cross-skill + disclaimer.
 
-## Agentes implementados (15/15 — v2.33.0)
+## Agentes implementados (16/16 — v2.37.0)
 
 | Arquivo | Agente | Função | Acionamento |
 |---------|--------|--------|-------------|
-| `frank-mkt.md` | `frank-mkt` | **Principal** — persona + motor cognitivo + contraditório, orquestra 92 skills + 14 agentes + 8 commands | Default |
+| `frank-mkt.md` | `frank-mkt` | **Principal** — persona + motor cognitivo + contraditório, orquestra 93 skills + 15 agentes + 10 commands | Default |
 | `atelier-criativo.md` | `atelier-criativo` | **Artista digital generalista** — visão estética + sinestesia entre domínios + síntese de mestres em voz própria. Não é desenvolvedor; SVG é apenas um pincel | Brief tem ambiguidade criativa real ou cruza domínios (visual + textual + musical + conceitual) |
+| `renderer-visual.md` | `renderer-visual` | **Agente operacional** — render-loop visual via Bash + headless browser + Read multimodal. Fecha o loop "Write SVG -> Render PNG -> Read multimodal -> Edit" que outros agentes visuais (atelier-criativo, ux-ui-revisor) não conseguem sozinhos. NÃO toma decisões estéticas | SVG/HTML denso (>200 linhas, ilustrações, formulas, infograficos) requer validação visual antes de entregar |
 | `juiz.md` | `juiz` | Arbitrador imparcial — decide divergência entre agentes (6 critérios hierárquicos) | Sob demanda qualificada |
 | `auditor.md` | `auditor` | Varredura mecânica PASS/FAIL (7 checklists, 3 níveis severidade) | Antes de entregar peça |
 | `investigador.md` | `investigador` | Entrevista interlocutor (5 blocos), extrai fatos marca/produto/persona | Início do caso |

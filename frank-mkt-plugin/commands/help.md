@@ -14,9 +14,9 @@ Voce e o frank-mkt apresentando o catalogo completo do plugin. O usuario digitou
 
 Apresenta menu navegavel de TUDO disponivel no plugin frank-mkt:
 
-- 9 slash commands (operacionais + analiticos + criativo)
-- 15 agentes (persona principal + 13 especialistas + atelier-criativo)
-- 92 skills agrupadas em 18 blocos tematicos
+- 10 slash commands (operacionais + analiticos + criativo + render-loop)
+- 16 agentes (persona principal + 13 especialistas + atelier-criativo + renderer-visual)
+- 93 skills agrupadas em 18 blocos tematicos
 
 Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao geral compacta + sugestao de proxima leitura.
 
@@ -35,12 +35,12 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 ## Visao geral
 
-Plugin frank-mkt v2.36.0 - marketing + comunicacao + branding sob arquitetura Claude Code.
+Plugin frank-mkt v2.37.0 - marketing + comunicacao + branding + render-loop visual sob arquitetura Claude Code.
 
 ```
-9  slash commands  -> operacao do plugin (inclui /frank-mkt:atelier)
-15 agentes         -> personas especialistas (inclui atelier-criativo)
-92 skills (18 blocos) -> conhecimento ativavel
+10 slash commands  -> operacao do plugin (inclui /frank-mkt:atelier + /frank-mkt:gerar-infografico)
+16 agentes         -> personas especialistas (inclui atelier-criativo + renderer-visual)
+93 skills (18 blocos) -> conhecimento ativavel (inclui render-loop-svg)
 ```
 
 Filtros aceitos: commands | agentes | skills | seo | social | branding | pesquisa | copy | ux | psicologia | dominio | ads | corporativo | identidade | ia | persuasao | guerrilha | estrategia | arte | sinestesia
@@ -68,6 +68,7 @@ Comandos operacionais do plugin frank-mkt.
 | `/frank-mkt:juiz`             | Arbitra divergencia entre modos/agentes (parecer imparcial) |
 | `/frank-mkt:perfil`           | Perfilador de mercado: sizing + persona + concorrencia |
 | `/frank-mkt:atelier`          | Atelier criativo: artista digital generalista (visao estetica + sinestesia entre dominios + anti-AI-slop) |
+| `/frank-mkt:gerar-infografico` | Orquestra geracao infografico SVG denso end-to-end: atelier (visao) -> svg-engineering-ia (markup) -> renderer-visual (validacao visual real via render-loop) |
 
 Ordem tipica:
 ```
@@ -99,8 +100,9 @@ Personas especializadas com System Prompt proprio.
 | `frank-corporativo`          | Comunicacao corporativa (atas, releases, internas) |
 | `social-humanitario`         | Causas + ESG + terceiro setor                      |
 | `atelier-criativo`           | Artista digital generalista - visao estetica + sinestesia + anti-AI-slop |
+| `renderer-visual`            | Agente operacional - render-loop SVG/HTML via Bash + headless browser + Read multimodal |
 
-Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialistas executam, `auditor` valida, `juiz` arbitra divergencias. `atelier-criativo` invocado quando brief tem ambiguidade estetica real ou cruza dominios (visual + textual + musical + conceitual).
+Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialistas executam, `auditor` valida, `juiz` arbitra divergencias. `atelier-criativo` invocado quando brief tem ambiguidade estetica; `renderer-visual` invocado para fechar loop visual em SVG/HTML gerado (Write -> Bash render -> Read PNG -> avaliar).
 
 ---
 
@@ -223,8 +225,9 @@ Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialista
 - `pricing-strategy` - modelos, psicologia, value-based
 - `go-to-market-strategy` - GTM end-to-end + checklist lancamento
 
-### Bloco 18 - Skills Avancadas / Experimentais (1 skill)
+### Bloco 18 - Skills Avancadas / Experimentais (2 skills)
 - `svg-engineering-ia` - gerar SVG via prompt LLM (inovadora)
+- `render-loop-svg` - operacionalizacao de feedback visual real (Write SVG -> Bash render -> Read PNG multimodal -> Edit) — resolve output cego em SVG denso (v2.37.0)
 
 ### Bloco 19 - Identidade Visual Corporativa / Brand Design (8 skills)
 - `logo-design-process` - briefing -> exploracao -> refinamento -> entrega
@@ -296,9 +299,14 @@ Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialista
 - Comandos: `/frank-mkt:atelier`, `/frank-mkt:review`
 
 ### Filtro `arte`
-- Skills: `svg-engineering-ia`, `logo-design-process`, `brand-book-methodology`, `paleta-cores-corporativa`, `tipografia-corporativa`, `iconografia-corporativa`, `composicao-visual`, `geracao-imagens-ia`, `audio-musica-ia`
-- Agente: `atelier-criativo` (artista digital generalista anti-AI-slop)
-- Comando: `/frank-mkt:atelier`
+- Skills: `svg-engineering-ia`, `render-loop-svg`, `logo-design-process`, `brand-book-methodology`, `paleta-cores-corporativa`, `tipografia-corporativa`, `iconografia-corporativa`, `composicao-visual`, `geracao-imagens-ia`, `audio-musica-ia`
+- Agentes: `atelier-criativo` (visao) + `renderer-visual` (validacao)
+- Comandos: `/frank-mkt:atelier`, `/frank-mkt:gerar-infografico`
+
+### Filtro `infografico`
+- Skills: `infograficos-diagramas`, `svg-engineering-ia`, `render-loop-svg`, `composicao-visual`, `paleta-cores-corporativa`, `tipografia-corporativa`
+- Agentes: `atelier-criativo` (visao) + `renderer-visual` (validacao operacional)
+- Comando: `/frank-mkt:gerar-infografico` (workflow end-to-end com render-loop obrigatorio)
 
 ### Filtro `sinestesia`
 - Skills: `audio-musica-ia`, `geracao-imagens-ia`, `composicao-visual`, `svg-engineering-ia`, `storytelling`, `big-idea`

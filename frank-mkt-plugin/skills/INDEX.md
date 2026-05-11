@@ -2,9 +2,9 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.36.0 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT 100% COMPLETO — 92 skills + 9 commands + 15 agentes
+## Status (v2.37.0 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos
 
-**92 skills + 9 slash commands + 15 agentes / 119.768 linhas totais.**
+**93 skills + 10 slash commands + 16 agentes / ~121.463 linhas totais.**
 
 🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 (`growth-hacking` + `product-marketing` + `account-based-marketing` + `pricing-strategy` + `go-to-market-strategy`) com 6 skills criadas em **paralelo simultâneo** (5ª paralelização do plugin).
 
@@ -27,22 +27,22 @@
 | **Psicologia & Influência** | ✅ **3/3** | 2.970 |
 | **Conhecimento de Plataforma** | ✅ **6/6** | 5.627 |
 | **Meta-skill** | ✅ **1/1** | 958 |
-| **Skills Avançadas / Experimentais** | ✅ **1/1** (svg-engineering-ia inovadora) | 1.234 |
+| **Skills Avançadas / Experimentais** | ✅ **2/2** (svg-engineering-ia + render-loop-svg) | 2.299 |
 | **Identidade Visual Corporativa / Brand Design** | ✅ **8/8** | 7.106 |
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | **TOTAL SKILLS** | **92/92** ✅ | **107.548** |
 
 **Volatility:** **61 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
-**Plugin completo**: 92 skills (18 blocos) + 9 slash commands + 15 agentes = **116 artefatos**.
+**Plugin completo**: 93 skills (18 blocos) + 10 slash commands + 16 agentes = **119 artefatos**.
 
-🚀🚀🚀 **PLUGIN FRANK-MKT 100% COMPLETO** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** (92/92) + **9/9 Slash Commands COMPLETOS** + **15/15 Agentes COMPLETOS**!
+🚀🚀🚀 **PLUGIN FRANK-MKT** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS** (93 skills incluindo 2 em Skills Avancadas) + **10/10 Slash Commands** + **16/16 Agentes**!
 
-## Agentes (15/15 COMPLETO — v2.36.0)
+## Agentes (16/16 — v2.37.0)
 
 | Agente | Linhas | Função |
 |--------|-------:|--------|
-| `frank-mkt` | 447 | Persona principal — orquestra 92 skills + 14 agentes + 9 commands |
+| `frank-mkt` | 447 | Persona principal — orquestra 93 skills + 15 agentes + 10 commands |
 | `juiz` | 534 | Arbitra divergência entre agentes (6 critérios hierárquicos) |
 | `auditor` | 454 | Varredura mecânica PASS/FAIL (7 tipos peça) |
 | `investigador` | 699 | Entrevista estruturada interlocutor (5 blocos perguntas) |
@@ -57,9 +57,10 @@
 | `frank-corporativo` | 574 | PESO + GEO 2026 + IR + ESG + Crisis + Employer + ABERJE/ABRACOM |
 | `social-humanitario` | 500 | Causas + ESG + AA1000 + SROI + Brasil ABONG/GIFE/Pacto Global ONU |
 | `atelier-criativo` | 456 | Artista digital generalista — visão estética + sinestesia cross-domain + anti-AI-slop firme + Brasil tropical conceitual (v2.33.0) |
-| **TOTAL** | **8.468** | |
+| `renderer-visual` | 296 | Agente operacional render-loop — Bash + headless browser + multimodal Read para validar SVG/HTML real (v2.37.0) |
+| **TOTAL** | **8.764** | |
 
-## Slash Commands (9/9 COMPLETO — v2.36.0)
+## Slash Commands (10/10 — v2.37.0)
 
 | Comando | Linhas | Função |
 |---------|-------:|--------|
@@ -72,7 +73,8 @@
 | `/frank-mkt:juiz` | 439 | Arbitra divergência entre agentes (6 critérios: compliance > ética > estratégia > evidência > audiência > custo-benefício) |
 | `/frank-mkt:perfil` | 444 | Perfilador de Mercado: TAM/SAM/SOM + ICP + concorrência + white-space + trends |
 | `/frank-mkt:atelier` | 223 | Atelier criativo: invocação direta atelier-criativo para brief estético aberto + workflow 7 etapas (Listening + Resonance + Cross-pollination + Tension + Synthesis + Translation + Iteration) — anti-AI-slop firme (v2.34.0) |
-| **TOTAL** | **3.752** | |
+| `/frank-mkt:gerar-infografico` | 320 | Orquestra geracao infografico SVG denso end-to-end: atelier-criativo (visao) → svg-engineering-ia (markup) → renderer-visual (validacao visual real via render-loop) → entrega com auto-critica honesta (v2.37.0) |
+| **TOTAL** | **4.072** | |
 
 **Roadmap expandido:** com novo bloco Comunicação Visual & IA (4 skills planejadas) + outros blocos novos sugeridos (Multi-Platform Strategy 3, Persuasão & Engajamento 2, Marketing Não-Tradicional 2, Documentos Corporativos 2 = +13 skills além das 9 originais ainda não iniciadas), total previsto subiu de ~58 para ~70.
 

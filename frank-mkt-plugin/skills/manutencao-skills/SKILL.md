@@ -540,7 +540,7 @@ Numeros, claims e estatisticas devem ser validados em:
 
 ---
 
-## Anti-Patterns 18
+## Anti-Patterns 19
 
 1. **Skill sem frontmatter completo.** Falta `volatility` ou `last_review` ou `next_review` -> staleness detection impossivel. Resultado: skill envelhece em silencio.
 
@@ -578,9 +578,11 @@ Numeros, claims e estatisticas devem ser validados em:
 
 18. **Mantenedor solo eternal bottleneck.** Sem este SKILL.md documentando processo, novo co-mantenedor nao consegue contribuir. Bus factor = 1.
 
+19. **Skills que prescrevem tecnica visual sem operacionalizar feedback visual real produzem output cego.** Aprendizado capturado em 2026-05-11 (`docs_mkt/aprendizado_infografico.md`): agente atelier-criativo entregou SVG declarando sucesso porque nunca renderizou + viu o resultado. Skill `svg-engineering-ia` previa "render-loop" como tecnica conceitual mas nao operacionalizava. Sem comando concreto + tool multimodal + Bash para fechar o loop (Write -> Bash render -> Read PNG multimodal -> Edit corrige), validacao e mental e produz falsos positivos. **Toda skill que gera artefato visual nao-trivial DEVE incluir loop de validacao operacional** (commands prontos por OS, criterios de avaliacao, stop conditions). Operacionalizado em skill `render-loop-svg` (v2.37.0). Referenciada em `svg-engineering-ia`. Replicar padrao em skills futuras que gerem imagem, audio, video, infografico.
+
 ---
 
-## 18 Regras de Ouro
+## 19 Regras de Ouro
 
 1. **Toda skill tem frontmatter YAML completo.** Sem excecoes.
 
@@ -617,6 +619,8 @@ Numeros, claims e estatisticas devem ser validados em:
 17. **Disclaimers educacionais em toda SKILL.md.** Plugin nao substitui consultoria juridica/financeira/medica.
 
 18. **Bus factor > 1.** Manutencao documentada para que terceiro consiga assumir.
+
+19. **Skills visuais incluem feedback visual operacional.** Toda skill que gera artefato visual (SVG, infografico, layout, imagem, audio renderizavel, video) DEVE incluir mecanismo de validacao por feedback real (render-loop, preview, side-by-side). Sem isso, skill produz output cego. Cristal capturado em 2026-05-11 apos sessao de teste com poster cientifico Gestuum. Skill canonica de referencia: `render-loop-svg` (commands cross-platform + criterios visuais + stop conditions).
 
 ---
 

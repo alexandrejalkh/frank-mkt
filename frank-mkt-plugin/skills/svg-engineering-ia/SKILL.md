@@ -542,6 +542,8 @@ Claude (em ambiente que permite render) executa loop:
 
 Sem capacidade render: **delegar render para humano** + apresentar SVG como "v1, valide visualmente e me diga gaps especificos".
 
+> ⚠️ **OPERACIONAL — usar skill `render-loop-svg`**: para SVG nao-trivial (>200 linhas, ilustracoes, formulas, infograficos densos), esta secao oferece o conceito; **a operacionalizacao com commands cross-platform** (Edge headless Windows/macOS/Linux + Playwright + Resvg-js alternativas), pitfalls de race condition, criterios de avaliacao visual passo-a-passo, stop conditions e fallbacks **esta em skill dedicada `render-loop-svg` (v2.37.0+)**. Esta skill (`svg-engineering-ia`) cobre **o COMO TECNICO** do markup SVG. A skill `render-loop-svg` cobre **o COMO OPERACIONAL** do feedback visual. Ambas se complementam — invocar as duas em fluxo de geracao de SVG denso. Agente complementar: `renderer-visual` (tem Bash para executar render-loop diretamente).
+
 ### Decomposicao em sub-tarefas (Comeau-style)
 
 Em vez de gerar logo complexo em 1 prompt, decompor:

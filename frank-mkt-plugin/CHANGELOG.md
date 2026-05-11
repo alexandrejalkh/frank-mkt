@@ -1,5 +1,62 @@
 # Changelog — Frank MKT
 
+## 2.37.0 (2026-05-11) — RENDER-LOOP VISUAL — operacionaliza feedback visual real para SVG/HTML
+
+### Adicionado
+
+3 novos artefatos resolvendo o problema documentado em `docs_mkt/aprendizado_infografico.md`: LLM gera SVG denso, declara sucesso, mas nunca viu o resultado (output cego). Render-loop reduz incidencia em ~45 pontos (paridade visual sobe de ~40% para ~85%, medido em sessao 2026-05-11 com poster cientifico Gestuum).
+
+- **Skill nova `render-loop-svg`** (1065 linhas, volatility=medium) — operacionalizacao de feedback visual real. Cobre: headless browsers 2026 (Edge / Chrome / Playwright / Puppeteer / Resvg-js / Inkscape CLI / ImageMagick comparativo); comandos cross-platform validados (Windows PowerShell + macOS bash + Linux bash + Playwright Node); workflow operacional em 5 passos (setup + render + Read multimodal + avaliacao 8-dimensoes + decisao); stop conditions iterativas (5 iter cap + convergencia <10% em 3 iter consecutivas); 8 pitfalls operacionais (race condition + backslashes file:// + viewBox vs window-size + font fallbacks + background transparente + filters aninhados + sandbox CI/CD + Edge legacy mode); avaliacao visual avancada (lado-a-lado vs referencia + paridade quantificada + anti-AI-slop check + mensuracao mudanca entre iteracoes); fallback chain quando tooling falta; 4 use cases MKT (founder pitch deck + CMO valida agencia + equipe interna infografico semanal + cientista poster academico); 16 anti-patterns + 18 Regras de Ouro + 4 exemplos comportamentais + 10 perguntas Contraditorio Interno + referencias canonicas (Chrome docs + Playwright + Resvg-js + W3C SVG + Anthropic Skills + papers academicos). Bloco "Skills Avancadas / Experimentais" passa de 1/1 para 2/2.
+
+- **Agente novo `renderer-visual`** (296 linhas, sonnet, tools=Read+Write+Edit+Bash+Glob+Grep+Agent) — 16o agente Frank-MKT. Operacional especializado em executar render-loop visual. NAO toma decisoes esteticas — apenas opera Bash + headless browser + Read multimodal + reporta findings via checklist 8-dimensoes (alinhamento + overlap + legibilidade + contraste + hierarquia + densidade + fidelidade vs referencia + coerencia). Decisao arquitetural tomada apos parecer `frank-pentest:arquiteto`: criar agente dedicado preserva trust boundaries vs adicionar Bash em atelier-criativo (que criaria precedente cascata para 14 outros agentes visuais). Capability isolada permite re-uso futuro por ux-ui-revisor.
+
+- **Slash command novo `/frank-mkt:gerar-infografico`** (320 linhas) — 10o comando do plugin. Orquestra cadeia end-to-end: listening (extracao brief) -> atelier-criativo (visao estetica) -> svg-engineering-ia (markup tecnico) -> renderer-visual (render-loop ate aceitar/convergir/cap 5 iter) -> entrega com auto-critica honesta. Argumentos: `<brief>` + flags opcionais `--ref=path` `--width=N` `--height=N` `--max-iter=N`. Fallback explicito quando tooling de render ausente (degrada para V1 nao-validado + sugere install). 4 exemplos de invocacao + 5 anti-patterns + dependencias declaradas (cadeia de 5 nos transparente para arquitetura).
+
+### Modificado
+
+- **Skill `manutencao-skills`** (+13 linhas) — anti-pattern #19 e regra de ouro #19 adicionadas: "Skills que prescrevem tecnica visual sem operacionalizar feedback visual real produzem output cego". Headers "Anti-Patterns 18" -> "19" e "18 Regras de Ouro" -> "19". Cristal negativo capturado em sessao 2026-05-11.
+
+- **Skill `svg-engineering-ia`** (+1 paragrafo) — ponteiro adicionado apos secao "Render-loop self-correction pattern" (linha 543) direcionando para skill operacional `render-loop-svg` (v2.37.0+). Esta skill continua cobrindo o COMO TECNICO do markup; `render-loop-svg` cobre o COMO OPERACIONAL do feedback visual. Sem duplicacao (Single Source of Truth respeitado).
+
+### Metadados sincronizados
+
+- `plugin.json`: version 2.36.0 -> 2.37.0 + description detalhada das adicoes
+- `marketplace.json`: version 2.37.0 (top + plugin entry) + description plugin entry atualizada (93 skills + 10 commands + 16 agentes = 119 artefatos)
+- `skills/INDEX.md`: status header v2.36.0 -> v2.37.0; totais 116 -> 119 artefatos; tabela agentes 15 -> 16 (renderer-visual); tabela commands 9 -> 10 (/gerar-infografico); bloco Skills Avancadas 1/1 -> 2/2
+- `commands/help.md`: versao v2.36.0 -> v2.37.0; contagens 9/15/92 -> 10/16/93; tabela commands +1 (/gerar-infografico); tabela agentes +1 (renderer-visual); novo filtro `infografico`; filtro `arte` expandido para incluir render-loop-svg + renderer-visual
+- `agents/README.md`: 15/15 -> 16/16 (v2.37.0); linha de renderer-visual adicionada
+- `agents/frank-mkt.md`: description e identidade refletem 93 skills + 10 commands + 16 agentes; secao "Stack de agentes especialistas" passa de 14 para 15 entradas (renderer-visual entre atelier-criativo); secao "Slash commands" passa de 9 para 10 (/gerar-infografico); mapa de delegacao recebe linha para validacao visual obrigatoria -> renderer-visual + /gerar-infografico
+
+### Decisao arquitetural relevante
+
+**Por que agente dedicado renderer-visual em vez de adicionar Bash a atelier-criativo:**
+
+Auditoria `frank-pentest:arquiteto` em 2026-05-11 detectou que adicionar Bash em atelier-criativo criaria precedente cascata: ux-ui-revisor (revisor de UX que precisa ver pixel renderizado) e outros 12 agentes visuais teriam mesmo argumento para reivindicar Bash. Em iteracoes futuras todos herdariam capability nao-essencial ao seu papel core, expandindo trust boundary do plugin desnecessariamente.
+
+Solucao: isolar capability operacional em agente dedicado renderer-visual com tools restritos ao escopo (Bash para render + Read para multimodal + Edit para fix minor). Atelier-criativo permanece hermetico (artista que decide o QUE) e delega execucao via tool Agent. Bonus: ux-ui-revisor pode reusar renderer-visual no futuro sem ganhar Bash proprio.
+
+### Decisao SSOT
+
+**Por que skill nova render-loop-svg em vez de secao em svg-engineering-ia:**
+
+Auditoria `frank-pentest:arquiteto` apontou que adicionar comandos Edge headless detalhados em svg-engineering-ia (que ja menciona render-loop conceitual em linha 1216) e dentro de uma skill nova criaria duplicacao garantida: comandos divergiriam entre arquivos no proximo update (vetor #6 drift de protocolo).
+
+Solucao: render-loop-svg como skill standalone cobre operacao; svg-engineering-ia tem ponteiro unico no final da secao conceitual. Update de comando = 1 lugar editado. Single Source of Truth respeitado.
+
+### Acionado por
+
+Documento `docs_mkt/aprendizado_infografico.md` (commit 8c951f8) escrito em 2026-05-11 apos sessao de teste real em `D:/4nk/teste_mkt`: replica de poster cientifico Gestuum (wearable que traduz gestos) como SVG editavel, evoluindo de ~40% paridade (V1 sem render-loop) para ~85% paridade (V2 com render-loop). Documento e transfer brief tecnico end-to-end para proxima sessao Claude que evoluiria o plugin.
+
+### Sem mudanca em runtime de skills existentes
+
+Esta versao **adiciona** capabilities — nao altera comportamento de skills, agentes ou commands previos. Plugin v2.36.0 continua funcionando identico. Restore point disponivel: tag `v2.36.0` ou `v2.35.0-pre-drift-fix`.
+
+```
+git reset --hard v2.36.0  # se necessario reverter
+```
+
+---
+
 ## 2.36.0 (2026-05-11) — DRIFT REPAIR — sincroniza documentacao v2.32 → v2.35
 
 ### Corrigido
