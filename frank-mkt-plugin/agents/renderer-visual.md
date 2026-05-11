@@ -90,12 +90,144 @@ google-chrome --headless=new --disable-gpu --window-size=1024,1536 \
   --screenshot="/tmp/out.png" "file:///path/to/arquivo.svg"
 ```
 
-### Fallback chain quando Edge falta
+### Fallback chain executavel (tentar em ordem ate sucesso)
 
-1. Tentar **Chrome** (mesmo flag set)
-2. Tentar **Chromium** (Linux comum)
-3. Reportar AUSENCIA do tooling + sugerir instalacao OU pedir user para enviar PNG renderizado manualmente
-4. **NAO inventar render mental** — declarar honesto que sem render real validacao e parcial
+NAO parar no primeiro erro. Tentar comandos em sequencia. Reportar AUSENCIA so se TODOS falharem.
+
+**Bash multi-plataforma (macOS/Linux):**
+
+```bash
+# render-fallback.sh — executar nesta ordem
+SVG="$1"
+OUT="$2"
+WIDTH="${3:-1024}"
+HEIGHT="${4:-1536}"
+
+# Detecta extensoes ou paths
+EDGE_PATHS=(
+  "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"  # macOS
+  "microsoft-edge"
+  "microsoft-edge-stable"
+)
+CHROME_PATHS=(
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"     # macOS
+  "google-chrome"
+  "google-chrome-stable"
+  "chromium-browser"
+  "chromium"
+)
+
+try_chromium_family() {
+  local browser="$1"
+  if [ -x "$browser" ] || command -v "$browser" >/dev/null 2>&1; then
+    "$browser" \
+      --headless=new --disable-gpu --no-sandbox \
+      --window-size="$WIDTH,$HEIGHT" --hide-scrollbars \
+      --screenshot="$OUT" "file://$SVG" 2>/dev/null
+    sleep 1.2
+    [ -s "$OUT" ] && return 0
+  fi
+  return 1
+}
+
+# Tentativa 1: Edge (paths conhecidos)
+for path in "${EDGE_PATHS[@]}"; do
+  try_chromium_family "$path" && echo "Renderizado via Edge ($path)" && exit 0
+done
+
+# Tentativa 2: Chrome / Chromium
+for path in "${CHROME_PATHS[@]}"; do
+  try_chromium_family "$path" && echo "Renderizado via Chrome/Chromium ($path)" && exit 0
+done
+
+# Tentativa 3: Playwright (se Node + playwright instalado)
+if command -v node >/dev/null 2>&1 && [ -d "node_modules/playwright" ]; then
+  node -e "
+    const { chromium } = require('playwright');
+    (async () => {
+      const browser = await chromium.launch();
+      const page = await browser.newPage({ viewport: { width: $WIDTH, height: $HEIGHT } });
+      await page.goto('file://$SVG');
+      await page.waitForLoadState('networkidle');
+      await page.screenshot({ path: '$OUT' });
+      await browser.close();
+    })();
+  " && echo "Renderizado via Playwright" && exit 0
+fi
+
+# Tentativa 4: Resvg-js (SVG puro sem CSS animations)
+if command -v node >/dev/null 2>&1 && [ -d "node_modules/@resvg/resvg-js" ]; then
+  node -e "
+    const { Resvg } = require('@resvg/resvg-js');
+    const fs = require('fs');
+    const svg = fs.readFileSync('$SVG', 'utf8');
+    const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: $WIDTH } });
+    fs.writeFileSync('$OUT', resvg.render().asPng());
+  " && echo "Renderizado via Resvg-js" && exit 0
+fi
+
+# Tentativa 5: Inkscape CLI
+if command -v inkscape >/dev/null 2>&1; then
+  inkscape "$SVG" --export-type=png --export-filename="$OUT" \
+    --export-width="$WIDTH" 2>/dev/null
+  [ -s "$OUT" ] && echo "Renderizado via Inkscape" && exit 0
+fi
+
+# Falha total
+echo "AUSENCIA de tooling de render. Instalar uma das opcoes:" >&2
+echo "  - Edge: https://microsoft.com/edge" >&2
+echo "  - Chrome: https://google.com/chrome" >&2
+echo "  - Playwright: npm i playwright && npx playwright install chromium" >&2
+echo "  - Resvg-js: npm i @resvg/resvg-js" >&2
+echo "  - Inkscape: https://inkscape.org/release/" >&2
+exit 1
+```
+
+**PowerShell equivalente (Windows):**
+
+```powershell
+# render-fallback.ps1
+param([string]$Svg, [string]$Out, [int]$Width = 1024, [int]$Height = 1536)
+
+$EdgePaths = @(
+  "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+  "C:\Program Files\Microsoft\Edge\Application\msedge.exe"
+)
+$ChromePaths = @(
+  "C:\Program Files\Google\Chrome\Application\chrome.exe",
+  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+)
+
+function Try-Chromium {
+  param([string]$BrowserPath)
+  if (Test-Path $BrowserPath) {
+    & $BrowserPath `
+      --headless=new --disable-gpu --no-sandbox `
+      --window-size="$Width,$Height" --hide-scrollbars `
+      --screenshot="$Out" "file:///$($Svg.Replace('\','/'))" 2>&1 | Out-Null
+    Start-Sleep -Milliseconds 1200
+    if ((Test-Path $Out) -and ((Get-Item $Out).Length -gt 1024)) { return $true }
+  }
+  return $false
+}
+
+foreach ($p in $EdgePaths) { if (Try-Chromium $p) { Write-Host "Renderizado via Edge ($p)"; exit 0 } }
+foreach ($p in $ChromePaths) { if (Try-Chromium $p) { Write-Host "Renderizado via Chrome ($p)"; exit 0 } }
+
+# Playwright / Resvg-js / Inkscape — analogo ao bash acima
+
+Write-Error "AUSENCIA de tooling de render. Instalar Edge/Chrome/Playwright/Resvg/Inkscape."
+exit 1
+```
+
+**Notas operacionais:**
+
+- Salvar como `frank-mkt-plugin/hooks/render-fallback.sh` + `.ps1` (ou inline no agente conforme contexto)
+- Validar PNG `> 1024 bytes` para detectar falha silenciosa (browser pode fechar sem erro mas PNG vazio)
+- Sleep 1200ms apos browser para race condition (mesma constante validada em Windows 11 + Edge May 2026)
+- Reportar QUAL ferramenta foi usada no relatorio final (transparencia para auditoria + reproducibilidade)
+
+Detalhamento canonico (PORQUE cada ferramenta + limitacoes + comparativo) em skill `render-loop-svg` Fundacao 7.
 
 ### Alternativas testaveis (escala de fidelidade)
 
@@ -208,12 +340,100 @@ LOOP iteration 2-5:
     * ACEITAR alcancado
     * 3 iteracoes consecutivas com mudanca <10% (convergencia detectada)
     * 5 iteracoes totais (cap maximo, evita infinito)
+    * LOOP CIRCULAR detectado (mesmo fingerprint de issue repetiu)
 
 Pos-stop:
   - Reportar numero de iteracoes
   - Lado-a-lado iteracao 1 vs iteracao final
   - Limitacoes persistentes
 ```
+
+## Fingerprint de iteracao + deteccao A->B->A circular
+
+Cap de 5 iteracoes impede loop infinito mas NAO detecta loop circular. Exemplo do problema:
+
+```
+Iteracao 1: voce reporta "overlap zona 3" -> svg-engineering-ia corrige
+Iteracao 2: voce reporta "contraste coral baixo" -> atelier-criativo refaz paleta
+Iteracao 3: voce reporta "overlap zona 3"  <-- MESMO issue da iter 1
+Iteracao 4: voce reporta "contraste coral baixo"  <-- MESMO da iter 2
+Iteracao 5: CAP atingido — 5 iteracoes queimadas andando em circulo
+```
+
+Cada agente "corrige" o que o outro acabou de quebrar. Voce queima ~50k tokens sem convergir.
+
+### Solucao operacional — fingerprint de issue dominante
+
+A cada iteracao, **antes** de invocar agente gerador, voce gera um **fingerprint** do issue dominante e registra no log YAML em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`:
+
+```yaml
+iteracoes:
+  - n: 1
+    agente_chamado: svg-engineering-ia
+    issue_dominante: "overlap_texto_DTW_sobre_forma_escura"
+    fingerprint: "overlap+zona3+DTW"
+    severidade: CRITICO
+  - n: 2
+    agente_chamado: atelier-criativo
+    issue_dominante: "contraste_coral_paper_2.8_abaixo_WCAG"
+    fingerprint: "contraste+coral+paper+ratio<4.5"
+    severidade: CRITICO
+  - n: 3
+    agente_chamado: svg-engineering-ia
+    issue_dominante: "overlap_texto_DTW_sobre_forma_escura"
+    fingerprint: "overlap+zona3+DTW"  # <-- MATCH com iter 1
+    severidade: CRITICO
+    alerta: "LOOP_CIRCULAR — fingerprint repetiu de iter 1"
+```
+
+### Formato do fingerprint
+
+Concatenacao curta de **tipo + localizacao + elemento**, em snake_case ASCII:
+
+- `overlap+zona3+DTW` — sobreposicao de texto "DTW" na zona 3
+- `contraste+coral+paper+ratio<4.5` — contraste insuficiente entre coral e paper
+- `densidade+global+<80%` — densidade global abaixo do alvo
+- `legibilidade+formula+12px` — formula em 12px ilegivel
+- `paleta+coral+fora-do-brief` — cor coral nao declarada no brief
+
+Fingerprint NAO precisa ser perfeito — precisa ser **deterministico** (mesma issue produz mesma string).
+
+### Stop condition adicional
+
+Apos gerar fingerprint da iteracao N, checar log:
+
+```
+Se fingerprint_N == fingerprint_K para qualquer K em [1, N-2]:
+  ALERTA: loop circular detectado
+  PARAR loop
+  ESCALAR para humano com diagnostico:
+    "Issue '<fingerprint>' apareceu em iter K e re-apareceu em iter N.
+     Agentes nao conseguem resolver via iteracao incremental.
+     Caminho sugerido: redesign do zero OU caminho hibrido (raster + embed)
+     OU revisor humano senior."
+```
+
+A janela `N-2 ou anterior` (nao `N-1`) e proposital: oscilacao entre 2 issues (A na iter par, B na iter impar) tambem e circular — pega N=3 vs N=1.
+
+### Implementacao no fluxo
+
+Voce e responsavel por:
+
+1. Ler log YAML atual em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml` (se existir; senao criar)
+2. Apos avaliar findings, identificar issue dominante (mais critico OU primeiro CRITICO em ordem de checklist)
+3. Gerar fingerprint determistico
+4. Append ao log YAML
+5. Checar match com iter <= N-2
+6. Se match: parar loop, reportar circular, escalar
+7. Se sem match: prosseguir delegacao normal
+
+Quando comando `/frank-mkt:gerar-infografico` inicia, ele cria `render-loop-log.yaml` vazio (so com cabecalho `iteracoes: []`).
+
+### Caso de borda
+
+Se issue dominante muda a cada iteracao SEM ser circular (ex: iter 1 = overlap, iter 2 = contraste, iter 3 = densidade, iter 4 = paleta, iter 5 = tipografia — todos NOVOS), voce esta progredindo mas talvez nao convergindo. Stop conditions originais cobrem (cap 5 + convergencia <10%).
+
+Caso de borda raro mas possivel: issue "fingerprintavel" diferente mas SEMANTICAMENTE igual (ex: `overlap+zona3+DTW` em iter 1 vs `overlap+zona3+texto-DTW` em iter 3 — diferentes strings, mesma issue). Mitigacao: ao gerar fingerprint, **normalizar** strings (lowercase, remover prefixos comuns como "texto-", "elemento-", "forma-"). Ainda assim falsos negativos podem ocorrer — auditoria humana periodica recomendada.
 
 ## Cross-references — quem te invoca, voce invoca
 

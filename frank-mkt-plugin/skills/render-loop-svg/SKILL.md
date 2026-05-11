@@ -528,6 +528,21 @@ Loop para quando QUALQUER uma:
 3. **Cap maximo** — 5 iteracoes totais (custo de tokens significativo apos)
 4. **Limitacao tooling** — ambiente nao permite render (sem Edge, sem Node, etc.)
 5. **User intervention** — usuario humano pede parar
+6. **LOOP CIRCULAR detectado** — fingerprint de issue dominante repetiu (mesmo issue aparece em iter N e tambem em iter K para algum K <= N-2). Indica que agentes nao resolvem via iteracao incremental — issue exige redesign OU caminho hibrido OU revisor humano. **Operacionalizacao no agente `renderer-visual`** (secao "Fingerprint de iteracao + deteccao A->B->A circular").
+
+### Fingerprint de issue dominante (operacionaliza stop condition #6)
+
+A cada iteracao N, o agente `renderer-visual` gera fingerprint determistico do issue mais critico:
+
+- Formato: `tipo+localizacao+elemento` (snake_case, ASCII)
+- Exemplos: `overlap+zona3+DTW`, `contraste+coral+paper+ratio<4.5`, `densidade+global+<80%`
+- Append em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`
+
+Stop condition checa: `fingerprint_N == fingerprint_K para algum K em [1, N-2]`. Janela `N-2 ou anterior` (nao `N-1`) pega oscilacao entre 2 issues alternando — A na iter par, B na iter impar.
+
+Falsos positivos possiveis (mesma issue com strings diferentes — ex: `overlap+zona3+DTW` vs `overlap+zona3+texto-DTW`). Mitigacao: normalizar strings antes de comparar (lowercase, remover prefixos comuns).
+
+Detalhamento + caso de borda + implementacao no fluxo: ver `agents/renderer-visual.md` secao "Fingerprint de iteracao + deteccao A->B->A circular".
 
 ### Quando aceitar antes de convergir
 
@@ -691,16 +706,18 @@ Se 3 iteracoes consecutivas trazem mudanca <10% no checklist, convergencia. Para
 
 ## Fundacao 7 — Fallback Chain Quando Tooling Falta
 
+Esta secao explica **PORQUE** cada ferramenta + ordem racional. A **operacionalizacao executavel** (script bash + PowerShell prontos para copy-paste) esta em `agents/renderer-visual.md` secao "Fallback chain executavel". Use esta secao para entender taxonomia + escolha consciente. Use o agente para execucao.
+
 ### Hierarquia de fallback
 
-1. **Edge headless** (default Windows)
-2. **Chrome headless** (Linux/Mac comum)
-3. **Chromium** (Linux distros sem Chrome)
-4. **Playwright** (Node disponivel)
-5. **Puppeteer** (Node, legacy)
-6. **Resvg-js** (Node, SVG puro sem CSS animations)
-7. **Inkscape CLI** (instalavel cross-platform)
-8. **AUSENCIA reportada** — sugerir install OU pedir user enviar PNG
+1. **Edge headless** (default Windows) — pre-instalado em Windows 11 desde 2021; binario tambem disponivel macOS/Linux. Mesma engine Chromium do Chrome, mas distribuicao corporativa em ambientes com policy MS.
+2. **Chrome headless** — engine identica ao Edge. Caminhos `/Applications/Google Chrome.app/...` macOS, `google-chrome` Linux apt, `C:\Program Files\Google\Chrome\...` Windows.
+3. **Chromium** — Linux distros sem Chrome (Debian/Ubuntu pacote `chromium-browser`).
+4. **Playwright** (Node) — quando precisa de fontes web custom (preload via `addStyleTag`), animacoes (espera `networkidle`), wait for specific element. `npm i playwright; npx playwright install chromium`.
+5. **Puppeteer** (Node) — legacy. Playwright e preferido salvo codigo herdado.
+6. **Resvg-js** (Node, Rust+JS) — SVG puro sem CSS animations. ~10x mais rapido que Chromium para SVG puro. Bom para CI/CD sem Chromium instalado. `npm i @resvg/resvg-js`.
+7. **Inkscape CLI** (DMG/apt install) — fidelidade vetor maxima. Bom para print pre-press / PDF / EPS. Nao renderiza HTML+CSS externo.
+8. **AUSENCIA reportada** — sugerir install OU pedir user enviar PNG manual.
 
 ### Quando declarar ausencia honesta
 

@@ -1,5 +1,60 @@
 # Changelog — Frank MKT
 
+## 2.38.0 (2026-05-11) — HARDENING OPERACIONAL — deteccao loop circular + fallback chain executavel
+
+Release de hardening sem features novas. Implementa 2 itens de debito tecnico registrados em v2.37.1 pelo arquiteto.
+
+### Adicionado
+
+**1. Fingerprint de iteracao + deteccao de loop circular A->B->A**
+
+Cap de 5 iteracoes do render-loop impede loop infinito mas NAO detecta loop circular. Cenario problematico: renderer-visual reporta issue X em iter 1, agente A corrige; iter 2 reporta issue Y, agente B corrige; iter 3 volta a issue X (mesma de iter 1) — agentes andam em circulo "corrigindo" um o que o outro quebrou.
+
+Solucao:
+- **`agents/renderer-visual.md`** ganha secao "Fingerprint de iteracao + deteccao A->B->A circular" (~80 linhas) — formato de fingerprint determistico (`tipo+localizacao+elemento`), estrutura YAML do log em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`, janela de comparacao `N-2 ou anterior` (pega oscilacao entre 2 issues), normalizacao de strings para reduzir falsos negativos, caso de borda documentado
+- **`skills/render-loop-svg/SKILL.md`** Fundacao 4 ganha **stop condition #6 LOOP CIRCULAR** + secao explicativa apontando para o agente como SSOT operacional
+- **`commands/gerar-infografico.md`** Etapa 4 atualizada para inicializar log YAML + Etapa 4.1 nova explicando formato
+
+**2. Matriz fallback executavel no agente renderer-visual**
+
+Antes: matriz de fallback (Edge -> Chrome -> Chromium -> Playwright -> Resvg-js -> Inkscape) vivia SO na skill `render-loop-svg/SKILL.md` Fundacao 7 como descricao taxonomica. Agente que **executa** render nao tinha script pronto — risco de parar no primeiro erro em ambiente Linux minimalista.
+
+Solucao:
+- **`agents/renderer-visual.md`** ganha secao "Fallback chain executavel (tentar em ordem ate sucesso)" (~140 linhas) — script bash completo cross-platform (macOS/Linux) + equivalente PowerShell (Windows) cobrindo 5 niveis (Edge -> Chrome/Chromium -> Playwright se Node -> Resvg-js se Node -> Inkscape) + validacao de PNG `>1024 bytes` para detectar falha silenciosa + sleep 1200ms canonico + reportar QUAL ferramenta foi usada
+- **`skills/render-loop-svg/SKILL.md`** Fundacao 7 atualizada com ponteiro reciproco — esta secao explica **PORQUE** cada ferramenta (taxonomia + caso de uso + limitacoes); agente tem o **COMO** executavel. Especializacao por papel, nao duplicacao SSOT.
+
+### Modificado
+
+- `plugin.json`: 2.37.1 -> 2.38.0
+- `marketplace.json`: 2.37.1 -> 2.38.0 (top + plugin entry)
+- `skills/INDEX.md`: status v2.37.0 -> v2.38.0
+- `commands/help.md`: linha 38 versao v2.37.0 -> v2.38.0
+
+### Origem
+
+Itens registrados como **debito tecnico opcional** no relatorio de auditoria v2.37.1 (achados LOW/INFO do `frank-pentest:arquiteto`):
+- "Falta smoke test CI cross-skill" — NAO implementado nesta release (espera CI lint do v2.38.0+)
+- "Logging de tipo de iteracao no render-loop (detectar A->B->A circular)" — IMPLEMENTADO nesta release
+- "Matriz tooling fallback documentada no agente" — IMPLEMENTADO nesta release
+
+User aprovou implementacao dos 2 ultimos. CI lint cross-artifact fica como release futura dedicada.
+
+### Sem mudanca em runtime de skills/commands previos
+
+`atelier-criativo`, `svg-engineering-ia`, demais skills/agentes/commands continuam funcionando identico a v2.37.1. Apenas `renderer-visual` ganha capabilities operacionais novas (fingerprint + fallback chain) e referencias reciprocas em `render-loop-svg/SKILL.md` + `gerar-infografico.md`. Restore point: tag `v2.37.1`.
+
+```
+git reset --hard v2.37.1  # se necessario reverter
+```
+
+### Pendente para v2.39.0+
+
+- CI lint cross-artifact (validacao automatica de contagens versao em N arquivos correlatos) — vetor #6 drift de protocolo continua ativo sem isso
+- Smoke test integrado da cadeia `/gerar-infografico` end-to-end
+- Possivel expansao do fingerprint para semantic similarity (nao so string match)
+
+---
+
 ## 2.37.1 (2026-05-11) — POST-AUDIT FIX — drift + Guardian + IA-typical corrigidos
 
 Auditoria pos-v2.37.0 com 4 agentes especialistas (`frank-pentest:arquiteto`, `frank-pentest:lost-in-middle`, `frank-pentest:source-auditor`, `frank-dev:guardian-agent`) detectou 14 issues. Esta release de patch corrige todos.

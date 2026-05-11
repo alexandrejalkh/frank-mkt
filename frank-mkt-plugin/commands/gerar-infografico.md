@@ -137,12 +137,33 @@ Se ITERAR -> invocar svg-engineering-ia OU atelier-criativo conforme tipo de iss
 
 Iteracao 2-5: idem.
 
+A cada iteracao N, renderer-visual gera fingerprint do issue dominante e
+append em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`. Se fingerprint
+de iter N bater com fingerprint de iter K para algum K <= N-2, **LOOP CIRCULAR
+detectado** -- abortar loop e escalar para humano com diagnostico.
+
 Stop conditions:
   - ACEITAR alcancado
   - Convergencia (mudanca <10% em 3 iter consecutivas)
   - Cap 5 iteracoes
+  - LOOP CIRCULAR detectado (fingerprint repetiu)
   - User intervention
 ```
+
+### Etapa 4.1 — Inicializacao do log de iteracoes
+
+Antes da primeira invocacao do renderer-visual, criar arquivo YAML vazio:
+
+```yaml
+# .frank-mkt/entregaveis/<slug>/render-loop-log.yaml
+slug: <slug>
+created_at: <ISO timestamp>
+iteracoes: []
+```
+
+Renderer-visual append iteracoes a este arquivo + checa loop circular.
+Detalhamento do formato de fingerprint + caso de borda: ver
+`agents/renderer-visual.md` secao "Fingerprint de iteracao + deteccao A->B->A circular".
 
 ### Etapa 5 — Entrega
 
