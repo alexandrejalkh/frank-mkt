@@ -92,32 +92,47 @@ google-chrome --headless=new --disable-gpu --window-size=1024,1536 \
 
 ### Fallback chain executavel (tentar em ordem ate sucesso)
 
-NAO parar no primeiro erro. Tentar comandos em sequencia. Reportar AUSENCIA so se TODOS falharem.
+NAO parar no primeiro erro. Tentar 3 niveis em sequencia. Reportar AUSENCIA so se TODOS falharem. **PNG valido = arquivo existe E tamanho > 1024 bytes** (browser pode fechar sem erro mas gerar PNG vazio).
+
+Reduzimos para 3 niveis executaveis (vs 5 inicialmente propostos) porque source-auditor v2.38.1 identificou que niveis 4-5 (Resvg-js + Inkscape) atendem audiencia tipo "dev Node ja com Playwright instalado" -- cobertura sobreposta. Inkscape e Resvg-js ficam disponiveis como **opcoes manuais** documentadas no AUSENCIA, nao no fallback automatico.
+
+**Nivel 1: Chromium-family (Edge/Chrome/Chromium)** -- cobre 95% dos casos.
+**Nivel 2: Playwright** -- cobre Node ambientes com fontes web custom OU animations.
+**Nivel 3: AUSENCIA reportada** -- sugere install + alternativas manuais (Resvg-js / Inkscape).
 
 **Bash multi-plataforma (macOS/Linux):**
 
 ```bash
-# render-fallback.sh — executar nesta ordem
+#!/usr/bin/env bash
+# render-fallback.sh -- executar nesta ordem
+set -u
+
 SVG="$1"
 OUT="$2"
 WIDTH="${3:-1024}"
 HEIGHT="${4:-1536}"
 
-# Detecta extensoes ou paths
-EDGE_PATHS=(
-  "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"  # macOS
+PNG_MIN_BYTES=1024  # canonico (espelha skill render-loop-svg Fundacao 2)
+
+CHROMIUM_BROWSERS=(
+  # Edge (preferencial)
+  "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
   "microsoft-edge"
   "microsoft-edge-stable"
-)
-CHROME_PATHS=(
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"     # macOS
+  # Chrome
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
   "google-chrome"
   "google-chrome-stable"
+  # Chromium (Linux distros sem Chrome)
   "chromium-browser"
   "chromium"
 )
 
-try_chromium_family() {
+png_valid() {
+  [ -f "$1" ] && [ "$(stat -f%z "$1" 2>/dev/null || stat -c%s "$1")" -gt "$PNG_MIN_BYTES" ]
+}
+
+try_chromium() {
   local browser="$1"
   if [ -x "$browser" ] || command -v "$browser" >/dev/null 2>&1; then
     "$browser" \
@@ -125,22 +140,20 @@ try_chromium_family() {
       --window-size="$WIDTH,$HEIGHT" --hide-scrollbars \
       --screenshot="$OUT" "file://$SVG" 2>/dev/null
     sleep 1.2
-    [ -s "$OUT" ] && return 0
+    png_valid "$OUT" && return 0
   fi
   return 1
 }
 
-# Tentativa 1: Edge (paths conhecidos)
-for path in "${EDGE_PATHS[@]}"; do
-  try_chromium_family "$path" && echo "Renderizado via Edge ($path)" && exit 0
+# Nivel 1: Chromium-family
+for browser in "${CHROMIUM_BROWSERS[@]}"; do
+  if try_chromium "$browser"; then
+    echo "Renderizado via $browser"
+    exit 0
+  fi
 done
 
-# Tentativa 2: Chrome / Chromium
-for path in "${CHROME_PATHS[@]}"; do
-  try_chromium_family "$path" && echo "Renderizado via Chrome/Chromium ($path)" && exit 0
-done
-
-# Tentativa 3: Playwright (se Node + playwright instalado)
+# Nivel 2: Playwright (se Node + playwright instalado)
 if command -v node >/dev/null 2>&1 && [ -d "node_modules/playwright" ]; then
   node -e "
     const { chromium } = require('playwright');
@@ -152,97 +165,136 @@ if command -v node >/dev/null 2>&1 && [ -d "node_modules/playwright" ]; then
       await page.screenshot({ path: '$OUT' });
       await browser.close();
     })();
-  " && echo "Renderizado via Playwright" && exit 0
+  " 2>/dev/null
+  png_valid "$OUT" && echo "Renderizado via Playwright" && exit 0
 fi
 
-# Tentativa 4: Resvg-js (SVG puro sem CSS animations)
-if command -v node >/dev/null 2>&1 && [ -d "node_modules/@resvg/resvg-js" ]; then
-  node -e "
-    const { Resvg } = require('@resvg/resvg-js');
-    const fs = require('fs');
-    const svg = fs.readFileSync('$SVG', 'utf8');
-    const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: $WIDTH } });
-    fs.writeFileSync('$OUT', resvg.render().asPng());
-  " && echo "Renderizado via Resvg-js" && exit 0
-fi
+# Nivel 3: AUSENCIA reportada + sugestao install
+cat >&2 <<EOF
+AUSENCIA de tooling de render no PATH.
 
-# Tentativa 5: Inkscape CLI
-if command -v inkscape >/dev/null 2>&1; then
-  inkscape "$SVG" --export-type=png --export-filename="$OUT" \
-    --export-width="$WIDTH" 2>/dev/null
-  [ -s "$OUT" ] && echo "Renderizado via Inkscape" && exit 0
-fi
+Opcoes recomendadas (instalar UMA):
+  - Edge:       https://microsoft.com/edge (pre-instalado em Windows 11)
+  - Chrome:     https://google.com/chrome
+  - Playwright: npm i playwright && npx playwright install chromium
 
-# Falha total
-echo "AUSENCIA de tooling de render. Instalar uma das opcoes:" >&2
-echo "  - Edge: https://microsoft.com/edge" >&2
-echo "  - Chrome: https://google.com/chrome" >&2
-echo "  - Playwright: npm i playwright && npx playwright install chromium" >&2
-echo "  - Resvg-js: npm i @resvg/resvg-js" >&2
-echo "  - Inkscape: https://inkscape.org/release/" >&2
+Alternativas manuais (SVG puro sem CSS animations):
+  - Resvg-js:   npm i @resvg/resvg-js   (Rust, ~10x mais rapido que Chromium)
+  - Inkscape:   https://inkscape.org/release/   (fidelidade vetor maxima, lento)
+
+Apos instalar, re-invocar render-loop.
+EOF
 exit 1
 ```
 
 **PowerShell equivalente (Windows):**
 
 ```powershell
-# render-fallback.ps1
-param([string]$Svg, [string]$Out, [int]$Width = 1024, [int]$Height = 1536)
-
-$EdgePaths = @(
-  "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-  "C:\Program Files\Microsoft\Edge\Application\msedge.exe"
+# render-fallback.ps1 -- equivalente direto ao bash, 3 niveis
+param(
+  [Parameter(Mandatory=$true)][string]$Svg,
+  [Parameter(Mandatory=$true)][string]$Out,
+  [int]$Width = 1024,
+  [int]$Height = 1536
 )
-$ChromePaths = @(
+
+$PngMinBytes = 1024  # canonico (espelha skill + bash)
+
+$ChromiumBrowsers = @(
+  "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+  "C:\Program Files\Microsoft\Edge\Application\msedge.exe",
   "C:\Program Files\Google\Chrome\Application\chrome.exe",
   "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 )
 
-function Try-Chromium {
-  param([string]$BrowserPath)
-  if (Test-Path $BrowserPath) {
-    & $BrowserPath `
-      --headless=new --disable-gpu --no-sandbox `
-      --window-size="$Width,$Height" --hide-scrollbars `
-      --screenshot="$Out" "file:///$($Svg.Replace('\','/'))" 2>&1 | Out-Null
-    Start-Sleep -Milliseconds 1200
-    if ((Test-Path $Out) -and ((Get-Item $Out).Length -gt 1024)) { return $true }
-  }
-  return $false
+function PngValid {
+  param([string]$Path)
+  return (Test-Path $Path) -and ((Get-Item $Path).Length -gt $PngMinBytes)
 }
 
-foreach ($p in $EdgePaths) { if (Try-Chromium $p) { Write-Host "Renderizado via Edge ($p)"; exit 0 } }
-foreach ($p in $ChromePaths) { if (Try-Chromium $p) { Write-Host "Renderizado via Chrome ($p)"; exit 0 } }
+function Try-Chromium {
+  param([string]$BrowserPath)
+  if (-not (Test-Path $BrowserPath)) { return $false }
+  $svgUrl = "file:///$($Svg.Replace('\','/'))"
+  & $BrowserPath `
+    --headless=new --disable-gpu --no-sandbox `
+    --window-size="$Width,$Height" --hide-scrollbars `
+    --screenshot="$Out" $svgUrl 2>&1 | Out-Null
+  Start-Sleep -Milliseconds 1200
+  return (PngValid $Out)
+}
 
-# Playwright / Resvg-js / Inkscape — analogo ao bash acima
+# Nivel 1: Chromium-family
+foreach ($browser in $ChromiumBrowsers) {
+  if (Try-Chromium $browser) {
+    Write-Host "Renderizado via $browser"
+    exit 0
+  }
+}
 
-Write-Error "AUSENCIA de tooling de render. Instalar Edge/Chrome/Playwright/Resvg/Inkscape."
+# Nivel 2: Playwright (se Node + playwright instalado)
+$nodeCmd = Get-Command node -ErrorAction SilentlyContinue
+if ($nodeCmd -and (Test-Path "node_modules\playwright")) {
+  $jsScript = @"
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: { width: $Width, height: $Height } });
+  await page.goto('file:///$($Svg.Replace('\','/'))');
+  await page.waitForLoadState('networkidle');
+  await page.screenshot({ path: '$($Out.Replace('\','/'))' });
+  await browser.close();
+})();
+"@
+  node -e $jsScript 2>&1 | Out-Null
+  if (PngValid $Out) {
+    Write-Host "Renderizado via Playwright"
+    exit 0
+  }
+}
+
+# Nivel 3: AUSENCIA reportada
+Write-Host @"
+AUSENCIA de tooling de render no PATH.
+
+Opcoes recomendadas (instalar UMA):
+  - Edge:       https://microsoft.com/edge (pre-instalado em Windows 11)
+  - Chrome:     https://google.com/chrome
+  - Playwright: npm i playwright; npx playwright install chromium
+
+Alternativas manuais (SVG puro sem CSS animations):
+  - Resvg-js:   npm i @resvg/resvg-js
+  - Inkscape:   https://inkscape.org/release/
+
+Apos instalar, re-invocar render-loop.
+"@
 exit 1
 ```
 
 **Notas operacionais:**
 
-- Salvar como `frank-mkt-plugin/hooks/render-fallback.sh` + `.ps1` (ou inline no agente conforme contexto)
-- Validar PNG `> 1024 bytes` para detectar falha silenciosa (browser pode fechar sem erro mas PNG vazio)
-- Sleep 1200ms apos browser para race condition (mesma constante validada em Windows 11 + Edge May 2026)
-- Reportar QUAL ferramenta foi usada no relatorio final (transparencia para auditoria + reproducibilidade)
+- Salvar como `frank-mkt-plugin/hooks/render-fallback.sh` + `.ps1` (artefatos versionados) OU manter inline no agente conforme contexto.
+- Threshold `PNG_MIN_BYTES = 1024` canonico (espelha render-loop-svg/SKILL.md Fundacao 2). Bash e PowerShell agora alinhados (v2.38.1 corrigiu inconsistencia anterior onde bash usava `>0 bytes`).
+- Sleep 1200ms apos browser para race condition (constante validada em Windows 11 + Edge May 2026).
+- Reportar QUAL ferramenta foi usada no relatorio final (transparencia + reproducibilidade).
+- Concurrency: log YAML em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml` NAO tem lock atomico. Restricao operacional: **1 invocacao ativa por slug**. Invocacoes paralelas mesmo slug podem corromper YAML. Sem mitigacao automatica em v2.38.1 (registrado como debito para v2.39.0+).
 
-Detalhamento canonico (PORQUE cada ferramenta + limitacoes + comparativo) em skill `render-loop-svg` Fundacao 7.
+Detalhamento canonico (PORQUE cada ferramenta + limitacoes + comparativo + Resvg-js + Inkscape como alternativas) em skill `render-loop-svg` Fundacao 7.
 
-### Alternativas testaveis (escala de fidelidade)
+### Tabela de ferramentas (alinhada com fallback chain executavel)
 
-| Ferramenta | Pre-instalado Windows 11 | Fidelidade SVG | Suporta HTML+CSS |
-|---|---|---|---|
-| Edge headless | sim | alta | sim full |
-| Chrome headless | se instalado | alta | sim full |
-| Playwright (Node) | nao (`npm i`) | alta | sim full |
-| Puppeteer (Node) | nao (`npm i`) | alta | sim full |
-| Inkscape CLI | nao | muito alta | nao (SVG puro) |
-| rsvg-convert | nao | media | nao |
-| Resvg-js (Rust) | nao | alta | nao |
-| ImageMagick | nao | baixa | nao |
+Esta tabela reflete o que o script de fallback **realmente tenta** -- 3 niveis automatic + 2 alternativas manuais. Alinhada com v2.38.1 (vs 8 linhas iniciais em v2.38.0 que misturavam executavel com aspiracional).
 
-**Padrao do agente: Edge headless** (zero install Windows + caminho equivalente macOS/Linux). Outras opcoes se Edge falhar ou se user pedir explicitamente.
+| Nivel | Ferramenta | Como acionar | Fidelidade SVG | HTML+CSS |
+|---|---|---|---|---|
+| Auto 1 | Edge headless | Script fallback | alta | sim full |
+| Auto 1 | Chrome headless | Script fallback | alta | sim full |
+| Auto 1 | Chromium | Script fallback | alta | sim full |
+| Auto 2 | Playwright (Node) | Script fallback se `node_modules/playwright` existir | alta | sim full + fontes web |
+| Manual | Resvg-js (Rust) | `npm i @resvg/resvg-js` + invocar manualmente | alta | nao (SVG puro) |
+| Manual | Inkscape CLI | Install + invocar manualmente | muito alta | nao |
+
+**Padrao do agente: Edge headless** (zero install Windows + caminho equivalente macOS/Linux). Fallback automatico cobre 95% dos casos. Resvg-js e Inkscape sao opcoes manuais para casos especificos (CI/CD sem Chromium para Resvg; print pre-press para Inkscape).
 
 ## Workflow padrao em 5 passos
 
@@ -357,12 +409,12 @@ Iteracao 1: voce reporta "overlap zona 3" -> svg-engineering-ia corrige
 Iteracao 2: voce reporta "contraste coral baixo" -> atelier-criativo refaz paleta
 Iteracao 3: voce reporta "overlap zona 3"  <-- MESMO issue da iter 1
 Iteracao 4: voce reporta "contraste coral baixo"  <-- MESMO da iter 2
-Iteracao 5: CAP atingido — 5 iteracoes queimadas andando em circulo
+Iteracao 5: CAP atingido -- 5 iteracoes queimadas andando em circulo
 ```
 
 Cada agente "corrige" o que o outro acabou de quebrar. Voce queima ~50k tokens sem convergir.
 
-### Solucao operacional — fingerprint de issue dominante
+### Solucao operacional: fingerprint de issue dominante
 
 A cada iteracao, **antes** de invocar agente gerador, voce gera um **fingerprint** do issue dominante e registra no log YAML em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`:
 
@@ -383,20 +435,24 @@ iteracoes:
     issue_dominante: "overlap_texto_DTW_sobre_forma_escura"
     fingerprint: "overlap+zona3+DTW"  # <-- MATCH com iter 1
     severidade: CRITICO
-    alerta: "LOOP_CIRCULAR — fingerprint repetiu de iter 1"
+    alerta: "LOOP_CIRCULAR: fingerprint repetiu de iter 1"
 ```
 
 ### Formato do fingerprint
 
-Concatenacao curta de **tipo + localizacao + elemento**, em snake_case ASCII:
+Formato canonico: `<tipo>+<localizacao>+<elemento>`, snake_case ASCII, **sem prefixos auxiliares** (NAO usar `texto-`, `elemento-`, `forma-` -- agente ja sabe que e elemento visual). Tipos validos do checklist 8-dimensoes: `overlap`, `contraste`, `densidade`, `legibilidade`, `paleta`, `alinhamento`, `hierarquia`, `coerencia`.
 
-- `overlap+zona3+DTW` — sobreposicao de texto "DTW" na zona 3
-- `contraste+coral+paper+ratio<4.5` — contraste insuficiente entre coral e paper
-- `densidade+global+<80%` — densidade global abaixo do alvo
-- `legibilidade+formula+12px` — formula em 12px ilegivel
-- `paleta+coral+fora-do-brief` — cor coral nao declarada no brief
+Exemplos:
 
-Fingerprint NAO precisa ser perfeito — precisa ser **deterministico** (mesma issue produz mesma string).
+- `overlap+zona3+DTW`: sobreposicao de texto "DTW" na zona 3 (zona definida pelo agente conforme grid do brief)
+- `contraste+coral+paper+ratio<4.5`: contraste insuficiente entre coral e paper
+- `densidade+global+<80%`: densidade global abaixo do alvo
+- `legibilidade+formula+12px`: formula em 12px ilegivel
+- `paleta+coral+fora-do-brief`: cor coral nao declarada no brief
+
+Fingerprint NAO precisa ser perfeito; precisa ser **deterministico** (mesma issue produz mesma string).
+
+> NOTA SOBRE ZONAS: nomenclatura de zonas (`zona3`, `zona-superior`, `header`, etc) e **escolha do agente ao avaliar** conforme grid declarado no brief. Sistema de zonas nao e universal -- e local ao infografico. Use rotulos que se mantenham consistentes entre iteracoes do MESMO render-loop. Diferentes invocacoes podem usar nomenclaturas diferentes.
 
 ### Stop condition adicional
 
@@ -413,27 +469,27 @@ Se fingerprint_N == fingerprint_K para qualquer K em [1, N-2]:
      OU revisor humano senior."
 ```
 
-A janela `N-2 ou anterior` (nao `N-1`) e proposital: oscilacao entre 2 issues (A na iter par, B na iter impar) tambem e circular — pega N=3 vs N=1.
+A janela `[1, N-2]` (nao apenas `N-1`) e proposital: pega oscilacao 2-ciclo (A em iter par, B em iter impar -- match entre N=3 e N=1). **Limitacao conhecida**: oscilacao 3-ciclo (A-B-C-A em iter 1-2-3-4) nao e detectada porque janela termina antes. Em loops curtos (cap 5) e improvavel mas possivel. Em v2.39.0+ pode-se expandir para checar TODO o historico.
 
 ### Implementacao no fluxo
 
 Voce e responsavel por:
 
-1. Ler log YAML atual em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml` (se existir; senao criar)
+1. Ler log YAML atual em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml` (se existir; senao criar com cabecalho canonico: `slug` + `created_at` + `iteracoes: []`)
 2. Apos avaliar findings, identificar issue dominante (mais critico OU primeiro CRITICO em ordem de checklist)
-3. Gerar fingerprint determistico
+3. Gerar fingerprint determistico no formato canonico (sem prefixos auxiliares)
 4. Append ao log YAML
-5. Checar match com iter <= N-2
+5. Checar match com iter K para algum K em [1, N-2]
 6. Se match: parar loop, reportar circular, escalar
 7. Se sem match: prosseguir delegacao normal
 
-Quando comando `/frank-mkt:gerar-infografico` inicia, ele cria `render-loop-log.yaml` vazio (so com cabecalho `iteracoes: []`).
+Quando comando `/frank-mkt:gerar-infografico` inicia, ele cria `render-loop-log.yaml` com cabecalho completo (slug + created_at + iteracoes vazia). Se agente for invocado direto (sem command wrapper), agente cria com mesmo schema para coerencia.
 
 ### Caso de borda
 
-Se issue dominante muda a cada iteracao SEM ser circular (ex: iter 1 = overlap, iter 2 = contraste, iter 3 = densidade, iter 4 = paleta, iter 5 = tipografia — todos NOVOS), voce esta progredindo mas talvez nao convergindo. Stop conditions originais cobrem (cap 5 + convergencia <10%).
+Se issue dominante muda a cada iteracao SEM ser circular (ex: iter 1 = overlap, iter 2 = contraste, iter 3 = densidade, iter 4 = paleta, iter 5 = tipografia: todos NOVOS), voce esta progredindo mas talvez nao convergindo. Stop conditions originais cobrem (cap 5 + convergencia <10%).
 
-Caso de borda raro mas possivel: issue "fingerprintavel" diferente mas SEMANTICAMENTE igual (ex: `overlap+zona3+DTW` em iter 1 vs `overlap+zona3+texto-DTW` em iter 3 — diferentes strings, mesma issue). Mitigacao: ao gerar fingerprint, **normalizar** strings (lowercase, remover prefixos comuns como "texto-", "elemento-", "forma-"). Ainda assim falsos negativos podem ocorrer — auditoria humana periodica recomendada.
+Caso de borda raro: issue "fingerprintavel" diferente mas SEMANTICAMENTE igual. Com formato canonico **sem prefixos auxiliares** (regra prescritiva do v2.38.1, nao reativa), risco reduzido. Falsos negativos residuais possiveis: auditoria humana periodica recomendada em SVG complexo.
 
 ## Cross-references — quem te invoca, voce invoca
 

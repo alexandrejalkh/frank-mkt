@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.38.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado — persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.38.0** — 93 skills (18 blocos + Skills Avancadas) + 10 slash commands + 16 agentes = 119 artefatos. v2.38.0 e hardening operacional sem features novas: renderer-visual ganha fingerprint de iteracao para detectar loop circular A->B->A + fallback chain executavel (Edge -> Chrome -> Chromium -> Playwright -> Resvg-js -> Inkscape) com script bash/PowerShell pronto. Skill render-loop-svg refletida: nova stop condition #6 (LOOP CIRCULAR) + Fundacao 7 com ponteiro reciproco para o agente. Sem mudanca em runtime de skills/commands previos. Skills 24 high + 62 medium + 7 low.",
+  "version": "2.38.1",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado: persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.38.1** -- 93 skills + 10 slash commands + 16 agentes = 119 artefatos. v2.38.0 adicionou hardening operacional (fingerprint loop circular + fallback chain). v2.38.1 e post-audit fix: corrige 4a recorrencia do drift docs_mkt esquecido (INSTALACAO + ROADMAP + frank-mkt.md + README) + alinha bash/PS validation PNG > 1024 bytes + simplifica fallback de 5 niveis para 3 (Chromium-family + Playwright + AUSENCIA com manuais Resvg/Inkscape) + corrige em-dashes Unicode em conteudo NOVO de v2.38.0. Skills 24 high + 62 medium + 7 low. Restore: tag v2.38.0.",
   "author": {
     "name": "Alexandre Jalkh"
   },

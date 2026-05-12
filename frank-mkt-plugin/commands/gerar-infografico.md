@@ -150,7 +150,7 @@ Stop conditions:
   - User intervention
 ```
 
-### Etapa 4.1 — Inicializacao do log de iteracoes
+### Etapa 4.1 -- Inicializacao do log de iteracoes
 
 Antes da primeira invocacao do renderer-visual, criar arquivo YAML vazio:
 

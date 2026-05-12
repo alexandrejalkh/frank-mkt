@@ -1,7 +1,7 @@
 {
   "$schema": "https://code.claude.com/schemas/marketplace-schema.json",
   "name": "frank-mkt",
-  "version": "2.38.0",
+  "version": "2.38.1",
   "description": "Frank-MKT — Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado para Brasil 2026 como plugin do Claude Code. Inclui agente atelier-criativo (artista digital generalista anti-AI-slop) + agente renderer-visual (render-loop SVG/HTML via Edge headless + multimodal Read) + slash commands /frank-mkt:atelier e /frank-mkt:gerar-infografico.",
   "owner": {
     "name": "Alexandre Jalkh",
@@ -11,7 +11,7 @@
     {
       "name": "frank-mkt",
       "description": "Consultor MKT/SEO/Midias Sociais/Inteligencia de Mercado Brasil 2026 — 93 skills (18 blocos + Skills Avancadas) + 10 slash commands + 16 agentes = 119 artefatos. Inclui atelier-criativo (artista digital anti-AI-slop) + renderer-visual (render-loop SVG operacional com Bash) + /frank-mkt:atelier + /frank-mkt:gerar-infografico (workflow infografico denso end-to-end com validacao visual real). LGPD/CONAR/CDC compliance + cases Magalu/Nubank/Itau + ANTI-dark-pattern + GEO 2026 + Decaimento Temporal por volatility tier.",
-      "version": "2.38.0",
+      "version": "2.38.1",
       "author": {
         "name": "Alexandre Jalkh"
       },

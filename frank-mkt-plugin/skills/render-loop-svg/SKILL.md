@@ -427,11 +427,11 @@ Se `reference_png` foi fornecido, ler tambem — ambos no contexto para comparac
 
 **Limite pratico**: Read tool aceita imagens ate ~20 MB. PNGs renderizados ficam tipicamente 50KB-2MB. Sem problema em 99% dos casos.
 
-### Passo 4 — Avaliacao visual sistematica (checklist heuristico)
+### Passo 4 -- Avaliacao visual sistematica (checklist heuristico)
 
-Aplicar checklist heuristico — **6 dimensoes objetivas + 2 condicionais**:
+Aplicar checklist heuristico: **6 dimensoes objetivas + 2 condicionais**:
 
-> ⚠️ **Origem do checklist**: derivado da sessao de teste 2026-05-11 com poster Gestuum (`docs_mkt/aprendizado_infografico.md`). NAO e framework academico validado em N casos — e proposta operacional. Replicar em mais casos para validar/refinar.
+> NOTA -- Origem do checklist: derivado da sessao de teste 2026-05-11 com poster Gestuum (`docs_mkt/aprendizado_infografico.md`). NAO e framework academico validado em N casos -- e proposta operacional. Replicar em mais casos para validar/refinar.
 
 **6 dimensoes objetivas (sempre aplicaveis):**
 
@@ -523,26 +523,25 @@ Convergencia: nao aplicavel ainda (precisa baseline)
 
 Loop para quando QUALQUER uma:
 
-1. **ACEITAR alcancado** — todos PASS / WARN cosmeticos
-2. **Convergencia detectada** — 3 iteracoes consecutivas com mudanca <10% (avaliacao subjetiva do agente)
-3. **Cap maximo** — 5 iteracoes totais (custo de tokens significativo apos)
-4. **Limitacao tooling** — ambiente nao permite render (sem Edge, sem Node, etc.)
-5. **User intervention** — usuario humano pede parar
-6. **LOOP CIRCULAR detectado** — fingerprint de issue dominante repetiu (mesmo issue aparece em iter N e tambem em iter K para algum K <= N-2). Indica que agentes nao resolvem via iteracao incremental — issue exige redesign OU caminho hibrido OU revisor humano. **Operacionalizacao no agente `renderer-visual`** (secao "Fingerprint de iteracao + deteccao A->B->A circular").
+1. **ACEITAR alcancado**: todos PASS / WARN cosmeticos
+2. **Convergencia detectada**: 3 iteracoes consecutivas com mudanca <10% (avaliacao subjetiva do agente)
+3. **Cap maximo**: 5 iteracoes totais (custo de tokens significativo apos)
+4. **Limitacao tooling**: ambiente nao permite render (sem Edge, sem Node, etc.)
+5. **User intervention**: usuario humano pede parar
+6. **LOOP CIRCULAR detectado**: fingerprint de issue dominante repetiu (mesmo issue aparece em iter N e tambem em iter K para algum K <= N-2). Indica que agentes nao resolvem via iteracao incremental -- issue exige redesign OU caminho hibrido OU revisor humano. **Operacionalizacao no agente `renderer-visual`** (secao "Fingerprint de iteracao + deteccao A->B->A circular").
 
 ### Fingerprint de issue dominante (operacionaliza stop condition #6)
 
 A cada iteracao N, o agente `renderer-visual` gera fingerprint determistico do issue mais critico:
 
-- Formato: `tipo+localizacao+elemento` (snake_case, ASCII)
+- Formato canonico: `<tipo>+<localizacao>+<elemento>` (snake_case ASCII, sem prefixos auxiliares)
+- Tipos validos: `overlap`, `contraste`, `densidade`, `legibilidade`, `paleta`, `alinhamento`, `hierarquia`, `coerencia`
 - Exemplos: `overlap+zona3+DTW`, `contraste+coral+paper+ratio<4.5`, `densidade+global+<80%`
 - Append em `.frank-mkt/entregaveis/<slug>/render-loop-log.yaml`
 
-Stop condition checa: `fingerprint_N == fingerprint_K para algum K em [1, N-2]`. Janela `N-2 ou anterior` (nao `N-1`) pega oscilacao entre 2 issues alternando — A na iter par, B na iter impar.
+Stop condition checa: `fingerprint_N == fingerprint_K para algum K em [1, N-2]`. Janela `[1, N-2]` (nao apenas `N-1`) pega oscilacao 2-ciclo (A em iter par, B em iter impar -- match entre N=3 e N=1). Limitacao conhecida: oscilacao 3-ciclo (A-B-C-A) escapa porque janela termina antes -- improvavel em loops curtos cap=5 mas possivel.
 
-Falsos positivos possiveis (mesma issue com strings diferentes — ex: `overlap+zona3+DTW` vs `overlap+zona3+texto-DTW`). Mitigacao: normalizar strings antes de comparar (lowercase, remover prefixos comuns).
-
-Detalhamento + caso de borda + implementacao no fluxo: ver `agents/renderer-visual.md` secao "Fingerprint de iteracao + deteccao A->B->A circular".
+Operacionalizacao executavel (formato fingerprint canonico + caso de borda + schema YAML completo + implementacao no fluxo) e CANONICA no agente `renderer-visual.md`. Esta secao da skill explica APENAS o conceito + integracao com stop condition.
 
 ### Quando aceitar antes de convergir
 
@@ -704,20 +703,31 @@ Se 3 iteracoes consecutivas trazem mudanca <10% no checklist, convergencia. Para
 
 ---
 
-## Fundacao 7 — Fallback Chain Quando Tooling Falta
+## Fundacao 7 -- Fallback Chain Quando Tooling Falta
 
-Esta secao explica **PORQUE** cada ferramenta + ordem racional. A **operacionalizacao executavel** (script bash + PowerShell prontos para copy-paste) esta em `agents/renderer-visual.md` secao "Fallback chain executavel". Use esta secao para entender taxonomia + escolha consciente. Use o agente para execucao.
+Esta secao explica **PORQUE** cada ferramenta + ordem racional. A **operacionalizacao executavel** (script bash + PowerShell prontos para copy-paste) e CANONICA em `agents/renderer-visual.md` secao "Fallback chain executavel" (v2.38.1 simplificou para 3 niveis automatic + 2 manuais). Use esta secao para entender taxonomia + escolha consciente; use o agente para execucao.
 
-### Hierarquia de fallback
+### Hierarquia de fallback (3 niveis automatic + 2 manuais em v2.38.1)
 
-1. **Edge headless** (default Windows) — pre-instalado em Windows 11 desde 2021; binario tambem disponivel macOS/Linux. Mesma engine Chromium do Chrome, mas distribuicao corporativa em ambientes com policy MS.
-2. **Chrome headless** — engine identica ao Edge. Caminhos `/Applications/Google Chrome.app/...` macOS, `google-chrome` Linux apt, `C:\Program Files\Google\Chrome\...` Windows.
-3. **Chromium** — Linux distros sem Chrome (Debian/Ubuntu pacote `chromium-browser`).
-4. **Playwright** (Node) — quando precisa de fontes web custom (preload via `addStyleTag`), animacoes (espera `networkidle`), wait for specific element. `npm i playwright; npx playwright install chromium`.
-5. **Puppeteer** (Node) — legacy. Playwright e preferido salvo codigo herdado.
-6. **Resvg-js** (Node, Rust+JS) — SVG puro sem CSS animations. ~10x mais rapido que Chromium para SVG puro. Bom para CI/CD sem Chromium instalado. `npm i @resvg/resvg-js`.
-7. **Inkscape CLI** (DMG/apt install) — fidelidade vetor maxima. Bom para print pre-press / PDF / EPS. Nao renderiza HTML+CSS externo.
-8. **AUSENCIA reportada** — sugerir install OU pedir user enviar PNG manual.
+**Nivel 1: Chromium-family** (cobre 95% dos casos)
+
+1. **Edge headless** (default Windows): pre-instalado em Windows 11 desde 2021; binario tambem disponivel macOS/Linux. Mesma engine Chromium do Chrome, mas distribuicao corporativa em ambientes com policy MS.
+2. **Chrome headless**: engine identica ao Edge. Caminhos `/Applications/Google Chrome.app/...` macOS, `google-chrome` Linux apt, `C:\Program Files\Google\Chrome\...` Windows.
+3. **Chromium**: Linux distros sem Chrome (Debian/Ubuntu pacote `chromium-browser`). Todos 3 testados no mesmo bloco do script bash/PS porque sao engine-equivalente.
+
+**Nivel 2: Playwright** (Node disponivel + casos especificos)
+
+4. **Playwright** (Node): quando precisa de fontes web custom (preload via `addStyleTag`), animacoes (espera `networkidle`), wait for specific element. `npm i playwright; npx playwright install chromium`. Script auto-detecta `node_modules/playwright`.
+
+**Nivel 3: AUSENCIA reportada** + sugestao install + alternativas manuais
+
+5. **AUSENCIA**: nivel 1+2 falharam. Reportar sugestao de install + listar alternativas manuais (abaixo).
+
+**Opcoes manuais (NAO no fallback automatico)**
+
+6. **Resvg-js** (Node, Rust+JS): SVG puro sem CSS animations. ~10x mais rapido que Chromium para SVG puro. Bom para CI/CD sem Chromium instalado. `npm i @resvg/resvg-js`. NAO esta no fallback automatico porque audiencia (Node dev) tipicamente tambem tem Playwright disponivel; cobertura sobreposta.
+7. **Inkscape CLI** (DMG/apt install): fidelidade vetor maxima. Bom para print pre-press / PDF / EPS. Nao renderiza HTML+CSS externo. NAO esta no fallback automatico porque caso de uso (print pre-press) e distinto do render-loop tipico (web/social/screen).
+8. **Puppeteer** (Node): legacy. Playwright e preferido salvo codigo herdado. NAO no fallback automatico v2.38.1.
 
 ### Quando declarar ausencia honesta
 

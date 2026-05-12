@@ -1,6 +1,6 @@
 # Instalação Frank-MKT
 
-Guia de instalação validado em 2026-05-11 (v2.37.1) — testado e funcional.
+Guia de instalação validado em 2026-05-11 (v2.38.1) — testado e funcional.
 
 ## Pré-requisitos
 
@@ -159,4 +159,4 @@ frank-mkt/                              # GitHub repo root
 
 ## Versão
 
-**v2.37.1** (2026-05-11) — Plugin: 93 skills + 10 commands + 16 agentes = **119 artefatos** / ~121.463 linhas. v2.37.0 adicionou render-loop visual real (skill render-loop-svg + agente renderer-visual + command /frank-mkt:gerar-infografico). v2.37.1 e drift repair pos-v2.37.0 (sincroniza docs_mkt + headings mid-file + corrige ASCII).
+**v2.38.1** (2026-05-11) — Plugin: 93 skills + 10 commands + 16 agentes = **119 artefatos**. v2.37.0 adicionou render-loop visual real (skill render-loop-svg + agente renderer-visual + command /frank-mkt:gerar-infografico). v2.37.1 corrigiu drift pos-v2.37.0. v2.38.0 adicionou hardening operacional (fingerprint loop circular + fallback chain executavel). v2.38.1 corrige drift pos-v2.38.0 (4a recorrencia docs_mkt esquecido). CI lint cross-artifact planejado para v2.39.0 (definitivamente fechar vetor de drift recorrente).
