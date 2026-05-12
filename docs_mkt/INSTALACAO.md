@@ -1,6 +1,6 @@
 # Instalação Frank-MKT
 
-Guia de instalação validado em 2026-05-11 (v2.39.1) — testado e funcional.
+Guia de instalação validado em 2026-05-11 (v2.39.2) — testado e funcional.
 
 ## Pré-requisitos
 
@@ -159,4 +159,4 @@ frank-mkt/                              # GitHub repo root
 
 ## Versão
 
-**v2.39.1** (2026-05-11) — Plugin: 93 skills + 10 commands + 16 agentes = **119 artefatos**. v2.39.0 implementou CI lint cross-artifact. **v2.39.1 e meta-fix**: auditoria pos-v2.39.0 detectou que a propria release introduziu 4 drifts que o lint inicial NAO pegava (subsection headers em INDEX, soma de volatility tiers, tabelas, auto-contradicoes mid-file). v2.39.1 corrige os 4 drifts + endurece o lint (`_check_all_version_mentions` itera TODOS matches em vez de so o primeiro; cobre subsection headers `## Agentes/Slash Commands (X/X — vY)`; valida soma de volatility tiers vs total skills; auto-contradicao agora cobre skills alem de Slash Commands/Agentes).
+**v2.39.2** (2026-05-11) — Plugin: 93 skills (19 blocos) + 10 commands + 16 agentes = **119 artefatos**. v2.39.0 implementou CI lint. v2.39.1 endureceu lint. **v2.39.2 e meta-meta-fix**: auditoria pos-v2.39.1 detectou 3 drifts adicionais (README.md raiz congelado em v2.35.0, help.md "18 blocos" mas tem 19, marketplace narrativa stale). v2.39.2 corrige + adiciona README.md raiz ao lint VERSION_FILES + adiciona check_block_count_consistency contando `### Bloco N` headers vs declaracoes "X blocos". 5 ciclos de drift na sessao -- o lint cresceu de 5 checks (v2.39.0) para 9 checks (v2.39.2) atraves de auditoria iterativa.

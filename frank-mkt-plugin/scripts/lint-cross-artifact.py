@@ -49,17 +49,21 @@ INSTALACAO_MD = REPO_ROOT / "docs_mkt" / "INSTALACAO.md"
 ROADMAP_MD = REPO_ROOT / "docs_mkt" / "ROADMAP-FRANK-MKT.md"
 AGENTS_README = AGENTS_DIR / "README.md"
 FRANK_MKT_AGENT = AGENTS_DIR / "frank-mkt.md"
+README_ROOT = REPO_ROOT / "README.md"  # v2.39.2: adicionado apos lost-in-middle detectar drift
 
-# Arquivos que devem espelhar a versao do plugin.json
+# Arquivos que devem espelhar a versao do plugin.json (apenas documentacao --
+# checks reais sao implementados em check_version_consistency)
 VERSION_FILES = {
     "marketplace.json (top)": MARKETPLACE_JSON,
     "marketplace.json (plugin entry)": MARKETPLACE_JSON,
     "INDEX.md status header": INDEX_MD,
+    "INDEX.md subsection Agentes header": INDEX_MD,
+    "INDEX.md subsection Slash Commands header": INDEX_MD,
     "help.md visao geral": HELP_MD,
     "INSTALACAO.md versao section": INSTALACAO_MD,
     "ROADMAP.md header": ROADMAP_MD,
     "agents/README.md header": AGENTS_README,
-    "agents/frank-mkt.md (sem versao hardcoded - apenas contagens)": FRANK_MKT_AGENT,
+    "README.md raiz (v2.39.2)": README_ROOT,
 }
 
 # ============================================================
@@ -224,20 +228,91 @@ def check_version_consistency(version: str, errors: list[LintError]) -> None:
         "agents/README.md header", errors, "MEDIUM"
     )
 
+    # README.md raiz (v2.39.2: adicionado apos lost-in-middle detectar 4 releases atrasadas)
+    # Procura padroes "Status vX.Y.Z" + ">  X artefatos" + qualquer "vX.Y.Z" em headers
+    _check_all_version_mentions(
+        README_ROOT, r"\*\*Status v[\d.]+", version,
+        "README.md raiz Status", errors, "HIGH"
+    )
+    _check_all_version_mentions(
+        README_ROOT, r"\*\*v[\d.]+\*\* \(2026-", version,
+        "README.md raiz versao secao final", errors, "HIGH"
+    )
 
-def _check_count_in_file(
+
+def _check_simple_count(
     file: Path, pattern: str, expected: int, label: str, errors: list[LintError],
     severity: str = "HIGH"
 ) -> None:
-    """Helper: itera TODOS os matches do pattern e valida contagem."""
+    """Helper: valida contagem unica em pattern com 1 grupo capturante.
+
+    Pattern DEVE ter UM grupo capturante (\\d+) para capturar o numero.
+    Usado para casos simples de contagem unica por linha.
+
+    Exemplo: r"(\\d+) blocos completos"
+    """
     matches = grep_line_numbers(file, pattern)
     for line_no, content in matches:
-        m = re.search(pattern.replace(r"\d+", r"(\d+)"), content)
+        m = re.search(pattern, content)
         if m and int(m.group(1)) != expected:
             errors.append(LintError(
                 severity, str(file), line_no,
                 f"{label} L{line_no} diz {m.group(1)}, filesystem tem {expected}"
             ))
+
+
+def count_blocks_in_help() -> int:
+    """Conta '### Bloco N' headers em help.md (ground truth para blocos)."""
+    matches = grep_line_numbers(HELP_MD, r"^### Bloco \d+")
+    return len(matches)
+
+
+def check_block_count_consistency(errors: list[LintError]) -> None:
+    """v2.39.2: valida 'X blocos' declarado vs count de '### Bloco N' headers.
+
+    Motivacao: lost-in-middle detectou em v2.39.1 que help.md/INDEX.md
+    declaravam '18 blocos' mas help.md tinha headers '### Bloco 1' ate
+    '### Bloco 19' (auto-contradicao mid-file).
+
+    Regex restrito a declaracoes totalizantes explicitas para evitar falsos
+    positivos com textos descritivos ('5 blocos perguntas' do investigador,
+    '9 BLOCOS COMPLETOS plugin Frank-MKT' em texto historico de skill, etc).
+    """
+    real_blocks = count_blocks_in_help()
+
+    # Padroes legitimos de declaracao TOTAL:
+    # - "(X blocos)" em "93 skills (X blocos)" -- declaracao estrutural
+    # - "X blocos completos" ou "X BLOCOS COMPLETOS" -- milestone tracking
+    # - "X sub-blocos" -- subset enumeration
+    # - "X blocos tematicos" -- visao geral
+
+    # help.md
+    _check_simple_count(
+        HELP_MD, r"\((\d+) blocos\)", real_blocks,
+        "help.md '(X blocos)' declaracao estrutural", errors, "HIGH"
+    )
+    _check_simple_count(
+        HELP_MD, r"(\d+) blocos tematicos", real_blocks,
+        "help.md 'X blocos tematicos'", errors, "HIGH"
+    )
+    _check_simple_count(
+        HELP_MD, r"(\d+) BLOCOS COMPLETOS", real_blocks,
+        "help.md 'X BLOCOS COMPLETOS'", errors, "HIGH"
+    )
+    _check_simple_count(
+        HELP_MD, r"(\d+) sub-blocos", real_blocks,
+        "help.md 'X sub-blocos'", errors, "HIGH"
+    )
+
+    # INDEX.md
+    _check_simple_count(
+        INDEX_MD, r"\((\d+) blocos\)", real_blocks,
+        "INDEX.md '(X blocos)' declaracao estrutural", errors, "HIGH"
+    )
+    _check_simple_count(
+        INDEX_MD, r"^🎉.*MILESTONE (\d+) BLOCOS COMPLETOS", real_blocks,
+        "INDEX.md MILESTONE 'X BLOCOS COMPLETOS'", errors, "HIGH"
+    )
 
 
 def check_count_consistency(
@@ -531,6 +606,7 @@ def main() -> int:
     # Run checks
     check_version_consistency(version_real, errors)
     check_count_consistency(skills_real, agents_real, commands_real, errors)
+    check_block_count_consistency(errors)
     check_auto_contradiction(errors)
     check_skill_frontmatter(errors)
     check_cross_refs(errors)

@@ -16,7 +16,7 @@ Apresenta menu navegavel de TUDO disponivel no plugin frank-mkt:
 
 - 10 slash commands (operacionais + analiticos + criativo + render-loop)
 - 16 agentes (persona principal + 13 especialistas + atelier-criativo + renderer-visual)
-- 93 skills agrupadas em 18 blocos tematicos
+- 93 skills agrupadas em 19 blocos tematicos
 
 Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao geral compacta + sugestao de proxima leitura.
 
@@ -27,7 +27,7 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 1. Se $ARGUMENTS vazio: imprimir secao "Visao geral" + "Por onde comecar".
 2. Se $ARGUMENTS = "commands" ou "comandos" ou "slash": imprimir bloco "10 Slash Commands" completo.
 3. Se $ARGUMENTS = "agentes" ou "agents": imprimir bloco "16 Agentes" completo.
-4. Se $ARGUMENTS = "skills": imprimir bloco "93 Skills" completo (todos os 18 sub-blocos).
+4. Se $ARGUMENTS = "skills": imprimir bloco "93 Skills" completo (todos os 19 sub-blocos).
 5. Se $ARGUMENTS for tema (seo, social, branding, pesquisa, copy, ux, psicologia, dominio, ads, corporativo, identidade, ia, persuasao, guerrilha, estrategia): imprimir somente recortes relevantes (skills + agentes + commands daquele tema).
 6. Sempre fechar com "Cross-references" sugerindo ordem de leitura.
 
@@ -35,12 +35,12 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 ## Visao geral
 
-Plugin frank-mkt v2.39.1 - marketing + comunicacao + branding + render-loop visual + hardening operacional + CI lint cross-artifact (endurecido v2.39.1) sob arquitetura Claude Code.
+Plugin frank-mkt v2.39.2 - marketing + comunicacao + branding + render-loop visual + hardening operacional + CI lint cross-artifact (endurecido v2.39.2 cobrindo README raiz + blocos) sob arquitetura Claude Code.
 
 ```
 10 slash commands  -> operacao do plugin (inclui /frank-mkt:atelier + /frank-mkt:gerar-infografico)
 16 agentes         -> personas especialistas (inclui atelier-criativo + renderer-visual)
-93 skills (18 blocos) -> conhecimento ativavel (inclui render-loop-svg)
+93 skills (19 blocos) -> conhecimento ativavel (inclui render-loop-svg)
 ```
 
 Filtros aceitos: commands | agentes | skills | seo | social | branding | pesquisa | copy | ux | psicologia | dominio | ads | corporativo | identidade | ia | persuasao | guerrilha | estrategia | arte | sinestesia
@@ -106,7 +106,7 @@ Convocacao tipica: persona principal `frank-mkt` orquestra, agentes especialista
 
 ---
 
-## 93 Skills (18 BLOCOS COMPLETOS)
+## 93 Skills (19 BLOCOS COMPLETOS)
 
 ### Bloco 1 - SEO Estendido (7 skills)
 - `seo-fundamentos` - principios basicos SEO 2026

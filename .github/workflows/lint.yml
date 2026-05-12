@@ -26,9 +26,15 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Run unit tests do proprio lint
+        run: |
+          echo "Step 1: rodando test_lint.py (7 fixtures sinteticas)"
+          python3 frank-mkt-plugin/scripts/test_lint.py
+
       - name: Run cross-artifact lint
         run: |
-          echo "Running lint-cross-artifact.py..."
+          echo "Step 2: rodando lint-cross-artifact.py contra o repo real"
+          echo ""
           echo "Repo layout:"
           ls -la
           echo ""
@@ -40,13 +46,14 @@ jobs:
       - name: Report on PR (success)
         if: success()
         run: |
-          echo "Cross-artifact lint PASS - plugin metadata coerente em todos os arquivos correlatos."
+          echo "PASS - test_lint.py (7 testes) + lint-cross-artifact.py (0 HIGH) = plugin metadata coerente."
 
       - name: Report on PR (failure)
         if: failure()
         run: |
-          echo "Cross-artifact lint FAIL - drift detectado entre arquivos correlatos."
+          echo "FAIL - drift detectado OU regressao em test_lint.py."
           echo "Ver output acima para detalhes. Corrigir antes de merge."
           echo ""
           echo "Para rodar local:"
-          echo "  python3 frank-mkt-plugin/scripts/lint-cross-artifact.py"
+          echo "  python3 frank-mkt-plugin/scripts/test_lint.py            # 7 testes unitarios"
+          echo "  python3 frank-mkt-plugin/scripts/lint-cross-artifact.py  # lint contra repo real"

@@ -1,5 +1,91 @@
 # Changelog -- Frank MKT
 
+## 2.39.2 (2026-05-11) -- META-META-FIX -- v2.39.1 introduziu drift adicional + testes unitarios do lint adicionados
+
+Auditoria pos-v2.39.1 com lost-in-middle detectou 3 drifts adicionais que persistiam ou foram introduzidos:
+
+1. **README.md raiz CONGELADO em v2.35.0** (4 releases atrasadas!) -- HIGH. Visivel no GitHub do publico. Lint v2.39.1 nao verificava README.md raiz.
+2. **help.md "18 blocos" mas tem 19 blocos** (Bloco 1 ate Bloco 19 nos headers) -- HIGH. Auto-contradicao mid-file. Lint v2.39.1 nao checava block count vs `### Bloco N` headers.
+3. **marketplace.json description narrativa stale** -- LOW. Diz "v2.39.0 adiciona" sem mencionar v2.39.1.
+
+PLUS: arquiteto reportou em v2.39.1 que lint nao tinha auto-testes (E1 CONCERN -- "testar o testador" e SPOF arquitetural).
+
+v2.39.2 corrige tudo:
+
+### Adicionado
+
+- **`frank-mkt-plugin/scripts/test_lint.py`** (~360 linhas Python stdlib unittest) -- 7 testes unitarios com fixture sintetica `make_fixture_known_good()` que cria estrutura completa de plugin sintetica em tempdir. Cada teste valida cenario especifico:
+  1. `test_known_good_fixture_passes` -- fixture coerente nao gera HIGH
+  2. `test_marketplace_version_drift_detected` -- drift v != plugin.json detectado
+  3. `test_index_status_header_version_drift_detected` -- INDEX subsection drift detectado
+  4. `test_help_md_skills_count_drift_detected` -- count drift em help.md detectado
+  5. `test_block_count_drift_detected` -- "X BLOCOS COMPLETOS" vs `### Bloco N` real
+  6. `test_marketplace_without_plugins_key_fails_high` -- defensive default removido valida
+  7. `test_skill_missing_frontmatter_field_detected` -- frontmatter check detecta
+
+  Rodam em ~80ms total. Zero deps externas (apenas stdlib `unittest`, `tempfile`, `json`, `re`, `pathlib`).
+
+- **`check_block_count_consistency()`** no lint -- nova funcao que conta `### Bloco N` headers em help.md (ground truth) + valida declaracoes "X blocos completos / X BLOCOS COMPLETOS / X sub-blocos / X blocos tematicos / (X blocos)" em help.md + INDEX.md.
+
+- **`README.md` raiz** adicionado ao `VERSION_FILES` + check em `check_version_consistency` (`r"\*\*Status v[\d.]+"` + `r"\*\*v[\d.]+\*\* \(2026-"`).
+
+- **GitHub Action atualizada** -- step novo "Run unit tests do proprio lint" antes do lint principal. Bloqueia merge se test_lint.py falhar (regressao no lint).
+
+### Modificado
+
+- **README.md raiz** (12 linhas): Status v2.35.0 -> v2.39.2; 92 -> 93 skills; 18 -> 19 blocos completos; 9 -> 10 commands (atelier + gerar-infografico); 15 -> 16 agentes (renderer-visual); 116 -> 119 artefatos; mencao CI lint.
+
+- **help.md** (4 ocorrencias): "18 blocos" -> "19 blocos" em todas as referencias (auto-contradicao mid-file detectada por lost-in-middle).
+
+- **INDEX.md** (2 lugares): "Plugin completo: 93 skills (18 blocos)" -> "(19 blocos)"; "🎉 MILESTONE 17 BLOCOS COMPLETOS" texto historico atualizado para "🎉 MILESTONE 19 BLOCOS COMPLETOS (estado atual; v2.28.0 fechou 17 inicialmente)" -- preserva historia mas declara realidade atual.
+
+- **marketplace.json plugin entry description**: narrativa atualizada para mencionar v2.39.0-v2.39.2 (range iterativo).
+
+- **lint-cross-artifact.py** (~50 linhas): novo helper `_check_simple_count()`, nova funcao `check_block_count_consistency()`, `count_blocks_in_help()` ground truth para blocos, README_ROOT adicionado ao VERSION_FILES + 2 checks novos para README. Helper anterior `_check_count_in_file` removido (era dead code reportado pelo source-auditor; substituido por `_check_simple_count` que tem call sites reais).
+
+### Validacao recursiva
+
+1. `python3 frank-mkt-plugin/scripts/test_lint.py` -> 7/7 PASS (todos cenarios)
+2. `python3 frank-mkt-plugin/scripts/lint-cross-artifact.py` -> 0 HIGH + 34 MEDIUM + 39 LOW (debito legado documentado). Exit 0, PASS WITH WARNINGS.
+
+Lint cresceu de 5 checks (v2.39.0) para 9 checks (v2.39.2) atraves de auditoria iterativa.
+
+### Findings nao implementados (debito tecnico residual)
+
+Arquiteto e source-auditor reportaram findings adicionais em v2.39.1 que persistem:
+- Source-auditor: 8 findings LOW (Optional vs `int | None`, Path.open vs builtin open, dataclass, magic 2000, f-strings sem var, etc) -- polish, nao bugs
+- Arquiteto: auto-contradicao generalizada para INSTALACAO/ROADMAP/agents/README (so help.md cobertio), regex frágil em-dash Unicode
+
+Estes findings sao **debito tecnico aceito** -- sao polish ou casos de borda raros. v2.39.2 priorizou os HIGH detectados.
+
+### A meta-meta-ironia
+
+- v2.39.0 adicionou lint -> v2.39.0 introduziu drift que lint nao detectava
+- v2.39.1 endureceu lint -> v2.39.1 introduziu drift que lint v2.39.1 nao detectava  
+- **v2.39.2 endureceu mais lint + adicionou testes** -- objetivo final: lint que detecta proprio drift mecanicamente, validado por suite de testes que previne regressao quando lint crescer
+
+A cadeia v2.39.x e o caso de uso real: cada drift detectado virava teste novo. Cobertura iterativa do superficie de drift.
+
+### Sem mudanca em runtime
+
+Nao altera comportamento de skills/agentes/commands. Apenas documentacao + lint + testes. Restore: tag v2.39.1.
+
+```
+git reset --hard v2.39.1  # se necessario reverter
+```
+
+### Marco da sessao 2026-05-11
+
+8 releases (v2.36.0 a v2.39.2) + 9 tags publicadas. Plugin v2.35.0 -> v2.39.2 com:
+- 3 novos artefatos features (render-loop-svg + renderer-visual + gerar-infografico)
+- 2 ciclos de hardening (fingerprint + fallback chain)
+- 5 ciclos de drift repair (cada um detectado por auditoria + corrigido na release seguinte)
+- CI lint cross-artifact (5 checks v2.39.0 -> 9 checks v2.39.2)
+- Suite de 7 testes unitarios do lint
+- GitHub Action workflow rodando ambos
+
+---
+
 ## 2.39.1 (2026-05-11) -- META-FIX -- v2.39.0 introduziu drift que o proprio lint v2.39.0 nao detectou
 
 A release v2.39.0 adicionou CI lint cross-artifact mas, em meta-ironia perfeita, introduziu 4 drifts proprios que o lint inicial NAO pegava. Auditoria pos-v2.39.0 com `frank-pentest:lost-in-middle` detectou e identificou os buracos especificos no lint. v2.39.1 corrige os drifts + endurece o lint para fechar os buracos.

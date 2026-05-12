@@ -3,10 +3,10 @@
 > Documento-fonte para o plugin `frank-mkt-plugin/`. Não é versionado pelo plugin — fica em `docs_mkt/` para evolução livre.
 
 **Data inicial:** 2026-05-07
-**Versão atual do plugin:** **v2.39.1** (atualizada em 2026-05-11 -- CI lint endurecido apos auditoria pos-v2.39.0 detectar buracos)
+**Versão atual do plugin:** **v2.39.2** (atualizada em 2026-05-11 -- lint cobre README raiz + blocos count + texto historico MILESTONE atualizado)
 **Modelo de referência:** `frank-juridico-ti-plugin/` (v1.5.3)
 
-> NOTA HISTORICA (2026-05-11): este Roadmap foi escrito em 2026-05-07 quando o plugin estava em v0.5.0 com 11 skills implementadas e ~58 skills previstas. **O plugin avancou MUITO ALEM** do roadmap original -- hoje (v2.39.1) tem **93 skills implementadas em 18 blocos completos + Skills Avancadas 2/2 (svg-engineering-ia + render-loop-svg) + 10 slash commands + 16 agentes totais = 119 artefatos**, mais CI lint cross-artifact (`scripts/lint-cross-artifact.py` + GitHub Action) endurecido em v2.39.1 para cobrir subsection headers + volatility tier sum + tabelas + auto-contradicoes mid-file. As secoes abaixo sao preservadas como **historia do projeto**, mas refletem o plano inicial, NAO o estado atual. Para estado atual ver: `frank-mkt-plugin/skills/INDEX.md` (v2.39.1).
+> NOTA HISTORICA (2026-05-11): este Roadmap foi escrito em 2026-05-07 quando o plugin estava em v0.5.0 com 11 skills implementadas e ~58 skills previstas. **O plugin avancou MUITO ALEM** do roadmap original -- hoje (v2.39.2) tem **93 skills implementadas em 19 blocos completos (incluindo Bloco 18 Skills Avancadas + Bloco 19 Brand Design) + 10 slash commands + 16 agentes totais = 119 artefatos**, mais CI lint cross-artifact (`scripts/lint-cross-artifact.py` + GitHub Action) endurecido iterativamente em v2.39.0 -> v2.39.1 -> v2.39.2 cobrindo: subsection headers + volatility tier sum + tabelas + auto-contradicoes mid-file + README.md raiz + block count vs ### Bloco N headers. As secoes abaixo sao preservadas como **historia do projeto**, mas refletem o plano inicial, NAO o estado atual. Para estado atual ver: `frank-mkt-plugin/skills/INDEX.md` (v2.39.2).
 
 **Snapshots historicos das sessoes principais:**
 - [`SNAPSHOT-2026-05-07.md`](SNAPSHOT-2026-05-07.md) — fim sessao 1 (v0.5.0)

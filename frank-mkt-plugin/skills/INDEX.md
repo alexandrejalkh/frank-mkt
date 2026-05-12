@@ -2,11 +2,11 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.39.1 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos (CI lint endurecido — fecha buracos detectados na auditoria pos-v2.39.0)
+## Status (v2.39.2 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills (19 blocos) + 10 commands + 16 agentes = 119 artefatos (lint v2.39.2 cobre README.md raiz + blocos count + auto-contradicao mid-file generalizada)
 
 **93 skills + 10 slash commands + 16 agentes / ~121.463 linhas totais.**
 
-🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 17 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 (`growth-hacking` + `product-marketing` + `account-based-marketing` + `pricing-strategy` + `go-to-market-strategy`) com 6 skills criadas em **paralelo simultâneo** (5ª paralelização do plugin).
+🎉🎉🎉🎉🎉🎉🎉 **MILESTONE 19 BLOCOS COMPLETOS — 100% SKILLS PLANEJADAS** (estado atual v2.39.2; v2.28.0 fechou 17 inicialmente; v2.30.0 adicionou Bloco 18 Skills Avancadas + Bloco 19 Brand Design) — Meta-skill `manutencao-skills` 1/1 + MKT & Estratégia 2º lote 5/5 + Skills Avancadas 2/2 + Brand Design 8/8 + Bloco F 13/13 + demais blocos.
 
 | Bloco | Implementadas | Linhas |
 |-------|--------------:|-------:|
@@ -34,11 +34,11 @@
 
 **Volatility:** **62 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
-**Plugin completo**: 93 skills (18 blocos) + 10 slash commands + 16 agentes = **119 artefatos**.
+**Plugin completo**: 93 skills (19 blocos) + 10 slash commands + 16 agentes = **119 artefatos**.
 
-🚀🚀🚀 **PLUGIN FRANK-MKT** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS** (93 skills incluindo 2 em Skills Avancadas) + **10/10 Slash Commands** + **16/16 Agentes**!
+🚀🚀🚀 **PLUGIN FRANK-MKT** + 🎉🎉🎉🎉🎉🎉🎉🎉 **19 BLOCOS COMPLETOS** (93 skills incluindo 2 em Skills Avancadas) + **10/10 Slash Commands** + **16/16 Agentes**!
 
-## Agentes (16/16 — v2.39.1)
+## Agentes (16/16 — v2.39.2)
 
 | Agente | Linhas | Função |
 |--------|-------:|--------|
@@ -60,7 +60,7 @@
 | `renderer-visual` | 296 | Agente operacional render-loop — Bash + headless browser + multimodal Read para validar SVG/HTML real (v2.37.0) |
 | **TOTAL** | **8.764** | |
 
-## Slash Commands (10/10 — v2.39.1)
+## Slash Commands (10/10 — v2.39.2)
 
 | Comando | Linhas | Função |
 |---------|-------:|--------|

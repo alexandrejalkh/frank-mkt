@@ -2,12 +2,13 @@
 
 Consultor de Marketing, SEO, Mídias Sociais, Inteligência de Mercado e **arte digital generalista** que opera como plugin do Claude Code. Persona unificada com motor cognitivo, Contraditório Interno obrigatório, Perfilador de Mercado e skills com decaimento temporal. Foco Brasil 2026 (LGPD + CONAR + CDC + cultura tropicalizada). Inclui agente `atelier-criativo` que combate AI-slop estético via síntese de história da arte em voz própria.
 
-> **Status v2.35.0 — 2026-05-10 — 🚀 PLUGIN COMPLETO + EXPANDIDO**
+> **Status v2.39.2 — 2026-05-11 — 🚀 PLUGIN + RENDER-LOOP + CI LINT CROSS-ARTIFACT**
 >
-> **116 artefatos / 119.737+ linhas totais**:
-> - ✅ **92 skills** em **18 blocos completos** (107.548 linhas)
-> - ✅ **9 slash commands** (3.752 linhas — `init` + `stack` + `save-session` + `help` + `audit` + `review` + `juiz` + `perfil` + `atelier` ✨)
-> - ✅ **15 agentes especialistas** (8.437 linhas — incluindo **`atelier-criativo`** ✨ artista digital generalista anti-AI-slop)
+> **119 artefatos totais**:
+> - ✅ **93 skills** em **19 blocos completos** (108.619+ linhas) — inclui Bloco 19 Identidade Visual Corporativa / Brand Design 8/8 + Skills Avancadas 2/2 (svg-engineering-ia + render-loop-svg)
+> - ✅ **10 slash commands** — `init` + `stack` + `save-session` + `help` + `audit` + `review` + `juiz` + `perfil` + `atelier` + `gerar-infografico` (v2.37.0)
+> - ✅ **16 agentes** (15 especialistas + atelier-criativo + renderer-visual operacional)
+> - ✅ **CI lint cross-artifact** em `frank-mkt-plugin/scripts/lint-cross-artifact.py` + `.github/workflows/lint.yml` previne drift documental
 >
 > **Volatility distribution**:
 > - **24 skills `high`** (re-validar 3 meses) — plataformas Meta/Google/LinkedIn, GA4, Search Console, CONAR/CDC, tendências
@@ -66,7 +67,7 @@ claude
 /frank-mkt:init [nome-cliente]
 ```
 
-**Verificação**: dentro do Claude Code, rode `/frank-mkt:help` — deve listar **9 commands + 15 agentes + 92 skills**.
+**Verificação**: dentro do Claude Code, rode `/frank-mkt:help` — deve listar **10 commands + 16 agentes + 93 skills**.
 
 ### Re-instalação após updates
 
@@ -130,7 +131,7 @@ INDEX completo de todas as skills com volatility, linhas e cross-references: [`f
 | `/frank-mkt:init` | 803 | Configura `.frank-mkt/` cliente — estrutura marca + persona + campanhas + decisões + entregáveis + pesquisa. **Inclui doc mestre `identidade-visual.md` (12 seções)** ✨ |
 | `/frank-mkt:stack` | 348 | Estado atual do projeto (marca + persona + campanhas + decisões + entregáveis recentes) |
 | `/frank-mkt:save-session` | 359 | Log estruturado da sessão em `.frank-mkt/sessoes/` |
-| `/frank-mkt:help` | 404 | Menu navegável: 9 commands + 15 agentes + 92 skills agrupadas |
+| `/frank-mkt:help` | 404 | Menu navegável: 10 commands + 16 agentes + 93 skills agrupadas |
 | `/frank-mkt:audit` | 467 | Varredura mecânica PASS/FAIL (7 tipos peça: copy/post/landing/briefing/plano-mídia/deck/email) |
 | `/frank-mkt:review` | 509 | Review qualitativo multi-agent (narrativa + execução + arbitragem) |
 | `/frank-mkt:juiz` | 439 | Arbitra divergência entre agentes (6 critérios hierárquicos) |
@@ -141,7 +142,7 @@ INDEX completo de todas as skills com volatility, linhas e cross-references: [`f
 
 | Agente | Modelo | Função |
 |--------|--------|--------|
-| `frank-mkt` | opus | **Persona principal** — orquestra 92 skills + 14 agentes + 9 commands |
+| `frank-mkt` | opus | **Persona principal** — orquestra 93 skills + 16 agentes + 10 commands |
 | **`atelier-criativo`** ✨ | opus | **Artista digital generalista** — visão estética + sinestesia entre domínios + síntese de mestres em voz própria. SVG é apenas um pincel. Anti-AI-slop firme |
 | `juiz` | opus | Arbitrador imparcial — 6 critérios hierárquicos (compliance > ética > estratégia > evidência > audiência > custo-benefício) |
 | `auditor` | sonnet | Varredura mecânica PASS/FAIL — 7 checklists, 3 níveis severidade |
@@ -284,16 +285,16 @@ frank-mkt/                              # repo root (alexandrejalkh/frank-mkt)
 └── frank-mkt-plugin/                   # Plugin em subpasta dedicada
     ├── .claude-plugin/
     │   └── plugin.json                 # Plugin manifest
-    ├── CHANGELOG.md                    # Histórico v0.1.0 → v2.35.0
+    ├── CHANGELOG.md                    # Histórico v0.1.0 → v2.39.2
     ├── settings.json
-    ├── skills/                         # 92 skills em 18 blocos
+    ├── skills/                         # 93 skills em 19 blocos
     │   ├── INDEX.md                    # Mapa completo
     │   └── <nome-skill>/SKILL.md
-    ├── commands/                       # 9 slash commands
+    ├── commands/                       # 10 slash commands
     │   ├── init.md (com doc mestre identidade-visual.md ✨)
     │   ├── atelier.md ✨
     │   └── <outros>.md
-    ├── agents/                         # 15 agentes especialistas
+    ├── agents/                         # 16 agentes (15 especialistas + renderer-visual)
     │   ├── frank-mkt.md (persona principal)
     │   ├── atelier-criativo.md ✨
     │   └── <outros>.md
@@ -332,7 +333,7 @@ Quando user roda `/frank-mkt:init`, é criada esta estrutura no projeto:
 
 ## Versão
 
-**v2.35.0** (2026-05-10) — 116 artefatos (92 skills + 9 commands + 15 agentes) / 119.737+ linhas. Inclui agente `atelier-criativo` (artista digital anti-AI-slop) + slash command `/frank-mkt:atelier` + doc mestre `identidade-visual.md` com 12 seções estruturadas. Ver [`frank-mkt-plugin/CHANGELOG.md`](frank-mkt-plugin/CHANGELOG.md) para histórico detalhado v0.1.0 → v2.35.0.
+**v2.39.2** (2026-05-11) — 119 artefatos (93 skills + 10 commands + 16 agentes). Inclui agente `atelier-criativo` (artista digital anti-AI-slop) + agente `renderer-visual` (render-loop SVG operacional) + slash commands `/frank-mkt:atelier` + `/frank-mkt:gerar-infografico` + doc mestre `identidade-visual.md` + skill `render-loop-svg` + CI lint cross-artifact (scripts/lint-cross-artifact.py + GitHub Action) que previne drift documental mecanicamente. Ver [`frank-mkt-plugin/CHANGELOG.md`](frank-mkt-plugin/CHANGELOG.md) para histórico detalhado v0.1.0 → v2.39.2.
 
 ## Plugins SPKR/Frank compatíveis
 
