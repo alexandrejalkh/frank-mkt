@@ -2,7 +2,7 @@
 
 > 16 agentes implementados. Cada agente é arquivo `.md` com frontmatter YAML + persona + skills consultadas + frameworks + workflow + cross-skill + disclaimer.
 
-## Agentes implementados (16/16 — v2.39.0)
+## Agentes implementados (16/16 — v2.39.1)
 
 | Arquivo | Agente | Função | Acionamento |
 |---------|--------|--------|-------------|

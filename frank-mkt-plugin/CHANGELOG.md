@@ -1,5 +1,77 @@
 # Changelog -- Frank MKT
 
+## 2.39.1 (2026-05-11) -- META-FIX -- v2.39.0 introduziu drift que o proprio lint v2.39.0 nao detectou
+
+A release v2.39.0 adicionou CI lint cross-artifact mas, em meta-ironia perfeita, introduziu 4 drifts proprios que o lint inicial NAO pegava. Auditoria pos-v2.39.0 com `frank-pentest:lost-in-middle` detectou e identificou os buracos especificos no lint. v2.39.1 corrige os drifts + endurece o lint para fechar os buracos.
+
+### 4 drifts em v2.39.0 que o lint nao detectava (todos corrigidos em v2.39.1)
+
+1. **`skills/INDEX.md:41`** -- subsection header `## Agentes (16/16 -- v2.37.0)` congelado em v2.37.0. Drift HIGH. Lint v2.39.0 so olhava o primeiro match do regex `## Status (v...)` em INDEX, ignorando subsection headers.
+2. **`skills/INDEX.md:63`** -- subsection header `## Slash Commands (10/10 -- v2.37.0)` congelado. Mesma causa.
+3. **`skills/INDEX.md:35`** -- soma volatility tiers "61 medium + 24 high + 7 low" = 92, mas plugin.json declara 93 skills. Drift MEDIUM. Lint v2.39.0 nao validava soma por tier.
+4. **`skills/INDEX.md:45`** -- celula de tabela "frank-mkt | 447 | orquestra 93 skills + 15 agentes + 10 commands" (real: 16 agentes). Regressao do fix v2.38.1. Lint v2.39.0 nao checava celulas de tabela.
+5. **`commands/help.md:50`** -- exemplo inline "/frank-mkt:help skills -> 92 skills agrupadas". Auto-contradicao mid-file (resto do arquivo diz 93). Drift LOW. Lint v2.39.0 so checava patterns Slash Commands/Agentes, nao skills.
+
+### Lint endurecido em v2.39.1 (scripts/lint-cross-artifact.py)
+
+**Novo helper `_check_all_version_mentions()`**: itera TODOS os matches do pattern em vez de apenas o primeiro. Eliminou o bug de "so olha [0]".
+
+**Novo helper `_check_count_in_file()`**: similar para contagens, evita repeticao de copy-paste.
+
+**Novos checks adicionados**:
+- INDEX.md subsection headers `## Agentes (X/X -- vY)` e `## Slash Commands (X/X -- vY)` validados como HIGH
+- INDEX.md celulas de tabela `orquestra X skills + Y agentes + Z commands` validadas como MEDIUM
+- INDEX.md soma volatility tiers (`high + medium + low == skills total`) validada como MEDIUM
+- help.md auto-contradicao agora cobre "skills agrupadas" alem de "slash commands" e "agentes"
+- INSTALACAO.md valida TODAS as mencoes `**vX.Y.Z**` (nao so a ultima)
+
+**Refactor source-auditor**: defensive default `mp.get("plugins", [{}])[0]` substituido por erro explicito HIGH se chave `plugins` ausente em marketplace.json (evita mascaramento de bug latente).
+
+### Validacao recursiva
+
+Apos endurecer, lint rodou localmente contra v2.39.1:
+- **0 HIGH** (gate passa)
+- 34 MEDIUM (debito legado: frontmatter de skills antigas)
+- 39 LOW (em-dashes em conteudo pre-v2.38.0)
+- Exit code 0, **PASS WITH WARNINGS**
+
+Lint agora detecta os 4 drifts que originalmente escapavam. Validacao mecanica funcional.
+
+### Modificado
+
+- `frank-mkt-plugin/scripts/lint-cross-artifact.py`: ~80 linhas alteradas (novos helpers + 3 checks novos + defensive default removido)
+- `frank-mkt-plugin/skills/INDEX.md`: linhas 35/41/45/63 corrigidas
+- `frank-mkt-plugin/commands/help.md`: linha 50 corrigida
+- `plugin.json` + `marketplace.json` + `INSTALACAO.md` + `ROADMAP.md` + `agents/README.md`: bump v2.39.0 -> v2.39.1
+
+### Findings nao implementados (debito tecnico)
+
+Source-auditor reportou 3 MEDIUM e 7 LOW adicionais (refactor extrair helpers para `check_count_consistency` 3 blocos + `check_auto_contradiction` 2 blocos, magic number 2000, dataclass vs class manual, f-strings sem variavel, etc). Estes findings sao polish e codigo-quality -- nao bugs ativos. Endurecimento dos checks foi priorizado em v2.39.1; refactor cosmetico fica para v2.39.2 ou release dedicada.
+
+Arquiteto reportou 7 CONCERN (FRANK_MKT_AGENT em VERSION_FILES sem ser checado, cross-refs hardcoded em 5 arquivos, Python 3.11 pinned demais, etc). Idem -- nao bloqueadores, debito tecnico documentado.
+
+Guardian retornou 14/14 PASS em v2.39.0. v2.39.1 nao introduziu nova violacao.
+
+### Promessa anti-drift agora endurecida
+
+CI lint agora cobre cenarios que escapavam:
+- versao em subsection headers
+- contagens em tabelas
+- soma por volatility tier
+- auto-contradicao mid-file alem de help.md slash/agentes
+
+A meta-ironia desta sessao (4 ciclos de drift na sessao, incluindo o ciclo onde a propria solucao introduziu drift) tornou-se a melhor validacao funcional do lint. Cada drift que o lint detectava era um teste real do proprio lint.
+
+### Sem mudanca em runtime
+
+Esta release **nao altera comportamento** de skills/agentes/commands -- apenas endurece a validacao + corrige drift declarativo. Plugin v2.39.0 continua funcional. Restore point: tag `v2.39.0`.
+
+```
+git reset --hard v2.39.0  # se necessario reverter
+```
+
+---
+
 ## 2.39.0 (2026-05-11) -- CI LINT CROSS-ARTIFACT -- quebra mecanicamente o vetor de drift recorrente
 
 3 ciclos de drift em uma sessao (v2.32->v2.35, v2.37.0, v2.38.0) provaram que disciplina humana NAO previne drift documental cross-artifact. v2.39.0 implementa validacao automatica via script Python + GitHub Action.

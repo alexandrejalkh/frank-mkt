@@ -2,7 +2,7 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.39.0 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos (CI lint cross-artifact implementado — quebra ciclo de drift recorrente)
+## Status (v2.39.1 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos (CI lint endurecido — fecha buracos detectados na auditoria pos-v2.39.0)
 
 **93 skills + 10 slash commands + 16 agentes / ~121.463 linhas totais.**
 
@@ -32,17 +32,17 @@
 | Infraestrutura (slash commands) | ⏸️ 0/8 | — |
 | **TOTAL SKILLS** | **93/93** ✅ | **108.619** |
 
-**Volatility:** **61 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
+**Volatility:** **62 skills `medium`** (re-validar a cada 6 meses) + **24 skills `high`** (re-validar a cada 3 meses — próxima validação 2026-08-09 para Conhecimento Plataforma) + 7 skills `low` (re-validar a cada 12 meses, próxima 2027-05-08).
 
 **Plugin completo**: 93 skills (18 blocos) + 10 slash commands + 16 agentes = **119 artefatos**.
 
 🚀🚀🚀 **PLUGIN FRANK-MKT** + 🎉🎉🎉🎉🎉🎉🎉🎉 **18 BLOCOS COMPLETOS** (93 skills incluindo 2 em Skills Avancadas) + **10/10 Slash Commands** + **16/16 Agentes**!
 
-## Agentes (16/16 — v2.37.0)
+## Agentes (16/16 — v2.39.1)
 
 | Agente | Linhas | Função |
 |--------|-------:|--------|
-| `frank-mkt` | 447 | Persona principal — orquestra 93 skills + 15 agentes + 10 commands |
+| `frank-mkt` | 447 | Persona principal — orquestra 93 skills + 16 agentes totais + 10 commands |
 | `juiz` | 534 | Arbitra divergência entre agentes (6 critérios hierárquicos) |
 | `auditor` | 454 | Varredura mecânica PASS/FAIL (7 tipos peça) |
 | `investigador` | 699 | Entrevista estruturada interlocutor (5 blocos perguntas) |
@@ -60,14 +60,14 @@
 | `renderer-visual` | 296 | Agente operacional render-loop — Bash + headless browser + multimodal Read para validar SVG/HTML real (v2.37.0) |
 | **TOTAL** | **8.764** | |
 
-## Slash Commands (10/10 — v2.37.0)
+## Slash Commands (10/10 — v2.39.1)
 
 | Comando | Linhas | Função |
 |---------|-------:|--------|
 | `/frank-mkt:init` | 560 | Configura `.frank-mkt/` do cliente — estrutura completa marca/persona/campanhas/decisoes/entregaveis + doc mestre `identidade-visual.md` (12 secoes — v2.35.0) |
 | `/frank-mkt:stack` | 348 | Mostra estado atual (marca + persona + campanhas + decisões + entregáveis) |
 | `/frank-mkt:save-session` | 359 | Salva log estruturado da sessão em `.frank-mkt/sessoes/` |
-| `/frank-mkt:help` | 403 | Lista comandos + agentes + 92 skills agrupadas por categoria |
+| `/frank-mkt:help` | 403 | Lista comandos + agentes + 93 skills agrupadas por categoria |
 | `/frank-mkt:audit` | 467 | Varredura mecânica PASS/FAIL (7 tipos peça: copy/post/landing/briefing/plano-mídia/deck/email) |
 | `/frank-mkt:review` | 509 | Review qualitativo multi-agent (narrativa + estratégia + execução + arbitragem) |
 | `/frank-mkt:juiz` | 439 | Arbitra divergência entre agentes (6 critérios: compliance > ética > estratégia > evidência > audiência > custo-benefício) |

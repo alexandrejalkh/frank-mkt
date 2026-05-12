@@ -124,9 +124,37 @@ def grep_line_numbers(file: Path, pattern: str) -> list[tuple[int, str]]:
     return results
 
 
+def _check_all_version_mentions(
+    file: Path, pattern: str, version: str, label: str, errors: list[LintError],
+    severity: str = "HIGH"
+) -> None:
+    """Helper: itera TODOS os matches do pattern e valida versao.
+
+    Eliminou bug v2.39.0 onde apenas [0] era checado, deixando subsection
+    headers com versao stale escapar.
+    """
+    matches = grep_line_numbers(file, pattern)
+    if not matches:
+        return  # arquivo nao tem pattern, ignora silenciosamente
+    for line_no, content in matches:
+        m = re.search(r"v([\d.]+)", content)
+        if not m:
+            continue
+        found_v = m.group(1)
+        if found_v != version:
+            errors.append(LintError(
+                severity, str(file), line_no,
+                f"{label} L{line_no} diz v{found_v}, plugin.json {version}"
+            ))
+
+
 def check_version_consistency(version: str, errors: list[LintError]) -> None:
-    """Verifica que cada arquivo correlato menciona a versao truth."""
-    # marketplace.json (top + plugin entry)
+    """Verifica que cada arquivo correlato menciona a versao truth.
+
+    v2.39.1: endurecido apos meta-finding lost-in-middle -- itera TODOS
+    matches (nao so [0]), cobre subsection headers em INDEX.md.
+    """
+    # marketplace.json (top + plugin entry) -- defensive default removido
     with open(MARKETPLACE_JSON, encoding="utf-8") as f:
         mp = json.load(f)
     if mp.get("version") != version:
@@ -134,92 +162,92 @@ def check_version_consistency(version: str, errors: list[LintError]) -> None:
             "HIGH", str(MARKETPLACE_JSON), None,
             f"marketplace.json top version={mp.get('version')} != plugin.json {version}"
         ))
-    plugins_entry = mp.get("plugins", [{}])[0]
-    if plugins_entry.get("version") != version:
+    plugins_list = mp.get("plugins")
+    if not plugins_list:
         errors.append(LintError(
             "HIGH", str(MARKETPLACE_JSON), None,
-            f"marketplace.json plugin entry version={plugins_entry.get('version')} != plugin.json {version}"
-        ))
-
-    # INDEX.md status header
-    matches = grep_line_numbers(INDEX_MD, r"## Status \(v[\d.]+")
-    if not matches:
-        errors.append(LintError(
-            "MEDIUM", str(INDEX_MD), None,
-            "INDEX.md sem '## Status (v...' header"
+            "marketplace.json sem chave 'plugins' (estrutura quebrada)"
         ))
     else:
-        line_no, content = matches[0]
-        m = re.search(r"v([\d.]+)", content)
-        found_v = m.group(1) if m else "?"
-        if found_v != version:
+        plugins_entry = plugins_list[0]
+        if plugins_entry.get("version") != version:
             errors.append(LintError(
-                "HIGH", str(INDEX_MD), line_no,
-                f"INDEX.md header diz v{found_v}, plugin.json {version}"
+                "HIGH", str(MARKETPLACE_JSON), None,
+                f"marketplace.json plugin entry version={plugins_entry.get('version')} != plugin.json {version}"
             ))
+
+    # INDEX.md: header principal + subsection headers (## Agentes (X/X — vY) etc)
+    _check_all_version_mentions(
+        INDEX_MD, r"## Status \(v[\d.]+", version, "INDEX.md status header", errors, "HIGH"
+    )
+    _check_all_version_mentions(
+        INDEX_MD, r"## Agentes? \(\d+/\d+ — v[\d.]+\)", version,
+        "INDEX.md ## Agentes subsection", errors, "HIGH"
+    )
+    _check_all_version_mentions(
+        INDEX_MD, r"## Slash Commands \(\d+/\d+ — v[\d.]+\)", version,
+        "INDEX.md ## Slash Commands subsection", errors, "HIGH"
+    )
 
     # help.md visao geral
-    matches = grep_line_numbers(HELP_MD, r"Plugin frank-mkt v[\d.]+")
-    if matches:
-        line_no, content = matches[0]
-        m = re.search(r"v([\d.]+)", content)
-        found_v = m.group(1) if m else "?"
-        if found_v != version:
-            errors.append(LintError(
-                "HIGH", str(HELP_MD), line_no,
-                f"help.md visao geral diz v{found_v}, plugin.json {version}"
-            ))
+    _check_all_version_mentions(
+        HELP_MD, r"Plugin frank-mkt v[\d.]+", version, "help.md visao geral",
+        errors, "HIGH"
+    )
 
-    # INSTALACAO.md versao section
+    # INSTALACAO.md: itera TODAS as menções **vX.Y.Z** (nao so a ultima)
     matches = grep_line_numbers(INSTALACAO_MD, r"\*\*v[\d.]+\*\*")
-    versions_found = []
-    for ln, content in matches:
-        m = re.search(r"\*\*v([\d.]+)\*\*", content)
-        if m:
-            versions_found.append((ln, m.group(1)))
-    if not versions_found:
+    if not matches:
         errors.append(LintError(
             "MEDIUM", str(INSTALACAO_MD), None,
             "INSTALACAO.md sem **vX.Y.Z** marcador"
         ))
     else:
-        # Pegar a ultima ocorrencia (secao Versao)
-        ln, found_v = versions_found[-1]
-        if found_v != version:
+        # A ultima ocorrencia e a "secao Versao" — drift HIGH
+        last_ln, last_content = matches[-1]
+        m = re.search(r"\*\*v([\d.]+)\*\*", last_content)
+        if m and m.group(1) != version:
             errors.append(LintError(
-                "HIGH", str(INSTALACAO_MD), ln,
-                f"INSTALACAO.md secao Versao diz v{found_v}, plugin.json {version}"
+                "HIGH", str(INSTALACAO_MD), last_ln,
+                f"INSTALACAO.md secao Versao (L{last_ln}) diz v{m.group(1)}, plugin.json {version}"
             ))
 
     # ROADMAP.md header
-    matches = grep_line_numbers(ROADMAP_MD, r"Vers[aã]o atual do plugin:")
-    if matches:
-        line_no, content = matches[0]
-        m = re.search(r"v([\d.]+)", content)
-        found_v = m.group(1) if m else "?"
-        if found_v != version:
-            errors.append(LintError(
-                "MEDIUM", str(ROADMAP_MD), line_no,
-                f"ROADMAP.md header diz v{found_v}, plugin.json {version}"
-            ))
+    _check_all_version_mentions(
+        ROADMAP_MD, r"Vers[aã]o atual do plugin:.*v[\d.]+", version,
+        "ROADMAP.md header", errors, "MEDIUM"
+    )
 
     # agents/README.md header
-    matches = grep_line_numbers(AGENTS_README, r"## Agentes implementados \(\d+/\d+ — v[\d.]+\)")
-    if matches:
-        line_no, content = matches[0]
-        m = re.search(r"v([\d.]+)", content)
-        found_v = m.group(1) if m else "?"
-        if found_v != version:
+    _check_all_version_mentions(
+        AGENTS_README, r"## Agentes implementados \(\d+/\d+ — v[\d.]+\)", version,
+        "agents/README.md header", errors, "MEDIUM"
+    )
+
+
+def _check_count_in_file(
+    file: Path, pattern: str, expected: int, label: str, errors: list[LintError],
+    severity: str = "HIGH"
+) -> None:
+    """Helper: itera TODOS os matches do pattern e valida contagem."""
+    matches = grep_line_numbers(file, pattern)
+    for line_no, content in matches:
+        m = re.search(pattern.replace(r"\d+", r"(\d+)"), content)
+        if m and int(m.group(1)) != expected:
             errors.append(LintError(
-                "MEDIUM", str(AGENTS_README), line_no,
-                f"agents/README.md header diz v{found_v}, plugin.json {version}"
+                severity, str(file), line_no,
+                f"{label} L{line_no} diz {m.group(1)}, filesystem tem {expected}"
             ))
 
 
 def check_count_consistency(
     skills: int, agents: int, commands: int, errors: list[LintError]
 ) -> None:
-    """Verifica contagens declaradas em arquivos correlatos."""
+    """Verifica contagens declaradas em arquivos correlatos.
+
+    v2.39.1: cobre subsection counts (Skills Avancadas tier, tabela INDEX celulas,
+    soma por volatility tier, help.md exemplos inline, INSTALACAO/ROADMAP contagens).
+    """
     expected_total = skills + agents + commands
 
     # plugin.json description
@@ -232,74 +260,87 @@ def check_count_consistency(
         ("agentes", agents),
         ("artefatos", expected_total),
     ]:
-        # Procura padrao "<numero> <label>" no description
         m = re.search(rf"(\d+) {label}", desc)
-        if m:
-            found = int(m.group(1))
-            if found != expected:
-                errors.append(LintError(
-                    "MEDIUM", str(PLUGIN_JSON), None,
-                    f"plugin.json description '{found} {label}' != real {expected}"
-                ))
+        if m and int(m.group(1)) != expected:
+            errors.append(LintError(
+                "MEDIUM", str(PLUGIN_JSON), None,
+                f"plugin.json description '{m.group(1)} {label}' != real {expected}"
+            ))
 
-    # marketplace.json plugin entry description
+    # marketplace.json plugin entry description (defensive default removido)
     with open(MARKETPLACE_JSON, encoding="utf-8") as f:
         mp = json.load(f)
-    plugin_entry_desc = mp.get("plugins", [{}])[0].get("description", "")
-    for label, expected in [
-        ("skills", skills),
-        ("slash commands", commands),
-        ("agentes", agents),
-        ("artefatos", expected_total),
-    ]:
-        m = re.search(rf"(\d+) {label}", plugin_entry_desc)
-        if m:
-            found = int(m.group(1))
-            if found != expected:
+    plugins_list = mp.get("plugins")
+    if plugins_list:
+        plugin_entry_desc = plugins_list[0].get("description", "")
+        for label, expected in [
+            ("skills", skills),
+            ("slash commands", commands),
+            ("agentes", agents),
+            ("artefatos", expected_total),
+        ]:
+            m = re.search(rf"(\d+) {label}", plugin_entry_desc)
+            if m and int(m.group(1)) != expected:
                 errors.append(LintError(
                     "MEDIUM", str(MARKETPLACE_JSON), None,
-                    f"marketplace.json plugin description '{found} {label}' != real {expected}"
+                    f"marketplace.json plugin description '{m.group(1)} {label}' != real {expected}"
                 ))
 
-    # INDEX.md status header
+    # INDEX.md: status header agregado (93 skills + 10 commands + 16 agentes)
     matches = grep_line_numbers(INDEX_MD, r"\d+ skills \+ \d+ commands \+ \d+ agentes")
-    for line_no, content in matches[:1]:  # primeiro match
+    for line_no, content in matches:
         m = re.search(r"(\d+) skills \+ (\d+) commands \+ (\d+) agentes", content)
         if m:
             s, c, a = int(m.group(1)), int(m.group(2)), int(m.group(3))
             if (s, c, a) != (skills, commands, agents):
                 errors.append(LintError(
                     "HIGH", str(INDEX_MD), line_no,
-                    f"INDEX.md header diz {s}/{c}/{a} (skills/commands/agentes), filesystem tem {skills}/{commands}/{agents}"
+                    f"INDEX.md L{line_no} diz {s}/{c}/{a} (skills/commands/agentes), real {skills}/{commands}/{agents}"
                 ))
 
-    # help.md visao geral
-    matches = grep_line_numbers(HELP_MD, r"\d+ slash commands? .*\n.*\d+ agentes")
-    # check separado por linha
-    cmd_matches = grep_line_numbers(HELP_MD, r"^- \d+ slash commands")
-    for ln, content in cmd_matches:
-        m = re.search(r"(\d+) slash commands", content)
-        if m and int(m.group(1)) != commands:
-            errors.append(LintError(
-                "HIGH", str(HELP_MD), ln,
-                f"help.md '{m.group(1)} slash commands' != real {commands}"
-            ))
-    agt_matches = grep_line_numbers(HELP_MD, r"^- \d+ agentes")
-    for ln, content in agt_matches:
-        m = re.search(r"(\d+) agentes", content)
-        if m and int(m.group(1)) != agents:
-            errors.append(LintError(
-                "HIGH", str(HELP_MD), ln,
-                f"help.md '{m.group(1)} agentes' != real {agents}"
-            ))
-    skl_matches = grep_line_numbers(HELP_MD, r"^- \d+ skills agrupadas")
-    for ln, content in skl_matches:
-        m = re.search(r"(\d+) skills", content)
-        if m and int(m.group(1)) != skills:
-            errors.append(LintError(
-                "HIGH", str(HELP_MD), ln,
-                f"help.md '{m.group(1)} skills' != real {skills}"
-            ))
+    # INDEX.md: celulas de tabela "orquestra X skills + Y agentes + Z commands"
+    matches = grep_line_numbers(INDEX_MD, r"orquestra \d+ skills \+ \d+ agentes")
+    for line_no, content in matches:
+        m = re.search(r"orquestra (\d+) skills \+ (\d+) agentes \+ (\d+) commands", content)
+        if m:
+            s, a, c = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            if (s, a, c) != (skills, agents, commands):
+                errors.append(LintError(
+                    "MEDIUM", str(INDEX_MD), line_no,
+                    f"INDEX.md tabela L{line_no} celula diz orquestra {s}/{a}/{c}, real {skills}/{agents}/{commands}"
+                ))
+
+    # INDEX.md: soma por volatility tier (24 high + 62 medium + 7 low = 93)
+    matches = grep_line_numbers(INDEX_MD, r"\d+ skills `(?:high|medium|low)`")
+    if matches:
+        # Extrai todos os tier counts da linha
+        for ln, content in matches[:1]:  # so primeira ocorrencia (linha Volatility)
+            tier_high = re.search(r"(\d+) skills `high`", content)
+            tier_medium = re.search(r"(\d+) skills `medium`", content)
+            tier_low = re.search(r"(\d+) skills `low`", content)
+            if tier_high and tier_medium and tier_low:
+                total = int(tier_high.group(1)) + int(tier_medium.group(1)) + int(tier_low.group(1))
+                if total != skills:
+                    errors.append(LintError(
+                        "MEDIUM", str(INDEX_MD), ln,
+                        f"INDEX.md soma volatility tiers ({tier_high.group(1)}+{tier_medium.group(1)}+{tier_low.group(1)}={total}) != real {skills} skills"
+                    ))
+
+    # help.md visao geral (workflow + heading + exemplos)
+    # Cobre tanto "- 10 slash commands" quanto "10 slash commands (inclui...)"
+    help_patterns = [
+        (r"(\d+) slash commands", commands, "slash commands"),
+        (r"(\d+) agentes", agents, "agentes"),
+        (r"(\d+) skills agrupadas", skills, "skills agrupadas"),
+    ]
+    for pattern, expected, label in help_patterns:
+        for ln, content in grep_line_numbers(HELP_MD, pattern):
+            m = re.search(pattern, content)
+            if m and int(m.group(1)) != expected:
+                errors.append(LintError(
+                    "HIGH", str(HELP_MD), ln,
+                    f"help.md L{ln} diz '{m.group(1)} {label}', real {expected}"
+                ))
 
 
 def check_auto_contradiction(errors: list[LintError]) -> None:

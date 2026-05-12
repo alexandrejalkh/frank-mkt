@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.39.0",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado: persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.39.0** -- 93 skills + 10 slash commands + 16 agentes = 119 artefatos. v2.39.0 adiciona CI lint cross-artifact (scripts/lint-cross-artifact.py + GitHub Action) que valida automaticamente versao e contagens skills/commands/agentes em plugin.json, marketplace.json, INDEX, help, INSTALACAO, ROADMAP, agents/README, agents/frank-mkt.md. Quebra mecanicamente o vetor de drift recorrente (3 ciclos detectados pelo lost-in-middle em uma sessao). Sem mudanca em runtime de artefatos previos. Skills 24 high + 62 medium + 7 low. Restore: tag v2.38.1.",
+  "version": "2.39.1",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado: persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.39.1** -- 93 skills + 10 slash commands + 16 agentes = 119 artefatos. v2.39.0 adicionou CI lint cross-artifact. v2.39.1 e meta-fix: a propria release v2.39.0 introduziu drift cross-arquivo que o lint v2.39.0 NAO detectou (subsection headers + volatility tier sum + tabelas + auto-contradicoes mid-file fora do help.md). v2.39.1 corrige os 4 drifts + endurece o lint para fechar os buracos. Skills 24 high + 62 medium + 7 low. Restore: tag v2.39.0.",
   "author": {
     "name": "Alexandre Jalkh"
   },

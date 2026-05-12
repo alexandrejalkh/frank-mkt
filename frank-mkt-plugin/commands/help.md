@@ -35,7 +35,7 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 ## Visao geral
 
-Plugin frank-mkt v2.39.0 - marketing + comunicacao + branding + render-loop visual + hardening operacional + CI lint cross-artifact sob arquitetura Claude Code.
+Plugin frank-mkt v2.39.1 - marketing + comunicacao + branding + render-loop visual + hardening operacional + CI lint cross-artifact (endurecido v2.39.1) sob arquitetura Claude Code.
 
 ```
 10 slash commands  -> operacao do plugin (inclui /frank-mkt:atelier + /frank-mkt:gerar-infografico)
@@ -47,7 +47,7 @@ Filtros aceitos: commands | agentes | skills | seo | social | branding | pesquis
 
 Exemplos:
 - `/frank-mkt:help` -> visao geral
-- `/frank-mkt:help skills` -> 92 skills agrupadas
+- `/frank-mkt:help skills` -> 93 skills agrupadas
 - `/frank-mkt:help seo` -> recorte SEO (skills + agentes + commands)
 - `/frank-mkt:help branding` -> recorte branding/identidade visual
 
