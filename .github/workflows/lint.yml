@@ -1,0 +1,52 @@
+name: Cross-Artifact Lint
+
+# Acionado em qualquer push para main + qualquer pull request.
+# Bloqueia merge se HIGH severity drifts forem detectados.
+# Background: 3 ciclos de drift documental em uma sessao (v2.32->v2.35,
+# v2.37.0, v2.38.0) provaram que disciplina humana nao previne esse vetor.
+# Este workflow preveni mecanicamente.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Validate cross-artifact consistency
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run cross-artifact lint
+        run: |
+          echo "Running lint-cross-artifact.py..."
+          echo "Repo layout:"
+          ls -la
+          echo ""
+          echo "Plugin layout:"
+          ls -la frank-mkt-plugin/
+          echo ""
+          python3 frank-mkt-plugin/scripts/lint-cross-artifact.py
+
+      - name: Report on PR (success)
+        if: success()
+        run: |
+          echo "Cross-artifact lint PASS - plugin metadata coerente em todos os arquivos correlatos."
+
+      - name: Report on PR (failure)
+        if: failure()
+        run: |
+          echo "Cross-artifact lint FAIL - drift detectado entre arquivos correlatos."
+          echo "Ver output acima para detalhes. Corrigir antes de merge."
+          echo ""
+          echo "Para rodar local:"
+          echo "  python3 frank-mkt-plugin/scripts/lint-cross-artifact.py"

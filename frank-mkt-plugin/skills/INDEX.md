@@ -2,7 +2,7 @@
 
 > Mapa de todas as skills do plugin `frank-mkt`. Skills implementadas em pastas individuais com `SKILL.md` interno (mesmo padrão do Frank Jurídico TI). Acionamento automático pelo agente principal conforme contexto, exceto as marcadas com `/` (slash commands).
 
-## Status (v2.38.1 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos (post-audit fix: drift docs_mkt + bash/PS alignment + fallback simplificado + ASCII em-dashes em conteudo novo)
+## Status (v2.39.0 — 2026-05-11) — 🚀🚀🚀 PLUGIN FRANK-MKT — 93 skills + 10 commands + 16 agentes = 119 artefatos (CI lint cross-artifact implementado — quebra ciclo de drift recorrente)
 
 **93 skills + 10 slash commands + 16 agentes / ~121.463 linhas totais.**
 

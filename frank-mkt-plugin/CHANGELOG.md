@@ -1,5 +1,83 @@
 # Changelog -- Frank MKT
 
+## 2.39.0 (2026-05-11) -- CI LINT CROSS-ARTIFACT -- quebra mecanicamente o vetor de drift recorrente
+
+3 ciclos de drift em uma sessao (v2.32->v2.35, v2.37.0, v2.38.0) provaram que disciplina humana NAO previne drift documental cross-artifact. v2.39.0 implementa validacao automatica via script Python + GitHub Action.
+
+### Adicionado
+
+- **`frank-mkt-plugin/scripts/lint-cross-artifact.py`** (~340 linhas Python 3.11) -- script de validacao executavel local OR via CI. Coleta ground truth do filesystem (contagens skills/agents/commands) + plugin.json (versao). Valida que arquivos correlatos batem:
+  - marketplace.json (top + plugin entry version)
+  - skills/INDEX.md (status header)
+  - commands/help.md (versao + tabelas + auto-contradicao mid-file)
+  - docs_mkt/INSTALACAO.md (secao Versao)
+  - docs_mkt/ROADMAP-FRANK-MKT.md (header)
+  - agents/README.md (header)
+  - agents/frank-mkt.md (description + stack)
+
+  Checks adicionais: frontmatter YAML obrigatorio nas SKILLs (aceita sinonimos last_review/last_verified e next_review/next_verified), cross-refs apontam para arquivos reais (skills/agents conhecidos), ASCII compliance em arquivos com `ascii_only: true`.
+
+  Severidades:
+  - **HIGH** (bloqueia build, exit 1): drift de versao + auto-contradicao mid-file + frontmatter ausente
+  - **MEDIUM** (warning, exit 0): contagens com erro + frontmatter incompleto
+  - **LOW** (info, exit 0): em-dashes em conteudo legado declarando ascii_only
+
+  Output: limita a 10 items por severidade para MEDIUM/LOW (HIGH lista todos); reporta tipo PASS / PASS WITH WARNINGS / FAIL claramente.
+
+- **`.github/workflows/lint.yml`** -- GitHub Action workflow disparado em push/pull_request para `main`. Roda Python 3.11 + executa o script. Bloqueia merge de PR se exit != 0 (HIGH detectado). Reporta no PR com mensagem clara.
+
+### Como usar
+
+Local (antes de commit):
+```bash
+python3 frank-mkt-plugin/scripts/lint-cross-artifact.py
+```
+
+CI: automatico em push para main + PRs. Falha se HIGH detectado.
+
+### Validacao da implementacao
+
+Lint rodado contra v2.38.1 antes de bump v2.39.0:
+- 0 HIGH (gate passa)
+- 34 MEDIUM (frontmatter legado de skills antigas usando last_verified em vez de last_review -- aceito como sinonimo, mas algumas skills nao tem nenhum)
+- 39 LOW (em-dashes Unicode em conteudo de skills criadas antes de v2.38.0 -- legado, nao bloqueador)
+
+PASS WITH WARNINGS = build prossegue. Debito tecnico (frontmatter normalization + ASCII migration completa) registrado para releases futuras dedicadas.
+
+### Modificado
+
+- `plugin.json`: 2.38.1 -> 2.39.0 + description menciona CI lint
+- `marketplace.json`: 2.39.0 (top + plugin entry) + description menciona CI lint
+- `skills/INDEX.md`: status header v2.38.1 -> v2.39.0
+- `commands/help.md`: versao linha 38
+- `docs_mkt/INSTALACAO.md`: versao section v2.38.1 -> v2.39.0 + menciona CI lint
+- `docs_mkt/ROADMAP-FRANK-MKT.md`: nota historica + versao header
+- `agents/README.md`: header v2.38.1 -> v2.39.0
+
+### O que NAO esta no v2.39.0 (debito proxima release)
+
+- **Frontmatter normalization**: 17 skills antigas (atas-relatorios, comunicacoes-corporativas, dominio-*, pesquisa-mercado-fundamentos, persona-icp-deep, white-space-analysis, trendwatching, competitive-intelligence) usam schema antigo sem `last_review`+`next_review`. Lint reporta como MEDIUM. Release v2.40.0 dedicada para migrar todas.
+- **ASCII migration completa**: 39 SKILLs antigas tem em-dashes Unicode em conteudo legado. Lint reporta como LOW. Release v2.41.0 dedicada para conversao mecanica `--` -> `--`.
+- **Cross-ref expansion**: lint atualmente checa apenas 5 arquivos novos (render-loop-svg, renderer-visual, atelier-criativo, gerar-infografico, atelier). Expandir gradualmente para todos os 119 artefatos.
+
+### Promessa anti-drift
+
+Com v2.39.0, qualquer release futura que tente esquecer um arquivo correlato sera detectada AUTOMATICAMENTE no CI antes do merge. Quebra definitiva do ciclo:
+- v2.32->v2.35 (drift) -> v2.36.0 (reparo manual)
+- v2.37.0 (drift) -> v2.37.1 (reparo manual)
+- v2.38.0 (drift) -> v2.38.1 (reparo manual)
+- v2.39.0 (CI lint) -> sem drift futuro silencioso
+
+### Sem mudanca em runtime
+
+Esta release **nao altera comportamento** de skills/agentes/commands -- adiciona apenas ferramenta de validacao. Plugin v2.38.1 continua funcional. Restore point: tag `v2.38.1`.
+
+```
+git reset --hard v2.38.1  # se necessario reverter
+```
+
+---
+
 ## 2.38.1 (2026-05-11) -- POST-AUDIT FIX -- drift 4a recorrencia + bash/PS alignment + fallback simplificado
 
 Auditoria pos-v2.38.0 com 4 agentes (`lost-in-middle`, `arquiteto`, `source-auditor`, `guardian`) detectou 13 issues. v2.38.1 corrige os criticos. Findings LOW restantes registrados como debito.

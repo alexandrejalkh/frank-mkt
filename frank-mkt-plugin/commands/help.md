@@ -35,7 +35,7 @@ Filtro $ARGUMENTS afunila a listagem por categoria ou tema. Sem filtro = visao g
 
 ## Visao geral
 
-Plugin frank-mkt v2.38.1 - marketing + comunicacao + branding + render-loop visual + hardening operacional sob arquitetura Claude Code.
+Plugin frank-mkt v2.39.0 - marketing + comunicacao + branding + render-loop visual + hardening operacional + CI lint cross-artifact sob arquitetura Claude Code.
 
 ```
 10 slash commands  -> operacao do plugin (inclui /frank-mkt:atelier + /frank-mkt:gerar-infografico)

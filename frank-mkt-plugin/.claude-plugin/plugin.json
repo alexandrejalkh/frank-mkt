@@ -1,8 +1,8 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin-schema.json",
   "name": "frank-mkt",
-  "version": "2.38.1",
-  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado: persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.38.1** -- 93 skills + 10 slash commands + 16 agentes = 119 artefatos. v2.38.0 adicionou hardening operacional (fingerprint loop circular + fallback chain). v2.38.1 e post-audit fix: corrige 4a recorrencia do drift docs_mkt esquecido (INSTALACAO + ROADMAP + frank-mkt.md + README) + alinha bash/PS validation PNG > 1024 bytes + simplifica fallback de 5 niveis para 3 (Chromium-family + Playwright + AUSENCIA com manuais Resvg/Inkscape) + corrige em-dashes Unicode em conteudo NOVO de v2.38.0. Skills 24 high + 62 medium + 7 low. Restore: tag v2.38.0.",
+  "version": "2.39.0",
+  "description": "Consultor de Marketing, SEO, Midias Sociais e Inteligencia de Mercado: persona unificada com motor cognitivo, Contraditorio Interno, perfilador de mercado e skills com decaimento temporal. **PLUGIN v2.39.0** -- 93 skills + 10 slash commands + 16 agentes = 119 artefatos. v2.39.0 adiciona CI lint cross-artifact (scripts/lint-cross-artifact.py + GitHub Action) que valida automaticamente versao e contagens skills/commands/agentes em plugin.json, marketplace.json, INDEX, help, INSTALACAO, ROADMAP, agents/README, agents/frank-mkt.md. Quebra mecanicamente o vetor de drift recorrente (3 ciclos detectados pelo lost-in-middle em uma sessao). Sem mudanca em runtime de artefatos previos. Skills 24 high + 62 medium + 7 low. Restore: tag v2.38.1.",
   "author": {
     "name": "Alexandre Jalkh"
   },
